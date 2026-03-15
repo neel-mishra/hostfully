@@ -75,7 +75,7 @@ def _get_playwright():
 # META AD LIBRARY
 # ═══════════════════════════════════════════════════════════════════════════
 
-SCRAPECREATORS_BASE = "https://api.scrapecreators.com/v2"
+SCRAPECREATORS_BASE = "https://api.scrapecreators.com/v1"
 META_AD_LIBRARY_URL = "https://www.facebook.com/ads/library/"
 
 
@@ -95,31 +95,14 @@ def scrape_meta_competitor(competitor_name: str, api_key: str | None) -> list[di
 def _meta_api_scrape(competitor_name: str, search_term: str, api_key: str) -> list[dict]:
     try:
         resp = requests.get(
-            f"{SCRAPECREATORS_BASE}/meta-ad-library/search-page",
-            params={"query": search_term},
-            headers={"x-api-key": api_key},
-            timeout=30,
-        )
-        if resp.status_code != 200:
-            return []
-        data = resp.json()
-        pages = data.get("data", data.get("results", []))
-        if not pages:
-            return []
-
-        page_id = pages[0].get("id") or pages[0].get("page_id") or pages[0].get("platform_id", "")
-        if not page_id:
-            return []
-
-        resp2 = requests.get(
-            f"{SCRAPECREATORS_BASE}/meta-ad-library/ads",
-            params={"platform_id": page_id, "limit": 50},
+            f"{SCRAPECREATORS_BASE}/facebook/adLibrary/company/ads",
+            params={"companyName": search_term, "country": "US", "trim": "true"},
             headers={"x-api-key": api_key},
             timeout=60,
         )
-        if resp2.status_code != 200:
+        if resp.status_code != 200:
             return []
-        ad_data = resp2.json()
+        ad_data = resp.json()
         raw_ads = ad_data.get("data", ad_data.get("ads", ad_data.get("results", [])))
 
         today = datetime.now().strftime("%Y-%m-%d")

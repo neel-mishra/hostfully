@@ -30,7 +30,7 @@ REFRESH_TOKEN = os.environ.get("GOOGLE_ADS_REFRESH_TOKEN", "")
 CUSTOMER_ID = os.environ.get("GOOGLE_ADS_CUSTOMER_ID", "").replace("-", "")
 MANAGER_ID = os.environ.get("GOOGLE_ADS_MANAGER_ID", "").replace("-", "")
 
-GAQL_URL = f"https://googleads.googleapis.com/v18/customers/{CUSTOMER_ID}/googleAds:searchStream"
+GAQL_URL = f"https://googleads.googleapis.com/v23/customers/{CUSTOMER_ID}/googleAds:searchStream"
 
 
 def get_access_token():
