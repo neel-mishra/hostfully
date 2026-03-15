@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "Month 2 - March 2026: Scale Winners, Fix Measurement",
+  "target_persona": "Property Managers scaling from 5-50 vacation rental units (US/CA primary, BR expansion test)",
+  "active_campaign_hypothesis": "Social proof-driven creative (testimonials) outperforms feature-based messaging for PMS conversions; Guidebook lead magnets deliver efficient mid-funnel conversions",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -29,7 +29,7 @@
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "CRO Intelligence",
