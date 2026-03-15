@@ -1,0 +1,236 @@
+{
+  "total_leads": 21,
+  "total_campaign_spend": 6117.3,
+  "account_level_spend": 6117.3,
+  "reporting_spend": 6117.3,
+  "spend_delta": 0.0,
+  "blended_cpl": 291.3,
+  "lead_type_breakdown": [
+    {
+      "action_type": "lead",
+      "label": "Leads",
+      "count": 9
+    },
+    {
+      "action_type": "offsite_conversion.fb_pixel_custom.lead_email-valid",
+      "label": "lead_email-valid",
+      "count": 5
+    },
+    {
+      "action_type": "offsite_conversion.fb_pixel_custom.qualified_meeting_booked",
+      "label": "qualified_meeting_booked",
+      "count": 1
+    }
+  ],
+  "allowed_lead_breakdown": [
+    {
+      "action_type": "lead",
+      "label": "Leads",
+      "count": 0
+    },
+    {
+      "action_type": "offsite_conversion.fb_pixel_custom.qualified_meeting_booked",
+      "label": "qualified_meeting_booked",
+      "count": 1
+    },
+    {
+      "action_type": "offsite_conversion.fb_pixel_complete_registration",
+      "label": "Website Complete Registration",
+      "count": 0
+    }
+  ],
+  "campaign_results": [
+    {
+      "campaign_id": "6954326744668",
+      "campaign_name": "au-uk_pms_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "effective_status": "",
+      "spend": 1261.8,
+      "leads": 3,
+      "primary_action_type": "offsite_conversion.fb_pixel_custom.lead_email-valid",
+      "primary_objective_label": "lead_email-valid",
+      "cpl": 420.6,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "offsite_conversion.fb_pixel_custom.lead_email-valid": 3
+      },
+      "allowed_breakdown": {
+        "lead": 0,
+        "qualified_meeting_booked": 0,
+        "complete_registration": 0,
+        "total": 0
+      }
+    },
+    {
+      "campaign_id": "6954326449668",
+      "campaign_name": "au-uk_pms_retargeting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "effective_status": "",
+      "spend": 377.47,
+      "leads": 2,
+      "primary_action_type": "offsite_conversion.fb_pixel_custom.lead_email-valid",
+      "primary_objective_label": "lead_email-valid",
+      "cpl": 188.74,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 2
+      },
+      "allowed_breakdown": {
+        "lead": 2,
+        "qualified_meeting_booked": 1,
+        "complete_registration": 2,
+        "total": 5
+      }
+    },
+    {
+      "campaign_id": "6954323673468",
+      "campaign_name": "ca-us_pms_retargeting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "effective_status": "",
+      "spend": 788.56,
+      "leads": 2,
+      "primary_action_type": "offsite_conversion.fb_pixel_custom.lead_email-valid",
+      "primary_objective_label": "lead_email-valid",
+      "cpl": 394.28,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "offsite_conversion.fb_pixel_custom.lead_email-valid": 2
+      },
+      "allowed_breakdown": {
+        "lead": 0,
+        "qualified_meeting_booked": 0,
+        "complete_registration": 0,
+        "total": 0
+      }
+    },
+    {
+      "campaign_id": "6954321351868",
+      "campaign_name": "ca-us_pms_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "effective_status": "",
+      "spend": 3543.41,
+      "leads": 13,
+      "primary_action_type": "offsite_conversion.fb_pixel_custom.lead_email-valid",
+      "primary_objective_label": "lead_email-valid",
+      "cpl": 272.57,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 7
+      },
+      "allowed_breakdown": {
+        "lead": 7,
+        "qualified_meeting_booked": 0,
+        "complete_registration": 7,
+        "total": 14
+      }
+    },
+    {
+      "campaign_id": "6914921864468",
+      "campaign_name": "[Post Promovido] | pt-br",
+      "objective": "OUTCOME_ENGAGEMENT",
+      "status": "ACTIVE",
+      "effective_status": "",
+      "spend": 49.93,
+      "leads": 0,
+      "primary_action_type": null,
+      "primary_objective_label": "",
+      "cpl": null,
+      "is_engagement": true,
+      "lead_breakdown": {},
+      "allowed_breakdown": {
+        "lead": 0,
+        "qualified_meeting_booked": 0,
+        "complete_registration": 0,
+        "total": 0
+      }
+    },
+    {
+      "campaign_id": "6896525103468",
+      "campaign_name": "[Leads] | hostfully | pt-br \u2014 meeting",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "effective_status": "",
+      "spend": 96.13,
+      "leads": 1,
+      "primary_action_type": "offsite_conversion.fb_pixel_custom.qualified_meeting_booked",
+      "primary_objective_label": "qualified_meeting_booked",
+      "cpl": 96.13,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "offsite_conversion.fb_pixel_custom.qualified_meeting_booked": 1
+      },
+      "allowed_breakdown": {
+        "lead": 0,
+        "qualified_meeting_booked": 1,
+        "complete_registration": 0,
+        "total": 1
+      }
+    }
+  ],
+  "campaign_leads_breakdown": [
+    {
+      "campaign_name": "ca-us_pms_prospecting_website-conv",
+      "spend": 3543.41,
+      "results": 13,
+      "primary_objective": "lead_email-valid",
+      "lead": 7,
+      "qualified_meeting_booked": 0,
+      "complete_registration": 7,
+      "total": 13
+    },
+    {
+      "campaign_name": "au-uk_pms_prospecting_website-conv",
+      "spend": 1261.8,
+      "results": 3,
+      "primary_objective": "lead_email-valid",
+      "lead": 0,
+      "qualified_meeting_booked": 0,
+      "complete_registration": 0,
+      "total": 3
+    },
+    {
+      "campaign_name": "au-uk_pms_retargeting_website-conv",
+      "spend": 377.47,
+      "results": 2,
+      "primary_objective": "lead_email-valid",
+      "lead": 2,
+      "qualified_meeting_booked": 1,
+      "complete_registration": 2,
+      "total": 2
+    },
+    {
+      "campaign_name": "ca-us_pms_retargeting_website-conv",
+      "spend": 788.56,
+      "results": 2,
+      "primary_objective": "lead_email-valid",
+      "lead": 0,
+      "qualified_meeting_booked": 0,
+      "complete_registration": 0,
+      "total": 2
+    },
+    {
+      "campaign_name": "[Leads] | hostfully | pt-br \u2014 meeting",
+      "spend": 96.13,
+      "results": 1,
+      "primary_objective": "qualified_meeting_booked",
+      "lead": 0,
+      "qualified_meeting_booked": 1,
+      "complete_registration": 0,
+      "total": 1
+    },
+    {
+      "campaign_name": "[Post Promovido] | pt-br",
+      "spend": 49.93,
+      "results": 0,
+      "primary_objective": "",
+      "lead": 0,
+      "qualified_meeting_booked": 0,
+      "complete_registration": 0,
+      "total": 0
+    }
+  ]
+}

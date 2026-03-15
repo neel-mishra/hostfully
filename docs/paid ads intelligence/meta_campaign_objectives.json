@@ -1,0 +1,67 @@
+{
+  "version": "1",
+  "updated": "2026-03-14",
+  "description": "One objective per Meta Ads campaign. Used by paid ads intelligence agent for Results per campaign. Only change when adding new campaigns or correcting objective.",
+  "objective_keys": {
+    "lead": "lead",
+    "website_complete_registration": "offsite_conversion.fb_pixel_complete_registration",
+    "qualified_meeting_booked": "offsite_conversion.fb_pixel_custom.qualified_meeting_booked",
+    "2025_industry_study": "offsite_conversion.fb_pixel_custom.2025_industry_study",
+    "lead_email-valid": "offsite_conversion.fb_pixel_custom.lead_email-valid",
+    "none": ""
+  },
+  "campaigns": {
+    "6891715059868": {
+      "campaign_name": "Meta-Leads-PMS_Conversions-Manual",
+      "objective": "lead"
+    },
+    "6913423474668": {
+      "campaign_name": "Meta-Leads-PMS_Conversions-Manual-Broad",
+      "objective": "lead"
+    },
+    "6894149906468": {
+      "campaign_name": "Meta-Leads-Guidebook_Conversions",
+      "objective": "lead"
+    },
+    "6894156598868": {
+      "campaign_name": "Meta-Sales-PMS_Conversions-Retargeting",
+      "objective": "qualified_meeting_booked"
+    },
+    "6893093544468": {
+      "campaign_name": "Meta-Sales-Webinar_Registrations",
+      "objective": "website_complete_registration"
+    },
+    "6896525103468": {
+      "campaign_name": "[Leads] | hostfully | pt-br — meeting",
+      "objective": "qualified_meeting_booked"
+    },
+    "6941195367868": {
+      "campaign_name": "Meta-Sales-Industry Report_Prospecting",
+      "objective": "2025_industry_study"
+    },
+    "6954326744668": {
+      "campaign_name": "au-uk_pms_prospecting_website-conv",
+      "objective": "lead_email-valid"
+    },
+    "6954326449668": {
+      "campaign_name": "au-uk_pms_retargeting_website-conv",
+      "objective": "lead_email-valid"
+    },
+    "6954323673468": {
+      "campaign_name": "ca-us_pms_retargeting_website-conv",
+      "objective": "lead_email-valid"
+    },
+    "6954321351868": {
+      "campaign_name": "ca-us_pms_prospecting_website-conv",
+      "objective": "lead_email-valid"
+    },
+    "6922497287068": {
+      "campaign_name": "Meta-Engagement-Boosted_Posts",
+      "objective": "none"
+    },
+    "6914921864468": {
+      "campaign_name": "[Post Promovido] | pt-br",
+      "objective": "none"
+    }
+  }
+}

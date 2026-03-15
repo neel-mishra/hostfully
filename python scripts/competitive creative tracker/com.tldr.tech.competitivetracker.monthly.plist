@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.tldr.tech.competitivetracker.monthly</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.13/bin/python3</string>
+        <string>/Users/neelmishra/antigravity/synthetic growth/TLDR/python scripts/competitive creative tracker/heartbeat_monthly.py</string>
+        <string>--now</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/neelmishra/antigravity/synthetic growth/TLDR/python scripts/competitive creative tracker</string>
+    <!--
+        Runs on the 28th of every month at 08:00.
+        Using Day=28 as a safe "last day" proxy that exists in every month.
+        The heartbeat_monthly.py script also checks is_last_day_of_month()
+        for exact end-of-month scheduling when run as a daemon.
+    -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Day</key>
+        <integer>28</integer>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/com.tldr.tech.competitivetracker.monthly.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.tldr.tech.competitivetracker.monthly.stderr</string>
+</dict>
+</plist>

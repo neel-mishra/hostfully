@@ -1,0 +1,6 @@
+advertiser_id,advertiser_name,campaign_id,campaign_name,newsletter,placement_type,placement_date,impressions,clicks,ctr,spend,cpc,conversions,cpl
+adv-001,Acme Corp,camp-101,Q1 Brand Tech,Tech,Primary,2026-03-08,12500,300,0.024,555,1.85,12,46.25
+adv-001,Acme Corp,camp-102,AI Launch,AI,Secondary,2026-03-05,8200,197,0.024,385,1.95,8,
+adv-002,Beta Labs,camp-201,Product Awareness,Tech,Primary,2026-02-28,9500,171,0.018,359,2.10,5,71.80
+adv-003,Gamma Inc,camp-301,Dev Tools Q1,Tech,Primary,2026-03-06,6800,150,0.022,293,1.95,6,48.83
+adv-003,Gamma Inc,camp-301,Dev Tools Q1,Dev,Secondary,2026-03-04,4200,92,0.022,179,1.95,3,

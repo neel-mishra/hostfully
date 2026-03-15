@@ -1,0 +1,89 @@
+{
+  "period": "2026-01-01 to 2026-01-31",
+  "summary": {
+    "total_leads": 234,
+    "reporting_spend": 27472.07,
+    "campaign_sum_leads": 288,
+    "campaign_sum_spend": 37761.29
+  },
+  "campaigns": [
+    {
+      "name": "Meta-Leads-PMS_Conversions-Manual",
+      "spend": 7180.47,
+      "leads": 117,
+      "cpl": 61.37
+    },
+    {
+      "name": "Meta-Leads-Guidebook_Conversions",
+      "spend": 6204.23,
+      "leads": 48,
+      "cpl": 129.25
+    },
+    {
+      "name": "Meta-Leads-PMS_Conversions-Manual-Broad",
+      "spend": 5253.6,
+      "leads": 64,
+      "cpl": 82.09
+    },
+    {
+      "name": "Meta-Sales-Industry Report_Prospecting",
+      "spend": 4977.18,
+      "leads": 7,
+      "cpl": 711.03
+    },
+    {
+      "name": "Meta-Sales-PMS_Conversions-Retargeting",
+      "spend": 4934.56,
+      "leads": 2,
+      "cpl": 2467.28
+    },
+    {
+      "name": "ca-us_pms_prospecting_website-conv",
+      "spend": 3104.97,
+      "leads": 5,
+      "cpl": 620.99
+    },
+    {
+      "name": "Meta-Sales-Webinar_Registrations",
+      "spend": 1780.97,
+      "leads": 40,
+      "cpl": 44.52
+    },
+    {
+      "name": "Meta-Engagement-Boosted_Posts",
+      "spend": 1336.52,
+      "leads": 0,
+      "cpl": null
+    },
+    {
+      "name": "au-uk_pms_prospecting_website-conv",
+      "spend": 1072.29,
+      "leads": 0,
+      "cpl": null
+    },
+    {
+      "name": "ca-us_pms_retargeting_website-conv",
+      "spend": 763.81,
+      "leads": 0,
+      "cpl": null
+    },
+    {
+      "name": "[Leads] | hostfully | pt-br \u2014 meeting",
+      "spend": 560.55,
+      "leads": 3,
+      "cpl": 186.85
+    },
+    {
+      "name": "au-uk_pms_retargeting_website-conv",
+      "spend": 370.97,
+      "leads": 2,
+      "cpl": 185.49
+    },
+    {
+      "name": "[Post Promovido] | pt-br",
+      "spend": 221.17,
+      "leads": 0,
+      "cpl": null
+    }
+  ]
+}

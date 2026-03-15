@@ -1,0 +1,1207 @@
+{
+  "total_leads": 126,
+  "total_campaign_spend": 34227.35,
+  "account_level_spend": 6304.83,
+  "reporting_spend": 6304.83,
+  "spend_delta": 27922.52,
+  "blended_cpl": 50.04,
+  "lead_type_breakdown": [
+    {
+      "action_type": "lead",
+      "label": "Meta Lead Form",
+      "count": 302
+    }
+  ],
+  "campaign_results": [
+    {
+      "campaign_id": "6954329303868",
+      "campaign_name": "mx_pms_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6954327557268",
+      "campaign_name": "br_pms_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6954326744668",
+      "campaign_name": "au-uk_pms_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "spend": 1072.29,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6954326449668",
+      "campaign_name": "au-uk_pms_retargeting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "spend": 370.97,
+      "leads": 2,
+      "cpl": 185.49,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 2
+      }
+    },
+    {
+      "campaign_id": "6954325532468",
+      "campaign_name": "ca-us_spring-promo_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6954325093268",
+      "campaign_name": "ca-us_guidebooks_prospecting_demo",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6954323673468",
+      "campaign_name": "ca-us_pms_retargeting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "spend": 763.81,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6954321351868",
+      "campaign_name": "ca-us_pms_prospecting_website-conv",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "spend": 3104.9,
+      "leads": 5,
+      "cpl": 620.98,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 5
+      }
+    },
+    {
+      "campaign_id": "6941195367868",
+      "campaign_name": "Meta-Sales-Industry Report_Prospecting",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 4977.18,
+      "leads": 7,
+      "cpl": 711.03,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 7
+      }
+    },
+    {
+      "campaign_id": "6938010063068",
+      "campaign_name": "New Sales Campaign",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6936384661268",
+      "campaign_name": "Meta-Leads-Ebook_Downloads",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6922497287068",
+      "campaign_name": "Meta-Engagement-Boosted_Posts",
+      "objective": "OUTCOME_ENGAGEMENT",
+      "status": "PAUSED",
+      "spend": 581.25,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": true,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6914921864468",
+      "campaign_name": "[Post Promovido] | pt-br",
+      "objective": "OUTCOME_ENGAGEMENT",
+      "status": "ACTIVE",
+      "spend": 222.22,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": true,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6913423474668",
+      "campaign_name": "Meta-Leads-PMS_Conversions-Manual-Broad",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6896525103468",
+      "campaign_name": "[Leads] | hostfully | pt-br \u2014 meeting",
+      "objective": "OUTCOME_LEADS",
+      "status": "ACTIVE",
+      "spend": 525.94,
+      "leads": 4,
+      "cpl": 131.49,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 4
+      }
+    },
+    {
+      "campaign_id": "6894156598868",
+      "campaign_name": "Meta-Sales-PMS_Conversions-Retargeting",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 4204.49,
+      "leads": 15,
+      "cpl": 280.3,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 15
+      }
+    },
+    {
+      "campaign_id": "6894149906468",
+      "campaign_name": "Meta-Leads-Guidebook_Conversions",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 4274.41,
+      "leads": 48,
+      "cpl": 89.05,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 48
+      }
+    },
+    {
+      "campaign_id": "6894145276468",
+      "campaign_name": "Meta-Sales-Guidebook_Retargeting",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6893093544468",
+      "campaign_name": "Meta-Sales-Webinar_Registrations",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6892300914668",
+      "campaign_name": "Meta-Leads-PMS_Conversions-Adv+",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6891715059868",
+      "campaign_name": "Meta-Leads-PMS_Conversions-Manual",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 7825.06,
+      "leads": 95,
+      "cpl": 82.37,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 95
+      }
+    },
+    {
+      "campaign_id": "6891254236868",
+      "campaign_name": "[Leads] | hostfully | pt-br",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6876720791468",
+      "campaign_name": "PMS (Image) - US / CAN",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6863789382068",
+      "campaign_name": "Guidebooks Demo - US / CAN",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 334.07,
+      "leads": 2,
+      "cpl": 167.03,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 2
+      }
+    },
+    {
+      "campaign_id": "6863269454868",
+      "campaign_name": "Guidebooks Get Started Now - US / CAN",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 299.35,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6862946151268",
+      "campaign_name": "Webinar | Pricing Power | Video",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 253.16,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6862251858068",
+      "campaign_name": "Webinar | Pricing Power | Image",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 334.01,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6862233299468",
+      "campaign_name": "E-Book | The Vacation Rental Software Ecosystem",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 388.35,
+      "leads": 1,
+      "cpl": 388.35,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 1
+      }
+    },
+    {
+      "campaign_id": "6862178778668",
+      "campaign_name": "E-Book | Scale from 1 to 20 Properties",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 573.62,
+      "leads": 6,
+      "cpl": 95.6,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 6
+      }
+    },
+    {
+      "campaign_id": "6861365716868",
+      "campaign_name": "PMS (Audience Test) - US/CAN",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 1833.29,
+      "leads": 46,
+      "cpl": 39.85,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 46
+      }
+    },
+    {
+      "campaign_id": "6797905147068",
+      "campaign_name": "PMS (Video) - US/CAN",
+      "objective": "OUTCOME_LEADS",
+      "status": "PAUSED",
+      "spend": 2288.98,
+      "leads": 71,
+      "cpl": 32.24,
+      "is_engagement": false,
+      "lead_breakdown": {
+        "lead": 71
+      }
+    },
+    {
+      "campaign_id": "6326229393668",
+      "campaign_name": "ToFu- Dubai - Conversions - Prospecting - Demo Request",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6326194139068",
+      "campaign_name": "New Sales Campaign",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6326194001268",
+      "campaign_name": "MoFu - Reach - Testimonial RT",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6292064174668",
+      "campaign_name": "VB - Engagement",
+      "objective": "OUTCOME_ENGAGEMENT",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": true,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6285988828068",
+      "campaign_name": "MoFu - Reach - Testimonial RT",
+      "objective": "REACH",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6285909253668",
+      "campaign_name": "ToFu- Mexico - Conversions - Prospecting - Demo Request",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6281931208868",
+      "campaign_name": "ToFu- Chile - Conversions - Prospecting - Demo Request",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6281074317668",
+      "campaign_name": "MoFu - Reach - Video Views Funnel",
+      "objective": "REACH",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6277535898468",
+      "campaign_name": "ToFu- UK - Conversions - Prospecting - Demo Request",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6275534237868",
+      "campaign_name": "Booking.com Webinar - 3.22.21",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6268803216468",
+      "campaign_name": "ToFu- Dubai - Conversions - Prospecting - Demo Request",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6263632957468",
+      "campaign_name": "ToFu-Video Views",
+      "objective": "VIDEO_VIEWS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6258186879268",
+      "campaign_name": "ToFu - Reach",
+      "objective": "REACH",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6258185517668",
+      "campaign_name": "ToFu - Post Engagement",
+      "objective": "POST_ENGAGEMENT",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": true,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6253559032268",
+      "campaign_name": "Tofu - Conversions - Website Leads Tech Calculator",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6252255679468",
+      "campaign_name": "ToFu - Traffic",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6250756099068",
+      "campaign_name": "ToFu - Brand Aware",
+      "objective": "BRAND_AWARENESS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6248248373068",
+      "campaign_name": "ToFu - Conversions - Prospecting - Demo Request",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6247997194868",
+      "campaign_name": "MoFu - Conversions - Retargeting - Demo Request",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6247682440468",
+      "campaign_name": "Conversions - Website Visitor Retargeting",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6226466383468",
+      "campaign_name": "ToFu-Conversions - Prospecting - Demo Request - CBO",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6214944772468",
+      "campaign_name": "ToFu - Lead Ads - Prospecting - Guidebooks - CBO",
+      "objective": "LEAD_GENERATION",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6205186434868",
+      "campaign_name": "Conversions - Retargeting - Guidebooks - CBO",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6203763750268",
+      "campaign_name": "Conversions - Prospecting - Guidebooks - CBO",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6199395393268",
+      "campaign_name": "Lead Ads - Prospecting - Ebooks - CBO",
+      "objective": "LEAD_GENERATION",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6199123097268",
+      "campaign_name": "Conversions - Prospecting - Outgrow Lead Magnets - CBO",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6186726356468",
+      "campaign_name": "Conversions - Ebooks",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6182618556668",
+      "campaign_name": "Conversions - Outgrow Lead Magnets",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6182612800468",
+      "campaign_name": "Conversions - PMP",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6162445157668",
+      "campaign_name": "Introducing the Guidebook ROI Calculator",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6162437752868",
+      "campaign_name": "Amenities and services vacation rental guests will pay more for [2019 data]",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6162429272068",
+      "campaign_name": "Increase revenue with Hostfully Guidebooks Marketplace - Blog",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6161959464868",
+      "campaign_name": "Taxes on vacation rental properties: PMP Blog",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6160256109868",
+      "campaign_name": "Get a bird\u2019s eye view of all your guest bookings in one place.",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6159623321868",
+      "campaign_name": "PMP Blog - Award Winning Platform",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6159030568068",
+      "campaign_name": "What is a Property Management Software?",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6157694207868",
+      "campaign_name": "Process Remarketing - Step 1 (product intro simple)",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6156314061068",
+      "campaign_name": "\"What Info Goes Inside My Guidebook\" - optimizemybnb article",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6155175472668",
+      "campaign_name": "process retargeting step 3 - $7.99 Offer",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6153213376268",
+      "campaign_name": "Over 1M Guidebook Views!",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6152519117868",
+      "campaign_name": "Process Remarketing Step 2 (product validation)",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6151793803468",
+      "campaign_name": "Dec Comic - New Audience",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6149871194268",
+      "campaign_name": "Customize Digital Guidebooks - RT 12/19",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6148056198668",
+      "campaign_name": "Customize Digital Guidebooks - RT 12/10",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6146575558268",
+      "campaign_name": "Guidebooks Video - Retargeting",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6143930655468",
+      "campaign_name": "Nick Halverson Story",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6143681434068",
+      "campaign_name": "Customize Digital Guidebooks - Website Retargeting past 180 days - UPDATED 11/18",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6143680245868",
+      "campaign_name": "Are You an Airbnb Host or Property Renter - FB page targeting UPDATED 11/18",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6141330419868",
+      "campaign_name": "Customize Digital Guidebooks - Airbnb Interest Audience",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6140401726068",
+      "campaign_name": "Customize Digital Guidebooks - New Audience",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6139986658268",
+      "campaign_name": "Short term rental property management: will it work for you?",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6139170321068",
+      "campaign_name": "VRMA 2019 Success!",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6138813631668",
+      "campaign_name": "Guidebooks improve guest experience - Remarketing",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6138519724268",
+      "campaign_name": "True Things Guests Say Comic #1",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6138118510868",
+      "campaign_name": "Are You an Airbnb Host or Property Renter - FB page targeting",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6137620982468",
+      "campaign_name": "The Digital Guidebook - How To Create a 5 Star Experience",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6137320053068",
+      "campaign_name": "Increase your Airbnb Host Rating by creating an exceptional experience",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6137020681668",
+      "campaign_name": "The 4 key things to look for in a Property Management Software",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6136451175868",
+      "campaign_name": "Customize Digital Guidebooks - Website Retargeting past 180 days",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6135619995068",
+      "campaign_name": "Power Host LP - Paid Focus",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6134809540668",
+      "campaign_name": "Award Winning Vacation Rental Platform",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6134488484868",
+      "campaign_name": "Customize Digital Guidebooks - Anti-Free Version",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6133884597868",
+      "campaign_name": "Post: \"Are you an Airbnb host or Property Renter? Create...\" 4th Run",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6132979803868",
+      "campaign_name": "What is a Guidebook",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6132167144068",
+      "campaign_name": "Customize Digital Guidebooks",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6131751371468",
+      "campaign_name": "Hostfully Guest Book",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6131236133868",
+      "campaign_name": "Post: \"Are you an Airbnb host or Property Renter? Create...\" 3rd RUN",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6130684444068",
+      "campaign_name": "Website Retargeting: \"Are you an Airbnb host or Property Renter? Create...\"",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6130573831668",
+      "campaign_name": "Post: \"So... exactly what impact would a guidebook...\"",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6129983167868",
+      "campaign_name": "Post: \"We are very honored to receive the Keystone Award...\" - Copy",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6129563186868",
+      "campaign_name": "Create Beautiful Guidebooks 1",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6129357333068",
+      "campaign_name": "Post: \"Are you an Airbnb host or Property Renter? Create...\" 2nd RUN",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6128114863668",
+      "campaign_name": "Post: \"We are very honored to receive the Keystone Award...\"",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6127333171868",
+      "campaign_name": "Post: \"Are you an Airbnb host or Property Renter? Create...\"",
+      "objective": "LINK_CLICKS",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": false,
+      "lead_breakdown": {}
+    },
+    {
+      "campaign_id": "6125391662868",
+      "campaign_name": "Post: \"Are you an Airbnb host or Property Renter? Create...\"",
+      "objective": "POST_ENGAGEMENT",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "leads": 0,
+      "cpl": null,
+      "is_engagement": true,
+      "lead_breakdown": {}
+    }
+  ]
+}

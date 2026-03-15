@@ -1,0 +1,42 @@
+{
+  "sprint_name": "Month 1 - Initial Testing",
+  "target_persona": "VP of Marketing at DTC Ecommerce",
+  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "verticals_to_run": [
+    {
+      "name": "Content & SEO Pipeline",
+      "agents": [
+        "programmatic_seo_agent.py",
+        "content_ideation_agent.py",
+        "traffic_analytics_agent.py",
+        "search_ranking_agent.py",
+        "site_performance_agent.py",
+        "creative_direction_agent.py"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "Paid Acquisition",
+      "agents": [
+        "search_ads_agent.py",
+        "social_ads_agent.py",
+        "landing_page_agent.py"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "B2B Outbound",
+      "agents": [
+        "outbound_sequence_agent.py"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "CRO Intelligence",
+      "agents": [
+        "cro_hypothesis_agent.py"
+      ],
+      "enabled": true
+    }
+  ]
+}
