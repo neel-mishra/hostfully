@@ -20,8 +20,31 @@ from dotenv import load_dotenv
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent.parent
 load_dotenv(WORKSPACE_ROOT / ".env")
 
+def _normalize_private_key(raw: str) -> str:
+    """Handle key from .env: literal \\n or actual newlines, and strip."""
+    if not raw:
+        return ""
+    key = raw.strip()
+    # If stored as single line with literal \n, expand to real newlines
+    if "\\n" in key and "\n" not in key:
+        key = key.replace("\\n", "\n")
+    return key
+
+
+def _check_pem_line_lengths(key: str) -> None:
+    """PEM base64 lines should be 64 chars (except the last). One short line = corrupt key."""
+    lines = [l for l in key.split("\n") if l and not l.startswith("-----")]
+    bad = [i for i, l in enumerate(lines) if len(l) != 64 and i < len(lines) - 1]
+    if bad:
+        raise ValueError(
+            "GSHEETS_PRIVATE_KEY is corrupt: base64 line(s) %s have length != 64 (got %s). "
+            "Re-copy the full private_key from your service account JSON into .env as one line with \\n for newlines."
+            % (bad, [len(lines[i]) for i in bad])
+        )
+
+
 CLIENT_EMAIL = os.environ.get("GSHEETS_CLIENT_EMAIL", "")
-PRIVATE_KEY = os.environ.get("GSHEETS_PRIVATE_KEY", "").replace("\\n", "\n")
+PRIVATE_KEY = _normalize_private_key(os.environ.get("GSHEETS_PRIVATE_KEY", ""))
 FOLDER_ID = os.environ.get("DRIVE_FOLDER_ID_SHEETS", "") or os.environ.get("DEFAULT_GOOGLE_SHEETS_FOLDER_ID", "")
 
 
@@ -31,6 +54,12 @@ def get_service():
 
     if not CLIENT_EMAIL or not PRIVATE_KEY:
         print(json.dumps({"error": "GSHEETS_CLIENT_EMAIL or GSHEETS_PRIVATE_KEY not set"}))
+        sys.exit(1)
+
+    try:
+        _check_pem_line_lengths(PRIVATE_KEY)
+    except ValueError as e:
+        print(json.dumps({"error": str(e)}))
         sys.exit(1)
 
     creds = service_account.Credentials.from_service_account_info(
@@ -75,19 +104,25 @@ def cmd_list():
 
 
 def cmd_create(title):
-    sheets, drive = get_service()
-    body = {"properties": {"title": title}}
-    ss = sheets.spreadsheets().create(body=body).execute()
-    sheet_id = ss["spreadsheetId"]
-
-    drive.files().update(
-        fileId=sheet_id,
-        addParents=FOLDER_ID,
-        supportsAllDrives=True,
-        fields="id, parents",
-    ).execute()
-
-    print(json.dumps({"spreadsheetId": sheet_id, "title": title, "url": ss.get("spreadsheetUrl", "")}))
+    _, drive = get_service()
+    # Create sheet directly in the shared folder via Drive API so SA's Editor on folder is used
+    body = {
+        "name": title,
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "parents": [FOLDER_ID],
+    }
+    file = (
+        drive.files()
+        .create(
+            body=body,
+            supportsAllDrives=True,
+            fields="id, name, webViewLink",
+        )
+        .execute()
+    )
+    sheet_id = file["id"]
+    url = file.get("webViewLink") or f"https://docs.google.com/spreadsheets/d/{sheet_id}/edit"
+    print(json.dumps({"spreadsheetId": sheet_id, "title": title, "url": url}))
 
 
 def cmd_update(title, range_, values_json):

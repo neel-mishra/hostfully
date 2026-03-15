@@ -59,24 +59,10 @@ This generates LinkedIn posts, Twitter threads, email subject lines, newsletter 
 For each blog, generate a video script:
 
 ```bash
-python3 -c "
-import os, sys
-from dotenv import load_dotenv
-load_dotenv('.env')
-sys.path.insert(0, 'python scripts/visual generators/videos')
-from video_script_agent import VideoScriptAgent
-agent = VideoScriptAgent()
-blog_content = open('PATH_TO_BLOG').read()
-script = agent.generate_script(blog_content[:3000], 'TLDR tech newsletter content')
-if script:
-    from pathlib import Path
-    out = Path('docs/content_assets/repurposed') / 'video_script_SLUG.md'
-    out.write_text(script)
-    print(f'Saved: {out}')
-"
+python3 automations/lib/run_video_script_for_blog.py --file "PATH_TO_BLOG" --slug SLUG
 ```
 
-Replace PATH_TO_BLOG and SLUG for each blog file.
+Replace PATH_TO_BLOG (path to the blog markdown file) and SLUG (short identifier for the output filename, e.g. `how-to-write-emails`) for each blog file.
 
 ## Step 6: Push to Google Docs for Editorial Review
 
