@@ -1,0 +1,4 @@
+date,advertiser,risk_level,spend_30d,ctr,cpc,days_to_renewal,risk_factor,action
+2026-03-16,Acme Corp,Green,8500,0.024,1.85,76,None,Monitor — healthy account; prepare Q2 upsell proposal for additional newsletters
+2026-03-16,Beta Labs,Red,2800,0.018,2.10,29,spend,"CRITICAL: Schedule urgent renewal call by Mar 18; propose new placement strategy to reverse declining spend"
+2026-03-16,Gamma Inc,Green,3200,0.022,1.95,168,communication,Schedule routine check-in this week — approaching communication Yellow threshold (15 days since last contact)
