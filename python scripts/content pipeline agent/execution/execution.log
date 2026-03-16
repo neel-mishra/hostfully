@@ -88,3 +88,11 @@
 [2026-03-09 09:08:33] 🚀 Starting Social Media Agent (Aggregator)...
 [2026-03-09 09:08:33] ✅ Social Media Agent run complete.
 [2026-03-09 09:08:33] === WEEKLY EXECUTION END ===
+[2026-03-16 01:07:12] === WEEKLY EXECUTION START ===
+[2026-03-16 01:07:12] 🚀 Starting Blog Writer Agent...
+[2026-03-16 01:07:12]    Pipeline CSV: /workspace/docs/competitor content tracker/blogs/content_pipeline.csv
+[2026-03-16 01:07:12]    Blogs Dir: /workspace/docs/blogs
+[2026-03-16 01:17:44] ✅ Blog Writer Agent run complete.
+[2026-03-16 01:17:44] 🚀 Starting Social Media Agent (Aggregator)...
+[2026-03-16 01:18:02] ✅ Social Media Agent run complete.
+[2026-03-16 01:18:02] === WEEKLY EXECUTION END ===
