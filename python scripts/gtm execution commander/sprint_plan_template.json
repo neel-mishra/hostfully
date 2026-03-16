@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "March 2026 - CPL Recovery & Creative Refresh",
+  "target_persona": "Property Managers & Vacation Rental Operators (US/CA primary, LATAM expansion)",
+  "active_campaign_hypothesis": "Lead-form campaigns with fresh testimonial creative will recover CPL below $120 while creative fatigue drove Feb regression",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -13,7 +13,9 @@
         "site_performance_agent.py",
         "creative_direction_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": "high",
+      "notes": "Accelerate content pipeline — only 15% completion last month. Focus on 4 items with weighted score >= 3.2. Fix site performance score to hit 90% threshold."
     },
     {
       "name": "Paid Acquisition",
@@ -22,21 +24,27 @@
         "social_ads_agent.py",
         "landing_page_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": "critical",
+      "notes": "Reactivate PMS_Conversions-Manual and Guidebook_Conversions. Pause or restructure ca-us_pms_prospecting_website-conv ($735 CPA). Refresh ad creative — CTR declined 26% WoW. Test new testimonial and video formats. Scale pt-br cautiously."
     },
     {
       "name": "B2B Outbound",
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": "medium",
+      "notes": "Maintain current sequences. Explore vacation rental property manager segment based on paid conversion data."
     },
     {
       "name": "CRO Intelligence",
       "agents": [
         "cro_hypothesis_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "priority": "high",
+      "notes": "Focus on landing page conversion rate for paid traffic. Current 3.22% site-wide CR can be improved. Test dedicated landing pages for guidebook and PMS campaigns."
     }
   ]
 }
