@@ -1,4 +1,4 @@
-# GTM Monthly Retrospective — February 2026
+# GTM Monthly Retrospective — February 2026 <!-- pragma: allowlist secret -->
 **Period:** February 14 – March 15, 2026 (Last 30 Days)
 **Generated:** 2026-03-16
 
