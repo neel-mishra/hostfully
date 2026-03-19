@@ -1,0 +1,723 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "title": "TLDR - A Byte Sized Daily Tech Newsletter",
+    "h1": "Keep up with tech in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 5,
+    "cta_texts": [
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe"
+    ],
+    "form_count": 1,
+    "link_count": 393,
+    "imgs_without_alt": 2,
+    "total_imgs": 126,
+    "inputs": [
+      {
+        "type": "url",
+        "name": "website",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Email Address"
+      }
+    ],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Keep up with tech in 5 minutes"
+      },
+      {
+        "level": "h2",
+        "text": "Get the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and p"
+      },
+      {
+        "level": "h3",
+        "text": "Open SWE: An Open-Source Framework for Internal Coding Agents (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "More Stories"
+      },
+      {
+        "level": "h3",
+        "text": "Nvidia pushes further into the autonomous vehicle space to compete with Tesla and Waymo (2 minute re"
+      },
+      {
+        "level": "h3",
+        "text": "Amazon rolls out 1-hour, 3-hour delivery as ultrafast shipping trend grows in the US (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "OpenAI launches GPT-5.4 mini and GPT-5.4 nano on APIs (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Will AI Kill Spreadsheets? (14 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "The Future Of Software Engineering with Anthropic (12 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "How Stripe's Minions Ship 1,300 PRs a Week (11 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Meta planning sweeping layoffs as AI costs mount (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Comprehension Debt \u2014 the hidden cost of AI generated code (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Porting software has been trivial for a while now. Here's how you do it (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Google Maps gets its biggest navigation redesign in a decade, plus more AI (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Don't Vibe \u2014 Prove (16 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Wrote down some reflections after 1 year at Anthropic (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "NVIDIA Expanded Its AI Stack Across Models, Agents, and Robotics (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "AI's Oppenheimer Moment (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "MCP is Dead; Long Live MCP! (20 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Early look at upcoming design tool from Google (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Claude now creates interactive charts, diagrams, and visualizations (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Institutional AI vs Individual AI (16 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Will Claude Code ruin our team? (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Your MCP Server Is Eating Your Context Window. There's a Simpler Way (19 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Godogen (GitHub Repo)"
+      },
+      {
+        "level": "h3",
+        "text": "Domain expertise still wanted: the latest trends in AI-assisted knowledge for developers (11 minute "
+      },
+      {
+        "level": "h3",
+        "text": "My Personal Skills for AI-assisted Node.js Development (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Why I Love FreeBSD (10 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "My Journey to a reliable and enjoyable locally hosted voice assistant (12 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "On The Need For Understanding (19 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "How Kernel Anti-Cheats Work: A Deep Dive into Modern Game Protection (54 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "MCP is Dead; Long Live MCP! (18 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "18 Months of Code, Gone. Here's What We Learned. (12 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "13-hour AWS outage reportedly caused by Amazon's own AI tools (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "How Vimeo Implemented AI-Powered Subtitles (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "What's Happening in OpenAI's Agentic Commerce (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "UX Roundup: Old vs New UX | Adam Smith Predicts AI | AI Video (11 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Every Company is a Startup Now (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "143 Million Pok\u00e9mon Players Accidentally Built a Massive AI Dataset (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "When building becomes cheaper than specifying, everything changes (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Be Honest If Growth Has Slowed. Is Your Product Still Magical? It Probably \u2026 Used to Be (5 minute re"
+      },
+      {
+        "level": "h3",
+        "text": "WTF does a product manager do? (and why engineers should care) (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "5 Ways Product Discovery Breaks Down (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Will Features Even Exist? How AI Is Forcing SaaS To Rethink The Product Itself (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "NVIDIA: Enterprise Stack for AI Agents (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "You're Not Just Deploying AI, You're Managing a Non-Human Workforce (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "IBM Unveils Hybrid Blueprint for Quantum-Centric Supercomputing (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "OpenAI Frontier Puts Enterprise AI Agents at the Centre of a Fight the SaaS Industry Cannot Afford t"
+      },
+      {
+        "level": "h3",
+        "text": "AWS Launches Managed Openclaw on Lightsail Amid Critical Security Vulnerabilities (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Fortinet FortiOS 8.0: AI Governance at the Network Layer (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "The New Stack: Beginners Guide to Vibe Coding (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "The SaaS Extinction Test (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "6 worthwhile conferences for women in tech (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Meeting culture: Hidden costs, pitfalls, and practical guidelines (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Neoclouds Are Emerging as a New Enterprise Infrastructure Category (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Google Clock Update Adopts Pixel Weather Colors (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Adobe CEO Shantanu Narayen Says He Will Step Down After Company Installs Successor (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Human Strategy in an AI-accelerated Workflow (10 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "I thought Spielberg's Disclosure Day poster was nothing special, until I spotted this creepy detail "
+      },
+      {
+        "level": "h3",
+        "text": "Will AI Make Us All Product Builders? (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "AI Video Platform (Website)"
+      },
+      {
+        "level": "h3",
+        "text": "New Tennessee Titans logo draws unexpected car brand comparisons (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "30 Brilliant Logo Concepts for Startups and Designers (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Webflow Acquires Vidoso.ai to Deploy AI Agents that Work Within Your Brand (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Dark Patterns: When Design Crosses the Line (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Five Design Skills to Sharpen in the AI Era (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Canva Can Now Turn a Flat AI Image Into a Fully Editable Design in Seconds (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Google Maps Unveils Immersive Navigation (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Lovable Says it Added $100m in Revenue Last Month Alone, With Just 146 Employees (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Invisible Prompts: Why You Can't See the AI Searches Driving Your Leads (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "7 retention hills to die on (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Shopify is preparing for AI shopping agents to change everything (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Short-Form Video is Driving Viewers to Watch Full TV Shows (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Apple Opens a Secret Instagram Account @helloapple (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "The Ahrefs API is now available on all paid plans (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Gartner is telling CMOs to double their PR budgets by 2027 (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Automating Lifecycle Email QA with Claude (1 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Starting a New Project Is Harder Than You Think (13 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Brands that win are clearer, not louder (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "56% of GPT-5.4's Citations Go to Brand Websites. Only 8% of GPT-5.3's Do (13 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "FBI Seeks Victims of Steam Games Used to Spread Malware (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Hacked data shines light on homeland security's AI surveillance ambitions (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "YouTube Media Storage (GitHub Repo)"
+      },
+      {
+        "level": "h3",
+        "text": "The rise of malicious repositories on GitHub (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "GlassWorm Supply-Chain Attack Abuses 72 Open VSX Extensions to Target Developers (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "OpenClaw AI Agent Flaws Could Enable Prompt Injection and Data Exfiltration (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Onyx Security (Product Launch)"
+      },
+      {
+        "level": "h3",
+        "text": "How I Use LLMs for Security Work (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "New PhantomRaven NPM attack wave steals dev data via 88 packages (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "AI-linked crypto tokens Increase as Jensen Huang talks agentic future (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "With Thanh Le: How Vietnam Leaves the Wild West Behind (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Predictions markets often have very low liquidity; be careful citing them (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Bitcoin eyes $75,000, nearing 25% bounce from February bottom (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Gen Z Risk Hits Record as Financial Hardship Drives Speculation (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Circle's USDC volumes top Tether's USDT for first time since 2019 (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Ripple Launches $750M Share Buyback at $50B Valuation (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "The AI Agent Economy Needs Your Money And x402 Knows How to Ask (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Claude Code with Docker: Local Models, MCP, Sandboxes (3 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Twenty years of Amazon S3 and building what's next (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Building AI Teams: How Docker Sandboxes and Docker Agent Transform Development (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Codegen Is Not Productivity (13 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Azure IaaS series: Explore new resources for building a stronger, more efficient infrastructure (7 m"
+      },
+      {
+        "level": "h3",
+        "text": "Understanding Karpenter architecture for Kubernetes autoscaling (13 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "AI Security for Apps is now generally available (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Building AI Teams with Docker Sandboxes & Docker Agent (4 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "AI Won't Replace Innovation (11 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Data Is the Only Moat (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Rethinking SaaS Metrics for AI (7 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Naoma AI (Tool)"
+      },
+      {
+        "level": "h3",
+        "text": "How To Give a Demo That Doesn't Suck (5 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Startups Should Evaluate Engineers Differently From Big Companies (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Venture Capital Doesn't Exist (13 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Notte (Tool)"
+      },
+      {
+        "level": "h3",
+        "text": "MCP is Dead; Long Live MCP! (9 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "How did YouTube engineers build CI/CD for data pipelines? (8 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Engineering the next generation of LinkedIn's Feed (12 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "The Context Problem (25 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Inside the Archive: The Tech Behind Your 2025 Wrapped Highlights (12 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Synthetic data, real harm (9 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Evolutionary Database Design (31 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Perplexity launches AI investing dashboard that analyzes brokerage portfolios (2 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Analysis: Robot Money and the Financial System for AI (15 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "American Express migrated its payments network twice with zero downtime (6 minute read)"
+      },
+      {
+        "level": "h3",
+        "text": "Experian and OpenAI launch the UK's first credit score app inside ChatGPT (3 minute read)"
+      }
+    ],
+    "blocked_by_security": false
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "title": "TLDR Newsletter - Keep up with Tech in 5 minutes",
+    "h1": "Keep up with tech in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up for Free"
+    ],
+    "form_count": 1,
+    "link_count": 1,
+    "imgs_without_alt": 2,
+    "total_imgs": 2,
+    "inputs": [
+      {
+        "type": "url",
+        "name": "website",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Email Address"
+      }
+    ],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Keep up with tech in 5 minutes"
+      },
+      {
+        "level": "h2",
+        "text": "Get the most interesting stories in startups, tech, and programming delivered in a free daily email."
+      }
+    ],
+    "blocked_by_security": false
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "title": "TLDR | Sponsorship Opportunities",
+    "h1": "Reach over 7 million tech professionals",
+    "meta": "",
+    "cta_count": 7,
+    "cta_texts": [],
+    "form_count": 0,
+    "link_count": 50,
+    "imgs_without_alt": 128,
+    "total_imgs": 128,
+    "inputs": [],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Reach over 7 million tech professionals"
+      },
+      {
+        "level": "h2",
+        "text": "Native ad opportunities in every newsletter \ud83d\ude80"
+      },
+      {
+        "level": "h2",
+        "text": "Your brand, directly in your target audience's inbox \u2709\ufe0f"
+      },
+      {
+        "level": "h2",
+        "text": "Interested in advertising with TLDR?"
+      },
+      {
+        "level": "h3",
+        "text": "Quick Links"
+      },
+      {
+        "level": "h3",
+        "text": "Secondary Placement"
+      },
+      {
+        "level": "h3",
+        "text": "\ud83d\udc51 Primary Placement"
+      }
+    ],
+    "blocked_by_security": false
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "title": "",
+    "h1": "Keep up with AI in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_count": 1,
+    "link_count": 2,
+    "imgs_without_alt": 2,
+    "total_imgs": 2,
+    "inputs": [
+      {
+        "type": "url",
+        "name": "website",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Email Address"
+      }
+    ],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Keep up with AI in 5 minutes"
+      },
+      {
+        "level": "h2",
+        "text": "Get the most interesting AI stories and breakthroughs delivered in a free daily email."
+      }
+    ],
+    "blocked_by_security": false
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "title": "",
+    "h1": "Get smarter about software in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_count": 1,
+    "link_count": 4,
+    "imgs_without_alt": 2,
+    "total_imgs": 2,
+    "inputs": [
+      {
+        "type": "url",
+        "name": "website",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Email Address"
+      }
+    ],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Get smarter about software in 5 minutes"
+      },
+      {
+        "level": "h2",
+        "text": "The most important software engineering news in one daily email"
+      }
+    ],
+    "blocked_by_security": false
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "title": "",
+    "h1": "Keep Up With Crypto in 5 Minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_count": 1,
+    "link_count": 4,
+    "imgs_without_alt": 2,
+    "total_imgs": 2,
+    "inputs": [
+      {
+        "type": "url",
+        "name": "website",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Email Address"
+      }
+    ],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Keep Up With Crypto in 5 Minutes"
+      },
+      {
+        "level": "h2",
+        "text": "Get our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in cryp"
+      }
+    ],
+    "blocked_by_security": false
+  }
+]
