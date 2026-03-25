@@ -1,0 +1,16 @@
+campaign_id,campaign_name,platform,monthly_budget,planned_start_date,planned_end_date,priority_tier,target_kpi_value
+ca-us_pms_prospecting_website-conv,CA+US PMS Prospecting (LAL A/B),meta,14000,2026-03-01,2026-03-31,A,45
+ca-us_pms_retargeting_website-conv,CA+US PMS Retargeting (30d visitors),meta,5300,2026-03-01,2026-03-31,A,45
+uk-au_pms_prospecting_website-conv,UK+AU PMS Prospecting,meta,5500,2026-03-01,2026-03-31,A,45
+uk-au_pms_retargeting_website-conv,UK+AU PMS Retargeting (30d visitors),meta,2000,2026-03-01,2026-03-31,B,55
+ca-us_spring-promo_prospecting_website-conv,CA+US Spring Cleaning Promo Prospecting,meta,2000,2026-03-01,2026-03-31,B,50
+br_pms_prospecting_website-conv,Brazil PMS Prospecting,meta,1500,2026-03-01,2026-03-31,B,55
+mx_pms_prospecting_website-conv,Mexico PMS Prospecting,meta,1200,2026-03-01,2026-03-31,B,55
+ca-us_brand_search,CA+US Brand Search,google,5000,2026-03-01,2026-03-31,A,150
+ca-us_pms_pmax,CA+US PMS Performance Max,google,11000,2026-03-01,2026-03-31,A,120
+uk-au_brand_search,UK+AU Brand Search,google,2000,2026-03-01,2026-03-31,A,150
+uk-au_pms_pmax,UK+AU PMS Performance Max,google,6000,2026-03-01,2026-03-31,A,120
+mx_pms_search_website-conv,Mexico PMS Search,google,3000,2026-03-01,2026-03-31,B,80
+br_brand_search,Brazil Brand Search,google,500,2026-03-01,2026-03-31,B,150
+fr_brand_search,France Brand Search,google,500,2026-03-01,2026-03-31,B,150
+fr_pms_search,France PMS Search,google,500,2026-03-01,2026-03-31,B,100

@@ -1,0 +1,57 @@
+,March 2026 Campaign Structure & Budget,,,,,
+,"Meta + Google  |  $60K Fully Allocated  |  CA+US, UK breakout, LATAM BAU",,,,,
+,,,,,,
+,META ADS,,,,,
+,Campaign,Ad Set,Audience Strategy,Budget/Mo,Optimization,Notes / Rationale
+,ca-us_pms_prospecting_website-conv,ca-us_lal_1pct-ideal-5to30_pms,1% LAL of ideal customer SF export (5–30 props). No layering.,"$7,000",Website conv,Core test #1. Clean LAL from ICP-curated list (not old broad list).
+,,ca+us_lal_1pct-ideal-5to30-demolayered_pms,"Same 1% LAL + demo/behavioral layering (30–64, PM interests)","$7,000",Website conv,Core test #2. Same list + demo guardrails. Same creative for clean A/B.
+,ca-us_pms_retargeting_website-conv,ca+us_rtg_30d-visitors_pms,30d website visitors who didn't convert. Excl. customers.,"$5,300",Website conv,Warm audience. Historically lowest CPA.
+,uk-au_pms_prospecting_website-conv,au+uk_lal_1pct-ideal-5to30_pms,1% LAL of ideal UK customer list (5–30 props).,"$5,500",Website conv,NEW. UK+AU = 2nd+4th largest ICP geo (~$99K ORBI ARR in 5–30 segment). AU bundled with UK (shared British English spelling conventions). UK/AU-tailored copy/creative.
+,uk-au_pms_retargeting_website-conv,au+uk_rtg_30d-visitors_pms,UK 30d visitors who didn't convert. Excl. customers.,"$2,000",Website conv,NEW. UK+AU retargeting with UK/AU-specific creative.
+,ca-us_spring-promo_prospecting_website-conv,ca+us_lal_1pct-ideal-5to30_promo,"LAL of ideal customer list, promo creative","$2,000",Website conv,SPRING CLEANING. ~Mar 16–31. 30% off annual. Promo LP.
+,br_pms_prospecting_website-conv,br_lal_1pct-2yr_pms,1% LAL of customer list for Brazil,"$1,500",Website conv,Brazil BAU.
+,mx_pms_prospecting_website-conv,mx_demo_layered_pms,Demo + behavioral targeting for MX property managers,"$1,200",Website conv,Mexico Meta BAU.
+,,,,,,
+,META TOTAL,,,"$31,500",,
+,All Meta campaigns: website conversion only (no form fills). Guidebook campaigns eliminated. UK uses UK/AU-tailored creative.,,,,,
+,,,,,,
+,GOOGLE ADS,,,,,
+,Campaign,Ad Group,Targeting Strategy,Budget/Mo,Bid Strategy,Notes / Rationale
+,ca-us_brand_search,ca+us_brand_exact,"[hostfully], [hostfully pms], [hostfully vacation rental], [hostfully property management]","$4,000",tCPA ($150),Brand defense. Fix $753 → $132 CPA. Exact vs broad breakout for diagnosis.
+,,ca+us_brand_broad,hostfully (broad match),"$1,000",Max conv,"Catch misspellings, long-tail. Monitor for waste."
+,ca-us_pms_pmax,ca+us_pmax_auto,PMAX w/ brand exclusions. Audience: Hatchling+ list (5–30). Neg KW list. Dedicated LP.  Incl. Spring Cleaning promo asset group.,"$11,000",Max conv value,ICP signal fed. Conversion AI guardrails. Promo runs as asset group within (~Mar 16–31). AUS bundled in.
+,uk-au_brand_search,au+uk_brand_exact,[hostfully] (UK+AU geo-targeted),"$1,500",tCPA ($150),NEW. UK+AU brand defense.
+,,au+uk_brand_broad,"hostfully (broad match, UK)",$500,Max conv,UK+AU broad catch-all.
+,uk-au_pms_pmax,au+uk_pmax_auto,"PMAX for UK. Audience: UK Hatchling+ list. Themes: property management software UK, holiday let software, short let management.","$6,000",Max conv value,NEW. UK+AU PMAX with UK/AU-specific signals. Same guardrails. UK/AU-tailored LP.
+,mx_pms_search_website-conv,mx_kw_airbnb-hospedaje,"[airbnb hospedaje], airbnb alquiler, renta airbnb, gestión de propiedades","$3,000",Max conv,Mexico BAU. Cheapest market: $42–$100 CPA.
+,br_brand_search,br_brand_exact,[hostfully] (BR),$500,Max conv,Brazil brand defense BAU.
+,fr_brand_search,fr_brand_exact,[hostfully] (FR geo-targeted). French agency managed.,$500,Max conv,France brand defense. Agency-managed.
+,fr_pms_search,fr_kw_property-management,French PMS acquisition keywords. Agency-managed search campaigns for France market.,$500,Max conv,France PMS acquisition. Agency-managed.
+,,,,,,
+,GOOGLE TOTAL,,,"$28,500.00",,
+,,,,,,
+,TOTAL BUDGET (Fully Allocated),,,"$60,000",,
+,BUDGET ALLOCATION SUMMARY,,,,,
+,Category,Monthly Budget,% of Total,Rationale,,
+,Meta — CA+US PMS Prospecting (2 tests),"$14,000",23%,Core acquisition. ICP LAL A/B test.,,
+,Meta — CA+US PMS Retargeting,"$5,300",9%,Warm audience. Lowest CPA.,,
+,Meta — UK+AU PMS (Prospecting + Retargeting),"$7,500",13%,NEW. 2nd largest ICP geo.,,
+,Meta — Spring Cleaning Promo,"$2,000",4%,~Mar 16–31. LAL prospecting.,,
+,Meta — LATAM BAU (BR + MX),"$2,700",5%,BAU for performing regions.,,
+,Google — CA+US Brand Defense,"$5,000",9%,Fix CPA regression. Exact vs broad.,,
+,Google — CA+US PMAX (+ promo asset group),"$11,000",18%,ICP signals. Conversion AI. Promo asset group.,,
+,Google — UK+AU (Brand + PMAX),"$8,000",13%,NEW. UK+AU brand + PMAX.,,
+,Google — MX Search BAU,"$3,000",5%,Best CPA market.,,
+,Google — BR Brand BAU,$500,1%,Minimal brand presence.,,
+,Google — FR Agency (search),"$1,000",2%,French geo targeting. Agency-managed.,,
+,,,,,,
+,,,,,,
+,SPRING CLEANING PROMO — TIMELINE,,,,Dependencies,
+,Date,Action,Owner,Status,Discount % TBD,
+,Mar 7–10,"Design lockdown: banners, creative, LP assets",Design + Sebastian/Puma,Pending,Offer finalized,
+,Mar 10–12,Assets to Yousuf for upload,Yousuf,Pending,3–5 days platform review,
+,Mar 12–14,Email sequences set up,Fred B / Brad,Pending,Nurture vs BDR decision,
+,Mar 14,Promo LP live,Sebastian / Puma,Pending,Copy finalized,
+,Mar 16,PROMO LAUNCH,Yousuf,Pending,All assets approved. LP live.,
+,Mar 16–31,Monitor + optimize daily,Yousuf,,Possible extension into April,
+,~Apr 5,Promo deadline,Sales / Marketing,TBD,Date tentative.,

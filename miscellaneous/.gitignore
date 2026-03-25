@@ -1,0 +1,11 @@
+.env
+credentials/
+**/__pycache__/
+.env
+ai system/python scripts/google_ads_mcp/.venv/
+ai system/python scripts/google_ads_mcp/.env
+ai system/python scripts/google_ads_mcp/*.log
+ai system/python scripts/google_ads_mcp/google_ads_token.json
+
+# PII-heavy audience exports should never be committed
+docs/paid_acquisition/audiences/*/exports/

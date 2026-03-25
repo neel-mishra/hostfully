@@ -1,0 +1,82 @@
+---
+# TLDR GTM Social Roster
+# This file defines who the social system should generate drafts for,
+# and the constraints/context for each person.
+
+version: 1
+
+defaults:
+  platforms:
+    - linkedin
+  posts_per_day: 1
+  content_pillars:
+    - thought_leadership
+    - behind_the_scenes
+    - tactical_how_to
+  # Optional: global topics to avoid across everyone
+  banned_topics:
+    - politics
+    - religion
+
+people:
+  - id: founder_neel
+    name: "Neel Mishra"
+    role: "Founder & CEO"
+    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME"
+    # Audience & positioning
+    primary_audience:
+      - "B2B growth leaders"
+      - "Performance marketers"
+    content_pillars:
+      - product_strategy
+      - founder_journey
+      - tactical_gtm_systems
+    voice_overrides:
+      # Optional guardrails for the voice memory agent
+      max_emojis_per_post: 1
+      prefers_short_paragraphs: true
+    constraints:
+      topics_to_avoid:
+        - fundraising_advice
+      hard_rules:
+        - "Do not overclaim TLDR capabilities beyond what’s on the website."
+
+  - id: marketing_lead
+    name: "Marketing Lead"
+    role: "Head of Marketing"
+    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME"
+    primary_audience:
+      - "Demand gen leaders"
+      - "Marketing ops / RevOps"
+    content_pillars:
+      - demand_gen_frameworks
+      - campaign_breakdowns
+      - creative_testing
+    voice_overrides:
+      max_emojis_per_post: 3
+      prefers_short_paragraphs: false
+    constraints:
+      topics_to_avoid: []
+      hard_rules:
+        - "Always ground claims in real TLDR results, case studies, or data."
+
+  - id: sales_lead
+    name: "Sales Lead"
+    role: "Head of Sales"
+    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME"
+    primary_audience:
+      - "CROs"
+      - "VP Sales"
+      - "Revenue leaders buying GTM systems"
+    content_pillars:
+      - sales_process
+      - objections_and_deals
+      - revenue_systems
+    voice_overrides:
+      max_emojis_per_post: 0
+      prefers_short_paragraphs: true
+    constraints:
+      topics_to_avoid: []
+      hard_rules:
+        - "No confidential customer deal details or dollar amounts."
+

@@ -1,0 +1,55 @@
+{
+  "name": "meta-ads-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for the Meta Marketing API (Facebook/Instagram Ads).",
+  "main": "build/src/index.js",
+  "type": "module",
+  "bin": {
+    "meta-ads-mcp": "build/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "jest",
+    "test:tools": "tsx test-tools.js",
+    "list:tools": "tsx list-tools.js",
+    "test:api": "tsx test-api.js",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "setup": "node scripts/setup-mcp.js",
+    "setup:mcp": "node scripts/setup-mcp.js",
+    "health-check": "node scripts/health-check.js",
+    "check": "node scripts/health-check.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "meta",
+    "facebook",
+    "instagram",
+    "advertising",
+    "marketing-api"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.19.28",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint": "^9.39.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

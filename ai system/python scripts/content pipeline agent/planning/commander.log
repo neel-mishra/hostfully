@@ -1,0 +1,577 @@
+[2026-02-15 15:57:41] === DAILY WORKFLOW START ===
+[2026-02-15 15:57:41] 🚀 Starting Competitor Blog Scraper...
+[2026-02-15 15:57:49] ✅ Scraper completed successfully.
+[2026-02-15 15:57:49]    Output Summary:
+
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+⚠️ Error reading existing CSV: 'Link URL'
+✨ No new unique articles to save.
+
+[2026-02-15 15:57:49] 🚀 Starting Pipeline Agent...
+[2026-02-15 15:57:49] ✅ Pipeline Agent completed.
+[2026-02-15 15:57:49] === DAILY WORKFLOW END ===
+[2026-02-15 16:20:39] === DAILY WORKFLOW START ===
+[2026-02-15 16:20:39] 🚀 Starting Competitor Blog Scraper...
+[2026-02-15 16:20:43] ✅ Scraper completed successfully.
+[2026-02-15 16:20:43]    Output Summary:
+
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+⚠️ Error reading existing CSV: 'Link URL'
+✨ No new unique articles to save.
+
+[2026-02-15 16:20:43] 🚀 Starting Pipeline Agent...
+[2026-02-15 16:20:43] ✅ Pipeline Agent completed.
+[2026-02-15 16:20:43] === DAILY WORKFLOW END ===
+[2026-02-15 16:23:09] === DAILY WORKFLOW START ===
+[2026-02-15 16:23:09] 🚀 Starting Competitor Blog Scraper...
+[2026-02-15 16:23:14] ✅ Scraper completed successfully.
+[2026-02-15 16:23:14]    Output Summary:
+
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+⚠️ Error reading existing CSV: 'Link URL'
+✨ No new unique articles to save.
+
+[2026-02-15 16:23:14] 🚀 Starting Pipeline Agent...
+[2026-02-15 16:23:14] ✅ Pipeline Agent completed.
+[2026-02-15 16:23:14] === DAILY WORKFLOW END ===
+[2026-02-15 16:24:12] === DAILY WORKFLOW START ===
+[2026-02-15 16:24:12] 🚀 Starting Competitor Blog Scraper...
+[2026-02-15 16:24:17] ✅ Scraper completed successfully.
+[2026-02-15 16:24:17]    Output Summary:
+
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+⚠️ Error reading existing CSV: 'Link URL'
+✨ No new unique articles to save.
+
+[2026-02-15 16:24:17] 🚀 Starting Pipeline Agent...
+[2026-02-15 16:24:17] ✅ Pipeline Agent completed.
+[2026-02-15 16:24:17] === DAILY WORKFLOW END ===
+[2026-02-15 16:25:17] === DAILY WORKFLOW START ===
+[2026-02-15 16:25:17] 🚀 Starting Competitor Blog Scraper...
+[2026-02-15 16:25:24] ✅ Scraper completed successfully.
+[2026-02-15 16:25:24]    Output Summary:
+
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+⚠️ Error reading existing CSV: 'Link URL'
+✨ No new unique articles to save.
+
+[2026-02-15 16:25:24] 🚀 Starting Pipeline Agent...
+[2026-02-15 16:25:24] ✅ Pipeline Agent completed.
+[2026-02-15 16:25:24] === DAILY WORKFLOW END ===
+[2026-02-16 08:00:07] === DAILY WORKFLOW START ===
+[2026-02-16 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-02-16 08:00:07] ❌ Scraper script not found at /Users/neelmishra/antigravity/synthetic growth/python scripts/python scripts/competitor scrapers/competitor-blog-scraper.py
+[2026-02-16 08:00:07] ⚠️ Skipping Pipeline run due to Scraper failure.
+[2026-02-16 08:00:07] === DAILY WORKFLOW END ===
+[2026-02-16 12:50:08] === DAILY WORKFLOW START ===
+[2026-02-16 12:50:08] 🚀 Starting Competitor Blog Scraper...
+[2026-02-16 12:50:25] ✅ Scraper completed successfully.
+[2026-02-16 12:50:25]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-02-16 12:50:25] 🚀 Starting Pipeline Agent...
+[2026-02-16 12:50:25] ✅ Pipeline Agent completed.
+[2026-02-16 12:50:25] === DAILY WORKFLOW END ===
+[2026-02-17 08:00:04] === DAILY WORKFLOW START ===
+[2026-02-17 08:00:04] 🚀 Starting Competitor Blog Scraper...
+[2026-02-17 08:00:18] ✅ Scraper completed successfully.
+[2026-02-17 08:00:18]    Output Summary:
+.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 17 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 11 new items.
+🚀 Validated and saved. Added 179 new articles.
+
+[2026-02-17 08:00:18] 🚀 Starting Pipeline Agent...
+[2026-02-17 08:00:18] ✅ Pipeline Agent completed.
+[2026-02-17 08:00:18] === DAILY WORKFLOW END ===
+[2026-02-18 08:00:07] === DAILY WORKFLOW START ===
+[2026-02-18 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-02-18 08:00:21] ✅ Scraper completed successfully.
+[2026-02-18 08:00:21]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 5 new articles.
+
+[2026-02-18 08:00:21] 🚀 Starting Pipeline Agent...
+[2026-02-18 08:00:21] ✅ Pipeline Agent completed.
+[2026-02-18 08:00:21] === DAILY WORKFLOW END ===
+[2026-02-19 08:00:07] === DAILY WORKFLOW START ===
+[2026-02-19 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-02-19 08:00:30] ✅ Scraper completed successfully.
+[2026-02-19 08:00:30]    Output Summary:
+️‍♂️ Scanning AdPulse...
+   ⚠️ HTTP 401 from AdPulse.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 4 new articles.
+
+[2026-02-19 08:00:30] 🚀 Starting Pipeline Agent...
+[2026-02-19 08:00:30] ✅ Pipeline Agent completed.
+[2026-02-19 08:00:30] === DAILY WORKFLOW END ===
+[2026-02-20 08:00:03] === DAILY WORKFLOW START ===
+[2026-02-20 08:00:03] 🚀 Starting Competitor Blog Scraper...
+[2026-02-20 08:05:50] ✅ Scraper completed successfully.
+[2026-02-20 08:05:50]    Output Summary:
+tems.
+🕵️‍♂️ Scanning Roadway AI...
+❌ Error scraping Roadway AI: HTTPSConnectionPool(host='www.roadwayai.com', port=443): Read timed out. (read timeout=20)
+🚀 Validated and saved. Added 3 new articles.
+
+[2026-02-20 08:05:50] 🚀 Starting Pipeline Agent...
+[2026-02-20 08:05:50] ✅ Pipeline Agent completed.
+[2026-02-20 08:05:50] === DAILY WORKFLOW END ===
+[2026-02-21 08:00:07] === DAILY WORKFLOW START ===
+[2026-02-21 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-02-21 08:00:20] ✅ Scraper completed successfully.
+[2026-02-21 08:00:20]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 3 new articles.
+
+[2026-02-21 08:00:20] 🚀 Starting Pipeline Agent...
+[2026-02-21 08:00:20] ✅ Pipeline Agent completed.
+[2026-02-21 08:00:20] === DAILY WORKFLOW END ===
+[2026-02-23 08:00:04] === DAILY WORKFLOW START ===
+[2026-02-23 08:00:04] 🚀 Starting Competitor Blog Scraper...
+[2026-02-23 08:00:19] ✅ Scraper completed successfully.
+[2026-02-23 08:00:19]    Output Summary:
+nd 0 new items.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+
+✨ No new unique articles to save.
+
+[2026-02-23 08:00:19] 🚀 Starting Pipeline Agent...
+[2026-02-23 08:00:19] ✅ Pipeline Agent completed.
+[2026-02-23 08:00:19] === DAILY WORKFLOW END ===
+[2026-02-24 08:00:06] === DAILY WORKFLOW START ===
+[2026-02-24 08:00:06] 🚀 Starting Competitor Blog Scraper...
+[2026-02-24 08:00:37] ✅ Scraper completed successfully.
+[2026-02-24 08:00:37]    Output Summary:
+️‍♂️ Scanning AdPulse...
+   ⚠️ HTTP 401 from AdPulse.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 4 new articles.
+
+[2026-02-24 08:00:37] 🚀 Starting Pipeline Agent...
+[2026-02-24 08:00:37] ✅ Pipeline Agent completed.
+[2026-02-24 08:00:37] === DAILY WORKFLOW END ===
+[2026-02-24 23:18:29] === DAILY WORKFLOW START ===
+[2026-02-24 23:18:29] 🚀 Starting Competitor Blog Scraper...
+[2026-02-24 23:18:47] ✅ Scraper completed successfully.
+[2026-02-24 23:18:47]    Output Summary:
+️‍♂️ Scanning AdPulse...
+   ⚠️ HTTP 401 from AdPulse.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 9 new articles.
+
+[2026-02-24 23:18:47] 🚀 Starting Pipeline Agent...
+[2026-02-24 23:18:47] ✅ Pipeline Agent completed.
+[2026-02-24 23:18:47] === DAILY WORKFLOW END ===
+[2026-02-25 08:00:07] === DAILY WORKFLOW START ===
+[2026-02-25 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-02-25 08:00:23] ✅ Scraper completed successfully.
+[2026-02-25 08:00:23]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 3 new articles.
+
+[2026-02-25 08:00:23] 🚀 Starting Pipeline Agent...
+[2026-02-25 08:00:23] ✅ Pipeline Agent completed.
+[2026-02-25 08:00:23] === DAILY WORKFLOW END ===
+[2026-02-26 08:11:37] === DAILY WORKFLOW START ===
+[2026-02-26 08:11:37] 🚀 Starting Competitor Blog Scraper...
+[2026-02-26 08:12:30] ✅ Scraper completed successfully.
+[2026-02-26 08:12:30]    Output Summary:
+onError('<urllib3.connection.HTTPSConnection object at 0x10642f4d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+✨ No new unique articles to save.
+
+[2026-02-26 08:12:30] 🚀 Starting Pipeline Agent...
+[2026-02-26 08:12:30] ✅ Pipeline Agent completed.
+[2026-02-26 08:12:30] === DAILY WORKFLOW END ===
+[2026-02-27 08:00:05] === DAILY WORKFLOW START ===
+[2026-02-27 08:00:05] 🚀 Starting Competitor Blog Scraper...
+[2026-02-27 08:00:25] ✅ Scraper completed successfully.
+[2026-02-27 08:00:25]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 4 new articles.
+
+[2026-02-27 08:00:25] 🚀 Starting Pipeline Agent...
+[2026-02-27 08:00:25] ✅ Pipeline Agent completed.
+[2026-02-27 08:00:25] === DAILY WORKFLOW END ===
+[2026-02-28 08:00:07] === DAILY WORKFLOW START ===
+[2026-02-28 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-02-28 08:00:22] ✅ Scraper completed successfully.
+[2026-02-28 08:00:22]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 3 new articles.
+
+[2026-02-28 08:00:22] 🚀 Starting Pipeline Agent...
+[2026-02-28 08:00:22] ✅ Pipeline Agent completed.
+[2026-02-28 08:00:22] === DAILY WORKFLOW END ===
+[2026-03-01 08:02:24] === DAILY WORKFLOW START ===
+[2026-03-01 08:02:24] 🚀 Starting Competitor Blog Scraper...
+[2026-03-01 08:02:38] ✅ Scraper completed successfully.
+[2026-03-01 08:02:38]    Output Summary:
+nd 0 new items.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+
+✨ No new unique articles to save.
+
+[2026-03-01 08:02:38] 🚀 Starting Pipeline Agent...
+[2026-03-01 08:02:38] ✅ Pipeline Agent completed.
+[2026-03-01 08:02:38] === DAILY WORKFLOW END ===
+[2026-03-02 08:00:06] === DAILY WORKFLOW START ===
+[2026-03-02 08:00:06] 🚀 Starting Competitor Blog Scraper...
+[2026-03-02 08:00:25] ✅ Scraper completed successfully.
+[2026-03-02 08:00:25]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-03-02 08:00:25] 🚀 Starting Pipeline Agent...
+[2026-03-02 08:00:25] ✅ Pipeline Agent completed.
+[2026-03-02 08:00:25] === DAILY WORKFLOW END ===
+[2026-03-03 08:04:37] === DAILY WORKFLOW START ===
+[2026-03-03 08:04:37] 🚀 Starting Competitor Blog Scraper...
+[2026-03-03 08:04:50] ✅ Scraper completed successfully.
+[2026-03-03 08:04:50]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 4 new articles.
+
+[2026-03-03 08:04:50] 🚀 Starting Pipeline Agent...
+[2026-03-03 08:04:50] ✅ Pipeline Agent completed.
+[2026-03-03 08:04:50] === DAILY WORKFLOW END ===
+[2026-03-04 08:00:05] === DAILY WORKFLOW START ===
+[2026-03-04 08:00:05] 🚀 Starting Competitor Blog Scraper...
+[2026-03-04 08:00:19] ✅ Scraper completed successfully.
+[2026-03-04 08:00:19]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 5 new articles.
+
+[2026-03-04 08:00:19] 🚀 Starting Pipeline Agent...
+[2026-03-04 08:00:19] ✅ Pipeline Agent completed.
+[2026-03-04 08:00:19] === DAILY WORKFLOW END ===
+[2026-03-05 08:00:06] === DAILY WORKFLOW START ===
+[2026-03-05 08:00:06] 🚀 Starting Competitor Blog Scraper...
+[2026-03-05 08:00:27] ✅ Scraper completed successfully.
+[2026-03-05 08:00:27]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 1 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 4 new articles.
+
+[2026-03-05 08:00:27] 🚀 Starting Pipeline Agent...
+[2026-03-05 08:00:27] ✅ Pipeline Agent completed.
+[2026-03-05 08:00:27] === DAILY WORKFLOW END ===
+[2026-03-06 08:02:24] === DAILY WORKFLOW START ===
+[2026-03-06 08:02:24] 🚀 Starting Competitor Blog Scraper...
+[2026-03-06 08:02:37] ✅ Scraper completed successfully.
+[2026-03-06 08:02:37]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 3 new articles.
+
+[2026-03-06 08:02:37] 🚀 Starting Pipeline Agent...
+[2026-03-06 08:02:37] ✅ Pipeline Agent completed.
+[2026-03-06 08:02:37] === DAILY WORKFLOW END ===
+[2026-03-07 08:00:07] === DAILY WORKFLOW START ===
+[2026-03-07 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-03-07 08:00:22] ✅ Scraper completed successfully.
+[2026-03-07 08:00:22]    Output Summary:
+tems.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+🚀 Validated and saved. Added 4 new articles.
+
+[2026-03-07 08:00:22] 🚀 Starting Pipeline Agent...
+[2026-03-07 08:00:22] ✅ Pipeline Agent completed.
+[2026-03-07 08:00:22] === DAILY WORKFLOW END ===
+[2026-03-08 08:03:58] === DAILY WORKFLOW START ===
+[2026-03-08 08:03:58] 🚀 Starting Competitor Blog Scraper...
+[2026-03-08 08:04:11] ✅ Scraper completed successfully.
+[2026-03-08 08:04:11]    Output Summary:
+nd 0 new items.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+
+✨ No new unique articles to save.
+
+[2026-03-08 08:04:11] 🚀 Starting Pipeline Agent...
+[2026-03-08 08:04:11] ✅ Pipeline Agent completed.
+[2026-03-08 08:04:11] === DAILY WORKFLOW END ===
+[2026-03-09 08:00:07] === DAILY WORKFLOW START ===
+[2026-03-09 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-03-09 08:00:22] ✅ Scraper completed successfully.
+[2026-03-09 08:00:22]    Output Summary:
+nd 0 new items.
+🕵️‍♂️ Scanning AdPulse...
+   found 0 new items.
+🕵️‍♂️ Scanning Improvado...
+   found 0 new items.
+🕵️‍♂️ Scanning Roadway AI...
+   found 0 new items.
+
+✨ No new unique articles to save.
+
+[2026-03-09 08:00:22] 🚀 Starting Pipeline Agent...
+[2026-03-09 08:00:22] ✅ Pipeline Agent completed.
+[2026-03-09 08:00:22] === DAILY WORKFLOW END ===
+[2026-03-10 08:00:04] === DAILY WORKFLOW START ===
+[2026-03-10 08:00:04] 🚀 Starting Competitor Blog Scraper...
+[2026-03-10 08:00:17] ✅ Scraper completed successfully.
+[2026-03-10 08:00:17]    Output Summary:
+rror saving CSV: Cannot save file into a non-existent directory: '/Users/neelmishra/antigravity/synthetic growth/TLDR/python scripts/competitor scrapers/../../docs/competitive creative tracker/blogs'
+
+[2026-03-10 08:00:17] 🚀 Starting Pipeline Agent...
+[2026-03-10 08:00:17] ✅ Pipeline Agent completed.
+[2026-03-10 08:00:17] === DAILY WORKFLOW END ===
+[2026-03-11 08:06:49] === DAILY WORKFLOW START ===
+[2026-03-11 08:06:49] 🚀 Starting Competitor Blog Scraper...
+[2026-03-11 08:07:09] ✅ Scraper completed successfully.
+[2026-03-11 08:07:09]    Output Summary:
+tes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 1 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-03-11 08:07:09] 🚀 Starting Pipeline Agent...
+[2026-03-11 08:07:09] ✅ Pipeline Agent completed.
+[2026-03-11 08:07:09] === DAILY WORKFLOW END ===
+[2026-03-12 08:06:39] === DAILY WORKFLOW START ===
+[2026-03-12 08:06:39] 🚀 Starting Competitor Blog Scraper...
+[2026-03-12 08:06:57] ✅ Scraper completed successfully.
+[2026-03-12 08:06:57]    Output Summary:
+canning Bytes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 0 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+
+✨ No new unique articles to save.
+
+[2026-03-12 08:06:57] 🚀 Starting Pipeline Agent...
+[2026-03-12 08:06:57] ✅ Pipeline Agent completed.
+[2026-03-12 08:06:57] === DAILY WORKFLOW END ===
+[2026-03-13 08:08:32] === DAILY WORKFLOW START ===
+[2026-03-13 08:08:32] 🚀 Starting Competitor Blog Scraper...
+[2026-03-13 08:08:48] ✅ Scraper completed successfully.
+[2026-03-13 08:08:48]    Output Summary:
+tes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 1 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-03-13 08:08:48] 🚀 Starting Pipeline Agent...
+[2026-03-13 08:08:48] ✅ Pipeline Agent completed.
+[2026-03-13 08:08:48] === DAILY WORKFLOW END ===
+[2026-03-14 08:00:07] === DAILY WORKFLOW START ===
+[2026-03-14 08:00:07] 🚀 Starting Competitor Blog Scraper...
+[2026-03-14 08:00:17] ✅ Scraper completed successfully.
+[2026-03-14 08:00:17]    Output Summary:
+canning Bytes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 0 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+
+✨ No new unique articles to save.
+
+[2026-03-14 08:00:17] 🚀 Starting Pipeline Agent...
+[2026-03-14 08:00:17] ✅ Pipeline Agent completed.
+[2026-03-14 08:00:17] === DAILY WORKFLOW END ===
+[2026-03-15 08:03:08] === DAILY WORKFLOW START ===
+[2026-03-15 08:03:08] 🚀 Starting Competitor Blog Scraper...
+[2026-03-15 08:03:15] ✅ Scraper completed successfully.
+[2026-03-15 08:03:15]    Output Summary:
+tes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 1 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-03-15 08:03:15] 🚀 Starting Pipeline Agent...
+[2026-03-15 08:03:15] ✅ Pipeline Agent completed.
+[2026-03-15 08:03:15] === DAILY WORKFLOW END ===
+[2026-03-16 08:00:02] === DAILY WORKFLOW START ===
+[2026-03-16 08:00:02] 🚀 Starting Competitor Blog Scraper...
+[2026-03-16 08:00:10] ✅ Scraper completed successfully.
+[2026-03-16 08:00:10]    Output Summary:
+canning Bytes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 0 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+
+✨ No new unique articles to save.
+
+[2026-03-16 08:00:10] 🚀 Starting Pipeline Agent...
+[2026-03-16 08:00:10] ✅ Pipeline Agent completed.
+[2026-03-16 08:00:10] === DAILY WORKFLOW END ===
+[2026-03-17 08:00:00] === DAILY WORKFLOW START ===
+[2026-03-17 08:00:00] 🚀 Starting Competitor Blog Scraper...
+[2026-03-17 08:00:10] ✅ Scraper completed successfully.
+[2026-03-17 08:00:10]    Output Summary:
+tes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 1 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-03-17 08:00:10] 🚀 Starting Pipeline Agent...
+[2026-03-17 08:00:10] ✅ Pipeline Agent completed.
+[2026-03-17 08:00:10] === DAILY WORKFLOW END ===
+[2026-03-18 08:00:03] === DAILY WORKFLOW START ===
+[2026-03-18 08:00:03] 🚀 Starting Competitor Blog Scraper...
+[2026-03-18 08:00:10] ✅ Scraper completed successfully.
+[2026-03-18 08:00:10]    Output Summary:
+canning Bytes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 0 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+
+✨ No new unique articles to save.
+
+[2026-03-18 08:00:10] 🚀 Starting Pipeline Agent...
+[2026-03-18 08:00:10] ✅ Pipeline Agent completed.
+[2026-03-18 08:00:10] === DAILY WORKFLOW END ===
+[2026-03-19 08:03:16] === DAILY WORKFLOW START ===
+[2026-03-19 08:03:16] 🚀 Starting Competitor Blog Scraper...
+[2026-03-19 08:03:31] ✅ Scraper completed successfully.
+[2026-03-19 08:03:31]    Output Summary:
+tes.dev...
+   found 0 new items.
+🕵️‍♂️ Scanning Beehiiv...
+   found 1 new items.
+🕵️‍♂️ Scanning Paved...
+   ⚠️ 403 Forbidden — Paved is blocking requests.
+🚀 Validated and saved. Added 1 new articles.
+
+[2026-03-19 08:03:31] 🚀 Starting Pipeline Agent...
+[2026-03-19 08:03:31] ✅ Pipeline Agent completed.
+[2026-03-19 08:03:31] === DAILY WORKFLOW END ===

@@ -1,0 +1,16 @@
+campaign_id,platform,ad_account_id,platform_campaign_id
+ca-us_pms_prospecting_website-conv,meta,act_placeholder,meta_101
+ca-us_pms_retargeting_website-conv,meta,act_placeholder,meta_102
+uk-au_pms_prospecting_website-conv,meta,act_placeholder,meta_103
+uk-au_pms_retargeting_website-conv,meta,act_placeholder,meta_104
+ca-us_spring-promo_prospecting_website-conv,meta,act_placeholder,meta_105
+br_pms_prospecting_website-conv,meta,act_placeholder,meta_106
+mx_pms_prospecting_website-conv,meta,act_placeholder,meta_107
+ca-us_brand_search,google,1234567890,gads_201
+ca-us_pms_pmax,google,1234567890,gads_202
+uk-au_brand_search,google,1234567890,gads_203
+uk-au_pms_pmax,google,1234567890,gads_204
+mx_pms_search_website-conv,google,1234567890,gads_205
+br_brand_search,google,1234567890,gads_206
+fr_brand_search,google,1234567890,gads_207
+fr_pms_search,google,1234567890,gads_208

@@ -1,0 +1,19 @@
+{
+  "workspace_root": "/Users/neelmishra/antigravity/synthetic growth/TLDR",
+  "results": [
+    {
+      "automation_id": "1",
+      "automation_name": "Daily Content Pipeline Orchestrator",
+      "ok": false,
+      "missing_env": [
+        "AHREFS_API_KEY",
+        "GSHEETS_CLIENT_EMAIL",
+        "GSHEETS_PRIVATE_KEY"
+      ],
+      "path_status": {
+        "docs/competitor content tracker/blogs": "ok",
+        "docs/analytics_reports": "ok"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://github.com/mcp/com.figma.mcp/mcp",
+    "canonical_url": "https://github.com/mcp/com.figma.mcp/mcp",
+    "depth": 0,
+    "status": "failed",
+    "http_status": null,
+    "content_type": null,
+    "source_kind": "error",
+    "content_sha256": null,
+    "bytes": 0,
+    "discovered_links": [],
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "mirror_path": null,
+    "fetched_at_unix": 1774019576.850144
+  },
+  {
+    "url": "https://github.com/figma/mcp-server-guide",
+    "canonical_url": "https://github.com/figma/mcp-server-guide",
+    "depth": 0,
+    "status": "failed",
+    "http_status": null,
+    "content_type": null,
+    "source_kind": "error",
+    "content_sha256": null,
+    "bytes": 0,
+    "discovered_links": [],
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "mirror_path": null,
+    "fetched_at_unix": 1774019577.434725
+  },
+  {
+    "url": "https://developers.figma.com/docs/figma-mcp-server/",
+    "canonical_url": "https://developers.figma.com/docs/figma-mcp-server",
+    "depth": 0,
+    "status": "failed",
+    "http_status": null,
+    "content_type": null,
+    "source_kind": "error",
+    "content_sha256": null,
+    "bytes": 0,
+    "discovered_links": [],
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "mirror_path": null,
+    "fetched_at_unix": 1774019578.278466
+  }
+]

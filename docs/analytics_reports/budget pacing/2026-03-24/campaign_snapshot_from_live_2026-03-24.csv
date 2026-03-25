@@ -1,0 +1,16 @@
+campaign_id,platform,platform_campaign_id,platform_campaign_name,current_daily_budget,spend_mtd,leads_mtd,clicks_mtd,impressions_mtd,is_live
+ca-us_pms_prospecting_website-conv,meta,6954321351868,ca-us_pms_prospecting_website-conv,500.0,15648.05,33.0,2553.0,294897.0,True
+ca-us_pms_retargeting_website-conv,meta,6954323673468,ca-us_pms_retargeting_website-conv,50.0,1419.63,8.0,261.0,29910.0,True
+uk-au_pms_prospecting_website-conv,meta,6954326744668,au-uk_pms_prospecting_website-conv,40.0,5543.75,3.0,1140.0,117201.0,True
+uk-au_pms_retargeting_website-conv,meta,6954326449668,au-uk_pms_retargeting_website-conv,20.0,667.35,3.0,182.0,10398.0,True
+ca-us_spring-promo_prospecting_website-conv,meta,6959407590068,ca-us_spring-promo_prospecting_website-conv,100.0,0.0,0.0,0.0,0.0,False
+br_pms_prospecting_website-conv,meta,6954327557268,br_pms_prospecting_website-conv,68.18,0.0,0.0,0.0,0.0,False
+mx_pms_prospecting_website-conv,meta,6954329303868,mx_pms_prospecting_website-conv,54.54,0.0,0.0,0.0,0.0,False
+ca-us_brand_search,google,23622401230,ca-us_brand_search,250.0,3736.18557,25.75,877.0,4194.0,True
+ca-us_pms_pmax,google,23619267350,ca-us_pms_pmax,400.0,7427.411082,8.0,2114.0,55444.0,True
+uk-au_brand_search,google,23619221250,au-uk_brand_search,90.91,1077.840893,5.0,231.0,2182.0,False
+uk-au_pms_pmax,google,23619357777,au-uk_pms_pmax,472.72,2455.063502,2.0,716.0,11349.0,False
+mx_pms_search_website-conv,google,23620932365,mx_pms_search_website-conv,136.36,0.0,0.0,0.0,0.0,False
+br_brand_search,google,23620918556,br_brand_search,22.72,0.0,0.0,0.0,0.0,False
+fr_brand_search,google,,,0.0,0.0,0.0,0.0,0.0,False
+fr_pms_search,google,,,0.0,0.0,0.0,0.0,0.0,False
