@@ -73,7 +73,7 @@ def _simple_enrich_and_score(row: dict, icp_text: str) -> EnrichedCompany:
         reasons.append("US-focused ICP.")
     if "marketing" in icp_text.lower():
         score += 0.2
-        reasons.append("ICP mentions marketing; assuming fit with TLDR GTM product.")
+        reasons.append("ICP mentions marketing; assuming fit with Hostfully GTM product.")
 
     if score == 0.0:
         reasons.append("Fallback: insufficient data; treating as low-fit.")

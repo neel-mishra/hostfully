@@ -34,9 +34,9 @@ For each automation:
 
 | # | File | Schedule | Replaces |
 |---|------|----------|----------|
-| 1 | `01_daily_content_pipeline.md` | Daily 08:00 | `com.tofulab.contentpipeline.plist` |
-| 2 | `02_weekly_content_execution.md` | Weekly Mon 09:00 | `com.tofulab.contentpipeline.weekly.plist` |
-| 3 | `03_monthly_competitive_ads.md` | Monthly 28th | `com.tldr.tech.competitivetracker.monthly.plist` |
+| 1 | `01_daily_content_pipeline.md` | Daily 08:00 | `com.hostfully.contentpipeline.plist` |
+| 2 | `02_weekly_content_execution.md` | Weekly Mon 09:00 | `com.hostfully.contentpipeline.weekly.plist` |
+| 3 | `03_monthly_competitive_ads.md` | Monthly 28th | `com.hostfully.tech.competitivetracker.monthly.plist` |
 | 4 | `04_weekly_ad_performance.md` | Weekly Mon 07:00 | -- |
 | 5 | `05_weekly_seo_intelligence.md` | Weekly Tue 08:00 | -- |
 | 6 | `06_biweekly_advertiser_health.md` | Bi-weekly Mon 10:00 | -- |
@@ -61,9 +61,9 @@ For each automation:
 After automations 1-3 run reliably, remove the old plists:
 
 ```bash
-launchctl unload ~/Library/LaunchAgents/com.tofulab.contentpipeline.plist
-launchctl unload ~/Library/LaunchAgents/com.tofulab.contentpipeline.weekly.plist
-launchctl unload ~/Library/LaunchAgents/com.tldr.tech.competitivetracker.monthly.plist
+launchctl unload ~/Library/LaunchAgents/com.hostfully.contentpipeline.plist
+launchctl unload ~/Library/LaunchAgents/com.hostfully.contentpipeline.weekly.plist
+launchctl unload ~/Library/LaunchAgents/com.hostfully.tech.competitivetracker.monthly.plist
 ```
 
 ## Future: Remote MCP Setup

@@ -6,6 +6,7 @@ so channel totals match the playbook while pacing only reflects spend from live 
 from __future__ import annotations
 
 import pandas as pd
+from config import allocation_config
 
 
 def merge_playbook_with_snapshot(
@@ -146,6 +147,24 @@ def apply_playbook_redistribution(merged: pd.DataFrame) -> pd.DataFrame:
         # can participate in channel redistribution/allocation context.
         fallback = out.loc[live_mask, "current_daily_budget"].astype(float)
         live_weights = live_weights.where(live_weights > 0, fallback)
+        if bool(allocation_config.redistribute_use_weighted):
+            roi = pd.to_numeric(out.loc[live_mask, "roi_priority_weight"], errors="coerce").fillna(0.0)
+            winner = pd.to_numeric(out.loc[live_mask, "has_winning_angle"], errors="coerce").fillna(0.0)
+            roi_med = float(roi[roi > 0].median()) if (roi > 0).any() else 0.0
+            roi_norm = (roi / roi_med).clip(lower=0.25, upper=4.0) if roi_med > 0 else pd.Series(1.0, index=roi.index)
+            winner_norm = 1.0 + winner
+            w = (
+                float(allocation_config.redistribute_weight_playbook) * live_weights
+                + float(allocation_config.redistribute_weight_roi) * roi_norm
+                + float(allocation_config.redistribute_weight_winner_affinity) * winner_norm
+            )
+            # Tier floor protection.
+            tier = out.loc[live_mask, "campaign_priority_tier"].astype(str).str.upper() if "campaign_priority_tier" in out.columns else pd.Series("", index=w.index)
+            floor = pd.Series(1.0, index=w.index)
+            floor = floor.where(tier != "A", float(allocation_config.redistribute_tier_floor_A))
+            floor = floor.where(tier != "B", float(allocation_config.redistribute_tier_floor_B))
+            floor = floor.where(tier != "C", float(allocation_config.redistribute_tier_floor_C))
+            live_weights = (w * floor).clip(lower=0.01)
         live_sum = float(live_weights.sum())
 
         out.loc[mask & ~out["is_live"], "monthly_budget_effective"] = 0.0

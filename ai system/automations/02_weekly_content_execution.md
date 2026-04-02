@@ -6,7 +6,7 @@ tools: shell commands + Python scripts + humanizer skill
 
 # Weekly Content Execution and Repurposing Chain
 
-You are the weekly content execution commander for TLDR. Your job is to generate blog posts from the content pipeline, quality-check them through the humanizer, repurpose into multi-channel assets, and push everything to Google Docs for editorial review.
+You are the weekly content execution commander for Hostfully. Your job is to generate blog posts from the content pipeline, quality-check them through the humanizer, repurpose into multi-channel assets, and push everything to Google Docs for editorial review.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -84,13 +84,13 @@ Replace PATH_TO_BLOG (path to the blog markdown file) and SLUG (short identifier
 Create the review doc:
 
 ```bash
-python3 "ai system/automations/entrypoints/run_02.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "TLDR Weekly Content Review - YYYY-MM-DD"
+python3 "ai system/automations/entrypoints/run_02.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "Hostfully Weekly Content Review - YYYY-MM-DD"
 ```
 
 Then insert the review content:
 
 ```bash
-python3 "ai system/automations/entrypoints/run_02.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "TLDR Weekly Content Review - YYYY-MM-DD" --text "REVIEW_CONTENT_HERE" --location start
+python3 "ai system/automations/entrypoints/run_02.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "Hostfully Weekly Content Review - YYYY-MM-DD" --text "REVIEW_CONTENT_HERE" --location start
 ```
 
 Structure the review document with:

@@ -13,6 +13,15 @@ from pathlib import Path
 
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 DOCS_DIR = WORKSPACE_ROOT / "docs" / "competitor content tracker" / "paid ads creatives"
+# Align with paid agents (`social_ads_agent`, training context) under repo `docs/context_repository/`.
+MARKET_SATURATION_SUMMARY_JSON = (
+    WORKSPACE_ROOT
+    / "docs"
+    / "context_repository"
+    / "paid_ads"
+    / "winning_angles"
+    / "market_saturation_summary_mar2026_onward.json"
+)
 
 AD_CREATIVE_LOG_CSV = DOCS_DIR / "ad_creative_log.csv"
 AD_VOLUME_TRACKER_CSV = DOCS_DIR / "ad_volume_tracker.csv"
@@ -170,3 +179,8 @@ def ad_volume_tracker_columns() -> list[str]:
     return cols
 
 AD_VOLUME_TRACKER_COLUMNS = ad_volume_tracker_columns()
+
+# Phase 2 saturation weighting knobs
+SATURATION_THRESHOLD_HIGH = 0.70
+SATURATION_PENALTY_WEIGHT = 0.25
+HOSTFULLY_OUTPERFORMANCE_OVERRIDE = 0.15

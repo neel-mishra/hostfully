@@ -39,7 +39,7 @@ isProject: false
 
 ## Current State Summary
 
-Your workspace is a GTM operations hub for TLDR with:
+Your workspace is a GTM operations hub for Hostfully with:
 
 - **50+ Python agent scripts** across 15 agent categories (content, sales, SEO, ads, customer success, product, etc.)
 - **93 MCP tools** across 7 servers: Meta Ad Library, Playwright, Google Sheets, Google Docs, Google Ads, Meta Ads, Ahrefs
@@ -52,9 +52,9 @@ Your workspace is a GTM operations hub for TLDR with:
 
 | Schedule         | Script                                          | Plist                                            |
 | ---------------- | ----------------------------------------------- | ------------------------------------------------ |
-| Daily 08:00      | `commander.py` (blog scraper + pipeline)        | `com.tofulab.contentpipeline.plist`              |
-| Weekly Mon 09:00 | `execution_commander.py` (blog writer + social) | `com.tofulab.contentpipeline.weekly.plist`       |
-| Monthly 28th     | `heartbeat_monthly.py` (ad tracker)             | `com.tldr.tech.competitivetracker.monthly.plist` |
+| Daily 08:00      | `commander.py` (blog scraper + pipeline)        | `com.hostfully.contentpipeline.plist`              |
+| Weekly Mon 09:00 | `execution_commander.py` (blog writer + social) | `com.hostfully.contentpipeline.weekly.plist`       |
+| Monthly 28th     | `heartbeat_monthly.py` (ad tracker)             | `com.hostfully.tech.competitivetracker.monthly.plist` |
 
 
 ---
@@ -68,7 +68,7 @@ These three automations directly replace your current macOS LaunchAgent plists w
 #### 1. Daily Content Pipeline Orchestrator
 
 **Schedule:** Daily at 08:00
-**Replaces:** `com.tofulab.contentpipeline.plist`
+**LaunchAgent:** `com.hostfully.contentpipeline.plist`
 
 **What it does:**
 
@@ -82,7 +82,7 @@ These three automations directly replace your current macOS LaunchAgent plists w
 #### 2. Weekly Content Execution + Repurposing Chain
 
 **Schedule:** Weekly, Monday 09:00
-**Replaces:** `com.tofulab.contentpipeline.weekly.plist`
+**LaunchAgent:** `com.hostfully.contentpipeline.weekly.plist`
 
 **What it does:**
 
@@ -97,7 +97,7 @@ These three automations directly replace your current macOS LaunchAgent plists w
 #### 3. Monthly Competitive Ad Intelligence
 
 **Schedule:** Monthly, last day of month
-**Replaces:** `com.tldr.tech.competitivetracker.monthly.plist`
+**Replaces:** `com.hostfully.tech.competitivetracker.monthly.plist`
 
 **What it does:**
 
@@ -138,7 +138,7 @@ These are net-new automations that combine existing scripts with MCP tools to cr
 
 **What it does:**
 
-1. Use **Ahrefs MCP** (`site-explorer-organic-keywords`, `site-explorer-top-pages`, `site-explorer-metrics-history`) to pull TLDR's organic performance
+1. Use **Ahrefs MCP** (`site-explorer-organic-keywords`, `site-explorer-top-pages`, `site-explorer-metrics-history`) to pull Hostfully's organic performance
 2. Use **Ahrefs MCP** (`site-explorer-organic-competitors`) to check competitor movement
 3. Use **Ahrefs MCP** (`rank-tracker-overview`) to check tracked keyword positions
 4. Identify striking-distance keywords (positions 4-20) with optimization recommendations
@@ -184,7 +184,7 @@ These are net-new automations that combine existing scripts with MCP tools to cr
 
 **What it does:**
 
-1. Use **Playwright MCP** (`browser_navigate`, `browser_take_screenshot`, `browser_snapshot`) to crawl TLDR's key landing pages
+1. Use **Playwright MCP** (`browser_navigate`, `browser_take_screenshot`, `browser_snapshot`) to crawl Hostfully's key landing pages
 2. Use **Ahrefs MCP** (`site-explorer-top-pages`) to identify highest-traffic pages
 3. Run `cro_hypothesis_agent.py` to generate A/B test hypotheses
 4. Compare landing page content against current ad creative messaging for consistency
@@ -225,7 +225,7 @@ These combine multiple agents and MCP tools into sophisticated intelligence work
 2. Pull competitor blog content from `competitor_content_tracker.csv`
 3. Use **Ahrefs MCP** (`site-explorer-organic-keywords`, `site-explorer-top-pages`) to check competitor organic performance
 4. Cross-reference: What topics are competitors both blogging about AND running ads for? (signals high-conviction bets)
-5. Identify gaps: Topics competitors are investing in that TLDR is not covering
+5. Identify gaps: Topics competitors are investing in that Hostfully is not covering
 6. Generate strategic brief with recommended content + ad responses
 7. Push to **Google Docs MCP**
 

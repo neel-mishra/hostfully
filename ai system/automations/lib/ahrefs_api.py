@@ -3,12 +3,12 @@
 Ahrefs REST API v3 wrapper for Cursor Automations.
 
 Usage:
-  python ahrefs_api.py organic-keywords --target tldr.tech --date 2026-03-10
-  python ahrefs_api.py top-pages --target tldr.tech --date 2026-03-10
-  python ahrefs_api.py metrics-history --target tldr.tech --date-from 2025-12-01
-  python ahrefs_api.py organic-competitors --target tldr.tech --country us --date 2026-03-10
-  python ahrefs_api.py domain-rating --target tldr.tech --date 2026-03-10
-  python ahrefs_api.py paid-pages --target tldr.tech --date 2026-03-10
+  python ahrefs_api.py organic-keywords --target hostfully.tech --date 2026-03-10
+  python ahrefs_api.py top-pages --target hostfully.tech --date 2026-03-10
+  python ahrefs_api.py metrics-history --target hostfully.tech --date-from 2025-12-01
+  python ahrefs_api.py organic-competitors --target hostfully.tech --country us --date 2026-03-10
+  python ahrefs_api.py domain-rating --target hostfully.tech --date 2026-03-10
+  python ahrefs_api.py paid-pages --target hostfully.tech --date 2026-03-10
   python ahrefs_api.py keywords-overview --country us --keywords "newsletter advertising,tech newsletter"
   python ahrefs_api.py keywords-matching --country us --keywords "newsletter advertising"
 """

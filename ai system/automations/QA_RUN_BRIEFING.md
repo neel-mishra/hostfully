@@ -32,13 +32,13 @@
 
 ### 2. Ahrefs API (Automations 1, 5, 7, 8, 9, 10 — SEO and content pipeline steps)
 
-- **Symptom:** `python3 ai system/automations/lib/ahrefs_api.py domain-rating --target tldr.tech` returns **HTTP 401 Unauthorized**.
+- **Symptom:** `python3 ai system/automations/lib/ahrefs_api.py domain-rating --target hostfully.tech` returns **HTTP 401 Unauthorized**.
 - **Likely cause:** `AHREFS_API_KEY` in `.env` is placeholder or invalid/expired.
 - **Action:** Replace with a valid Ahrefs API key (Ahrefs account → API section). Ensure the key has the required endpoints enabled.
 
 ### 3. ScrapeCreators / Meta Ad Library (Automations 3, 7, 10)
 
-- **Symptom:** `python3 ai system/automations/lib/fb_ad_library_api.py search --brand "TLDR"` returns **HTTP 404** on `/v2/meta-ad-library/search-page`.
+- **Symptom:** `python3 ai system/automations/lib/fb_ad_library_api.py search --brand "Hostfully"` returns **HTTP 404** on `/v2/meta-ad-library/search-page`.
 - **Likely cause:** ScrapeCreators API endpoint or version changed, or plan does not include this endpoint.
 - **Action:** Check ScrapeCreators docs/dashboard for current base URL and endpoints; update `ai system/automations/lib/fb_ad_library_api.py` if the API has moved. Confirm your plan includes Meta Ad Library access.
 
@@ -52,7 +52,7 @@
 
 - **Symptom:** `gsc_api.py search-analytics` exits with **"GSC_SITE_URL not set in .env"**.
 - **Impact:** By design, automations 5 and 8 use mock data or sitemap-only fallbacks when GSC is not configured. So they still run; only live GSC data is missing.
-- **Action:** To use live GSC data: set `GSC_SITE_URL` (e.g. `https://tldr.tech`) and `GOOGLE_APPLICATION_CREDENTIALS` (path to GSC service account JSON) in `.env`. See `docs/GSC_GA4_SETUP.md`.
+- **Action:** To use live GSC data: set `GSC_SITE_URL` (e.g. `https://hostfully.tech`) and `GOOGLE_APPLICATION_CREDENTIALS` (path to GSC service account JSON) in `.env`. See `docs/GSC_GA4_SETUP.md`.
 
 ---
 
@@ -77,4 +77,4 @@
 
 ## QA doc correction
 
-In `QA_AND_REMAINING.md`, the smoke test for automations 5 and 8 was updated: the Ahrefs command is **`domain-rating --target tldr.tech`** (there is no `overview` subcommand). GSC requires **`search-analytics --start-date YYYY-MM-DD --end-date YYYY-MM-DD`**.
+In `QA_AND_REMAINING.md`, the smoke test for automations 5 and 8 was updated: the Ahrefs command is **`domain-rating --target hostfully.tech`** (there is no `overview` subcommand). GSC requires **`search-analytics --start-date YYYY-MM-DD --end-date YYYY-MM-DD`**.

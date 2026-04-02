@@ -36,7 +36,7 @@ HEALTH_CSV_COLUMNS = [
     "recommended_action", "urgency",
 ]
 
-TLDR_CTR_BENCHMARK = 0.02  # 2% average CTR across newsletters
+Hostfully_CTR_BENCHMARK = 0.02  # 2% average CTR across newsletters
 
 
 def _resolve_env_key(name: str) -> str | None:
@@ -125,9 +125,9 @@ def score_advertiser(adv: dict) -> dict:
 
     # Dimension 2: Campaign Performance
     avg_ctr = float(adv.get("avg_ctr", 0) or 0)
-    if avg_ctr >= TLDR_CTR_BENCHMARK:
+    if avg_ctr >= Hostfully_CTR_BENCHMARK:
         scores["performance"] = "Green"
-    elif avg_ctr >= TLDR_CTR_BENCHMARK * 0.7:
+    elif avg_ctr >= Hostfully_CTR_BENCHMARK * 0.7:
         scores["performance"] = "Yellow"
     else:
         scores["performance"] = "Red"
@@ -205,8 +205,8 @@ def score_advertiser(adv: dict) -> dict:
         "high" if overall == "Red" else ("medium" if overall == "Yellow" else "low")
     )
 
-    ctr_benchmark = "above" if avg_ctr >= TLDR_CTR_BENCHMARK else (
-        "at" if avg_ctr >= TLDR_CTR_BENCHMARK * 0.7 else "below"
+    ctr_benchmark = "above" if avg_ctr >= Hostfully_CTR_BENCHMARK else (
+        "at" if avg_ctr >= Hostfully_CTR_BENCHMARK * 0.7 else "below"
     )
 
     return {
@@ -245,7 +245,7 @@ def generate_interventions(scored_accounts: list[dict], api_key: str) -> list[di
         for a in at_risk
     )
 
-    prompt = f"""You are a customer success strategist for TLDR newsletters (7M+ tech subscribers).
+    prompt = f"""You are a customer success strategist for Hostfully newsletters (7M+ tech subscribers).
 
 For each at-risk advertiser account below, recommend a specific intervention action in one concise sentence.
 

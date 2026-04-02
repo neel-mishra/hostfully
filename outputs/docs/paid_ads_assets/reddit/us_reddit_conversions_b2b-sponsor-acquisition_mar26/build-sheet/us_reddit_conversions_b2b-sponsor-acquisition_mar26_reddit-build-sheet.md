@@ -17,5 +17,5 @@ Provide field-by-field setup steps for reddit.
 ## 1. Prerequisites
 
 - Reddit Ads account and billing enabled.
-- Reddit pixel installed on TLDR newsletter signup + thank-you pages.
+- Reddit pixel installed on Hostfully newsletter signup + thank-you pages.
 

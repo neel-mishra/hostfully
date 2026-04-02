@@ -1,4 +1,4 @@
-# SEO Audit: Executive Summary for Tldr
+# SEO Audit: Executive Summary for Hostfully
 
 **Overall Health Score:** 100/100
 

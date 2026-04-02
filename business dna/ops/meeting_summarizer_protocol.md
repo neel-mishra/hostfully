@@ -5,7 +5,7 @@
 * **Participants:** {{ATTENDEES}}
 * **Date & Context:** {{DATE}} (e.g., Weekly Sync, Discovery Call, Board Prep.)
 
-## 2. Executive Summary (The "TL;DR")
+## 2. Executive Summary (bottom line)
 * **One-Sentence Goal:** {{WHY_WE_MET}}
 * **Key Outcome:** {{BIGGEST_TAKEAWAY}}
 * **Sentiment Check:** {{TEAM_VIBE}} (e.g., Aligned, Pivoting, Concerned.)

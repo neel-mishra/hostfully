@@ -1,94 +1,166 @@
-# Ideal Customer Profile (ICP)
+# Ideal Customer Profile (ICP): Hostfully
 
-TLDR operates a 2-sided network. Every growth initiative targets one of these two audiences — and the messaging, channels, and creative must reflect which side you're speaking to.
-
----
-
-## Side 1: Readers (Subscriber Acquisition)
-
-### 1. Demographics & Firmographics
-*   **Primary Audience:** Tech professionals — software engineers, developers, product managers, engineering managers, data scientists, designers, DevOps engineers, CISOs, CTOs, VPs of Engineering.
-*   **Seniority Mix:** 30%+ manager-level or above. Mix of ICs (individual contributors) and decision-makers.
-*   **Industry:** Technology, SaaS, cloud infrastructure, AI/ML, fintech, cybersecurity, startups, big tech (FAANG+).
-*   **Geography:** Majority US-based. Secondary: Canada, UK, Western Europe, Australia, India.
-*   **Company Size:** All sizes — from solo founders and seed-stage startups to enterprise teams at Google, Amazon, Microsoft.
-
-### 2. Reader Personas
-
-#### Persona R1: "The Senior Engineer"
-*   **Role:** Staff/Senior Software Engineer, 5-15 years experience
-*   **Motivations:** Stay current on tools, frameworks, and industry trends without wasting time on social media. Peer credibility — wants to know what other engineers are talking about.
-*   **Pain Points:** Information overload from Twitter/X, Hacker News, Reddit. No time to read 20 articles. Doesn't trust algorithmic feeds to surface what matters.
-*   **The Hook:** "Everything you need to know in tech. 5 minutes. Free."
-
-#### Persona R2: "The Tech Executive"
-*   **Role:** VP Engineering, CTO, Director of Product, Engineering Manager
-*   **Motivations:** Strategic awareness — needs to understand market shifts, competitor moves, AI developments, and hiring trends to make decisions. Wants signal, not noise.
-*   **Pain Points:** Too senior to be in the weeds, too busy for long reads, but can't afford to be uninformed. Needs a reliable morning briefing.
-*   **The Hook:** "The newsletter your CTO already reads. Join 1.6M tech professionals."
-
-#### Persona R3: "The Ambitious Builder"
-*   **Role:** Startup founder, indie hacker, junior-to-mid developer, aspiring PM
-*   **Motivations:** Career advancement, staying ahead of the curve, discovering tools and opportunities. Wants to feel plugged into the tech ecosystem.
-*   **Pain Points:** Doesn't have a curated network of industry insiders yet. Relies on scattered sources. FOMO about missing important developments.
-*   **The Hook:** "Your daily edge in tech. Free to join."
-
-### 3. Behavioral Triggers (Reader)
-*   **Internal:** "I'm spending 30 minutes scrolling Hacker News and still don't feel caught up."
-*   **External:** A colleague mentions an article they saw in TLDR. A LinkedIn post references a TLDR story. A podcast host says "as TLDR covered this week..."
-*   **Conversion moment:** Sees a clean value proposition (5 min, free, curated), enters email, receives first issue, opens it — and realizes the format actually respects their time.
-
-### 4. Anti-ICP (Reader)
-*   **The Non-Tech Consumer:** People with zero interest in technology, programming, or startups. TLDR isn't a general news source.
-*   **The Content Hoarder:** Subscribers who sign up for everything but never open anything. Low-engagement readers dilute open rates and advertiser value.
-*   **The Bot/Fake Email:** Fraudulent signups from acquisition campaigns that inflate subscriber counts without real engagement.
+Hostfully sells subscription software to vacation rental and hospitality operators. Growth, product, and GTM content should reflect **who** is buying (portfolio scale, geography, billing), **what** they subscribe to (PMP and Guidebooks adoption), **how customers expand or contract** (upgrades/downgrades), **how durable** revenue is (cohort retention, CLV), and **which channels** feed the funnel. This document is the single source for that segmentation.
 
 ---
 
-## Side 2: Advertisers (Revenue Generation)
+## How this ICP was informed (Jan–Mar 2026 exports)
 
-### 1. Firmographics (The Company)
-*   **Target Industries:** B2B SaaS, developer tools, cloud infrastructure (AWS, GCP, Azure), AI/ML platforms, cybersecurity, fintech, recruiting/HR tech, education/upskilling, open-source monetization.
-*   **Company Stage:**
-    *   **Growth-stage startups (Series A-C):** Need efficient channels to reach developers and technical decision-makers. Often burned by LinkedIn CPCs.
-    *   **Scale-ups & mid-market:** Have budget, need to diversify beyond Meta/Google. Looking for high-intent channels.
-    *   **Enterprise (AWS, Google Cloud, Anthropic, Shopify):** Brand awareness + lead gen at scale. Use TLDR as a recurring channel in their media mix.
-*   **Budget Range:** $3K-$30K+ per campaign. Recurring advertisers spend $50K-$500K+/year across the newsletter portfolio.
+| Topic | Primary source (internal) |
+| :--- | :--- |
+| **Rolling signups by portfolio tier (A–E)** | `6. Customer Segmentation (Last 6 months) - Feb 2026.xlsx` → **`Segment analysis`** (latest full **Salesforce** cut in downloads; replaces Mar-only snapshot) |
+| **Product attach (PMP + Guidebooks)** | `7. Product Mix - Feb 2026.xlsx` → **`Calculation`** |
+| **Cohort retention (logo vs MRR)** | `8b` / `8c. Retention rate count|MRR - Feb 2026.xlsx` (same layout as prior months) |
+| **Customer lifetime value & term** | `6. Customer Lifetime Value (last 48 months) - Jan 2026.xlsx` → **`36 months`** |
+| **Average MRR at signup vs today** | `7d. Average MRR by segment - Jan 2026.xlsx` → **`for report`** |
+| **Expansion / contraction (Nov–Jan window)** | `9. Upgrades & Downgrades - Jan 2026.xlsx` → **`calculations`** |
+| **Acquisition by channel (last 12 months)** | `4a. Marketing Channels Summary last 12 months - Jan 2026.xlsx` → **`Lead Source matching`** (aggregated by **Channel**) |
+| **Churn cases (support lens)** | `8. Churn - Jan 2026.xlsx` → **`Pivot`** (segment rollup) |
+| **Executive narrative** | *Customer Acquisition Analysis and Recommendations* (Jan / Feb 2026 docx); *Copy of… January 2026* where cited internally |
+| **CS / bird-segment view (optional)** | `Hostfully Customer Segmentation 2026_03.xlsx` (Egglets / Hatchlings / Ducks / Geese / Albatrosses)—aligns to **property scale**, parallel to A–E |
 
-### 2. Advertiser Personas
-
-#### Persona A1: "The Growth Marketer"
-*   **Role:** Head of Growth, Demand Gen Manager, Performance Marketer at a B2B SaaS company
-*   **Motivations:** Hit pipeline targets. Find channels that deliver qualified leads at reasonable CPL. Prove ROI to leadership.
-*   **Pain Points:** LinkedIn CPCs are $8-15+ and rising. Google Search is competitive and expensive for dev tool keywords. Meta doesn't reach technical audiences well. Needs a channel that reaches developers where they actually pay attention.
-*   **The Hook:** "50% lower CPC than LinkedIn. $1M in attributed pipeline. See the case studies."
-
-#### Persona A2: "The DevRel / Developer Marketing Lead"
-*   **Role:** Developer Relations, Developer Marketing, Community Lead
-*   **Motivations:** Drive awareness and adoption among developers for APIs, SDKs, open-source projects, or dev tools. Needs to reach engineers, not just marketers.
-*   **Pain Points:** Developers are ad-averse and ignore banner ads. Traditional marketing channels don't work for this audience. Needs native, contextual placements that feel editorial.
-*   **The Hook:** "Your ad, in the newsletter developers already read every morning. Written to match the editorial voice."
-
-#### Persona A3: "The Marketing Director / CMO"
-*   **Role:** VP Marketing, CMO at a tech company
-*   **Motivations:** Diversify the media mix beyond Google/Meta duopoly. Find high-ROI channels for board reporting. Build brand with technical audiences.
-*   **Pain Points:** Diminishing returns on paid social. Difficulty attributing newsletter spend. Needs proof of performance.
-*   **The Hook:** "Delve drove $1M in pipeline with 52x ROI. Plaid added $382K in pipeline. TLDR outperforms LinkedIn, Google, and Meta."
-
-### 3. Behavioral Triggers (Advertiser)
-*   **Internal:** "Our LinkedIn CPL has doubled this quarter and lead quality is declining."
-*   **External:** A competitor's ad appears in TLDR. A case study gets shared on LinkedIn. A peer at a conference mentions TLDR as a top-performing channel.
-*   **Conversion moment:** Sees the case studies, calculates the CPL, realizes TLDR reaches their exact ICP at half the cost of LinkedIn — fills out the advertiser inquiry form.
-
-### 4. Anti-ICP (Advertiser)
-*   **The B2C Consumer Brand:** Companies selling to general consumers (fashion, food, fitness). TLDR's audience is tech professionals — consumer brands won't find ROI here.
-*   **The Tiny Budget Tester:** Companies wanting to spend $200 to "test" newsletters. TLDR's minimum placements start at ~$1,500-3,000. Below that, results aren't statistically meaningful.
-*   **The "Set and Forget" Advertiser:** Companies that buy one placement, don't optimize copy, and expect magic. Newsletter advertising works best with iteration — testing headlines, CTAs, and running recurring campaigns.
+If a docx number disagrees with an **xlsx**, **xlsx wins**.
 
 ---
 
-### AI Agent Context Rule:
-Before generating ANY content, determine which side of the network you're targeting:
--   **Reader acquisition campaigns:** Use Personas R1/R2/R3. Focus on time savings, curation quality, peer credibility. Channels: LinkedIn, Meta, Google, Reddit, X.
--   **Advertiser acquisition campaigns:** Use Personas A1/A2/A3. Focus on ROI, audience quality, CPC comparison, case studies. Channels: LinkedIn, Google Search, direct outbound, events.
--   **Never mix the two.** A reader doesn't care about your advertiser case studies. An advertiser doesn't care about your 5-minute reading time.
+## 1. Segmentation axis: property portfolio size (at signup)
+
+Accounts are grouped by **claimed number of PMP properties at signup** (cohorts **A–E**). Figures below are **last 6 months** of PMP signups (custom subscription types excluded per internal filters), from **`6. Customer Segmentation (Last 6 months) - Feb 2026.xlsx`** → **`Segment analysis`**.
+
+| Cohort | Properties | Worldwide accounts | Worldwide MRR | US accounts | US MRR | US share of cohort (count / MRR) | Avg MRR (WW) | Monthly | Yearly |
+| :--- | :--- | ---: | ---: | ---: | ---: | :--- | ---: | ---: | ---: |
+| **A** | 1–4 | 289 | $33,175.98 | 234 | $26,877.00 | 81.0% / 81.0% | $114.80 | 212 | 72 |
+| **B** | 5–15 | 116 | $21,919.59 | 70 | $13,756.76 | 60.3% / 62.8% | $188.96 | 98 | 17 |
+| **C** | 16–30 | 37 | $11,532.91 | 13 | $3,800.50 | 35.1% / 33.0% | $311.70 | 34 | 2 |
+| **D** | 31–49 | 15 | $6,526.58 | 8 | $3,507.98 | 53.3% / 53.7% | $435.11 | 12 | 3 |
+| **E** | 50+ | 13 | $9,643.50 | 5 | $4,474.00 | 38.5% / 46.4% | $741.81 | 10 | 0 |
+| **All** | — | **470** | **$82,798.56** | **330** | **$52,416.24** | 70.2% / 63.3% | **$176.17** | **366** | **94** |
+
+**Share of last-6-month signups (count):** A ~61.5%, B ~24.7%, C ~7.9%, D ~3.2%, E ~2.8%.  
+**Share of last-6-month WW MRR:** A ~40%, B ~26%, C ~14%, D ~8%, E ~12% (rounded).
+
+**Billing mix (subscription interval, all segments):** **366** monthly vs **94** yearly (**~78%** / **~20%**; remainder rounding)—same **`Segment analysis`** row.
+
+---
+
+## 2. Geography (customer count and MRR)
+
+**`Segment analysis`** country pivot (Feb 2026 export):
+
+- **United States:** **330 / 470** accounts (**~70%**), **~63%** of WW MRR (**$52,416 / $82,799**)—**All segments** row.
+- **By account count (Count %):** US **~72.7%**, Great Britain **~4.0%**, Canada **~3.5%**, Mexico **~2.6%**, UAE **~2.4%**, Spain **~1.5%**, France **~1.5%**, Portugal **~1.1%**, South Africa **~0.9%**, Costa Rica **~0.9%**, Switzerland **~0.9%**, etc.
+- **By MRR (MRR %):** US **~66.3%**, Spain **~4.9%**, Mexico **~3.0%**, Great Britain **~4.0%**, Canada **~3.6%**, UAE **~2.7%**, Portugal **~1.5%**, Australia **~1.7%**, etc.—use **MRR %** when discussing revenue concentration.
+
+---
+
+## 3. Product footprint (PMP + Guidebooks)
+
+From **`7. Product Mix - Feb 2026.xlsx`** → **`Calculation`**: among **2,211** Property Management Platform clients, **754** also use Guidebooks (**34%** of PMP). Those **754** are **36%** of all **2,078** Guidebook clients. **PMP-first** remains the default land; **PMP + Guidebooks** signals expansion and guest-experience depth.
+
+---
+
+## 4. Lifetime value and MRR drift (Jan 2026 cuts)
+
+**Customer lifetime value (36-month view, blended other recurring revenue in model):**  
+`6. Customer Lifetime Value (last 48 months) - Jan 2026.xlsx` → **`36 months`**
+
+| Segment | Accounts (count) | Avg ORBI MRR | Avg other recurring | Avg term (mo) | **CLV** |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| A) 1–4 | 1,054 | $155.97 | $66.98 | 19 | **$4,322** |
+| B) 5–15 | 567 | $261.88 | $112.60 | 22 | **$8,155** |
+| C) 16–30 | 219 | $396.07 | $170.33 | 21 | **$11,620** |
+| D) 31–49 | 53 | $487.51 | $209.66 | 23 | **$16,144** |
+| E) 50+ | 64 | $760.82 | $327.13 | 24 | **$25,886** |
+| **Total / blend** | **1,957** | **$242.28** | **$104.14** | **20** | **~$7,288** (blended total row) |
+
+**Current vs signup MRR (Jan 2026):** `7d. Average MRR by segment - Jan 2026.xlsx` — blended **avg first PMP MRR** **$196.90** vs **avg current PMP MRR** **$167.30** across **451** accounts in drilldown (mix and downgrades pull **current** below **signup** on average).
+
+---
+
+## 5. Expansion and contraction (recent window)
+
+**`9. Upgrades & Downgrades - Jan 2026.xlsx`** → **`calculations`** (expansion tracking ~ **Nov 2025 – Jan 2026** in raw):
+
+- **A) 1–4:** ~**62.8%** upgrades, ~**33.0%** no change, ~**4.3%** downgrades (by customer rows in pivot).
+- **B) 5–15:** ~**47.9%** upgrades, ~**44.2%** no change, ~**7.9%** downgrades.
+- **C) 16–30:** ~**47.9%** upgrades, ~**33.3%** no change, ~**18.8%** downgrades.
+- **D) 31–49:** ~**60%** upgrades, ~**12%** no change, ~**28%** downgrades (small **n**).
+- **E) 50+:** ~**66%** upgrades, ~**14%** no change, ~**20%** downgrades (small **n**).
+
+**Interpretation:** Larger portfolios show **more upgrade motion** but also **non-trivial downgrades**—messaging should pair **expansion** with **risk-aware** success practices.
+
+---
+
+## 6. Marketing channels (closed-won signups, last 12 months)
+
+**`4a. Marketing Channels Summary last 12 months - Jan 2026.xlsx`** → **`Lead Source matching`**, rolled up by mapped **Channel** (Signups / MRR Generated):
+
+| Channel (rollup) | Signups (12m) | MRR Generated (12m) |
+| :--- | ---: | ---: |
+| Website chat | 333 | $722,274 |
+| Website form | 263 | $602,137 |
+| Affiliate or Referral | 482 | $342,222 |
+| Recorded demos | 108 | $230,863 |
+| Thought Leadership / Education | 88 | $135,659 |
+| Cold Calls / Lists | 39 | $116,954 |
+| Advertising | 47 | $79,017 |
+| Other organic sources | 45 | $64,764 |
+| Events | 11 | $36,683 |
+| Accelerator | 2 | $2,993 |
+
+**Note:** MRR Generated reflects **won opportunity amounts** in the export, not ARR—use for **relative channel strength**, not GAAP revenue.
+
+**Opportunities closed won (product split, same workbook `Opportunities` sheet):** Lead sources such as **Qualified.com**, **Hostfully Website**, **Existing Client**, **Livestorm** appear with splits across **PMS**, **GB**, **PMS + GB**, **PMS + Devices**—use when writing **product-specific** campaigns.
+
+---
+
+## 7. Retention (12-month cohorts)
+
+**Definition:** Clients who subscribed in the **last 12 months**, cohorts by **subscription start month**; retention = **% still active** at months 1–4 after start.
+
+- **Logo / count:** **`8b. Retention rate count - Feb 2026.xlsx`** — sheets **`Count (all segments)`**, **`Count (1-4)`**, … **`Count (50+)`**.
+- **MRR-weighted:** **`8c. Retention rate MRR - Feb 2026.xlsx`** — parallel sheet names; **MRR** retention can diverge from **logo** when customers **downgrade**.
+
+**Reading tips:** Prefer **mature cohorts** (e.g. mid-2025) for stable M4 reads; **E) 50+** has **small n**; label **logo vs MRR** explicitly.
+
+---
+
+## 8. Parallel: Customer Success “bird” segments (Mar 2026 workbook)
+
+**`Hostfully Customer Segmentation 2026_03.xlsx`** uses branded tiers (**Egglets, Hatchlings, Ducks, Geese, Albatrosses**) mapped to **property scale** (same spirit as A–E). Example **all-time** base row: **~2,063** active PMP clients, **~$504,927** active MRR, **~245** avg MRR, **29,842** properties (**`All time`** sheet). Use this file for **CS / retention storytelling**; use **Section 1** table for **Salesforce cohort** consistency in GTM copy.
+
+---
+
+## 9. Operator personas (by tier)
+
+- **A — Small portfolio (1–4):** Highest volume, lower avg MRR, US-heavy; fast onboarding, Starter/Pro.
+- **B — Growing (5–15):** Large MRR share; automation + inbox scale; strong upgrade motion.
+- **C–D — Mid-scale (16–49):** Higher avg MRR; reporting and workflow control; watch downgrade rate.
+- **E — Large (50+):** Highest avg MRR and CLV; sales-led; **small-n** in cohort retention.
+
+---
+
+## 10. Anti-ICP
+
+- Operators with **no** operational volume expecting full PMS ROI; **consumer** travel plays without managed inventory; **one-off** tests with no implementation commitment.
+- Do not quote **E) 50+** or **D) 31–49** percentages without noting **sample size** or cohort maturity.
+
+---
+
+### AI Agent Context Rule
+
+1. **Portfolio tier (A–E)** + proof (CLV, MRR, upgrade rate) from this doc.
+2. **Region:** US vs international; count vs MRR emphasis for geo.
+3. **Product scope:** PMP-only vs **PMP + Guidebooks**; devices when relevant (`Opportunities` split).
+4. **Retention:** State **logo (`8b`)** vs **MRR (`8c`)** explicitly.
+5. **Channels:** Match campaign to **Website / referral / demo / content** strength from §6.
+
+---
+
+### Data provenance
+
+**Last refreshed:** March 30, 2026 (synthesis of Jan–Feb 2026 xlsx + Mar 2026 CS workbook + acquisition memos).
+
+**Primary files:**  
+`6. Customer Segmentation (Last 6 months) - Feb 2026.xlsx`; `7. Product Mix - Feb 2026.xlsx`; `8b`/`8c` Retention **Feb 2026**; `6. Customer Lifetime Value (last 48 months) - Jan 2026.xlsx`; `7d. Average MRR by segment - Jan 2026.xlsx`; `9. Upgrades & Downgrades - Jan 2026.xlsx`; `4a. Marketing Channels Summary last 12 months - Jan 2026.xlsx`; `8. Churn - Jan 2026.xlsx`; `Hostfully Customer Segmentation 2026_03.xlsx`; Customer Acquisition Analysis docx (Jan/Feb 2026).  
+Do not paste **account-level** rows into customer-facing copy.

@@ -2,7 +2,7 @@ import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {useFastPan, useHeroZoom} from './animations';
 import {default20sStoryboard} from '../storyboard/default20s';
 import {useStoryboardBeat} from '../storyboard/useStoryboardBeat';
-import {TldrAppMock} from '../ui/TldrAppMock';
+import {HostfullyAppMock} from '../ui/HostfullyAppMock';
 
 export const HypeVertical: React.FC = () => {
   const frame = useCurrentFrame();
@@ -14,8 +14,14 @@ export const HypeVertical: React.FC = () => {
     extrapolateRight: 'clamp',
   });
   const sceneOpacity = beat ? 1 : 0.5;
-  const motionScale = beat?.motionStyle === 'hero-zoom' ? zoom.scale : 1;
-  const translateX = beat?.motionStyle === 'fast-pan' ? pan.translateX : 0;
+
+  const motionStyle = beat?.motionStyle;
+  const isZoom =
+    motionStyle === 'hero-zoom' || motionStyle === 'count-up' || motionStyle === 'type-on';
+  const isPan = motionStyle === 'fast-pan' || motionStyle === 'wipe';
+
+  const motionScale = isZoom ? zoom.scale : 1;
+  const translateX = isPan ? pan.translateX : 0;
 
   const headline =
     beat?.copy ?? 'Keep up with tech in five minutes. Free forever.';
@@ -52,7 +58,7 @@ export const HypeVertical: React.FC = () => {
           opacity: globalFade * sceneOpacity,
         }}
       >
-        <TldrAppMock scene={scene} headline={headline} />
+        <HostfullyAppMock scene={scene} headline={headline} uiState={beat?.uiState} />
         <div style={{fontSize: 22, letterSpacing: 2, textTransform: 'uppercase', opacity: 0.8}}>
           {beat?.scene === 'proof' ? 'Proof, not fluff' : 'Signal over noise'}
         </div>

@@ -14,8 +14,12 @@ from typing import Any, Dict, List, Optional
 
 import pandas as pd
 
-from campaign_name_match import canonical_campaign_match_key, exact_match_key
-from config import load_env_files, workspace_root
+from campaign_name_match import (
+    best_match_against_candidates,
+    canonical_campaign_match_key,
+    exact_match_key,
+)
+from config import allocation_config, load_env_files, workspace_root
 
 
 def platform_channel_totals(live_full: pd.DataFrame, platform: str) -> tuple[float, float]:
@@ -330,6 +334,13 @@ def build_live_snapshot_dataframe(as_of: date) -> pd.DataFrame:
     df = pd.concat(parts, ignore_index=True)
     if errors:
         df.attrs["fetch_warnings"] = errors
+    df.attrs["source_reliability_api"] = float(allocation_config.source_reliability_api)
+    df.attrs["source_reliability_snapshot"] = float(allocation_config.source_reliability_snapshot)
+    # Coverage diagnostics: share of rows with non-empty campaign ids and finite spend.
+    if not df.empty:
+        has_id = df["campaign_id"].astype(str).str.strip() != ""
+        finite_spend = pd.to_numeric(df["spend_mtd"], errors="coerce").fillna(0.0) >= 0
+        df.attrs["coverage_ratio_rows"] = float((has_id & finite_spend).mean())
 
     # Reconcile Meta account-level MTD vs sum of campaign rows (same API, same time_range)
     try:
@@ -394,16 +405,23 @@ def build_snapshot_from_playbook_and_live(
     rows: List[Dict[str, Any]] = []
     for _, pr in playbook.iterrows():
         plat = str(pr.get("platform", "")).lower()
-        p_exact = exact_match_key(pr.get(id_col))
-        p_canon = canonical_campaign_match_key(str(pr.get(id_col) or ""))
         sub = pd.DataFrame()
+        match_type = "none"
+        match_score = 0.0
         if not live.empty and "platform" in live.columns:
             base = live[live["platform"] == plat]
-            # 1) Exact name match (case-insensitive)
-            sub = base[base["_key_exact"] == p_exact]
-            # 2) Canonical geo alias match (e.g. uk-au_* ↔ au-uk_*)
-            if sub.empty:
-                sub = base[base["_key_canon"] == p_canon]
+            mr = best_match_against_candidates(
+                str(pr.get(id_col) or ""),
+                base["campaign_id"].astype(str).tolist(),
+                min_score=float(allocation_config.match_min_score),
+                exact_weight=float(allocation_config.match_weight_exact),
+                canonical_weight=float(allocation_config.match_weight_canonical),
+                fuzzy_weight=float(allocation_config.match_weight_fuzzy),
+            )
+            match_type = mr.match_type
+            match_score = float(mr.match_score)
+            if mr.matched_name:
+                sub = base[base["campaign_id"].astype(str) == mr.matched_name]
         if sub.empty:
             rows.append(
                 {
@@ -417,6 +435,8 @@ def build_snapshot_from_playbook_and_live(
                     "clicks_mtd": 0.0,
                     "impressions_mtd": 0.0,
                     "is_live": False,
+                    "match_type": match_type,
+                    "match_score": match_score,
                 }
             )
         else:
@@ -435,6 +455,8 @@ def build_snapshot_from_playbook_and_live(
                     "clicks_mtd": float(r.get("clicks_mtd") or 0),
                     "impressions_mtd": float(r.get("impressions_mtd") or 0),
                     "is_live": bool(r.get("is_live", False)),
+                    "match_type": match_type,
+                    "match_score": match_score,
                 }
             )
 

@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Weekly SEO Intelligence Report
 
-You are the SEO intelligence analyst for TLDR. Every Tuesday, pull organic search data from Ahrefs, identify striking-distance keywords, check competitor organic movement, cross-reference with the content pipeline, and generate a strategic SEO report.
+You are the SEO intelligence analyst for Hostfully. Every Tuesday, pull organic search data from Ahrefs, identify striking-distance keywords, check competitor organic movement, cross-reference with the content pipeline, and generate a strategic SEO report.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -30,15 +30,15 @@ Use `--allow-duplicate-run` only when you intentionally need a rerun in the same
 pip install -r ai system/automations/lib/requirements.txt 2>/dev/null
 ```
 
-## Step 2: Pull TLDR Organic Performance
+## Step 2: Pull Hostfully Organic Performance
 
 Get today's date in YYYY-MM-DD format and 90 days ago for history queries.
 
 ```bash
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-keywords --target tldr.tech --date TODAY_DATE --limit 100
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" top-pages --target tldr.tech --date TODAY_DATE --limit 50
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" metrics-history --target tldr.tech --date-from 90_DAYS_AGO_DATE
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" domain-rating --target tldr.tech --date TODAY_DATE
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-keywords --target hostfully.tech --date TODAY_DATE --limit 100
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" top-pages --target hostfully.tech --date TODAY_DATE --limit 50
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" metrics-history --target hostfully.tech --date-from 90_DAYS_AGO_DATE
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" domain-rating --target hostfully.tech --date TODAY_DATE
 ```
 
 Replace TODAY_DATE and 90_DAYS_AGO_DATE with actual dates.
@@ -65,7 +65,7 @@ For each, note: current position, search volume, difficulty, URL ranking, traffi
 ## Step 4: Check Competitor Organic Movement
 
 ```bash
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-competitors --target tldr.tech --country us --date TODAY_DATE
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-competitors --target hostfully.tech --country us --date TODAY_DATE
 ```
 
 For the top 3 organic competitors returned, check their top pages:
@@ -86,13 +86,13 @@ Read `docs/competitor content tracker/blogs/content_pipeline.csv`.
 For "Not Started" and "In Progress" items:
 - Check if target keywords appear in the striking-distance list
 - Check if competitors rank for those keywords
-- Flag pipeline items targeting keywords where TLDR already ranks top 3
+- Flag pipeline items targeting keywords where Hostfully already ranks top 3
 
 ## Step 6: Generate SEO Intelligence Report
 
 Structure the report with:
 - **Headlines** — 2-3 key takeaways
-- **Organic Health Dashboard** — total keywords, traffic, top 3/10 counts with trends (use GSC data when available as primary for TLDR; Ahrefs for competitors and estimates)
+- **Organic Health Dashboard** — total keywords, traffic, top 3/10 counts with trends (use GSC data when available as primary for Hostfully; Ahrefs for competitors and estimates)
 - **Google Search Console** — when Step 2b succeeded: top queries by clicks, top pages by impressions, striking-distance (position 4-20) from GSC
 - **Striking-Distance Keywords** — top 15 opportunities sorted by volume x (21-position)
 - **Quick Wins** — positions 11-20, difficulty < 30 with specific optimization recommendations
@@ -104,8 +104,8 @@ Structure the report with:
 ## Step 7: Push Report to Google Docs
 
 ```bash
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "TLDR SEO Intelligence - Week of DATE"
-python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "TLDR SEO Intelligence - Week of DATE" --text "REPORT_CONTENT" --location start
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "Hostfully SEO Intelligence - Week of DATE"
+python3 "ai system/automations/entrypoints/run_05.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "Hostfully SEO Intelligence - Week of DATE" --text "REPORT_CONTENT" --location start
 ```
 
 ## Error Handling

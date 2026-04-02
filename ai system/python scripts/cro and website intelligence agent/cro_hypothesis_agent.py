@@ -155,7 +155,7 @@ class CROHypothesisAgent:
         </section>
         '''
         
-        self.generate_hypothesis(target_url="https://tldr.tech/signup", html_content_mock=mock_html)
+        self.generate_hypothesis(target_url="https://hostfully.tech/signup", html_content_mock=mock_html)
         print("--- CRO Hypothesis Agent Complete ---\n")
 
 if __name__ == "__main__":

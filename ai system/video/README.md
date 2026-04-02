@@ -40,6 +40,12 @@ COMP=HypeHorizontal-16x9 OUT=out/hype-16x9.mp4 node scripts/render.ts
 - Wire beats to UI wrappers/compositions as you build out `src/ui` and `src/comps`.
 - Use `UiParityHarness` to chase pixel-perfect matches against real app screenshots.
 
+### Audio and post-production
+
+- Use the `sfx` and `musicCue` fields in `src/storyboard/default20s.ts` as guidance for **where** audio events should land.
+- Primary audio (music + detailed sound design) is added in CapCut or a similar NLE; the Remotion render is visual-first.
+- Treat storyboard audio cues as a checklist when doing the CapCut pass: line them up on the waveform, then export platform presets.
+
 ### Music (Suno) and CapCut handoff
 
 - Generate 2–3 20–25s tracks in Suno that match the video’s energy.

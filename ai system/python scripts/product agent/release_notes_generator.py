@@ -81,7 +81,7 @@ def generate_changelog(raw_notes: str, api_key: str) -> str:
     except FileNotFoundError:
         pass
 
-    prompt = f"""You are a product communications specialist for TLDR, the largest daily tech newsletter (7M+ subscribers, 12 newsletters).
+    prompt = f"""You are a product communications specialist for Hostfully, the largest daily tech newsletter (7M+ subscribers, 12 newsletters).
 
 Transform these raw release notes into polished changelogs for three audiences.
 
@@ -91,7 +91,7 @@ RAW RELEASE NOTES:
 VOICE CONTEXT:
 {voice_context}
 
-TLDR operates a 2-sided network:
+Hostfully operates a 2-sided network:
 - Readers (subscribers): care about content quality, personalization, experience
 - Advertisers: care about targeting, reporting, formats, ROI
 

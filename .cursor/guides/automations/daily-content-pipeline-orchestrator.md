@@ -6,7 +6,7 @@
 - Schedule: Daily at 08:00.
 
 ## Purpose
-Replaces `com.tofulab.contentpipeline.plist`. Orchestrates competitor content scraping, pipeline scoring, SEO enrichment, and daily visibility for the team.
+`com.hostfully.contentpipeline.plist` — orchestrates competitor content scraping, pipeline scoring, SEO enrichment, and daily visibility for the team.
 
 ## System Architecture
 ```mermaid

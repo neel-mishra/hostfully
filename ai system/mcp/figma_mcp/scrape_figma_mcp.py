@@ -24,7 +24,7 @@ from urllib.parse import parse_qsl, urljoin, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 
-USER_AGENT = "TLDR-Figma-MCP-Crawler/1.0 (+local)"
+USER_AGENT = "Hostfully-Figma-MCP-Crawler/1.0 (+local)"
 TIMEOUT_SECONDS = 25
 MAX_URLS = 2000
 MAX_DEPTH = 8

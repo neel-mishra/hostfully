@@ -1,0 +1,2370 @@
+{
+  "insights": [
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "190",
+      "clicks": "3",
+      "spend": "18.25",
+      "ctr": "1.578947",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "32"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "32"
+        },
+        {
+          "action_type": "video_view",
+          "value": "31"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.58871"
+        },
+        {
+          "action_type": "link_click",
+          "value": "18.25"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.570313"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.570313"
+        }
+      ],
+      "ad_id": "6891715060668",
+      "video_asset": {
+        "video_id": "1373833847625339",
+        "url": "/hostfully/videos/828248319757692/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJ3nHhafffe2KejDmbn6DZVb0HvvP9nEY_QvQk6u20Qmgwq4Uqpso2TAb8GbGw4HPdVOnvquHxIHjRaM4JBt5rQSpJZ3QWU0DUHMSWDRc8ffqFnG99nAfswho-IUaPgj6HYK_7A-YCHytNUJvwATnUn",
+        "thumbnail_hash": "6f8b570886bc8c1b58ae6a202a4fbcce",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_9.0s_end_43.5s_Hostfully Ads Video 30s 1080x1920_111124 (2) (online-video-cutter.com).mp4",
+        "id": "1146514227590087"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1373833847625339",
+          "url": "/hostfully/videos/828248319757692/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJ3nHhafffe2KejDmbn6DZVb0HvvP9nEY_QvQk6u20Qmgwq4Uqpso2TAb8GbGw4HPdVOnvquHxIHjRaM4JBt5rQSpJZ3QWU0DUHMSWDRc8ffqFnG99nAfswho-IUaPgj6HYK_7A-YCHytNUJvwATnUn",
+          "thumbnail_hash": "6f8b570886bc8c1b58ae6a202a4fbcce",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_9.0s_end_43.5s_Hostfully Ads Video 30s 1080x1920_111124 (2) (online-video-cutter.com).mp4",
+          "id": "1146514227590087"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "6347",
+      "clicks": "73",
+      "spend": "422.726461",
+      "ctr": "1.15015",
+      "actions": [
+        {
+          "action_type": "onsite_conversion.total_messaging_connection",
+          "value": "1"
+        },
+        {
+          "action_type": "link_click",
+          "value": "45"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "1211"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "9"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "9"
+        },
+        {
+          "action_type": "comment",
+          "value": "1"
+        },
+        {
+          "action_type": "like",
+          "value": "1"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "11"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_first_reply",
+          "value": "1"
+        },
+        {
+          "action_type": "post",
+          "value": "3"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "1210"
+        },
+        {
+          "action_type": "onsite_conversion.post_unlike",
+          "value": "1"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "6"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_conversation_started_7d",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "1154"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "7"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "2"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "onsite_conversion.total_messaging_connection",
+          "value": "422.726461"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "211.363231"
+        },
+        {
+          "action_type": "video_view",
+          "value": "0.366314"
+        },
+        {
+          "action_type": "link_click",
+          "value": "9.393921"
+        },
+        {
+          "action_type": "like",
+          "value": "422.726461"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "38.429678"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.349361"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "46.969607"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.349072"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_first_reply",
+          "value": "422.726461"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "46.969607"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_conversation_started_7d",
+          "value": "422.726461"
+        }
+      ],
+      "ad_id": "6894156601668",
+      "video_asset": {
+        "video_id": "1373833847625339",
+        "url": "/hostfully/videos/1337280464769466/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJ3nHhafffe2KejDmbn6DZVb0HvvP9nEY_QvQk6u20Qmgwq4Uqpso2TAb8GbGw4HPdVOnvquHxIHjRaM4JBt5rQSpJZ3QWU0DUHMSWDRc8ffqFnG99nAfswho-IUaPgj6HYK_7A-YCHytNUJvwATnUn",
+        "thumbnail_hash": "6f8b570886bc8c1b58ae6a202a4fbcce",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_9.0s_end_43.5s_Hostfully Ads Video 30s 1080x1920_111124 (2) (online-video-cutter.com).mp4",
+        "id": "1151412870433556"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1373833847625339",
+          "url": "/hostfully/videos/1337280464769466/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJ3nHhafffe2KejDmbn6DZVb0HvvP9nEY_QvQk6u20Qmgwq4Uqpso2TAb8GbGw4HPdVOnvquHxIHjRaM4JBt5rQSpJZ3QWU0DUHMSWDRc8ffqFnG99nAfswho-IUaPgj6HYK_7A-YCHytNUJvwATnUn",
+          "thumbnail_hash": "6f8b570886bc8c1b58ae6a202a4fbcce",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_9.0s_end_43.5s_Hostfully Ads Video 30s 1080x1920_111124 (2) (online-video-cutter.com).mp4",
+          "id": "1151412870433556"
+        }
+      },
+      "primary_result": {
+        "label": "offsite_conversion.fb_pixel_custom",
+        "action_type": "offsite_conversion.fb_pixel_custom",
+        "results": 2,
+        "cost_per_result": 211.363231
+      }
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "3155",
+      "clicks": "40",
+      "spend": "213.603265",
+      "ctr": "1.267829",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "25"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "530"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "5"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "5"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "2"
+        },
+        {
+          "action_type": "post",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "530"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "503"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "213.603265"
+        },
+        {
+          "action_type": "video_view",
+          "value": "0.424659"
+        },
+        {
+          "action_type": "link_click",
+          "value": "8.544131"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "106.801632"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.403025"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "42.720653"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.403025"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "42.720653"
+        }
+      ],
+      "ad_id": "6894156601668",
+      "video_asset": {
+        "video_id": "864409786250405",
+        "url": "/hostfully/videos/793525430255650/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQIYM8sujbg6YnOhyFZNy9nngPGSb1brUzhdmIn6dnC7wRp9IbUUTUBntvLID-ZSXer1w_u0GXa6ktR6suEBLm3olNPd--t3SpO3UCfo-PH0FjLSE-fm0tH2-w92Mr-W9QQKdCjXmRO_c8Q8zj29Bh9v",
+        "thumbnail_hash": "3454a48e5be7a97af60d252c405e65e4",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+        "id": "1151412873766889"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "864409786250405",
+          "url": "/hostfully/videos/793525430255650/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQIYM8sujbg6YnOhyFZNy9nngPGSb1brUzhdmIn6dnC7wRp9IbUUTUBntvLID-ZSXer1w_u0GXa6ktR6suEBLm3olNPd--t3SpO3UCfo-PH0FjLSE-fm0tH2-w92Mr-W9QQKdCjXmRO_c8Q8zj29Bh9v",
+          "thumbnail_hash": "3454a48e5be7a97af60d252c405e65e4",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+          "id": "1151412873766889"
+        }
+      },
+      "primary_result": {
+        "label": "offsite_conversion.fb_pixel_custom",
+        "action_type": "offsite_conversion.fb_pixel_custom",
+        "results": 1,
+        "cost_per_result": 213.603265
+      }
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "80",
+      "clicks": "1",
+      "spend": "6.28",
+      "ctr": "1.25",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "20"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "20"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "19"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.330526"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "6.28"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.314"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.314"
+        }
+      ],
+      "ad_id": "6903700522668",
+      "video_asset": {
+        "video_id": "817084081131076",
+        "url": "/hostfully/videos/824717413586913/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQLWI5G69_7HOPxUMssciuIGZGf-V-g9y5uq7V1Ln6zsbf-cenypSre2w8oWR-pPpl14ns2d5OvbbXhefNdb4lNaIU6NAld4RzuJXCr-SC9YEzBJEfI9kxTdaZVsoHgsq7koSCWiacHqXJwfky2YccMq",
+        "thumbnail_hash": "7e9551a5f4c5e6e03159cf153dafbd1e",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - deskptop.mp4",
+        "id": "1167960815445428"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "817084081131076",
+          "url": "/hostfully/videos/824717413586913/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQLWI5G69_7HOPxUMssciuIGZGf-V-g9y5uq7V1Ln6zsbf-cenypSre2w8oWR-pPpl14ns2d5OvbbXhefNdb4lNaIU6NAld4RzuJXCr-SC9YEzBJEfI9kxTdaZVsoHgsq7koSCWiacHqXJwfky2YccMq",
+          "thumbnail_hash": "7e9551a5f4c5e6e03159cf153dafbd1e",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - deskptop.mp4",
+          "id": "1167960815445428"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "106",
+      "clicks": "1",
+      "spend": "8.13",
+      "ctr": "0.943396",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "11"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "11"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "9"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.903333"
+        },
+        {
+          "action_type": "link_click",
+          "value": "8.13"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "8.13"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.739091"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.739091"
+        }
+      ],
+      "ad_id": "6903700522668",
+      "video_asset": {
+        "video_id": "1361347082359913",
+        "url": "/hostfully/videos/1152786069894019/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQKiB9TBDR0Q4QUO4zVvK98etYqHTMLvHMIGxHK4TOKNHpYJAP5AGZS9JUw6M3pWpredGRvQgnHSMVHcu3QY-DbZ3OPbnD5fkLR2Oi-4ugLNzRWqFwcfvKk5ZPRpsskGFm1S5D1PS7yrAMQjy7EePF5Q",
+        "thumbnail_hash": "b8860c083c7c5f2eb0f67c4b14f180c7",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - vertical.mp4",
+        "id": "1167960818778761"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1361347082359913",
+          "url": "/hostfully/videos/1152786069894019/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQKiB9TBDR0Q4QUO4zVvK98etYqHTMLvHMIGxHK4TOKNHpYJAP5AGZS9JUw6M3pWpredGRvQgnHSMVHcu3QY-DbZ3OPbnD5fkLR2Oi-4ugLNzRWqFwcfvKk5ZPRpsskGFm1S5D1PS7yrAMQjy7EePF5Q",
+          "thumbnail_hash": "b8860c083c7c5f2eb0f67c4b14f180c7",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - vertical.mp4",
+          "id": "1167960818778761"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1",
+      "clicks": "0",
+      "spend": "0.04",
+      "ctr": "0",
+      "ad_id": "6903701334868",
+      "video_asset": {
+        "video_id": "817084081131076",
+        "url": "/hostfully/videos/1549167646408496/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQLWI5G69_7HOPxUMssciuIGZGf-V-g9y5uq7V1Ln6zsbf-cenypSre2w8oWR-pPpl14ns2d5OvbbXhefNdb4lNaIU6NAld4RzuJXCr-SC9YEzBJEfI9kxTdaZVsoHgsq7koSCWiacHqXJwfky2YccMq",
+        "thumbnail_hash": "7e9551a5f4c5e6e03159cf153dafbd1e",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - deskptop.mp4",
+        "id": "1167963708778472"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "817084081131076",
+          "url": "/hostfully/videos/1549167646408496/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQLWI5G69_7HOPxUMssciuIGZGf-V-g9y5uq7V1Ln6zsbf-cenypSre2w8oWR-pPpl14ns2d5OvbbXhefNdb4lNaIU6NAld4RzuJXCr-SC9YEzBJEfI9kxTdaZVsoHgsq7koSCWiacHqXJwfky2YccMq",
+          "thumbnail_hash": "7e9551a5f4c5e6e03159cf153dafbd1e",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - deskptop.mp4",
+          "id": "1167963708778472"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "72",
+      "clicks": "1",
+      "spend": "9.21",
+      "ctr": "1.388889",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "12"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "12"
+        },
+        {
+          "action_type": "video_view",
+          "value": "12"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.7675"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.7675"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.7675"
+        }
+      ],
+      "ad_id": "6903701334868",
+      "video_asset": {
+        "video_id": "1344480564074708",
+        "url": "/hostfully/videos/1515085016307823/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQIyYe8M7sNQma9d11FDxvTnyLQs05r1Lwi-l4H_M-xEg0-ly4f8cjLqnoqKFsDrN5Li2cxI5_W5ZY2UJCSk_Y9nH7CWpq1yHaW_mFIR28q-Mu11jCnhM22-kAOYEHT5Ujrl0QuhbaO-YUGeGAJ5pTPf",
+        "thumbnail_hash": "83dddc619511f3716cfa1df146eaafeb",
+        "video_name": "trimmed_start_0.0s_end_11.0s_Increase Revenue B - deskptop.mp4",
+        "id": "1182245300683646"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1344480564074708",
+          "url": "/hostfully/videos/1515085016307823/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQIyYe8M7sNQma9d11FDxvTnyLQs05r1Lwi-l4H_M-xEg0-ly4f8cjLqnoqKFsDrN5Li2cxI5_W5ZY2UJCSk_Y9nH7CWpq1yHaW_mFIR28q-Mu11jCnhM22-kAOYEHT5Ujrl0QuhbaO-YUGeGAJ5pTPf",
+          "thumbnail_hash": "83dddc619511f3716cfa1df146eaafeb",
+          "video_name": "trimmed_start_0.0s_end_11.0s_Increase Revenue B - deskptop.mp4",
+          "id": "1182245300683646"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "17",
+      "clicks": "0",
+      "spend": "0.66",
+      "ctr": "0",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "3"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "3"
+        },
+        {
+          "action_type": "video_view",
+          "value": "3"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.22"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.22"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.22"
+        }
+      ],
+      "ad_id": "6903701334868",
+      "video_asset": {
+        "video_id": "1361347082359913",
+        "url": "/hostfully/videos/1618208719148500/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQKiB9TBDR0Q4QUO4zVvK98etYqHTMLvHMIGxHK4TOKNHpYJAP5AGZS9JUw6M3pWpredGRvQgnHSMVHcu3QY-DbZ3OPbnD5fkLR2Oi-4ugLNzRWqFwcfvKk5ZPRpsskGFm1S5D1PS7yrAMQjy7EePF5Q",
+        "thumbnail_hash": "b8860c083c7c5f2eb0f67c4b14f180c7",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - vertical.mp4",
+        "id": "1182245304016979"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1361347082359913",
+          "url": "/hostfully/videos/1618208719148500/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQKiB9TBDR0Q4QUO4zVvK98etYqHTMLvHMIGxHK4TOKNHpYJAP5AGZS9JUw6M3pWpredGRvQgnHSMVHcu3QY-DbZ3OPbnD5fkLR2Oi-4ugLNzRWqFwcfvKk5ZPRpsskGFm1S5D1PS7yrAMQjy7EePF5Q",
+          "thumbnail_hash": "b8860c083c7c5f2eb0f67c4b14f180c7",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_11.0s_Increase Revenue B - vertical.mp4",
+          "id": "1182245304016979"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "65",
+      "clicks": "3",
+      "spend": "3.413029",
+      "ctr": "4.615385",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "3"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "20"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "2"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "2"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "20"
+        },
+        {
+          "action_type": "video_view",
+          "value": "17"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.200766"
+        },
+        {
+          "action_type": "link_click",
+          "value": "1.137676"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.170651"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "1.706514"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.170651"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "1.706514"
+        }
+      ],
+      "ad_id": "6942593901668",
+      "video_asset": {
+        "video_id": "4361204307433422",
+        "url": "/hostfully/videos/917507674014212/",
+        "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJiKfeovg7CvMltm_vo8qry0ptqZzFbrMgO3kMsrg9D_-rGYnZ1uacAgGuFwjLGPXNq4S7hTHoylPtyVIMInYh7VbK1vTx0N_rNKY9xETNWyUcj2H-addWd3hUsRwT1flAlOC8PyfaKG7jFTh8qJIXV",
+        "thumbnail_hash": "1d085804b1db7a3547c9fcb7a4a63c9b",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_15.0s_Client Expectations Industry Survey Answers Mystery (Facebook Video).mp4",
+        "id": "1240430334865142"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "4361204307433422",
+          "url": "/hostfully/videos/917507674014212/",
+          "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJiKfeovg7CvMltm_vo8qry0ptqZzFbrMgO3kMsrg9D_-rGYnZ1uacAgGuFwjLGPXNq4S7hTHoylPtyVIMInYh7VbK1vTx0N_rNKY9xETNWyUcj2H-addWd3hUsRwT1flAlOC8PyfaKG7jFTh8qJIXV",
+          "thumbnail_hash": "1d085804b1db7a3547c9fcb7a4a63c9b",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_15.0s_Client Expectations Industry Survey Answers Mystery (Facebook Video).mp4",
+          "id": "1240430334865142"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "495",
+      "clicks": "5",
+      "spend": "43.261904",
+      "ctr": "1.010101",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "3"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "81"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "1"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "1"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "onsite_conversion.post_save",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "81"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_save",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "77"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.561843"
+        },
+        {
+          "action_type": "link_click",
+          "value": "14.420635"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "43.261904"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.534098"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "43.261904"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.534098"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "43.261904"
+        }
+      ],
+      "ad_id": "6942593901668",
+      "video_asset": {
+        "video_id": "1398469398105918",
+        "url": "/hostfully/videos/1451909913182772/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/631414938_1090363123231053_5506231101417529541_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=108&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=oEEeijSJtuAQ7kNvwHVlahg&_nc_oc=Ado4V_sKBH6YETbl7bd3_bhtVWBGxrjZQAOe__nqbircEu2cAe42PBLYaYOCaAb1zKQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQHHYK5NZii-4uhUbMsKkdYnSWh1KyNkXwdsoVSCY646-Z37lBSySJc92Oq5wCOgednG6YhthvfU&oh=00_AfyxPtJO6cx8iZZlJIpymmz_vTNTmZJw4hGrJdSGGBs61g&oe=69C9D993",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_15.1s_Client Expectations Industry Survey Answers Mystery (2).mp4",
+        "id": "1240430338198475"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1398469398105918",
+          "url": "/hostfully/videos/1451909913182772/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/631414938_1090363123231053_5506231101417529541_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=108&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=oEEeijSJtuAQ7kNvwHVlahg&_nc_oc=Ado4V_sKBH6YETbl7bd3_bhtVWBGxrjZQAOe__nqbircEu2cAe42PBLYaYOCaAb1zKQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQHHYK5NZii-4uhUbMsKkdYnSWh1KyNkXwdsoVSCY646-Z37lBSySJc92Oq5wCOgednG6YhthvfU&oh=00_AfyxPtJO6cx8iZZlJIpymmz_vTNTmZJw4hGrJdSGGBs61g&oe=69C9D993",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_15.1s_Client Expectations Industry Survey Answers Mystery (2).mp4",
+          "id": "1240430338198475"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "51",
+      "clicks": "0",
+      "spend": "3.715067",
+      "ctr": "0",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "9"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "9"
+        },
+        {
+          "action_type": "video_view",
+          "value": "9"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.412785"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.412785"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.412785"
+        }
+      ],
+      "ad_id": "6942593901668",
+      "video_asset": {
+        "video_id": "4361204307433422",
+        "url": "/hostfully/videos/928836566278547/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/633684512_928836606278543_257191549580204019_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c6973a&_nc_ohc=oMA0DeuDKQIQ7kNvwEFmoKO&_nc_oc=AdocaGBdSXQzYylOxdvC22LAo3jUjWqYn9CJ-NnTa5gB2bI89-XKoI6PMeIORoX57Ow&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEEVAKE8FtzKfjrFdDO0rIp-Q2EtuwnAb16AZVjXKi3F3ZdZDCMIYOLJNq2CFmOSSXluLBQGEhR&oh=00_Afw1KQVFuTyJ44w-2yjNayln1mI4iPuqSrdehlqdWrYwrg&oe=69C9EF65",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_15.0s_Client Expectations Industry Survey Answers Mystery (Facebook Video).mp4",
+        "id": "1241885168052992"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "4361204307433422",
+          "url": "/hostfully/videos/928836566278547/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/633684512_928836606278543_257191549580204019_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c6973a&_nc_ohc=oMA0DeuDKQIQ7kNvwEFmoKO&_nc_oc=AdocaGBdSXQzYylOxdvC22LAo3jUjWqYn9CJ-NnTa5gB2bI89-XKoI6PMeIORoX57Ow&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEEVAKE8FtzKfjrFdDO0rIp-Q2EtuwnAb16AZVjXKi3F3ZdZDCMIYOLJNq2CFmOSSXluLBQGEhR&oh=00_Afw1KQVFuTyJ44w-2yjNayln1mI4iPuqSrdehlqdWrYwrg&oe=69C9EF65",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1080px_trimmed_start_0.0s_end_15.0s_Client Expectations Industry Survey Answers Mystery (Facebook Video).mp4",
+          "id": "1241885168052992"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1598",
+      "clicks": "21",
+      "spend": "119.557124",
+      "ctr": "1.314143",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "11"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "350"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "5"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "5"
+        },
+        {
+          "action_type": "like",
+          "value": "1"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "3"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "349"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "3"
+        },
+        {
+          "action_type": "video_view",
+          "value": "335"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "3"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.356887"
+        },
+        {
+          "action_type": "link_click",
+          "value": "10.868829"
+        },
+        {
+          "action_type": "like",
+          "value": "119.557124"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "39.852375"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.342571"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "23.911425"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.341592"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "23.911425"
+        }
+      ],
+      "ad_id": "6954323674468",
+      "video_asset": {
+        "video_id": "4442807219285687",
+        "url": "/hostfully/videos/706782495763226/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFz0r7SEGFve2BDTaCvbB5td6YgbZ3iS2dEF4TdgRG7eIgSSVojomDRhDk2ylL6PuEmHjbVMwzZ&oh=00_AfxJB0J1Gb6h9LfJHjaCyZ5AVkaBHZghaKXM_JwOO8tTXA&oe=69C9E86F",
+        "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252889663619209"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "4442807219285687",
+          "url": "/hostfully/videos/706782495763226/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFz0r7SEGFve2BDTaCvbB5td6YgbZ3iS2dEF4TdgRG7eIgSSVojomDRhDk2ylL6PuEmHjbVMwzZ&oh=00_AfxJB0J1Gb6h9LfJHjaCyZ5AVkaBHZghaKXM_JwOO8tTXA&oe=69C9E86F",
+          "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252889663619209"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1813",
+      "clicks": "18",
+      "spend": "144.231616",
+      "ctr": "0.99283",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "15"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "132"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "6"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "6"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "2"
+        },
+        {
+          "action_type": "onsite_web_lead",
+          "value": "1"
+        },
+        {
+          "action_type": "post",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "132"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "lead",
+          "value": "1"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_lead",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "115"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "144.231616"
+        },
+        {
+          "action_type": "video_view",
+          "value": "1.254188"
+        },
+        {
+          "action_type": "link_click",
+          "value": "9.615441"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "72.115808"
+        },
+        {
+          "action_type": "onsite_web_lead",
+          "value": "144.231616"
+        },
+        {
+          "action_type": "lead",
+          "value": "144.231616"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "1.092664"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "24.038603"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "1.092664"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "24.038603"
+        }
+      ],
+      "ad_id": "6954323674468",
+      "video_asset": {
+        "video_id": "1451310906695266",
+        "url": "/hostfully/videos/1248371250047623/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQH58pNeopBFhIfKS67sJ1GhLWKCu1qVFo4hG-bKq4JMnR2-gnKjIfhGRXt78LKJvlh4twTsrhLu&oh=00_AfykKyvsV9VW5hQa6JZz47bHHwh3_GeBz1WSKR-WIQs2KA&oe=69C9DD29",
+        "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252889666952542"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1451310906695266",
+          "url": "/hostfully/videos/1248371250047623/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQH58pNeopBFhIfKS67sJ1GhLWKCu1qVFo4hG-bKq4JMnR2-gnKjIfhGRXt78LKJvlh4twTsrhLu&oh=00_AfykKyvsV9VW5hQa6JZz47bHHwh3_GeBz1WSKR-WIQs2KA&oe=69C9DD29",
+          "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252889666952542"
+        }
+      },
+      "primary_result": {
+        "label": "lead",
+        "action_type": "lead",
+        "results": 1,
+        "cost_per_result": 144.231616
+      }
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "12",
+      "clicks": "1",
+      "spend": "0.90126",
+      "ctr": "8.333333",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "4"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "4"
+        },
+        {
+          "action_type": "video_view",
+          "value": "3"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.30042"
+        },
+        {
+          "action_type": "link_click",
+          "value": "0.90126"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.225315"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.225315"
+        }
+      ],
+      "ad_id": "6954323674468",
+      "video_asset": {
+        "video_id": "864409786250405",
+        "url": "/hostfully/videos/3405741189594516/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/566302889_1386527066257863_1275075642679984441_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=EHA_3ULrjQ0Q7kNvwHNWG6V&_nc_oc=Ado5v851zT6v-KWgGdY-8L1BMkYlBcUFV6bHWj7fADEWmx60AEwJX_PXo3sa7A0i0Qk&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQHLlAQ1XaOamtLYV3tzJ9T05vwC-RrJVaTLk1IIcAnzwufLSx1MbroOYPENqW8ghTwjL9dtR2x1&oh=00_AfxbaoTAmB84Uj1GtYr6DKDNwxudgRa2SbMaC3lfVb0gBg&oe=69C9C723",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+        "id": "1252898913618284"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "864409786250405",
+          "url": "/hostfully/videos/3405741189594516/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/566302889_1386527066257863_1275075642679984441_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=EHA_3ULrjQ0Q7kNvwHNWG6V&_nc_oc=Ado5v851zT6v-KWgGdY-8L1BMkYlBcUFV6bHWj7fADEWmx60AEwJX_PXo3sa7A0i0Qk&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQHLlAQ1XaOamtLYV3tzJ9T05vwC-RrJVaTLk1IIcAnzwufLSx1MbroOYPENqW8ghTwjL9dtR2x1&oh=00_AfxbaoTAmB84Uj1GtYr6DKDNwxudgRa2SbMaC3lfVb0gBg&oe=69C9C723",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+          "id": "1252898913618284"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "642",
+      "clicks": "4",
+      "spend": "58.545662",
+      "ctr": "0.623053",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "2"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "35"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "1"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "35"
+        },
+        {
+          "action_type": "video_view",
+          "value": "33"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "1.774111"
+        },
+        {
+          "action_type": "link_click",
+          "value": "29.272831"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "1.672733"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "58.545662"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "1.672733"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "58.545662"
+        }
+      ],
+      "ad_id": "6954326450868",
+      "video_asset": {
+        "video_id": "1451310906695266",
+        "url": "/hostfully/videos/1202029265049836/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEQY3t2ywGDaY-kXwsuhE5CoqRiVXbxVHikKQLx__BiN7vNU2XDEHTEWpCh33D7-MbTtSn3gM3Q&oh=00_Afy7T9X0yRdEgoCvNfoo8bQy57SAzBBIW_giMlvDdLejFg&oe=69C9DD29",
+        "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252890043619171"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1451310906695266",
+          "url": "/hostfully/videos/1202029265049836/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEQY3t2ywGDaY-kXwsuhE5CoqRiVXbxVHikKQLx__BiN7vNU2XDEHTEWpCh33D7-MbTtSn3gM3Q&oh=00_Afy7T9X0yRdEgoCvNfoo8bQy57SAzBBIW_giMlvDdLejFg&oe=69C9DD29",
+          "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252890043619171"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "671",
+      "clicks": "10",
+      "spend": "44.784331",
+      "ctr": "1.490313",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "7"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "151"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "1"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "151"
+        },
+        {
+          "action_type": "video_view",
+          "value": "144"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.311002"
+        },
+        {
+          "action_type": "link_click",
+          "value": "6.397762"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.296585"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "44.784331"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.296585"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "44.784331"
+        }
+      ],
+      "ad_id": "6954326450868",
+      "video_asset": {
+        "video_id": "4442807219285687",
+        "url": "/hostfully/videos/3347319468768721/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQG-SNW0mpM16yfeMbPipi2qfWSbhw7CNcxUmhEC_VOeJfcaEfi4sigaTn0jBrrGxW4mY_MRXFFz&oh=00_AfwuS15NBOXjIOZ7scGzvVw-FWzahQ78M8xu4O0rvgLgcw&oe=69C9E86F",
+        "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252890046952504"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "4442807219285687",
+          "url": "/hostfully/videos/3347319468768721/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQG-SNW0mpM16yfeMbPipi2qfWSbhw7CNcxUmhEC_VOeJfcaEfi4sigaTn0jBrrGxW4mY_MRXFFz&oh=00_AfwuS15NBOXjIOZ7scGzvVw-FWzahQ78M8xu4O0rvgLgcw&oe=69C9E86F",
+          "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252890046952504"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "3",
+      "clicks": "0",
+      "spend": "0.080008",
+      "ctr": "0",
+      "ad_id": "6954326450868",
+      "video_asset": {
+        "video_id": "864409786250405",
+        "url": "/hostfully/videos/26898412379746784/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/566302889_1386527066257863_1275075642679984441_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=EHA_3ULrjQ0Q7kNvwHNWG6V&_nc_oc=Ado5v851zT6v-KWgGdY-8L1BMkYlBcUFV6bHWj7fADEWmx60AEwJX_PXo3sa7A0i0Qk&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQF10SGPxHEvU6JXg7Sp7AF_T_C2XGdPsRZNzxtsNsCco7ToFFJlOj0GFlwAJWRzo8fgPnzE9IKl&oh=00_AfxtsUBJ97JV_RbRQjdalbAqsH3SjExfS4UX3AzxyHAGqg&oe=69C9C723",
+        "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+        "id": "1252899670284875"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "864409786250405",
+          "url": "/hostfully/videos/26898412379746784/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/566302889_1386527066257863_1275075642679984441_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=EHA_3ULrjQ0Q7kNvwHNWG6V&_nc_oc=Ado5v851zT6v-KWgGdY-8L1BMkYlBcUFV6bHWj7fADEWmx60AEwJX_PXo3sa7A0i0Qk&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQF10SGPxHEvU6JXg7Sp7AF_T_C2XGdPsRZNzxtsNsCco7ToFFJlOj0GFlwAJWRzo8fgPnzE9IKl&oh=00_AfxtsUBJ97JV_RbRQjdalbAqsH3SjExfS4UX3AzxyHAGqg&oe=69C9C723",
+          "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+          "id": "1252899670284875"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "11",
+      "clicks": "0",
+      "spend": "0.31",
+      "ctr": "0",
+      "ad_id": "6954326740868",
+      "video_asset": {
+        "video_id": "1451310906695266",
+        "url": "/hostfully/videos/1202029265049836/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEQY3t2ywGDaY-kXwsuhE5CoqRiVXbxVHikKQLx__BiN7vNU2XDEHTEWpCh33D7-MbTtSn3gM3Q&oh=00_Afy7T9X0yRdEgoCvNfoo8bQy57SAzBBIW_giMlvDdLejFg&oe=69C9DD29",
+        "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252890043619171"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1451310906695266",
+          "url": "/hostfully/videos/1202029265049836/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEQY3t2ywGDaY-kXwsuhE5CoqRiVXbxVHikKQLx__BiN7vNU2XDEHTEWpCh33D7-MbTtSn3gM3Q&oh=00_Afy7T9X0yRdEgoCvNfoo8bQy57SAzBBIW_giMlvDdLejFg&oe=69C9DD29",
+          "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252890043619171"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "11",
+      "clicks": "0",
+      "spend": "2.12",
+      "ctr": "0",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "2.12"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "2.12"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "2.12"
+        }
+      ],
+      "ad_id": "6954326740868",
+      "video_asset": {
+        "video_id": "4442807219285687",
+        "url": "/hostfully/videos/3347319468768721/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQG-SNW0mpM16yfeMbPipi2qfWSbhw7CNcxUmhEC_VOeJfcaEfi4sigaTn0jBrrGxW4mY_MRXFFz&oh=00_AfwuS15NBOXjIOZ7scGzvVw-FWzahQ78M8xu4O0rvgLgcw&oe=69C9E86F",
+        "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252890046952504"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "4442807219285687",
+          "url": "/hostfully/videos/3347319468768721/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQG-SNW0mpM16yfeMbPipi2qfWSbhw7CNcxUmhEC_VOeJfcaEfi4sigaTn0jBrrGxW4mY_MRXFFz&oh=00_AfwuS15NBOXjIOZ7scGzvVw-FWzahQ78M8xu4O0rvgLgcw&oe=69C9E86F",
+          "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252890046952504"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "289",
+      "clicks": "2",
+      "spend": "5.56",
+      "ctr": "0.692042",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "64"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "64"
+        },
+        {
+          "action_type": "video_view",
+          "value": "63"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.088254"
+        },
+        {
+          "action_type": "link_click",
+          "value": "5.56"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.086875"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.086875"
+        }
+      ],
+      "ad_id": "6954326742268",
+      "video_asset": {
+        "video_id": "1293641016007573",
+        "url": "/reel/1617924179249396/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/645586745_26162666730068240_8561522871714340330_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=102&ccb=1-7&_nc_sid=b696e2&_nc_ohc=n5ZMF2dIgDIQ7kNvwEccugd&_nc_oc=Adq3u2VY9du7NT8Q25BLyGKC2zbqgTiA6sWZFmBuLmOUYGWLT43_cwkciRmAohNf2ow&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQE4UbVX0ryHco1CGltPCmmRQOi9lkT6GOommVtuJ65zJj6kXocetuGijhuVCBPvo0H7vm9JARQ0&oh=00_Afxj1sahfGtlvsfIb1Llh7sOeHmCEu3LWRtXn_S6w-wOVg&oe=69C9EA60",
+        "video_name": "Increase Revenue A - desktop.mp4",
+        "id": "1253213783586797"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1293641016007573",
+          "url": "/reel/1617924179249396/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/645586745_26162666730068240_8561522871714340330_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=102&ccb=1-7&_nc_sid=b696e2&_nc_ohc=n5ZMF2dIgDIQ7kNvwEccugd&_nc_oc=Adq3u2VY9du7NT8Q25BLyGKC2zbqgTiA6sWZFmBuLmOUYGWLT43_cwkciRmAohNf2ow&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQE4UbVX0ryHco1CGltPCmmRQOi9lkT6GOommVtuJ65zJj6kXocetuGijhuVCBPvo0H7vm9JARQ0&oh=00_Afxj1sahfGtlvsfIb1Llh7sOeHmCEu3LWRtXn_S6w-wOVg&oe=69C9EA60",
+          "video_name": "Increase Revenue A - desktop.mp4",
+          "id": "1253213783586797"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "119",
+      "clicks": "0",
+      "spend": "6.02",
+      "ctr": "0",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "4"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "4"
+        },
+        {
+          "action_type": "video_view",
+          "value": "4"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "1.505"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "1.505"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "1.505"
+        }
+      ],
+      "ad_id": "6954326742268",
+      "video_asset": {
+        "video_id": "1326482216192123",
+        "url": "/reel/735810382796882/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFUVD0K5dFBDvBgrAB70vLBVegQqyp7h7AUgCtP9DSqwkVPN5zGlSrlIgqnwONXQOklfct8Tfri&oh=00_Afz2LNRh99DpFxt4WpPFaOWGh52tI14L0lj99B3iA_TzVQ&oe=69C9EB1E",
+        "video_name": "Increase Revenue A - vertical.mp4",
+        "id": "1253213786920130"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1326482216192123",
+          "url": "/reel/735810382796882/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFUVD0K5dFBDvBgrAB70vLBVegQqyp7h7AUgCtP9DSqwkVPN5zGlSrlIgqnwONXQOklfct8Tfri&oh=00_Afz2LNRh99DpFxt4WpPFaOWGh52tI14L0lj99B3iA_TzVQ&oe=69C9EB1E",
+          "video_name": "Increase Revenue A - vertical.mp4",
+          "id": "1253213786920130"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1964",
+      "clicks": "14",
+      "spend": "99.08",
+      "ctr": "0.712831",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "9"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "464"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "464"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "454"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.218238"
+        },
+        {
+          "action_type": "link_click",
+          "value": "11.008889"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "99.08"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.213534"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.213534"
+        }
+      ],
+      "ad_id": "6954326743068",
+      "video_asset": {
+        "video_id": "1314654033898903",
+        "url": "/reel/2098647130991539/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644925138_1473033727606272_7570318525106804916_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=b696e2&_nc_ohc=63MuKI5EA0YQ7kNvwFREcW6&_nc_oc=AdrOdolMWeELLj1O3W06p-2nPjKfLBbLDe1zSl159qKHEriOC0PJvvLyfpmQFS7UbZE&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQGEr59j04zV-8SvADH09NXjfotSHWyxwuHbLLJmNXdr0u8msT9S2pufHqM0LDlD8PWjNT9nd2Kz&oh=00_AfxodIgsxLVO_6TAeS1k_o1-6KICAT3OhF3ZcVcEwqzylA&oe=69C9E01D",
+        "video_name": "Increase Revenue A - desktop.mp4",
+        "id": "1252931806948328"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1314654033898903",
+          "url": "/reel/2098647130991539/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644925138_1473033727606272_7570318525106804916_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=b696e2&_nc_ohc=63MuKI5EA0YQ7kNvwFREcW6&_nc_oc=AdrOdolMWeELLj1O3W06p-2nPjKfLBbLDe1zSl159qKHEriOC0PJvvLyfpmQFS7UbZE&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQGEr59j04zV-8SvADH09NXjfotSHWyxwuHbLLJmNXdr0u8msT9S2pufHqM0LDlD8PWjNT9nd2Kz&oh=00_AfxodIgsxLVO_6TAeS1k_o1-6KICAT3OhF3ZcVcEwqzylA&oe=69C9E01D",
+          "video_name": "Increase Revenue A - desktop.mp4",
+          "id": "1252931806948328"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "4266",
+      "clicks": "39",
+      "spend": "252.1",
+      "ctr": "0.914205",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "23"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "908"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "2"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "2"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "908"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "884"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "252.1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "0.285181"
+        },
+        {
+          "action_type": "link_click",
+          "value": "10.96087"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "252.1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.277643"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "126.05"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.277643"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "126.05"
+        }
+      ],
+      "ad_id": "6954326743068",
+      "video_asset": {
+        "video_id": "1326482216192123",
+        "url": "/reel/1221401966744718/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+        "video_name": "Increase Revenue A - vertical.mp4",
+        "id": "1252931810281661"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1326482216192123",
+          "url": "/reel/1221401966744718/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+          "video_name": "Increase Revenue A - vertical.mp4",
+          "id": "1252931810281661"
+        }
+      },
+      "primary_result": {
+        "label": "offsite_conversion.fb_pixel_custom",
+        "action_type": "offsite_conversion.fb_pixel_custom",
+        "results": 1,
+        "cost_per_result": 252.1
+      }
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "62",
+      "clicks": "0",
+      "spend": "1.36",
+      "ctr": "0",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "9"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "9"
+        },
+        {
+          "action_type": "video_view",
+          "value": "9"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.151111"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.151111"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.151111"
+        }
+      ],
+      "ad_id": "6954326743468",
+      "video_asset": {
+        "video_id": "4442807219285687",
+        "url": "/hostfully/videos/706782495763226/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFz0r7SEGFve2BDTaCvbB5td6YgbZ3iS2dEF4TdgRG7eIgSSVojomDRhDk2ylL6PuEmHjbVMwzZ&oh=00_AfxJB0J1Gb6h9LfJHjaCyZ5AVkaBHZghaKXM_JwOO8tTXA&oe=69C9E86F",
+        "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252889663619209"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "4442807219285687",
+          "url": "/hostfully/videos/706782495763226/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFz0r7SEGFve2BDTaCvbB5td6YgbZ3iS2dEF4TdgRG7eIgSSVojomDRhDk2ylL6PuEmHjbVMwzZ&oh=00_AfxJB0J1Gb6h9LfJHjaCyZ5AVkaBHZghaKXM_JwOO8tTXA&oe=69C9E86F",
+          "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252889663619209"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "64",
+      "clicks": "1",
+      "spend": "2.02",
+      "ctr": "1.5625",
+      "actions": [
+        {
+          "action_type": "page_engagement",
+          "value": "4"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "4"
+        },
+        {
+          "action_type": "video_view",
+          "value": "4"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.505"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.505"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.505"
+        }
+      ],
+      "ad_id": "6954326743468",
+      "video_asset": {
+        "video_id": "1451310906695266",
+        "url": "/hostfully/videos/1248371250047623/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQH58pNeopBFhIfKS67sJ1GhLWKCu1qVFo4hG-bKq4JMnR2-gnKjIfhGRXt78LKJvlh4twTsrhLu&oh=00_AfykKyvsV9VW5hQa6JZz47bHHwh3_GeBz1WSKR-WIQs2KA&oe=69C9DD29",
+        "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+        "id": "1252889666952542"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1451310906695266",
+          "url": "/hostfully/videos/1248371250047623/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQH58pNeopBFhIfKS67sJ1GhLWKCu1qVFo4hG-bKq4JMnR2-gnKjIfhGRXt78LKJvlh4twTsrhLu&oh=00_AfykKyvsV9VW5hQa6JZz47bHHwh3_GeBz1WSKR-WIQs2KA&oe=69C9DD29",
+          "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+          "id": "1252889666952542"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1",
+      "clicks": "0",
+      "spend": "0.05",
+      "ctr": "0",
+      "ad_id": "6954326744068",
+      "video_asset": {
+        "video_id": "1436934351412083",
+        "url": "/hostfully/videos/1496549531895434/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/645214895_2878722322458983_4153203202407207874_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=070a5f&_nc_ohc=S6lDEJsmF0EQ7kNvwEnyHbV&_nc_oc=AdrgmXnGYZGCTd8aljHDaWcwHZPUoj5MU-c0AHhXJ-tvE6tHr0-s9pAvKCNzOTcEwYU&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFbi3XsTOqRSENU5mMRymT6-AwzrWRW8tyjY_13BogDm4i7y5FdF4Bkzj1T6FxjjMUApQF39kgD&oh=00_AfzFJgez8ggi4BLbdn0felrvix0kb2akucYQQ9e_-H2ubQ&oe=69C9E97C",
+        "video_name": "Auto_Cropped_AR_4_X_5_DCO_Increase Revenue B - deskptop.mp4",
+        "id": "1260211946220314"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1436934351412083",
+          "url": "/hostfully/videos/1496549531895434/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/645214895_2878722322458983_4153203202407207874_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=070a5f&_nc_ohc=S6lDEJsmF0EQ7kNvwEnyHbV&_nc_oc=AdrgmXnGYZGCTd8aljHDaWcwHZPUoj5MU-c0AHhXJ-tvE6tHr0-s9pAvKCNzOTcEwYU&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFbi3XsTOqRSENU5mMRymT6-AwzrWRW8tyjY_13BogDm4i7y5FdF4Bkzj1T6FxjjMUApQF39kgD&oh=00_AfzFJgez8ggi4BLbdn0felrvix0kb2akucYQQ9e_-H2ubQ&oe=69C9E97C",
+          "video_name": "Auto_Cropped_AR_4_X_5_DCO_Increase Revenue B - deskptop.mp4",
+          "id": "1260211946220314"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1",
+      "clicks": "0",
+      "spend": "0.02",
+      "ctr": "0",
+      "ad_id": "6954326744068",
+      "video_asset": {
+        "video_id": "1243085201287143",
+        "url": "/hostfully/videos/3701033110038420/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/647149084_2229889697542652_5673050591104281262_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=070a5f&_nc_ohc=e8rbqxhUB4QQ7kNvwEhU1H4&_nc_oc=AdoVqPd3oqKCe7LLDD_3J6VtMA_jeV5SLuy7_HFFjWTebPcBqXLvRfBe9RhxpWbSxEQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQF9WvnDTuqOKLJhxPj4ZGlLHHxz3nBsQR3jsen8iCCNzd0ZPoD4BbeywSCOB3d-RP0x4yfinHsx&oh=00_AfycFftZIQfuG_-pl3dBOpgwg17aUYEhSrbQtTMfNfoeAw&oe=69C9E75E",
+        "video_name": "Auto_Cropped_AR_IG_4_X_5_V3_Increase Revenue B - deskptop.mp4",
+        "id": "1260211989553643"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1243085201287143",
+          "url": "/hostfully/videos/3701033110038420/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/647149084_2229889697542652_5673050591104281262_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=070a5f&_nc_ohc=e8rbqxhUB4QQ7kNvwEhU1H4&_nc_oc=AdoVqPd3oqKCe7LLDD_3J6VtMA_jeV5SLuy7_HFFjWTebPcBqXLvRfBe9RhxpWbSxEQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQF9WvnDTuqOKLJhxPj4ZGlLHHxz3nBsQR3jsen8iCCNzd0ZPoD4BbeywSCOB3d-RP0x4yfinHsx&oh=00_AfycFftZIQfuG_-pl3dBOpgwg17aUYEhSrbQtTMfNfoeAw&oe=69C9E75E",
+          "video_name": "Auto_Cropped_AR_IG_4_X_5_V3_Increase Revenue B - deskptop.mp4",
+          "id": "1260211989553643"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1",
+      "clicks": "0",
+      "spend": "0.31",
+      "ctr": "0",
+      "ad_id": "6957116068868",
+      "video_asset": {
+        "video_id": "3960505164246674",
+        "url": "/hostfully/videos/1037106442816610/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/647149084_2229889697542652_5673050591104281262_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=070a5f&_nc_ohc=e8rbqxhUB4QQ7kNvwEhU1H4&_nc_oc=AdoVqPd3oqKCe7LLDD_3J6VtMA_jeV5SLuy7_HFFjWTebPcBqXLvRfBe9RhxpWbSxEQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEufo8rhkuE7cyuZxkeM0g-e3tI_9dsldsyBn8sk4ktH0xcsHXgAtwhfjgswbB9PTE4Vv9O118A&oh=00_AfwYYKdbZ8kPnF1EyEuT86oTjwxMK3RX1d-CkTf4zDbKyg&oe=69C9E75E",
+        "video_name": "Auto_Cropped_AR_IG_4_X_5_V3_Increase Revenue B - deskptop.mp4",
+        "id": "1259898479584994"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "3960505164246674",
+          "url": "/hostfully/videos/1037106442816610/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/647149084_2229889697542652_5673050591104281262_n.jpg?stp=dst-jpg_p110x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=070a5f&_nc_ohc=e8rbqxhUB4QQ7kNvwEhU1H4&_nc_oc=AdoVqPd3oqKCe7LLDD_3J6VtMA_jeV5SLuy7_HFFjWTebPcBqXLvRfBe9RhxpWbSxEQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEufo8rhkuE7cyuZxkeM0g-e3tI_9dsldsyBn8sk4ktH0xcsHXgAtwhfjgswbB9PTE4Vv9O118A&oh=00_AfwYYKdbZ8kPnF1EyEuT86oTjwxMK3RX1d-CkTf4zDbKyg&oe=69C9E75E",
+          "video_name": "Auto_Cropped_AR_IG_4_X_5_V3_Increase Revenue B - deskptop.mp4",
+          "id": "1259898479584994"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "343",
+      "clicks": "3",
+      "spend": "23.504337",
+      "ctr": "0.874636",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "1"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "75"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "1"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "75"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "1"
+        },
+        {
+          "action_type": "video_view",
+          "value": "73"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "1"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.321977"
+        },
+        {
+          "action_type": "link_click",
+          "value": "23.504337"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "23.504337"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.313391"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.313391"
+        }
+      ],
+      "ad_id": "6957116069668",
+      "video_asset": {
+        "video_id": "1314654033898903",
+        "url": "/reel/2098647130991539/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644925138_1473033727606272_7570318525106804916_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=b696e2&_nc_ohc=63MuKI5EA0YQ7kNvwFREcW6&_nc_oc=AdrOdolMWeELLj1O3W06p-2nPjKfLBbLDe1zSl159qKHEriOC0PJvvLyfpmQFS7UbZE&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQGEr59j04zV-8SvADH09NXjfotSHWyxwuHbLLJmNXdr0u8msT9S2pufHqM0LDlD8PWjNT9nd2Kz&oh=00_AfxodIgsxLVO_6TAeS1k_o1-6KICAT3OhF3ZcVcEwqzylA&oe=69C9E01D",
+        "video_name": "Increase Revenue A - desktop.mp4",
+        "id": "1252931806948328"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1314654033898903",
+          "url": "/reel/2098647130991539/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644925138_1473033727606272_7570318525106804916_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=b696e2&_nc_ohc=63MuKI5EA0YQ7kNvwFREcW6&_nc_oc=AdrOdolMWeELLj1O3W06p-2nPjKfLBbLDe1zSl159qKHEriOC0PJvvLyfpmQFS7UbZE&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQGEr59j04zV-8SvADH09NXjfotSHWyxwuHbLLJmNXdr0u8msT9S2pufHqM0LDlD8PWjNT9nd2Kz&oh=00_AfxodIgsxLVO_6TAeS1k_o1-6KICAT3OhF3ZcVcEwqzylA&oe=69C9E01D",
+          "video_name": "Increase Revenue A - desktop.mp4",
+          "id": "1252931806948328"
+        }
+      },
+      "primary_result": null
+    },
+    {
+      "date_start": "2026-03-01",
+      "date_stop": "2026-03-25",
+      "impressions": "1201",
+      "clicks": "12",
+      "spend": "84.895666",
+      "ctr": "0.999167",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "7"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "211"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "2"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "211"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "2"
+        },
+        {
+          "action_type": "video_view",
+          "value": "202"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "2"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "video_view",
+          "value": "0.420276"
+        },
+        {
+          "action_type": "link_click",
+          "value": "12.127952"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "42.447833"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.402349"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.402349"
+        }
+      ],
+      "ad_id": "6957116069668",
+      "video_asset": {
+        "video_id": "1326482216192123",
+        "url": "/reel/1221401966744718/",
+        "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+        "video_name": "Increase Revenue A - vertical.mp4",
+        "id": "1252931810281661"
+      },
+      "breakdown_values": {
+        "video_asset": {
+          "video_id": "1326482216192123",
+          "url": "/reel/1221401966744718/",
+          "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+          "video_name": "Increase Revenue A - vertical.mp4",
+          "id": "1252931810281661"
+        }
+      },
+      "primary_result": null
+    }
+  ],
+  "summary": {
+    "total_impressions": 23651,
+    "total_clicks": 252,
+    "total_spend": 1574.74,
+    "average_ctr": 1.07,
+    "average_cpc": 6.25,
+    "average_cpm": 66.58,
+    "total_reach": 0,
+    "average_frequency": 0,
+    "date_range": {
+      "start": "2026-03-01",
+      "end": "2026-03-25"
+    }
+  },
+  "conversion_action": null,
+  "primary_result": {
+    "label": "lead",
+    "action_type": "lead",
+    "results": 1,
+    "cost_per_result": 144.231616
+  },
+  "breakdown_summary": {
+    "dimensions": [
+      "video_asset"
+    ],
+    "row_count": 30,
+    "rows_with_results": 4,
+    "top_rows_by_results": [
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1373833847625339",
+            "url": "/hostfully/videos/1337280464769466/",
+            "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJ3nHhafffe2KejDmbn6DZVb0HvvP9nEY_QvQk6u20Qmgwq4Uqpso2TAb8GbGw4HPdVOnvquHxIHjRaM4JBt5rQSpJZ3QWU0DUHMSWDRc8ffqFnG99nAfswho-IUaPgj6HYK_7A-YCHytNUJvwATnUn",
+            "thumbnail_hash": "6f8b570886bc8c1b58ae6a202a4fbcce",
+            "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_9.0s_end_43.5s_Hostfully Ads Video 30s 1080x1920_111124 (2) (online-video-cutter.com).mp4",
+            "id": "1151412870433556"
+          }
+        },
+        "result_label": "offsite_conversion.fb_pixel_custom",
+        "results": 2,
+        "cost_per_result": 211.363231,
+        "spend": 422.726461,
+        "impressions": 6347,
+        "clicks": 73,
+        "ctr": 1.15015
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "864409786250405",
+            "url": "/hostfully/videos/793525430255650/",
+            "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQIYM8sujbg6YnOhyFZNy9nngPGSb1brUzhdmIn6dnC7wRp9IbUUTUBntvLID-ZSXer1w_u0GXa6ktR6suEBLm3olNPd--t3SpO3UCfo-PH0FjLSE-fm0tH2-w92Mr-W9QQKdCjXmRO_c8Q8zj29Bh9v",
+            "thumbnail_hash": "3454a48e5be7a97af60d252c405e65e4",
+            "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+            "id": "1151412873766889"
+          }
+        },
+        "result_label": "offsite_conversion.fb_pixel_custom",
+        "results": 1,
+        "cost_per_result": 213.603265,
+        "spend": 213.603265,
+        "impressions": 3155,
+        "clicks": 40,
+        "ctr": 1.267829
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1451310906695266",
+            "url": "/hostfully/videos/1248371250047623/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQH58pNeopBFhIfKS67sJ1GhLWKCu1qVFo4hG-bKq4JMnR2-gnKjIfhGRXt78LKJvlh4twTsrhLu&oh=00_AfykKyvsV9VW5hQa6JZz47bHHwh3_GeBz1WSKR-WIQs2KA&oe=69C9DD29",
+            "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+            "id": "1252889666952542"
+          }
+        },
+        "result_label": "lead",
+        "results": 1,
+        "cost_per_result": 144.231616,
+        "spend": 144.231616,
+        "impressions": 1813,
+        "clicks": 18,
+        "ctr": 0.99283
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1326482216192123",
+            "url": "/reel/1221401966744718/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+            "video_name": "Increase Revenue A - vertical.mp4",
+            "id": "1252931810281661"
+          }
+        },
+        "result_label": "offsite_conversion.fb_pixel_custom",
+        "results": 1,
+        "cost_per_result": 252.1,
+        "spend": 252.1,
+        "impressions": 4266,
+        "clicks": 39,
+        "ctr": 0.914205
+      }
+    ],
+    "top_rows_by_spend": [
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1373833847625339",
+            "url": "/hostfully/videos/1337280464769466/",
+            "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQJ3nHhafffe2KejDmbn6DZVb0HvvP9nEY_QvQk6u20Qmgwq4Uqpso2TAb8GbGw4HPdVOnvquHxIHjRaM4JBt5rQSpJZ3QWU0DUHMSWDRc8ffqFnG99nAfswho-IUaPgj6HYK_7A-YCHytNUJvwATnUn",
+            "thumbnail_hash": "6f8b570886bc8c1b58ae6a202a4fbcce",
+            "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_9.0s_end_43.5s_Hostfully Ads Video 30s 1080x1920_111124 (2) (online-video-cutter.com).mp4",
+            "id": "1151412870433556"
+          }
+        },
+        "result_label": "offsite_conversion.fb_pixel_custom",
+        "results": 2,
+        "cost_per_result": 211.363231,
+        "spend": 422.726461,
+        "impressions": 6347,
+        "clicks": 73,
+        "ctr": 1.15015
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1326482216192123",
+            "url": "/reel/1221401966744718/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+            "video_name": "Increase Revenue A - vertical.mp4",
+            "id": "1252931810281661"
+          }
+        },
+        "result_label": "offsite_conversion.fb_pixel_custom",
+        "results": 1,
+        "cost_per_result": 252.1,
+        "spend": 252.1,
+        "impressions": 4266,
+        "clicks": 39,
+        "ctr": 0.914205
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "864409786250405",
+            "url": "/hostfully/videos/793525430255650/",
+            "thumbnail_url": "https://www.facebook.com/ads/image/?d=AQIYM8sujbg6YnOhyFZNy9nngPGSb1brUzhdmIn6dnC7wRp9IbUUTUBntvLID-ZSXer1w_u0GXa6ktR6suEBLm3olNPd--t3SpO3UCfo-PH0FjLSE-fm0tH2-w92Mr-W9QQKdCjXmRO_c8Q8zj29Bh9v",
+            "thumbnail_hash": "3454a48e5be7a97af60d252c405e65e4",
+            "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_trimmed_start_8.9s_end_43.8s_",
+            "id": "1151412873766889"
+          }
+        },
+        "result_label": "offsite_conversion.fb_pixel_custom",
+        "results": 1,
+        "cost_per_result": 213.603265,
+        "spend": 213.603265,
+        "impressions": 3155,
+        "clicks": 40,
+        "ctr": 1.267829
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1451310906695266",
+            "url": "/hostfully/videos/1248371250047623/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQH58pNeopBFhIfKS67sJ1GhLWKCu1qVFo4hG-bKq4JMnR2-gnKjIfhGRXt78LKJvlh4twTsrhLu&oh=00_AfykKyvsV9VW5hQa6JZz47bHHwh3_GeBz1WSKR-WIQs2KA&oe=69C9DD29",
+            "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+            "id": "1252889666952542"
+          }
+        },
+        "result_label": "lead",
+        "results": 1,
+        "cost_per_result": 144.231616,
+        "spend": 144.231616,
+        "impressions": 1813,
+        "clicks": 18,
+        "ctr": 0.99283
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "4442807219285687",
+            "url": "/hostfully/videos/706782495763226/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQFz0r7SEGFve2BDTaCvbB5td6YgbZ3iS2dEF4TdgRG7eIgSSVojomDRhDk2ylL6PuEmHjbVMwzZ&oh=00_AfxJB0J1Gb6h9LfJHjaCyZ5AVkaBHZghaKXM_JwOO8tTXA&oe=69C9E86F",
+            "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+            "id": "1252889663619209"
+          }
+        },
+        "result_label": null,
+        "results": 0,
+        "cost_per_result": null,
+        "spend": 119.557124,
+        "impressions": 1598,
+        "clicks": 21,
+        "ctr": 1.314143
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1314654033898903",
+            "url": "/reel/2098647130991539/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644925138_1473033727606272_7570318525106804916_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=b696e2&_nc_ohc=63MuKI5EA0YQ7kNvwFREcW6&_nc_oc=AdrOdolMWeELLj1O3W06p-2nPjKfLBbLDe1zSl159qKHEriOC0PJvvLyfpmQFS7UbZE&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQGEr59j04zV-8SvADH09NXjfotSHWyxwuHbLLJmNXdr0u8msT9S2pufHqM0LDlD8PWjNT9nd2Kz&oh=00_AfxodIgsxLVO_6TAeS1k_o1-6KICAT3OhF3ZcVcEwqzylA&oe=69C9E01D",
+            "video_name": "Increase Revenue A - desktop.mp4",
+            "id": "1252931806948328"
+          }
+        },
+        "result_label": null,
+        "results": 0,
+        "cost_per_result": null,
+        "spend": 99.08,
+        "impressions": 1964,
+        "clicks": 14,
+        "ctr": 0.712831
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1326482216192123",
+            "url": "/reel/1221401966744718/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644231925_2092097927998148_8836909463545985712_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=b696e2&_nc_ohc=zz05VecSSusQ7kNvwEA_Rci&_nc_oc=AdqW5IJKj0ItSGGVdp4qzDEUMeoUTDHWlmabdDdKEhf-XEe9ny6CBI_QmPxPz9-0Bn8&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEdxvrdNYRHkBWW-wn9CuXwIyh84G9t7HbbuoYtpv0E40vCUrEjHc9py78hjfGmJpdp23ftST_f&oh=00_Afw1rujdcXlGR1cH_QzA3VRI4JJKstIum0V9LpgljedFIw&oe=69C9EB1E",
+            "video_name": "Increase Revenue A - vertical.mp4",
+            "id": "1252931810281661"
+          }
+        },
+        "result_label": null,
+        "results": 0,
+        "cost_per_result": null,
+        "spend": 84.895666,
+        "impressions": 1201,
+        "clicks": 12,
+        "ctr": 0.999167
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1451310906695266",
+            "url": "/hostfully/videos/1202029265049836/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644484997_2468480916942113_6978929761509090787_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=FPwJJqcLCBoQ7kNvwHvFyj_&_nc_oc=AdrO2cv69v9iFdCCT_21x2_reZRbhKHQsn853yuU1Go4y8lH7zieImB8RLKyRGv17vc&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQEQY3t2ywGDaY-kXwsuhE5CoqRiVXbxVHikKQLx__BiN7vNU2XDEHTEWpCh33D7-MbTtSn3gM3Q&oh=00_Afy7T9X0yRdEgoCvNfoo8bQy57SAzBBIW_giMlvDdLejFg&oe=69C9DD29",
+            "video_name": "cropped_9X16_(x, y)_(160, 0)_width_759px_height_1350px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+            "id": "1252890043619171"
+          }
+        },
+        "result_label": null,
+        "results": 0,
+        "cost_per_result": null,
+        "spend": 58.545662,
+        "impressions": 642,
+        "clicks": 4,
+        "ctr": 0.623053
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "4442807219285687",
+            "url": "/hostfully/videos/3347319468768721/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/644367809_951907520606559_8558287784709940979_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=107&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=q549ZOWeKy4Q7kNvwHRbGhk&_nc_oc=AdowppPDwrP9i59oQe1gBa4SMfOjrW6lHyCaPtNvo6xwQMExgO33eprdhiQFMyn5K84&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQG-SNW0mpM16yfeMbPipi2qfWSbhw7CNcxUmhEC_VOeJfcaEfi4sigaTn0jBrrGxW4mY_MRXFFz&oh=00_AfwuS15NBOXjIOZ7scGzvVw-FWzahQ78M8xu4O0rvgLgcw&oe=69C9E86F",
+            "video_name": "cropped_1X1_(x, y)_(0, 135)_width_1080px_height_1080px_cropped_original_(x, y)_(0, 0)_width_1080px_height_1348px_",
+            "id": "1252890046952504"
+          }
+        },
+        "result_label": null,
+        "results": 0,
+        "cost_per_result": null,
+        "spend": 44.784331,
+        "impressions": 671,
+        "clicks": 10,
+        "ctr": 1.490313
+      },
+      {
+        "breakdown_values": {
+          "video_asset": {
+            "video_id": "1398469398105918",
+            "url": "/hostfully/videos/1451909913182772/",
+            "thumbnail_url": "https://scontent.fdps11-1.fna.fbcdn.net/v/t15.5256-10/631414938_1090363123231053_5506231101417529541_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=108&ccb=1-7&_nc_sid=4c1fc5&_nc_ohc=oEEeijSJtuAQ7kNvwHVlahg&_nc_oc=Ado4V_sKBH6YETbl7bd3_bhtVWBGxrjZQAOe__nqbircEu2cAe42PBLYaYOCaAb1zKQ&_nc_zt=23&_nc_ht=scontent.fdps11-1.fna&edm=AKD5LVcEAAAA&_nc_gid=wPSNH-lyH4FV1izXsg48AQ&_nc_tpa=Q5bMBQHHYK5NZii-4uhUbMsKkdYnSWh1KyNkXwdsoVSCY646-Z37lBSySJc92Oq5wCOgednG6YhthvfU&oh=00_AfyxPtJO6cx8iZZlJIpymmz_vTNTmZJw4hGrJdSGGBs61g&oe=69C9D993",
+            "video_name": "cropped_original_(x, y)_(0, 0)_width_1080px_height_1920px_trimmed_start_0.0s_end_15.1s_Client Expectations Industry Survey Answers Mystery (2).mp4",
+            "id": "1240430338198475"
+          }
+        },
+        "result_label": null,
+        "results": 0,
+        "cost_per_result": null,
+        "spend": 43.261904,
+        "impressions": 495,
+        "clicks": 5,
+        "ctr": 1.010101
+      }
+    ]
+  },
+  "pagination": {
+    "has_next_page": false,
+    "has_previous_page": false
+  },
+  "query_parameters": {
+    "object_id": "act_602183263243751",
+    "level": "ad",
+    "time_range": {
+      "since": "2026-03-01",
+      "until": "2026-03-25"
+    },
+    "fields": [
+      "date_start",
+      "date_stop",
+      "ad_id",
+      "ad_name",
+      "spend",
+      "impressions",
+      "clicks",
+      "ctr",
+      "actions",
+      "cost_per_action_type"
+    ],
+    "breakdowns": [
+      "video_asset"
+    ]
+  },
+  "total_count": 30
+}

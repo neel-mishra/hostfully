@@ -431,7 +431,7 @@ nd 0 new items.
 [2026-03-10 08:00:04] 🚀 Starting Competitor Blog Scraper...
 [2026-03-10 08:00:17] ✅ Scraper completed successfully.
 [2026-03-10 08:00:17]    Output Summary:
-rror saving CSV: Cannot save file into a non-existent directory: '/Users/neelmishra/antigravity/synthetic growth/TLDR/python scripts/competitor scrapers/../../docs/competitive creative tracker/blogs'
+rror saving CSV: Cannot save file into a non-existent directory: '/Users/neelmishra/antigravity/synthetic growth/Hostfully/python scripts/competitor scrapers/../../docs/competitive creative tracker/blogs'
 
 [2026-03-10 08:00:17] 🚀 Starting Pipeline Agent...
 [2026-03-10 08:00:17] ✅ Pipeline Agent completed.

@@ -1,4 +1,4 @@
-## TLDR Python Scripts Roster
+## Hostfully Python Scripts Roster
 
 Mapping of core Python scripts to the agents and/or automations they power.
 
@@ -154,7 +154,7 @@ Mapping of core Python scripts to the agents and/or automations they power.
 | --- | --- | --- |
 | `ai system/automations/lib/run_video_script_for_blog.py` | `ai system/agents/content/copywriting-agent.md` (Long-Form mode), `ai system/agents/content/social-media-agent.md` | Weekly Content Execution + Repurposing Chain (video script step) |
 | `ai system/python scripts/visual generators/images/merge_wireframes.py` | `ai system/agents/ui-ux/ui-designer-agent.md` | Used ad-hoc for visual/wireframe workflows |
-| `Company Case Studies/TLDR/generate_tldr_wireframes.py` | `ai system/agents/ui-ux/ui-designer-agent.md`, `ai system/agents/personas/presentation-builder-agent.md` | Used ad-hoc for TLDR case study visuals and wireframes |
+| `Company Case Studies/Hostfully/generate_hostfully_wireframes.py` | `ai system/agents/ui-ux/ui-designer-agent.md`, `ai system/agents/personas/presentation-builder-agent.md` | Used ad-hoc for Hostfully case study visuals and wireframes |
 
 ---
 

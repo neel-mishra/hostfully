@@ -1,4 +1,4 @@
-# SEO Audit: Detailed Report for Tldr
+# SEO Audit: Detailed Report for Hostfully
 
 ## Page-by-Page Breakdown
 

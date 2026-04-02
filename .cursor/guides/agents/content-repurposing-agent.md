@@ -38,7 +38,7 @@ Social posts, email subject lines, threads, blurbs, executive summaries, and met
 - Downstream: Reports, briefs, trackers, and handoffs to other agents/automations.
 
 ## Related Implementation Plans
-- `tldr-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
+- `hostfully-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
 - `update_paths_for_docs_reorg_b0f5c8bd.plan.md` — 7/7 completed todo items.
 - `visual_creative_brief_agent_e97d4bf5.plan.md` — 3/3 completed todo items.
 

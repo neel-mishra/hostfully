@@ -15,7 +15,7 @@
 ## 1. Google Cloud project & APIs
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. Create or select a project (e.g. "TLDR Analytics").
+2. Create or select a project (e.g. "Hostfully Analytics").
 3. Enable APIs:
    - **Search Console API**: [Enable](https://console.cloud.google.com/apis/library/searchconsole.googleapis.com)
    - **Google Analytics Data API**: [Enable](https://console.cloud.google.com/apis/library/analyticsdata.googleapis.com)
@@ -25,21 +25,21 @@
 ## 2. Service account (for both GSC and GA4)
 
 1. In Cloud Console: **IAM & Admin** → **Service accounts** → **Create service account**.
-2. Name it (e.g. `tldr-analytics-reader`), then **Create and continue**.
+2. Name it (e.g. `hostfully-analytics-reader`), then **Create and continue**.
 3. Skip optional steps; click **Done**.
 4. Open the new service account → **Keys** → **Add key** → **Create new key** → **JSON** → save the file.
-5. Move the JSON into your project (e.g. `TLDR/credentials/google-service-account.json`) and **do not commit it** (add to `.gitignore`).
+5. Move the JSON into your project (e.g. `Hostfully/credentials/google-service-account.json`) and **do not commit it** (add to `.gitignore`).
 
 ---
 
 ## 3. Search Console (GSC)
 
-1. In [Search Console](https://search.google.com/search-console), add the property for your site (e.g. `https://tldr.tech` or `sc-domain:tldr.tech`).
+1. In [Search Console](https://search.google.com/search-console), add the property for your site (e.g. `https://hostfully.tech` or `sc-domain:hostfully.tech`).
 2. In Search Console: **Settings** → **Users and permissions** → **Add user**.
-3. Add the **service account email** (e.g. `tldr-analytics-reader@your-project.iam.gserviceaccount.com`) with **Full** (or at least “Read”) permission.
+3. Add the **service account email** (e.g. `hostfully-analytics-reader@your-project.iam.gserviceaccount.com`) with **Full** (or at least “Read”) permission.
 4. In your `.env` set:
-   - **GSC_SITE_URL** = the exact property URL (e.g. `https://tldr.tech` or `sc-domain:tldr.tech`).
-   - **GOOGLE_APPLICATION_CREDENTIALS** = absolute path to the service account JSON (e.g. `/Users/you/.../TLDR/credentials/google-service-account.json`).
+   - **GSC_SITE_URL** = the exact property URL (e.g. `https://hostfully.tech` or `sc-domain:hostfully.tech`).
+   - **GOOGLE_APPLICATION_CREDENTIALS** = absolute path to the service account JSON (e.g. `/Users/you/.../Hostfully/credentials/google-service-account.json`).
 
 ---
 
@@ -59,7 +59,7 @@
 
 ```bash
 # Optional — for live GSC/GA4 data (scripts use mock data if unset)
-GSC_SITE_URL=https://tldr.tech
+GSC_SITE_URL=https://hostfully.tech
 GA4_PROPERTY_ID=412345678
 GOOGLE_APPLICATION_CREDENTIALS=/absolute/path/to/google-service-account.json
 ```

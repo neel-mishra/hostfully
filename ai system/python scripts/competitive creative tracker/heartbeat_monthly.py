@@ -6,7 +6,7 @@ Scrapes all five platforms: Meta, Google, LinkedIn, TikTok, X.
 
 Two scheduling mechanisms:
   1. Python `schedule` library (runs as a long-lived process)
-  2. macOS LaunchAgent plist (see com.tldr.tech.competitivetracker.monthly.plist)
+  2. macOS LaunchAgent plist (see com.hostfully.tech.competitivetracker.monthly.plist)
 
 Usage:
   python heartbeat_monthly.py          # start the scheduler daemon

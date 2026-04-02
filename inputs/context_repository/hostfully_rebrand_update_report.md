@@ -1,0 +1,200 @@
+# Hostfully Rebrand Update Report
+
+Total files updated: 195
+
+## Updated files
+- `.cursor/guides/agents/advertiser-prospect-intelligence-agent.md`
+- `.cursor/guides/agents/competitive-battlecard-agent.md`
+- `.cursor/guides/agents/competitive-feature-matrix-agent.md`
+- `.cursor/guides/agents/content-repurposing-agent.md`
+- `.cursor/guides/agents/growth-engineer-agent.md`
+- `.cursor/guides/agents/product-strategy-agent.md`
+- `.cursor/guides/agents/qbr-generator-agent.md`
+- `.cursor/guides/agents/social-media-agent.md`
+- `.cursor/guides/automations/monthly-competitive-ad-intelligence.md`
+- `.cursor/guides/automations/monthly-competitor-creative-content-convergence-report.md`
+- `.cursor/guides/automations/weekly-seo-intelligence-report.md`
+- `.cursor/guides/implementation_plans_index.md`
+- `.cursor/guides/input_automation_roadmap.md`
+- `.cursor/guides/system bible.md`
+- `.cursor/mcp.json`
+- `.cursor/roster/agents_roster.md`
+- `.cursor/roster/automations_roster.md`
+- `.cursor/roster/python_scripts_roster.md`
+- `.cursor/skills/humanizer/SKILL.md`
+- `.cursor/skills/humanizer/patterns.md`
+- `.cursor/skills/humanizer/voice-samples.md`
+- `ai system/agents/content/email-sequence-agent.md`
+- `ai system/agents/gtm team/_index.md`
+- `ai system/agents/gtm team/customer success/advertiser-health-agent.md`
+- `ai system/agents/gtm team/customer success/churn-analyzer-agent.md`
+- `ai system/agents/gtm team/customer success/qbr-generator-agent.md`
+- `ai system/agents/gtm team/customer success/support-ticket-analyzer-agent.md`
+- `ai system/agents/gtm team/marketing/content-performance-agent.md`
+- `ai system/agents/gtm team/marketing/content-repurposing-agent.md`
+- `ai system/agents/gtm team/marketing/paid ads/ad-creative-agent.md`
+- `ai system/agents/gtm team/marketing/paid ads/competitor-ad-intelligence-agent.md`
+- `ai system/agents/gtm team/marketing/paid ads/visual-creative-brief-agent.md`
+- `ai system/agents/gtm team/product/competitive-feature-matrix-agent.md`
+- `ai system/agents/gtm team/product/engagement-behavior-agent.md`
+- `ai system/agents/gtm team/product/feature-request-prioritizer-agent.md`
+- `ai system/agents/gtm team/product/release-notes-agent.md`
+- `ai system/agents/gtm team/product/sprint-planner-agent.md`
+- `ai system/agents/gtm team/product/user-interview-synthesizer-agent.md`
+- `ai system/agents/gtm team/sales/advertiser-prospect-agent.md`
+- `ai system/agents/gtm team/sales/battlecard-agent.md`
+- `ai system/agents/gtm team/sales/call-transcript-analyzer-agent.md`
+- `ai system/agents/gtm team/sales/deal-risk-agent.md`
+- `ai system/agents/personas/competitive-creative-tracker-agent.md`
+- `ai system/agents/social/roster.yaml`
+- `ai system/automations/01_daily_content_pipeline.md`
+- `ai system/automations/02_weekly_content_execution.md`
+- `ai system/automations/03_monthly_competitive_ads.md`
+- `ai system/automations/04_weekly_ad_performance.md`
+- `ai system/automations/05_weekly_seo_intelligence.md`
+- `ai system/automations/06_biweekly_advertiser_health.md`
+- `ai system/automations/07_weekly_sales_intelligence.md`
+- `ai system/automations/08_weekly_cro_audit.md`
+- `ai system/automations/09_monthly_gtm_commander.md`
+- `ai system/automations/10_monthly_competitor_convergence.md`
+- `ai system/automations/OUTPUT_DESTINATIONS.md`
+- `ai system/automations/QA_AND_REMAINING.md`
+- `ai system/automations/QA_OUTPUT_LINKS.md`
+- `ai system/automations/QA_RUN_BRIEFING.md`
+- `ai system/automations/README.md`
+- `ai system/automations/automations architecture.md`
+- `ai system/automations/lib/ENV_SETUP.md`
+- `ai system/automations/lib/ahrefs_api.py`
+- `ai system/automations/lib/gsc_api.py`
+- `ai system/automations/lib/run_video_script_for_blog.py`
+- `ai system/mcp/figma_mcp/README.md`
+- `ai system/mcp/figma_mcp/scrape_figma_mcp.py`
+- `ai system/mcp/google_ads_mcp/.venv/pyvenv.cfg`
+- `ai system/mcp/google_ads_mcp/README.md`
+- `ai system/python scripts/competitive creative tracker/com.hostfully.tech.competitivetracker.monthly.plist`
+- `ai system/python scripts/competitive creative tracker/heartbeat_monthly.py`
+- `ai system/python scripts/content and seo pipeline agent/content_performance_analyzer.py`
+- `ai system/python scripts/content and seo pipeline agent/site_performance_agent.py`
+- `ai system/python scripts/content pipeline agent/execution/blog_writer_agent.py`
+- `ai system/python scripts/content pipeline agent/execution/com.hostfully.contentpipeline.weekly.plist`
+- `ai system/python scripts/content pipeline agent/planning/com.hostfully.contentpipeline.plist`
+- `ai system/python scripts/content pipeline agent/repurposing/repurpose_agent.py`
+- `ai system/python scripts/cro and website intelligence agent/cro_hypothesis_agent.py`
+- `ai system/python scripts/customer success agent/advertiser_health.py`
+- `ai system/python scripts/customer success agent/churn_analyzer.py`
+- `ai system/python scripts/customer success agent/feedback_synthesizer.py`
+- `ai system/python scripts/customer success agent/qbr_generator.py`
+- `ai system/python scripts/customer success agent/support_ticket_analyzer.py`
+- `ai system/python scripts/meta ads creative agent/meta_creative_agent.py`
+- `ai system/python scripts/meta ads creative agent/prompts.py`
+- `ai system/python scripts/paid acquisition agent/creative_mapping.py`
+- `ai system/python scripts/paid acquisition agent/icp_filter.py`
+- `ai system/python scripts/paid-ads_budget_tracker/config.py`
+- `ai system/python scripts/product agent/competitive_feature_matrix.py`
+- `ai system/python scripts/product agent/engagement_behavior.py`
+- `ai system/python scripts/product agent/feature_request_prioritizer.py`
+- `ai system/python scripts/product agent/interview_synthesizer.py`
+- `ai system/python scripts/product agent/release_notes_generator.py`
+- `ai system/python scripts/product agent/sprint_planner.py`
+- `ai system/python scripts/sales agent/battlecard_generator.py`
+- `ai system/python scripts/sales agent/deal_risk_analyzer.py`
+- `ai system/python scripts/sales agent/prospect_intelligence.py`
+- `ai system/python scripts/sales agent/transcript_analyzer.py`
+- `ai system/python scripts/social media agent/team_social_drafts.py`
+- `ai system/video/src/storyboard/default20s.ts`
+- `ai system/video/src/ui/HostfullyAppMock.tsx`
+- `ai system/video/src/ui/hostfullyBrand.ts`
+- `business dna/core/business_context.md`
+- `business dna/core/competitor_landscape.md`
+- `business dna/core/ideal_customer_profile.md`
+- `business dna/core/product_dna.md`
+- `business dna/identity/ad_copy_frameworks.md`
+- `business dna/identity/brand_voice_matrix.md`
+- `business dna/identity/creative_direction.md`
+- `business dna/identity/messaging_pillars.md`
+- `business dna/identity/style_guide_internal.md`
+- `business dna/identity/style_guides.md`
+- `docs/context_repository/hostfully_competitor_cohorts_extracted.md`
+- `docs/context_repository/hostfully_site_crawl_snapshot.md`
+- `docs/context_repository/paid_ads/README.md`
+- `docs/context_repository/paid_ads/training_data_manifest.md`
+- `miscellaneous/.env.example`
+- `outputs/automation_runs/latest_preflight.json`
+- `outputs/automation_runs/preflight_20260319T122414Z.json`
+- `outputs/automation_runs/preflight_20260319T123330Z.json`
+- `outputs/automation_runs/run_ledger.jsonl`
+- `outputs/company case studies/Hostfully/generate_hostfully_wireframes.py`
+- `outputs/company case studies/Hostfully/hostfully_gtm_deck_outline.md`
+- `outputs/company case studies/Hostfully/hostfully_gtm_guidelines.md`
+- `outputs/company case studies/Hostfully/hostfully_gtm_speaker_notes.md`
+- `outputs/company case studies/Hostfully/hostfully_linkedin_ads_campaign.md`
+- `outputs/company case studies/Hostfully/hostfully_website_analysis.md`
+- `outputs/company case studies/Mosaic/generate_mosaic_wireframes.py`
+- `outputs/data/advertiser_performance/_schema.md`
+- `outputs/docs/GSC_GA4_SETUP.md`
+- `outputs/docs/INTEGRATIONS_SEARCH_CONSOLE_AND_POMELLI.md`
+- `outputs/docs/SEO/Hostfully/hostfully_03_2026/hostfully_detailed.csv`
+- `outputs/docs/SEO/Hostfully/hostfully_03_2026/hostfully_detailed.md`
+- `outputs/docs/SEO/Hostfully/hostfully_03_2026/hostfully_high_level.md`
+- `outputs/docs/SEO/Hostfully/hostfully_03_2026/hostfully_url_inventory.csv`
+- `outputs/docs/SEO/Hostfully/hostfully_03_2026/hostfully_url_inventory.json`
+- `outputs/docs/analytics_reports/seo_intelligence_2026-03-15.md`
+- `outputs/docs/analytics_reports/site_performance_20260310_133203.md`
+- `outputs/docs/analytics_reports/weekly_ad_performance_2026-03-15.md`
+- `outputs/docs/blogs/2026-03-10/How-To-Get-55-Open-Rates-Like-the-Top-Performing-Newsletters.md`
+- `outputs/docs/content_assets/weekly_review_2026-03-15.md`
+- `outputs/docs/content_briefs/ideation_tracker.csv`
+- `outputs/docs/cro_reports/cro_sprint_report_hostfully_tech_signup_20260310_133245.md`
+- `outputs/docs/cro_reports/weekly_audit_2026-03-15.md`
+- `outputs/docs/email/free_user_upsell/email_01/variant_a.md`
+- `outputs/docs/email/free_user_upsell/email_01/variant_b.md`
+- `outputs/docs/email/free_user_upsell/email_02/variant_a.md`
+- `outputs/docs/email/free_user_upsell/email_02/variant_b.md`
+- `outputs/docs/email/free_user_upsell/email_03/variant_a.md`
+- `outputs/docs/email/free_user_upsell/email_03/variant_b.md`
+- `outputs/docs/email/free_user_upsell/email_04/variant_a.md`
+- `outputs/docs/email/free_user_upsell/email_04/variant_b.md`
+- `outputs/docs/email/free_user_upsell/email_05/variant_a.md`
+- `outputs/docs/email/free_user_upsell/email_05/variant_b.md`
+- `outputs/docs/email/free_user_upsell/email_06/variant_a.md`
+- `outputs/docs/email/free_user_upsell/email_06/variant_b.md`
+- `outputs/docs/landing_pages/landing_page_ai_marketing_hub_20260310_133245.md`
+- `outputs/docs/outbound_assets/outbound_seq_recent_hiring_spree_indicates_growth_chaos_ops_debt_20260310_133250.md`
+- `outputs/docs/paid_ads_assets/linkedin/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26/ad-creative/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26_ad-creative_mar26.md`
+- `outputs/docs/paid_ads_assets/linkedin/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26/campaign-structure/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26_campaign-structure.md`
+- `outputs/docs/paid_ads_assets/linkedin/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26/landing-page-and-cro/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26_landing-page-and-cro_mar26.md`
+- `outputs/docs/paid_ads_assets/linkedin/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26/tracking-implementation-and-qa/us-ca_linkedin_leads_b2b-sponsor-acquisition_mar26_tracking-implementation-and-qa_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/2026-03-10_lead_gen_retargeting_creative_brief/creative_brief.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/ab-test-plan/us-ca_meta_leads_reader-acquisition_mar26_ab-test-plan_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/ad-creative/us-ca_meta_leads_reader-acquisition_mar26_ad-creative_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/build-sheet/us-ca_meta_leads_reader-acquisition_mar26_meta-build-sheet.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/campaign-structure/us-ca_meta_leads_reader-acquisition_mar26_campaign-structure.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/5min-clock-v1_timer-display_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/builder-edge-v1_notification-cards_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/cto-inbox-v1_email-mockup_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/morning-shortcut-v1_split-screen_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/peer-signal-v1_crowd-grid_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/static_discovery-tools_mar26_v1_cards-layout_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/static_noise-vs-signal_mar26_v1_split-screen_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/static_social-proof_mar26_v1_social-proof-grid_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/creative-briefs/mar26/static_time-saved_mar26_v1_email-preview_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/landing-page-and-cro/us-ca_meta_leads_reader-acquisition_mar26_landing-page-and-cro_mar26.md`
+- `outputs/docs/paid_ads_assets/meta/us-ca_meta_leads_reader-acquisition_mar26/tracking-implementation-and-qa/us-ca_meta_leads_reader-acquisition_mar26_tracking-implementation-and-qa_mar26.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/ad-creative/us_reddit_conversions_b2b-sponsor-acquisition_mar26_ad-creative_mar26.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/build-sheet/us_reddit_conversions_b2b-sponsor-acquisition_mar26_reddit-build-sheet.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/campaign-structure/us_reddit_conversions_b2b-sponsor-acquisition_mar26_campaign-structure.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/creative-briefs/mar26/static_less-doomscroll_mar26_v1.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/creative-briefs/mar26/static_skip-fomo_mar26_v1.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/creative-briefs/mar26/static_tools-and-releases_mar26_v1.md`
+- `outputs/docs/paid_ads_assets/reddit/us_reddit_conversions_b2b-sponsor-acquisition_mar26/landing-page-and-cro/us_reddit_conversions_b2b-sponsor-acquisition_mar26_landing-page-and-cro_mar26.md`
+- `outputs/docs/sales_assets/weekly_intelligence_2026-03-15.md`
+- `outputs/docs/seo_pages/seo_comparison_hubspot_marketing_hub.md`
+- `outputs/docs/seo_pages/seo_integration_shopify.md`
+- `outputs/docs/social media/March Week 2/1. Monday/copy.md`
+- `outputs/docs/social media/March Week 2/1. Monday/script.md`
+- `outputs/docs/social media/March Week 2/2. Tuesday/copy.md`
+- `outputs/docs/social media/March Week 2/3. Wednesday/copy.md`
+- `outputs/docs/social media/March Week 2/3. Wednesday/script.md`
+- `outputs/docs/social media/March Week 3/1. Monday/copy.md`
+- `outputs/docs/social media/March Week 3/3. Wednesday/copy.md`
+- `outputs/docs/social media/March Week 3/5. Friday/copy.md`

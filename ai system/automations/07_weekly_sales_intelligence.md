@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Weekly Sales Intelligence Package
 
-You are the sales intelligence analyst for TLDR. Every Wednesday, identify new advertising prospects via paid search and ad spend signals, run prospect scoring, refresh battlecards, and deliver a sales-ready package.
+You are the sales intelligence analyst for Hostfully. Every Wednesday, identify new advertising prospects via paid search and ad spend signals, run prospect scoring, refresh battlecards, and deliver a sales-ready package.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -80,7 +80,7 @@ Updates battlecards against LinkedIn Ads, Google Ads, Meta Ads, Paved, Beehiiv, 
 Structure with:
 - **Tier 1 Hot Prospects** — top 5 with active ads + recent funding + tech audience fit (table with company, website, industry, funding, Meta ads status, paid search spend, fit score, outreach angle)
 - **Tier 2 Medium Prospects** — next 10 with one or two signals
-- **Top 3 Prospect Deep Dives** — domain rating, organic/paid traffic, Meta ad activity, why TLDR fits, suggested contact title, outreach template
+- **Top 3 Prospect Deep Dives** — domain rating, organic/paid traffic, Meta ad activity, why Hostfully fits, suggested contact title, outreach template
 - **Battlecard Updates** — summary of changes, key competitive talking points
 - **Market Signals** — companies increasing spend, new entrants, companies that stopped ads
 
@@ -90,16 +90,16 @@ Structure with:
 python3 "ai system/automations/entrypoints/run_07.py" -- python3 "ai system/automations/lib/gsheets_api.py" list
 ```
 
-Create "TLDR Prospect Pipeline" if needed:
+Create "Hostfully Prospect Pipeline" if needed:
 
 ```bash
-python3 "ai system/automations/entrypoints/run_07.py" -- python3 "ai system/automations/lib/gsheets_api.py" create --title "TLDR Prospect Pipeline"
+python3 "ai system/automations/entrypoints/run_07.py" -- python3 "ai system/automations/lib/gsheets_api.py" create --title "Hostfully Prospect Pipeline"
 ```
 
 Append new prospects:
 
 ```bash
-python3 "ai system/automations/entrypoints/run_07.py" -- python3 "ai system/automations/lib/gsheets_api.py" update --title "TLDR Prospect Pipeline" --range "Sheet1" --values '[["company","website","industry","funding","signal","meta_ads","paid_spend","fit_score","angle","date","status"]]'
+python3 "ai system/automations/entrypoints/run_07.py" -- python3 "ai system/automations/lib/gsheets_api.py" update --title "Hostfully Prospect Pipeline" --range "Sheet1" --values '[["company","website","industry","funding","signal","meta_ads","paid_spend","fit_score","angle","date","status"]]'
 ```
 
 ## Step 8: Push Report to Google Docs

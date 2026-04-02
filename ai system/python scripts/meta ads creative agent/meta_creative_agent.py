@@ -17,6 +17,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import context_loader
 import research
+from canva_connector import (
+    discover_canva_server,
+    parse_creative_output_to_plan,
+    persist_sync_plan,
+    validate_canva_tooling,
+)
 from prompts import CampaignBrief, build_system_prompt, build_user_message
 from validator import validate_output, format_validation_for_output
 
@@ -151,7 +157,7 @@ def collect_campaign_brief() -> tuple[CampaignBrief, list[str] | None]:
 
     # Step 2 — Funnel Stage
     funnel_stage = _select("Step 2/10 — Funnel Stage", {
-        "prospecting": "Cold audience — never heard of TLDR",
+        "prospecting": "Cold audience — never heard of Hostfully",
         "awareness": "Know the AI marketing agent category, haven't evaluated us",
         "retargeting": "Visited our site / engaged with content",
         "bottom_of_funnel": "Comparing us to competitors, ready to decide",
@@ -429,6 +435,54 @@ def save_output(content: str, campaign: CampaignBrief) -> str:
     return str(output_file)
 
 
+def maybe_prepare_canva_sync(
+    campaign: CampaignBrief,
+    creative_output: str,
+    output_doc_path: str,
+    *,
+    enable_canva_sync: bool,
+) -> None:
+    """
+    Build and save a Canva MCP sync plan when enabled.
+    This does not execute MCP tool calls directly; it validates connector readiness
+    and emits a deterministic handoff artifact used by downstream Canva automation.
+    """
+    if not enable_canva_sync:
+        return
+
+    print("\n🧩 Preparing Canva MCP sync plan...")
+    descriptor = discover_canva_server()
+    checks = validate_canva_tooling(descriptor)
+
+    print(f"  Canva MCP server: {descriptor.server_name}")
+    print(f"  Tools discovered: {len(descriptor.tools)}")
+    print(
+        "  Tooling checks: "
+        f"create/template={checks['has_create_or_template']} "
+        f"text/edit={checks['has_text_or_element_tool']} "
+        f"export/publish={checks['has_export_or_publish']}"
+    )
+
+    if not checks["ready"]:
+        print(
+            "❌ Canva MCP connector is not ready. "
+            "Expected create/template, text/edit, and export/publish tool coverage."
+        )
+        sys.exit(1)
+
+    plan = parse_creative_output_to_plan(
+        creative_output,
+        campaign_goal=campaign.goal,
+        funnel_stage=campaign.funnel_stage,
+        target_audience=campaign.target_audience,
+        placement_tags=campaign.placements,
+    )
+
+    plan_path = Path(output_doc_path).parent / "canva_mcp_sync_plan.json"
+    persist_sync_plan(plan, plan_path)
+    print(f"  ✅ Canva sync plan saved: {plan_path}")
+
+
 # ---------------------------------------------------------------------------
 # Dry Run Sample Data
 # ---------------------------------------------------------------------------
@@ -445,7 +499,7 @@ DRY_RUN_SAMPLE_OUTPUT = """## CONCEPT [1]: The Inbox of Chaos vs. The Single Thr
 - **Scene and Composition:** Left half: a chaotic desktop with 12 browser tabs open — Meta Business Suite, Google Ads, TikTok Ads, Sheets, Looker Studio, email — all visible, overlapping, stressful. Right half: a single clean Mia chat window on dark #111827 background, with a message reading "Your Meta CPA is up 23%. I paused the underperforming ad set and shifted budget to your top creative. Here's what I recommend next."
 - **The Scroll-Stop Element:** The extreme visual contrast between chaos (left) and calm (right) — the viewer's eye is drawn to the clean Mia chat as relief from the visual noise
 - **Premium Execution Notes:** Inter Bold typography for the headline, precise alignment of the split-screen divider, subtle shadow on the Mia chat card, #2563EB accent on the chat interface elements
-- **Color and Mood:** Left side uses desaturated, slightly overwhelming multi-colored browser tabs. Right side uses TLDR Dark #111827 background with Primary Blue #2563EB chat accents and Success Green #10B981 for positive metrics
+- **Color and Mood:** Left side uses desaturated, slightly overwhelming multi-colored browser tabs. Right side uses Hostfully Dark #111827 background with Primary Blue #2563EB chat accents and Success Green #10B981 for positive metrics
 - **Layout and Hierarchy:** 50/50 split composition. Left = chaos (many small elements). Right = single focal point (one chat window). The eye naturally moves from noise to clarity.
 - **Format Notes:** 1:1 for Instagram/Facebook feed. For 9:16 stories, stack vertically (chaos top, order bottom)
 
@@ -501,7 +555,7 @@ Split-screen digital composition. Left side: cluttered desktop screenshot with m
 - **Scene and Composition:** Dark #111827 background. A single Mia chat window, premium framing with subtle shadow. The timestamp reads 3:14 AM. Mia's message: "I noticed your 'Summer Launch' campaign CPA spiked to $47 (2.3x your target) in the last 2 hours. I've paused the underperforming ad set, shifted $120 to your top performer, and your projected CPA is now back to $19. Here's what happened." Below: a small metrics card showing the save — green #10B981 arrow.
 - **The Scroll-Stop Element:** The "3:14 AM" timestamp — it immediately communicates "this works while you're asleep"
 - **Premium Execution Notes:** Monospace font for the timestamp for technical credibility. Inter for the chat text. Generous negative space around the chat card. Subtle gradient shadow behind the card.
-- **Color and Mood:** TLDR Dark #111827 dominant. Primary Blue #2563EB for the Mia avatar and interface elements. Success Green #10B981 for the metric improvement. Overall mood: calm authority — "everything is handled"
+- **Color and Mood:** Hostfully Dark #111827 dominant. Primary Blue #2563EB for the Mia avatar and interface elements. Success Green #10B981 for the metric improvement. Overall mood: calm authority — "everything is handled"
 - **Layout and Hierarchy:** Single focal point — the chat window. The timestamp is the entry point, the message body is the substance, the metrics card is the proof.
 - **Format Notes:** 1:1 for feeds (centered chat card). 9:16 for stories (chat card fills upper 60%, headline text below)
 
@@ -556,8 +610,8 @@ Dark background #111827, single chat interface window centered with subtle drop 
 ### VISUAL DESCRIPTION
 - **Scene and Composition:** Editorial-quality photograph of a marketer (late 20s/early 30s) at a bright cafe table. Natural light. Coffee in hand. Laptop open (subtle, not hero). They're looking at their phone — a tiny Mia chat notification visible. The dominant visual element: an oversized typographic statement filling the upper portion of the frame: "I didn't become a marketer to babysit dashboards."
 - **The Scroll-Stop Element:** The oversized text statement — it reads like a personal declaration, not ad copy
-- **Premium Execution Notes:** Inter Bold for the headline at large scale. The typography is the hero — sized to fill ~40% of the frame. Warm, editorial color grading on the photo. Subtle TLDR Blue #2563EB on the CTA button.
-- **Color and Mood:** Warm natural tones (the cafe). White/cream for the oversized type. TLDR Blue #2563EB for the subtle CTA. Overall mood: aspirational confidence — "this is what marketing feels like now"
+- **Premium Execution Notes:** Inter Bold for the headline at large scale. The typography is the hero — sized to fill ~40% of the frame. Warm, editorial color grading on the photo. Subtle Hostfully Blue #2563EB on the CTA button.
+- **Color and Mood:** Warm natural tones (the cafe). White/cream for the oversized type. Hostfully Blue #2563EB for the subtle CTA. Overall mood: aspirational confidence — "this is what marketing feels like now"
 - **Layout and Hierarchy:** Typography (40% of frame) → Person (40%) → Product subtle hint (20%). The text draws you in, the person makes it relatable, the product hint creates curiosity.
 - **Format Notes:** 4:5 for Instagram feed (vertical orientation suits the typographic layout). 9:16 for stories (text fills upper third, person fills middle, CTA at bottom)
 
@@ -577,7 +631,7 @@ Editorial photography, young professional at a bright modern cafe, natural windo
 
 **Variation 3:**
 - Headline: I used to manage campaigns. Now I manage an AI teammate.
-- Subtext: TLDR handles the execution — optimization, reporting, and actions — across every platform.
+- Subtext: Hostfully handles the execution — optimization, reporting, and actions — across every platform.
 - CTA: Start free today
 
 **Variation 4:**
@@ -602,7 +656,7 @@ Editorial photography, young professional at a bright modern cafe, natural windo
 - **Why this stops the scroll:** The oversized typography reads like a personal manifesto — it's unexpected in a B2B SaaS ad context and triggers immediate identification
 - **How it meets the polished/premium bar:** Editorial photography quality, precise typographic hierarchy, warm but controlled color palette, magazine-level composition
 - **Research insight that inspired this:** "Identity tension — they became marketers for strategy and creativity, not to babysit CPMs and adjust bids" — this is the deepest emotional driver
-- **Why this is NOT a boring SaaS ad:** There's no product screenshot as hero, no feature list, no dashboard — it's a human story told through a typographic statement that happens to be an ad for TLDR
+- **Why this is NOT a boring SaaS ad:** There's no product screenshot as hero, no feature list, no dashboard — it's a human story told through a typographic statement that happens to be an ad for Hostfully
 """
 
 
@@ -687,12 +741,17 @@ def run_dry_test() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Meta Ads Creative Agent — Generate premium ad creative concepts for TLDR"
+        description="Meta Ads Creative Agent — Generate premium ad creative concepts for Hostfully"
     )
     parser.add_argument("--api-key", type=str, help="Gemini API key")
     parser.add_argument("--model", type=str, default="gemini-2.5-flash", help="Gemini model name")
     parser.add_argument("--skip-research", action="store_true", help="Skip live research, use fallback data")
     parser.add_argument("--dry-run", action="store_true", help="Full pipeline test with preset inputs")
+    parser.add_argument(
+        "--canva-sync",
+        action="store_true",
+        help="Validate Canva MCP connector and emit canva_mcp_sync_plan.json alongside output",
+    )
     args = parser.parse_args()
 
     # Dry run mode
@@ -756,6 +815,13 @@ def main() -> None:
     output_path = save_output(final_doc, campaign)
     print(f"\n💾 Output saved to: {output_path}")
     print(f"  Total: {len(final_doc):,} chars")
+
+    maybe_prepare_canva_sync(
+        campaign,
+        creative_output,
+        output_path,
+        enable_canva_sync=args.canva_sync,
+    )
 
     if not report.passed:
         print("\n⚠️  Validation FAILED — review the validation report section in the output.")

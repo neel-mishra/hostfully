@@ -10,7 +10,7 @@ from typing import Any, Dict, List, Optional
 
 import pandas as pd
 
-from config import MonthContext, paths
+from config import MonthContext, allocation_config, paths
 from pacing_allocation import ChannelPacingSummary
 from model_legend import MODEL_LEGEND_LINES
 
@@ -50,6 +50,8 @@ def write_analysis_markdown(
     artifacts: Dict[str, str],
     *,
     live_pull_succeeded: bool,
+    reliability_context: Optional[Dict[str, Any]] = None,
+    match_snapshot: Optional[pd.DataFrame] = None,
 ) -> Path:
     """
     Write a single markdown file covering: targets, live state, redistribution,
@@ -73,6 +75,57 @@ def write_analysis_markdown(
     )
     lines.append(f"- **Playbook file (only source of monthly targets):** `{paths.campaign_playbook}`")
     lines.append("")
+    lines.append("## Source reliability & coverage")
+    lines.append("")
+    rc = reliability_context or {}
+    eff = rc.get("effective_reliability")
+    lines.append(
+        f"- **Data path:** {'Live API pull (Meta + Google)' if live_pull_succeeded else 'CSV snapshot fallback'}."
+    )
+    if eff is not None:
+        lines.append(
+            f"- **Effective reliability score (this run):** {float(eff):.2f} "
+            f"(API baseline {float(rc.get('source_reliability_api', 1.0)):.2f}, "
+            f"snapshot baseline {float(rc.get('source_reliability_snapshot', 0.8)):.2f})."
+        )
+    if "coverage_ratio_rows" in rc:
+        cov = float(rc["coverage_ratio_rows"])
+        thr = float(rc.get("coverage_warning_threshold", allocation_config.coverage_warning_threshold))
+        flag = " ⚠️ below threshold" if cov < thr else ""
+        lines.append(
+            f"- **Live pull row coverage ratio:** {cov:.1%} (warn if < {thr:.0%}){flag}."
+        )
+    if "meta_account_spend_mtd" in rc and "meta_campaign_rows_spend_sum" in rc:
+        lines.append(
+            f"- **Meta spend reconcile (account vs sum of campaign rows):** "
+            f"${float(rc['meta_account_spend_mtd']):,.2f} vs ${float(rc['meta_campaign_rows_spend_sum']):,.2f}."
+        )
+    lines.append(
+        "- **Conservative rule:** When coverage is below threshold or live pull warnings fire, "
+        "treat deltas as directional; verify in-platform before large moves."
+    )
+    lines.append("")
+    if match_snapshot is not None and not match_snapshot.empty and "match_type" in match_snapshot.columns:
+        lines.append("### Playbook ↔ live name match QA")
+        lines.append("")
+        vc = match_snapshot["match_type"].astype(str).value_counts()
+        lines.append("| match_type | row_count |")
+        lines.append("|------------|-----------|")
+        for k, v in vc.items():
+            lines.append(f"| {_esc(k)} | {int(v)} |")
+        low = match_snapshot[match_snapshot["match_type"].isin(["none", "fuzzy"])]
+        if not low.empty and "match_score" in low.columns:
+            lines.append("")
+            lines.append("Rows with `none` or `fuzzy` match (review UTM / naming):")
+            lines.append("")
+            lines.append("| campaign_id | match_type | match_score |")
+            lines.append("|-------------|------------|-------------|")
+            for _, r in low.head(25).iterrows():
+                lines.append(
+                    f"| {_esc(r.get('campaign_id'))} | {_esc(r.get('match_type'))} | "
+                    f"{float(r.get('match_score') or 0):.3f} |"
+                )
+        lines.append("")
     lines.append("## Model legend")
     lines.append("")
     for line in MODEL_LEGEND_LINES:
@@ -152,6 +205,15 @@ def write_analysis_markdown(
     # --- Redistribution ---
     lines.append("## Redistribution (non-live playbook)")
     lines.append("")
+    if allocation_config.redistribute_use_weighted:
+        lines.append(
+            f"*Weighted redistribution enabled:* playbook base "
+            f"{allocation_config.redistribute_weight_playbook:.0%}, ROI signal "
+            f"{allocation_config.redistribute_weight_roi:.0%}, winner affinity "
+            f"{allocation_config.redistribute_weight_winner_affinity:.0%} "
+            f"(tier floors A/B/C protect weak tiers). Channel totals still reconcile to playbook.*"
+        )
+        lines.append("")
     if nonlive_merged.empty:
         lines.append(
             "*All playbook campaigns in the snapshot matched as live, or no non-live rows — "
@@ -264,6 +326,13 @@ def write_analysis_markdown(
         "sql_count",
         "roi_priority_weight",
         "performance_bucket",
+        "blended_core_85_15",
+        "tie_break_modifier",
+        "tie_break_delta_winning_angle",
+        "tie_break_delta_fatigue",
+        "tie_break_delta_volatility",
+        "tie_break_delta_low_confidence",
+        "tie_break_modifier_before_net_cap",
         "note",
     ]
     _rec_headers = {
@@ -291,6 +360,13 @@ def write_analysis_markdown(
         "sql_count": "sql_count",
         "roi_priority_weight": "roi_priority_weight",
         "performance_bucket": "performance_bucket",
+        "blended_core_85_15": "blended_core_85_15",
+        "tie_break_modifier": "tie_break_modifier",
+        "tie_break_delta_winning_angle": "tie_break_delta_winning_angle",
+        "tie_break_delta_fatigue": "tie_break_delta_fatigue",
+        "tie_break_delta_volatility": "tie_break_delta_volatility",
+        "tie_break_delta_low_confidence": "tie_break_delta_low_confidence",
+        "tie_break_modifier_before_net_cap": "tie_break_modifier_before_net_cap",
         "note": "note",
     }
     if combined is not None and not combined.empty:
@@ -311,6 +387,16 @@ def write_analysis_markdown(
                         cells.append(_money(v, currency) if pd.notna(v) and v != "" else "—")
                     elif c in ("sql_count",):
                         cells.append(f"{float(v):.2f}" if pd.notna(v) and v != "" else "—")
+                    elif c in (
+                        "blended_core_85_15",
+                        "tie_break_modifier",
+                        "tie_break_delta_winning_angle",
+                        "tie_break_delta_fatigue",
+                        "tie_break_delta_volatility",
+                        "tie_break_delta_low_confidence",
+                        "tie_break_modifier_before_net_cap",
+                    ):
+                        cells.append(f"{float(v):.4f}" if pd.notna(v) and v != "" else "—")
                     elif c in ("pct_budget_change", "allocation_share_pct", "ctr_mtd", "cvr_mtd"):
                         cells.append(f"{float(v):.2f}%" if pd.notna(v) and v != "" else "—")
                     elif c in ("cpl_mtd",):

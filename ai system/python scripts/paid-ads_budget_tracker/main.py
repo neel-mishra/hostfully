@@ -40,6 +40,7 @@ from redistribution import (  # noqa: E402
 from spreadsheet_output import write_pacing_workbook  # noqa: E402
 from analysis_report import write_analysis_markdown  # noqa: E402
 from pipeline_roi import attach_pipeline_roi  # noqa: E402
+from intelligence_bridge import merge_intelligence_hints  # noqa: E402
 
 DEFAULT_USE_LIVE = os.environ.get("BUDGET_TRACKER_USE_LIVE", "1").lower() in (
     "1",
@@ -72,6 +73,13 @@ def _annotate_nonlive_rows(df: pd.DataFrame) -> pd.DataFrame:
     out["conversion_score"] = None
     out["cost_score"] = None
     out["volume_score"] = None
+    out["blended_core_85_15"] = float("nan")
+    out["tie_break_modifier"] = float("nan")
+    out["tie_break_delta_winning_angle"] = float("nan")
+    out["tie_break_delta_fatigue"] = float("nan")
+    out["tie_break_delta_volatility"] = float("nan")
+    out["tie_break_delta_low_confidence"] = float("nan")
+    out["tie_break_modifier_before_net_cap"] = float("nan")
     out["note"] = (
         "Not live this month — playbook dollars for this campaign are redistributed "
         "to live campaigns in the same channel (proportional to playbook share)."
@@ -198,6 +206,13 @@ def run_for_date(
             f"Meta spend MTD=${ms:,.2f}, Σ daily (active campaigns, deduped)=${md:,.2f}; "
             f"Google spend MTD=${gs:,.2f}, Σ daily (ENABLED + shared-budget deduped)=${gd:,.2f}"
         )
+        cov = float(live_full.attrs.get("coverage_ratio_rows", 1.0))
+        thr = float(allocation_config.coverage_warning_threshold)
+        if cov < thr:
+            live_api_warnings.append(
+                f"Live pull row coverage below threshold: {cov:.1%} (target >= {thr:.0%}). "
+                "Apply conservative interpretation of pacing recommendations."
+            )
 
     meta_raw, meta_s = build_channel_frame(
         live_merged, "meta", month_ctx, merged_all=merged, **meta_kw
@@ -211,6 +226,8 @@ def run_for_date(
             attach_pipeline_roi(google_raw, pipeline_report_path) if not google_raw.empty else google_raw
         )
         print(f"[budget-tracker] Applied ROI weighting from pipeline report: {pipeline_report_path}")
+    meta_raw = merge_intelligence_hints(meta_raw, lead_analysis=None) if not meta_raw.empty else meta_raw
+    google_raw = merge_intelligence_hints(google_raw, lead_analysis=None) if not google_raw.empty else google_raw
 
     meta_df = allocate_channel(meta_raw, meta_s, allocation_config) if not meta_raw.empty else meta_raw
     google_df = (
@@ -290,6 +307,28 @@ def run_for_date(
 
     md_path = out_dir / f"budget_pacing_analysis_{as_of_str}.md"
     artifacts["Analysis summary (Markdown)"] = _rel(md_path)
+    eff_rel = (
+        float(allocation_config.source_reliability_api)
+        if live_pull_succeeded
+        else float(allocation_config.source_reliability_snapshot)
+    )
+    reliability_ctx: dict = {
+        "live_pull_succeeded": live_pull_succeeded,
+        "effective_reliability": eff_rel,
+        "source_reliability_api": float(allocation_config.source_reliability_api),
+        "source_reliability_snapshot": float(allocation_config.source_reliability_snapshot),
+        "coverage_warning_threshold": float(allocation_config.coverage_warning_threshold),
+    }
+    if live_full is not None and not live_full.empty:
+        reliability_ctx["coverage_ratio_rows"] = float(live_full.attrs.get("coverage_ratio_rows", 1.0))
+        if live_full.attrs.get("meta_account_spend_mtd") is not None:
+            reliability_ctx["meta_account_spend_mtd"] = float(live_full.attrs["meta_account_spend_mtd"])
+        if live_full.attrs.get("meta_campaign_rows_spend_sum") is not None:
+            reliability_ctx["meta_campaign_rows_spend_sum"] = float(
+                live_full.attrs["meta_campaign_rows_spend_sum"]
+            )
+    match_snapshot = snapshot if "match_type" in getattr(snapshot, "columns", []) else None
+
     write_analysis_markdown(
         md_path,
         as_of,
@@ -306,6 +345,8 @@ def run_for_date(
         warnings,
         artifacts,
         live_pull_succeeded=live_pull_succeeded,
+        reliability_context=reliability_ctx,
+        match_snapshot=match_snapshot,
     )
 
     return xlsx_path

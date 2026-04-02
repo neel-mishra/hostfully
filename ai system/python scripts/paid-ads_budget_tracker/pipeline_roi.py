@@ -6,7 +6,12 @@ from typing import Optional
 import pandas as pd
 import re
 
-from campaign_name_match import canonical_campaign_match_key, exact_match_key
+from campaign_name_match import (
+    best_match_against_candidates,
+    canonical_campaign_match_key,
+    exact_match_key,
+)
+from config import allocation_config
 
 
 def _normalize_utm_campaign(v: object) -> str:
@@ -111,11 +116,19 @@ def attach_pipeline_roi(merged_live: pd.DataFrame, report_path: Optional[str | P
         sub = parsed[(parsed["platform"] == plat) & (parsed["utm_campaign"] != "__PMAX_PLACEHOLDER__")]
         if sub.empty:
             continue
-        hit = sub[(sub["_key_exact"] == r["_pb_exact"]) | (sub["_key_exact"] == r["_pl_exact"])]
-        if hit.empty:
-            hit = sub[(sub["_key_canon"] == r["_pb_canon"]) | (sub["_key_canon"] == r["_pl_canon"])]
-        if hit.empty:
+        candidates = sub["utm_campaign"].astype(str).tolist()
+        target = str(r.get("platform_campaign_name") or r.get("campaign_id") or "")
+        mr = best_match_against_candidates(
+            target,
+            candidates,
+            min_score=float(allocation_config.match_min_score),
+            exact_weight=float(allocation_config.match_weight_exact),
+            canonical_weight=float(allocation_config.match_weight_canonical),
+            fuzzy_weight=float(allocation_config.match_weight_fuzzy),
+        )
+        if not mr.matched_name:
             continue
+        hit = sub[sub["utm_campaign"].astype(str) == mr.matched_name]
         out.at[idx, "pipeline_amount"] = float(hit["pipeline_amount"].sum())
         out.at[idx, "closed_won_amount"] = float(hit["closed_won_amount"].sum())
         out.at[idx, "roi_priority_weight"] = float(hit["roi_priority_weight"].sum())

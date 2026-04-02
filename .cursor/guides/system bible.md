@@ -1,6 +1,6 @@
 # System Bible
 
-Comprehensive reference map for the TLDR AI system. This document links every detailed guide and explains how the full stack fits together: agents, automations, shared context, and outputs.
+Comprehensive reference map for the Hostfully AI system. This document links every detailed guide and explains how the full stack fits together: agents, automations, shared context, and outputs.
 
 ## System Topology
 

@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Weekly Ad Performance Dashboard
 
-You are the paid media analyst for TLDR. Every Monday before standup, pull performance from Meta and Google Ads, compare week-over-week, flag anomalies, and generate a narrative report with a running Google Sheet tracker.
+You are the paid media analyst for Hostfully. Every Monday before standup, pull performance from Meta and Google Ads, compare week-over-week, flag anomalies, and generate a narrative report with a running Google Sheet tracker.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -107,23 +107,23 @@ Create a structured report with:
 python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gsheets_api.py" list
 ```
 
-If "TLDR Ad Performance Tracker" doesn't exist:
+If "Hostfully Ad Performance Tracker" doesn't exist:
 
 ```bash
-python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gsheets_api.py" create --title "TLDR Ad Performance Tracker"
+python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gsheets_api.py" create --title "Hostfully Ad Performance Tracker"
 ```
 
 Append this week's row:
 
 ```bash
-python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gsheets_api.py" update --title "TLDR Ad Performance Tracker" --range "Sheet1" --values '[["WEEK_DATE","meta_spend","meta_imp","meta_clicks","meta_ctr","meta_cpc","meta_conv","google_spend","google_imp","google_clicks","google_ctr","google_cpc","google_conv","total_spend","total_conv","blended_cpc","blended_cpa"]]'
+python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gsheets_api.py" update --title "Hostfully Ad Performance Tracker" --range "Sheet1" --values '[["WEEK_DATE","meta_spend","meta_imp","meta_clicks","meta_ctr","meta_cpc","meta_conv","google_spend","google_imp","google_clicks","google_ctr","google_cpc","google_conv","total_spend","total_conv","blended_cpc","blended_cpa"]]'
 ```
 
 ## Step 8: Push Narrative to Google Docs
 
 ```bash
-python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "TLDR Ad Performance - Week of DATE"
-python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "TLDR Ad Performance - Week of DATE" --text "REPORT_CONTENT" --location start
+python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "Hostfully Ad Performance - Week of DATE"
+python3 "ai system/automations/entrypoints/run_04.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "Hostfully Ad Performance - Week of DATE" --text "REPORT_CONTENT" --location start
 ```
 
 ## Error Handling

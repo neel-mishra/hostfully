@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paid ads campaign intake — Hostfully</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a2332;
+      --border: #2d3a4d;
+      --text: #e8eef5;
+      --muted: #8b9cb3;
+      --accent: #3d8bfd;
+      --accent-dim: #2563c7;
+      --radius: 10px;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.45;
+      padding: 1.5rem;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.35rem; font-weight: 600; margin: 0 0 0.35rem; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .step-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    section.panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+    }
+    h2 { font-size: 1rem; font-weight: 600; margin: 0 0 0.85rem; }
+    .q { margin-bottom: 1.15rem; }
+    .q:last-child { margin-bottom: 0; }
+    .qlabel { font-size: 0.88rem; color: var(--muted); margin-bottom: 0.5rem; display: block; }
+    .option-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .option-grid label {
+      cursor: pointer;
+      padding: 0.55rem 0.85rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      font-size: 0.9rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .option-grid label:hover { border-color: var(--accent-dim); }
+    .option-grid input { position: absolute; opacity: 0; pointer-events: none; }
+    .option-grid input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .option-grid label:has(input:checked) {
+      border-color: var(--accent);
+      background: rgba(61, 139, 253, 0.12);
+    }
+    .option-grid label { display: inline-flex; align-items: center; gap: 0.35rem; }
+    input[type="text"], input[type="number"], textarea, select {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font: inherit;
+    }
+    textarea { min-height: 72px; resize: vertical; }
+    .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    @media (max-width: 560px) { .row2 { grid-template-columns: 1fr; } }
+    .hidden { display: none !important; }
+    .nav {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+    }
+    button {
+      cursor: pointer;
+      font: inherit;
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+    }
+    button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    button:disabled { opacity: 0.45; cursor: not-allowed; }
+    #out {
+      font-family: ui-monospace, monospace;
+      font-size: 0.78rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 280px;
+      overflow: auto;
+      padding: 1rem;
+      background: var(--bg);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .check-row { display: flex; flex-direction: column; gap: 0.45rem; }
+    .check-row label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; cursor: pointer; }
+    .check-row input { width: auto; }
+    .hint { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Paid ads campaign intake</h1>
+    <p class="sub">Click options below. Matches the paid-ads-structure agent flow. Export JSON at the end for this chat or the orchestrator.</p>
+
+    <div id="steps">
+      <!-- Step 1 -->
+      <div class="panel" data-step="1">
+        <span class="step-badge">Step 1 — Foundations</span>
+        <div class="q">
+          <span class="qlabel">1. Platform</span>
+          <div class="option-grid" id="platform-opts"></div>
+        </div>
+        <div class="q hidden" id="multi-detail">
+          <span class="qlabel">Multi-platform detail (which channels / budget split if known)</span>
+          <textarea id="multi_notes" placeholder="e.g. Meta 60% / Google 40%; or list channels"></textarea>
+        </div>
+        <div class="q">
+          <span class="qlabel">2. Business objective</span>
+          <div class="option-grid" id="objective-opts"></div>
+        </div>
+        <div class="q row2">
+          <div>
+            <span class="qlabel">3. Monthly budget (number)</span>
+            <input type="number" id="budget_amount" min="0" step="1" placeholder="15000" />
+          </div>
+          <div>
+            <span class="qlabel">Currency</span>
+            <input type="text" id="budget_currency" placeholder="USD" />
+          </div>
+        </div>
+        <div class="q">
+          <span class="qlabel">4. New campaign or restructure?</span>
+          <div class="option-grid" id="newrest-opts"></div>
+        </div>
+        <div class="q hidden" id="restructure-detail">
+          <span class="qlabel">Existing account / structure notes</span>
+          <textarea id="restructure_notes" placeholder="Account ID, current structure, main pain"></textarea>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="panel hidden" data-step="2">
+        <span class="step-badge">Step 2 — Audience &amp; funnel</span>
+        <div class="q">
+          <span class="qlabel">5. B2B or B2C?</span>
+          <div class="option-grid" id="b2-opts"></div>
+        </div>
+        <div class="q">
+          <span class="qlabel">6. Target audience (short)</span>
+          <textarea id="audience_text" placeholder="Roles, industries, demographics, pain points"></textarea>
+        </div>
+        <div class="q">
+          <span class="qlabel">7. Funnel stage</span>
+          <div class="option-grid" id="funnel-opts"></div>
+        </div>
+        <div class="q">
+          <span class="qlabel">8. First-party data (check all that apply)</span>
+          <div class="check-row" id="firstparty-opts"></div>
+        </div>
+        <div class="q">
+          <span class="qlabel">9. Geographic targeting</span>
+          <textarea id="geo_text" placeholder="Countries, regions, cities, radius"></textarea>
+        </div>
+      </div>
+
+      <!-- Step 3 platform-specific -->
+      <div class="panel hidden" data-step="3">
+        <span class="step-badge">Step 3 — Platform-specific</span>
+        <p class="hint" id="platform-hint"></p>
+
+        <div id="block-google" class="hidden">
+          <h2>Google Ads</h2>
+          <div class="q">
+            <span class="qlabel">Campaign type</span>
+            <div class="option-grid" id="g-type"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Conversion volume for Smart Bidding (rough)</span>
+            <div class="option-grid" id="g-conv"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Search: brand vs non-brand / keywords</span>
+            <textarea id="g_search_notes" placeholder="Optional"></textarea>
+          </div>
+          <div class="q">
+            <span class="qlabel">Merchant Center / feed ready? (Shopping / PMax)</span>
+            <div class="option-grid" id="g-feed"></div>
+          </div>
+        </div>
+
+        <div id="block-meta" class="hidden">
+          <h2>Meta</h2>
+          <div class="q">
+            <span class="qlabel">Budget: CBO or ABO?</span>
+            <div class="option-grid" id="m-budget"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Advantage+ vs manual</span>
+            <div class="option-grid" id="m-adv"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Special ad category?</span>
+            <div class="option-grid" id="m-special"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Conversion event priority</span>
+            <div class="option-grid" id="m-event"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Attribution window</span>
+            <div class="option-grid" id="m-attr"></div>
+          </div>
+        </div>
+
+        <div id="block-linkedin" class="hidden">
+          <h2>LinkedIn</h2>
+          <div class="q">
+            <span class="qlabel">ABM vs broad</span>
+            <div class="option-grid" id="li-abm"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Company list available?</span>
+            <div class="option-grid" id="li-list"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Lead Gen Forms vs website conversions</span>
+            <div class="option-grid" id="li-lead"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Insight Tag installed?</span>
+            <div class="option-grid" id="li-tag"></div>
+          </div>
+        </div>
+
+        <div id="block-tiktok" class="hidden">
+          <h2>TikTok</h2>
+          <div class="q">
+            <span class="qlabel">Phase</span>
+            <div class="option-grid" id="tt-phase"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Spark Ads available?</span>
+            <div class="option-grid" id="tt-spark"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">TikTok Shop</span>
+            <div class="option-grid" id="tt-shop"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Smart+ vs manual</span>
+            <div class="option-grid" id="tt-smart"></div>
+          </div>
+        </div>
+
+        <div id="block-x" class="hidden">
+          <h2>X (Twitter)</h2>
+          <div class="q">
+            <span class="qlabel">Promoted organic vs dedicated creative</span>
+            <div class="option-grid" id="x-promo"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">Placements</span>
+            <div class="option-grid" id="x-place"></div>
+          </div>
+          <div class="q">
+            <span class="qlabel">X Pixel installed?</span>
+            <div class="option-grid" id="x-pixel"></div>
+          </div>
+        </div>
+
+        <div id="block-reddit" class="hidden">
+          <h2>Reddit</h2>
+          <div class="q">
+            <span class="qlabel">Primary Reddit objective (align to your funnel)</span>
+            <textarea id="reddit_notes" placeholder="Conversions, traffic, app installs, etc."></textarea>
+          </div>
+        </div>
+
+        <div id="block-multi" class="hidden">
+          <h2>Multi-platform</h2>
+          <p class="hint">Use the multi-platform notes from Step 1; add per-channel priorities below.</p>
+          <textarea id="multi_platform_extra" placeholder="Per-channel objectives, caveats"></textarea>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="panel hidden" data-step="4">
+        <span class="step-badge">Step 4 — Tracking &amp; naming</span>
+        <div class="q">
+          <span class="qlabel">10. Analytics platform</span>
+          <div class="option-grid" id="analytics-opts"></div>
+        </div>
+        <div class="q">
+          <span class="qlabel">11. UTM / naming</span>
+          <div class="option-grid" id="utm-opts"></div>
+        </div>
+        <div class="q">
+          <span class="qlabel">12. Conversion tracking</span>
+          <div class="check-row" id="conv-opts"></div>
+        </div>
+        <div class="q">
+          <span class="qlabel">Extra notes for the agent</span>
+          <textarea id="final_notes" placeholder="Compliance, words to avoid, deadlines"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button type="button" id="btn-back" disabled>Back</button>
+      <button type="button" class="primary" id="btn-next">Next</button>
+      <button type="button" id="btn-export" class="hidden">Copy JSON</button>
+    </div>
+
+    <section class="panel hidden" id="export-panel">
+      <h2>Exported payload</h2>
+      <pre id="out"></pre>
+      <p class="hint">Paste this message into Cursor chat so the paid-ads-structure / creative agents can run.</p>
+    </section>
+  </div>
+
+  <script>
+(function () {
+  const platforms = [
+    ["google", "Google Ads"],
+    ["meta", "Meta"],
+    ["linkedin", "LinkedIn"],
+    ["tiktok", "TikTok"],
+    ["x", "X"],
+    ["reddit", "Reddit"],
+    ["multi", "Multi-platform"],
+  ];
+  const objectives = [
+    ["leads", "Leads"],
+    ["sales", "Sales / purchases"],
+    ["app", "App installs / engagement"],
+    ["awareness", "Brand awareness / reach"],
+    ["traffic", "Website traffic"],
+    ["engagement", "Engagement (social, video)"],
+  ];
+  const newrest = [
+    ["new", "New campaign"],
+    ["restructure", "Restructure existing"],
+  ];
+  const b2 = [["b2b", "B2B"], ["b2c", "B2C"], ["both", "Both"]];
+  const funnel = [
+    ["cold", "Cold prospecting"],
+    ["warm", "Warm retargeting"],
+    ["reengage", "Re-engagement"],
+    ["full", "Full-funnel"],
+  ];
+  const firstparty = [
+    ["lists", "Email/phone lists for matching"],
+    ["pixel", "Pixel / tag collecting data"],
+    ["app", "App events"],
+    ["crm", "CRM / offline conversions"],
+  ];
+  const analytics = [
+    ["ga4", "GA4"],
+    ["mixpanel", "Mixpanel"],
+    ["amplitude", "Amplitude"],
+    ["adobe", "Adobe Analytics"],
+    ["other", "Other / multiple"],
+  ];
+  const utm = [
+    ["have", "We have a UTM convention"],
+    ["need", "Need one built"],
+  ];
+
+  function radioGroup(containerId, name, items, required) {
+    const el = document.getElementById(containerId);
+    items.forEach(([val, label]) => {
+      const id = name + "_" + val;
+      const lab = document.createElement("label");
+      lab.innerHTML = `<input type="radio" name="${name}" value="${val}" ${required ? "required" : ""} /><span>${label}</span>`;
+      el.appendChild(lab);
+    });
+  }
+
+  function checkGroup(containerId, name, items) {
+    const el = document.getElementById(containerId);
+    items.forEach(([val, label]) => {
+      const row = document.createElement("label");
+      row.innerHTML = `<input type="checkbox" name="${name}" value="${val}" /> ${label}`;
+      el.appendChild(row);
+    });
+  }
+
+  radioGroup("platform-opts", "platform", platforms, true);
+  radioGroup("objective-opts", "objective", objectives, true);
+  radioGroup("newrest-opts", "newrest", newrest, true);
+  radioGroup("b2-opts", "b2", b2, true);
+  radioGroup("funnel-opts", "funnel", funnel, true);
+  checkGroup("firstparty-opts", "firstparty", firstparty);
+  radioGroup("analytics-opts", "analytics", analytics, true);
+  radioGroup("utm-opts", "utm", utm, true);
+
+  const convChecks = [
+    ["pixel_ok", "Pixel/tag firing"],
+    ["serverside", "Server-side (CAPI / enhanced conversions)"],
+    ["offline", "Offline conversion import"],
+  ];
+  checkGroup("conv-opts", "conv", convChecks);
+
+  // Google
+  radioGroup("g-type", "g_type", [
+    ["search", "Search"], ["display", "Display"], ["video", "Video / YouTube"],
+    ["shopping", "Shopping"], ["pmax", "Performance Max"], ["demand_gen", "Demand Gen"],
+    ["app", "App"], ["call", "Call"], ["mixed", "Mixed"],
+  ], false);
+  radioGroup("g-conv", "g_conv", [
+    ["lt30", "&lt; 30/mo"], ["30_50", "30–50/mo"], ["50plus", "50+/mo"], ["unknown", "Unknown"],
+  ], false);
+  radioGroup("g-feed", "g_feed", [["yes", "Yes"], ["no", "No"], ["na", "N/A"]], false);
+
+  // Meta
+  radioGroup("m-budget", "m_budget", [["cbo", "CBO"], ["abo", "ABO"]], false);
+  radioGroup("m-adv", "m_adv", [["advantage", "Advantage+"], ["manual", "Manual"]], false);
+  radioGroup("m-special", "m_special", [["none", "None"], ["credit", "Credit"], ["employment", "Employment"], ["housing", "Housing"], ["social", "Social issues / politics"]], false);
+  radioGroup("m-event", "m_event", [["lead", "Lead"], ["purchase", "Purchase"], ["custom", "Custom event"]], false);
+  radioGroup("m-attr", "m_attr", [["1d_click", "1-day click"], ["7d_click", "7-day click"], ["1d_view", "1-day view"]], false);
+
+  // LinkedIn
+  radioGroup("li-abm", "li_abm", [["abm", "ABM / account list"], ["broad", "Broad targeting"]], false);
+  radioGroup("li-list", "li_list", [["yes", "Yes"], ["no", "No"], ["building", "Building"]], false);
+  radioGroup("li-lead", "li_lead", [["lgf", "Lead Gen Forms"], ["web", "Website conversions"], ["both", "Both"]], false);
+  radioGroup("li-tag", "li_tag", [["yes", "Installed"], ["no", "Not yet"]], false);
+
+  // TikTok
+  radioGroup("tt-phase", "tt_phase", [["test", "Testing"], ["scale", "Scaling"]], false);
+  radioGroup("tt-spark", "tt_spark", [["yes", "Yes"], ["no", "No"]], false);
+  radioGroup("tt-shop", "tt_shop", [["yes", "Yes"], ["no", "No"], ["na", "N/A"]], false);
+  radioGroup("tt-smart", "tt_smart", [["smart", "Smart+"], ["manual", "Manual"]], false);
+
+  // X
+  radioGroup("x-promo", "x_promo", [["organic", "Promoted organic"], ["dedicated", "Dedicated creative"]], false);
+  radioGroup("x-place", "x_place", [["standard", "Standard"], ["amplify", "Amplify / premium"]], false);
+  radioGroup("x-pixel", "x_pixel", [["yes", "Installed"], ["no", "Not yet"]], false);
+
+  let step = 1;
+  const maxStep = 4;
+
+  function selectedRadio(name) {
+    const r = document.querySelector(`input[name="${name}"]:checked`);
+    return r ? r.value : null;
+  }
+  function selectedChecks(name) {
+    return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map((c) => c.value);
+  }
+
+  function syncPlatformUI() {
+    const p = selectedRadio("platform");
+    document.getElementById("multi-detail").classList.toggle("hidden", p !== "multi");
+    document.getElementById("restructure-detail").classList.toggle("hidden", selectedRadio("newrest") !== "restructure");
+
+    const blocks = {
+      google: "block-google",
+      meta: "block-meta",
+      linkedin: "block-linkedin",
+      tiktok: "block-tiktok",
+      x: "block-x",
+      reddit: "block-reddit",
+      multi: "block-multi",
+    };
+    Object.entries(blocks).forEach(([k, id]) => {
+      const show = p === k || (p === "multi" && k === "multi");
+      document.getElementById(id).classList.toggle("hidden", !show);
+    });
+    // Multi: show all channel blocks? For simplicity only multi notes block + optional: show meta+google as hints
+    if (p === "multi") {
+      document.getElementById("block-multi").classList.remove("hidden");
+    }
+    const hint = document.getElementById("platform-hint");
+    hint.textContent = p
+      ? `Showing fields for: ${p}. Fill the sections that apply; skip N/A.`
+      : "";
+  }
+
+  document.getElementById("steps").addEventListener("change", syncPlatformUI);
+
+  function validateStep(s) {
+    if (s === 1) {
+      if (!selectedRadio("platform") || !selectedRadio("objective") || !selectedRadio("newrest")) {
+        alert("Please select platform, objective, and new vs restructure.");
+        return false;
+      }
+      const ba = document.getElementById("budget_amount").value.trim();
+      if (!ba) {
+        alert("Enter a monthly budget number (or 0 if unknown).");
+        return false;
+      }
+    }
+    if (s === 2) {
+      if (!selectedRadio("b2") || !selectedRadio("funnel")) {
+        alert("Select B2B/B2C and funnel stage.");
+        return false;
+      }
+    }
+    if (s === 4) {
+      if (!selectedRadio("analytics") || !selectedRadio("utm")) {
+        alert("Select analytics platform and UTM situation.");
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function showStep(s) {
+    document.querySelectorAll("[data-step]").forEach((panel) => {
+      panel.classList.toggle("hidden", +panel.dataset.step !== s);
+    });
+    document.getElementById("btn-back").disabled = s <= 1;
+    const btnNext = document.getElementById("btn-next");
+    btnNext.textContent = s < maxStep ? "Next" : "Generate JSON";
+    btnNext.classList.remove("hidden");
+    document.getElementById("export-panel").classList.add("hidden");
+    document.getElementById("btn-export").classList.add("hidden");
+    if (s === 3) syncPlatformUI();
+    step = s;
+  }
+
+  function collectPayload() {
+    const platform = selectedRadio("platform");
+    const payload = {
+      schema: "hostfully_paid_ads_intake_v1",
+      generated_at: new Date().toISOString(),
+      foundations: {
+        platform,
+        multi_platform_notes: platform === "multi" ? document.getElementById("multi_notes").value.trim() : null,
+        objective: selectedRadio("objective"),
+        monthly_budget: {
+          amount: document.getElementById("budget_amount").value.trim(),
+          currency: document.getElementById("budget_currency").value.trim() || null,
+        },
+        new_vs_restructure: selectedRadio("newrest"),
+        restructure_notes:
+          selectedRadio("newrest") === "restructure"
+            ? document.getElementById("restructure_notes").value.trim()
+            : null,
+      },
+      audience_funnel: {
+        b2b_b2c: selectedRadio("b2"),
+        target_audience: document.getElementById("audience_text").value.trim(),
+        funnel_stage: selectedRadio("funnel"),
+        first_party_data: selectedChecks("firstparty"),
+        geo: document.getElementById("geo_text").value.trim(),
+      },
+      platform_specific: {},
+      tracking: {
+        analytics: selectedRadio("analytics"),
+        utm: selectedRadio("utm"),
+        conversion_tracking: selectedChecks("conv"),
+        extra_notes: document.getElementById("final_notes").value.trim(),
+      },
+    };
+
+    const ps = {};
+    if (platform === "google") {
+      ps.google = {
+        campaign_type: selectedRadio("g_type"),
+        conversion_volume_tier: selectedRadio("g_conv"),
+        search_brand_notes: document.getElementById("g_search_notes").value.trim(),
+        merchant_feed: selectedRadio("g_feed"),
+      };
+    } else if (platform === "meta") {
+      ps.meta = {
+        cbo_or_abo: selectedRadio("m_budget"),
+        advantage_or_manual: selectedRadio("m_adv"),
+        special_ad_category: selectedRadio("m_special"),
+        conversion_event: selectedRadio("m_event"),
+        attribution: selectedRadio("m_attr"),
+      };
+    } else if (platform === "linkedin") {
+      ps.linkedin = {
+        abm_or_broad: selectedRadio("li_abm"),
+        company_list: selectedRadio("li_list"),
+        lead_form_or_web: selectedRadio("li_lead"),
+        insight_tag: selectedRadio("li_tag"),
+      };
+    } else if (platform === "tiktok") {
+      ps.tiktok = {
+        phase: selectedRadio("tt_phase"),
+        spark_ads: selectedRadio("tt_spark"),
+        tiktok_shop: selectedRadio("tt_shop"),
+        smart_or_manual: selectedRadio("tt_smart"),
+      };
+    } else if (platform === "x") {
+      ps.x = {
+        organic_or_dedicated: selectedRadio("x_promo"),
+        placements: selectedRadio("x_place"),
+        pixel: selectedRadio("x_pixel"),
+      };
+    } else if (platform === "reddit") {
+      ps.reddit = {
+        notes: document.getElementById("reddit_notes").value.trim(),
+      };
+    } else if (platform === "multi") {
+      ps.multi_platform = {
+        step1_notes: document.getElementById("multi_notes").value.trim(),
+        priorities: document.getElementById("multi_platform_extra").value.trim(),
+      };
+    }
+    payload.platform_specific = ps;
+    return payload;
+  }
+
+  document.getElementById("btn-next").addEventListener("click", () => {
+    if (!validateStep(step)) return;
+    if (step < maxStep) showStep(step + 1);
+    else {
+      const payload = collectPayload();
+      const text = JSON.stringify(payload, null, 2);
+      document.getElementById("out").textContent = text;
+      document.getElementById("export-panel").classList.remove("hidden");
+      document.getElementById("btn-export").classList.remove("hidden");
+    }
+  });
+
+  document.getElementById("btn-back").addEventListener("click", () => {
+    if (step > 1) showStep(step - 1);
+  });
+
+  document.getElementById("btn-export").addEventListener("click", async () => {
+    const text = document.getElementById("out").textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+      alert("JSON copied to clipboard.");
+    } catch {
+      alert("Copy failed; select the text manually.");
+    }
+  });
+
+  showStep(1);
+  syncPlatformUI();
+})();
+  </script>
+</body>
+</html>

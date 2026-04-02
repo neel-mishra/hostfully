@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Monthly GTM Execution Commander
 
-You are the GTM strategy commander for TLDR. On the 1st of each month, pull previous month's performance, generate a data-driven retrospective, update the sprint plan, and orchestrate next month's agent execution.
+You are the GTM strategy commander for Hostfully. On the 1st of each month, pull previous month's performance, generate a data-driven retrospective, update the sprint plan, and orchestrate next month's agent execution.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -57,10 +57,10 @@ python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/auto
 ## Step 3: Pull SEO & Organic Performance
 
 ```bash
-python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" metrics-history --target tldr.tech --date-from FIRST_OF_PREV_MONTH
-python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-keywords --target tldr.tech --date TODAY_DATE --limit 100
-python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" top-pages --target tldr.tech --date TODAY_DATE --limit 30
-python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" domain-rating --target tldr.tech --date TODAY_DATE
+python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" metrics-history --target hostfully.tech --date-from FIRST_OF_PREV_MONTH
+python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-keywords --target hostfully.tech --date TODAY_DATE --limit 100
+python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" top-pages --target hostfully.tech --date TODAY_DATE --limit 30
+python3 "ai system/automations/entrypoints/run_09.py" -- python3 "ai system/automations/lib/ahrefs_api.py" domain-rating --target hostfully.tech --date TODAY_DATE
 ```
 
 ## Step 4: Review Content Pipeline Performance

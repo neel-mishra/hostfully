@@ -50,6 +50,7 @@ This section is CRITICAL for Google Ads — give it full detail.
 ## 7. Ad Group & Ad Performance
 - Best ad groups by CPL and volume
 - Ad strength if available
+- Campaign-level fatigue in exported signals uses **prior-period WoW** (`fatigue_flag`, `wow_ctr_delta_pct`, `wow_cpl_delta_pct`) when a prior pull succeeded; reference when interpreting CPL/CTR shifts.
 - If data lacks this breakdown, state that.
 
 ## 8. Search Impression Share (when available)
@@ -60,6 +61,15 @@ This section is CRITICAL for Google Ads — give it full detail.
 ## 9. Key Inflection Points & Anomalies
 Flag any week-over-week shifts >15% in CPL, CTR, CPC, or spend.
 If no prior-period data, note any notable anomalies within the period.
+Compute and include an anomaly priority using:
+- 45% CPL/CPA deterioration
+- 25% CTR deterioration
+- 15% CPM/CPC change
+- 15% spend shock
+
+## 9.5 Ranked anomaly priority (pre-computed assist)
+Include a subsection that starts with the **PRE-COMPUTED RANKED TABLE** from the user prompt.
+Reproduce that table verbatim, then add 2–4 sentences interpreting the top 3 campaigns.
 
 ## 10. What Worked This Week
 Bullet list of winning tactics, keywords, ad groups, campaigns with supporting data.
@@ -81,7 +91,12 @@ Include key data tables for reference.
 """ + SHARED_RULES
 
 
-def generate_google_report(raw_data: dict, call_llm) -> str:
+def generate_google_report(
+    raw_data: dict,
+    call_llm,
+    *,
+    ranked_anomaly_markdown: str = "",
+) -> str:
     """Generate Google Ads performance report. Called by paid_ads_intelligence_agent."""
     data_json = json.dumps(raw_data, indent=2, default=str)
     if len(data_json) > 60000:
@@ -97,12 +112,16 @@ TODAY: {datetime.now().strftime('%Y-%m-%d')}
 ─── RAW API DATA ───
 {data_json}
 
+─── PRE-COMPUTED RANKED ANOMALY / ACTION PRIORITY (Section 9.5) ───
+{ranked_anomaly_markdown}
+
 INSTRUCTIONS:
 - Use "leads" terminology (not "conversions") throughout.
 - Section 5 (Keywords & Search Terms): give full detail — this is core to Google Ads optimization.
 - Section 6 (Landing Page): analyze if data contains landing_page_view or equivalent.
 - If data shows errors, empty campaigns, or API issues, note that in the Executive Summary.
 - Do NOT echo back raw JSON. Use formatted markdown tables only.
+- Section 9.5: start from the pre-computed table above; do not discard it.
 - Keep the report concise and analytical. Target 400-600 lines of markdown."""
 
     return call_llm(prompt, GOOGLE_SYSTEM_PROMPT)

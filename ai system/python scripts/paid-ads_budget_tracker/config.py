@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 def workspace_root() -> Path:
-    """TLDR repo root: paid-ads_budget_tracker/config.py -> 4 parents up."""
+    """Hostfully repo root: paid-ads_budget_tracker/config.py -> 4 parents up."""
     return Path(__file__).resolve().parent.parent.parent.parent
 
 
@@ -49,6 +49,36 @@ class AllocationConfig:
     epsilon: float = 0.01
     min_leads_for_tier: int = 1
     min_spend_for_tier: float = 25.0
+    # In-platform composite `performance_score` (see performance_scores.py). Must sum to 1.0.
+    perf_weight_cost: float = 0.45  # target CPL / actual CPL (clipped)
+    perf_weight_engagement: float = 0.10  # CTR vs median CTR
+    perf_weight_conversion: float = 0.10  # CVR vs median CVR
+    perf_weight_volume: float = 0.35  # leads vs median leads
+    # Optional congruent tie-break modifiers. These do not replace the 85/15 core blend.
+    winning_angle_bonus: float = 0.05
+    fatigue_penalty: float = 0.05
+    volatility_penalty: float = 0.03
+    low_confidence_penalty: float = 0.02
+    tie_break_modifier_min: float = 0.85
+    tie_break_modifier_max: float = 1.15
+    tie_break_max_net_impact_pct: float = 0.15
+    # Weighted redistribution knobs (Phase 2)
+    redistribute_use_weighted: bool = True
+    redistribute_weight_playbook: float = 0.50
+    redistribute_weight_roi: float = 0.35
+    redistribute_weight_winner_affinity: float = 0.15
+    redistribute_tier_floor_A: float = 0.90
+    redistribute_tier_floor_B: float = 0.70
+    redistribute_tier_floor_C: float = 0.50
+    # Matching confidence knobs
+    match_weight_exact: float = 1.00
+    match_weight_canonical: float = 0.90
+    match_weight_fuzzy: float = 0.70
+    match_min_score: float = 0.75
+    # Live pull QA (Phase 2)
+    source_reliability_api: float = 1.00
+    source_reliability_snapshot: float = 0.80
+    coverage_warning_threshold: float = 0.90
 
 
 paths = Paths()

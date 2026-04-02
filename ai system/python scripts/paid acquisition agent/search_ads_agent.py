@@ -1,4 +1,4 @@
-#!/usr/import/env python3
+#!/usr/bin/env python3
 """
 Search Ads Keyword & Copywriter Agent
 Generates high-intent search ad copy mapped to specific strategic query groups.
@@ -57,8 +57,60 @@ class SearchAdsAgent:
         self.commands_dir = os.path.join(self.workspace_root, "commands")
         self.output_dir = os.path.join(self.workspace_root, "docs", "paid_ads_assets")
         os.makedirs(self.output_dir, exist_ok=True)
+        self.winning_angles_dir = os.path.join(
+            self.workspace_root, "docs", "context_repository", "paid_ads", "winning_angles"
+        )
+        self.signals_jsonl = os.path.join(
+            self.workspace_root, "outputs", "training_data", "paid_ads", "signals", "signals_latest.jsonl"
+        )
+        self.angle_priors_json = os.path.join(
+            self.winning_angles_dir, "angle_priors_mar2026_onward.json"
+        )
+        self.search_weight_keyword_intent = 0.40
+        self.search_weight_hist_ctr = 0.25
+        self.search_weight_hist_conv = 0.35
+        self.search_exploration_ratio = 0.20
         
         self.context = {}
+
+    def _read_text_if_exists(self, path: str) -> str:
+        if not os.path.exists(path):
+            return ""
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+
+    def _load_training_context(self) -> dict:
+        top10 = self._read_text_if_exists(
+            os.path.join(self.winning_angles_dir, "top10_reusable_angles_mar2026_onward.md")
+        )
+        google_winners = self._read_text_if_exists(
+            os.path.join(self.winning_angles_dir, "google_mar2026_onward.md")
+        )
+        signal_rows = []
+        if os.path.exists(self.signals_jsonl):
+            with open(self.signals_jsonl, "r", encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        row = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if row.get("platform") == "google":
+                        signal_rows.append(row)
+                    if len(signal_rows) >= 30:
+                        break
+        priors = {}
+        if os.path.exists(self.angle_priors_json):
+            try:
+                with open(self.angle_priors_json, "r", encoding="utf-8") as f:
+                    priors = json.load(f)
+            except json.JSONDecodeError:
+                priors = {}
+        return {
+            "top10": top10,
+            "google_winners": google_winners,
+            "signals": signal_rows,
+            "angle_priors": priors,
+        }
 
     def load_context(self):
         """Loads required Markdown files from the commands/ directory."""
@@ -105,7 +157,15 @@ class SearchAdsAgent:
         """Uses Gemini to cluster keywords and generate valid Google Ads copy."""
         keywords = self.run_keyword_planner(seed_query)
         kw_list_str = "\n".join([f"- {k['keyword']} (Vol: {k['volume']})" for k in keywords])
-        
+        training = self._load_training_context()
+        signal_preview = "\n".join(
+            [
+                f"- blended={r.get('blended_score')} conv={r.get('results_or_conversions')} ctr={r.get('ctr')} text={str(r.get('entity_text',''))[:90]}"
+                for r in training["signals"][:10]
+            ]
+        )
+        priors_preview = json.dumps(training.get("angle_priors") or {}, indent=2)[:3500]
+
         prompt = f"""
         You are an expert Google Search Ads Copywriter.
         
@@ -121,18 +181,38 @@ class SearchAdsAgent:
         
         KEYWORDS FOUND:
         {kw_list_str}
+
+        HISTORICAL WINNERS CONTEXT:
+        {training['top10']}
+
+        GOOGLE WINNERS DETAIL:
+        {training['google_winners']}
+
+        STRUCTURED SIGNAL PREVIEW:
+        {signal_preview}
+
+        ANGLE PRIORS (JSON from creative_mapping / winners — use for Angle Tag selection):
+        {priors_preview}
         
         TASK:
         1. Cluster these keywords logically into Ad Groups.
         2. Write 3 Headlines and 2 Descriptions per Ad Group.
-        3. STRICT CONSTRAINTS:
+        3. Assign one **Angle Tag** per ad group from this closed set (pick the best fit):
+           ops_relief, roi_proof, scale_story, integration_power, social_proof, offer_urgency, general_value.
+        4. Use weighted strategy:
+           - {self.search_weight_keyword_intent*100:.0f}% keyword intent
+           - {self.search_weight_hist_ctr*100:.0f}% historical CTR signal
+           - {self.search_weight_hist_conv*100:.0f}% historical conversion signal
+           - Reserve ~{self.search_exploration_ratio*100:.0f}% of rows as explicit exploration (tag general_value or note in Keywords).
+        5. At least 80% of ad groups should use angle tags that appear in the ANGLE PRIORS ranked_families top half when priors exist; otherwise lean on top10/google winners text.
+        6. STRICT CONSTRAINTS:
            - Headlines MUST be 30 characters or less.
            - Descriptions MUST be 90 characters or less.
            - Do not use exclamation points in the headline.
            
         OUTPUT FORMAT:
         Return ONLY a properly formatted CSV. No markdown code blocks, no intro text.
-        Headers exactly: Campaign,Ad Group,Headline 1,Headline 2,Headline 3,Description 1,Description 2,Keywords
+        Headers exactly: Campaign,Ad Group,Angle Tag,Headline 1,Headline 2,Headline 3,Description 1,Description 2,Keywords
         """
         print("✍️  Generating AI Ad Copy based on strategic constraints...")
         raw_csv = safe_generate(prompt)
@@ -144,6 +224,21 @@ class SearchAdsAgent:
         output_file = os.path.join(self.output_dir, f"search_ads_copy_{int(time.time())}.csv")
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(raw_csv.strip())
+        # Basic constraints sanity check for downstream QA.
+        try:
+            import io
+            r = csv.DictReader(io.StringIO(raw_csv.strip()))
+            for row in r:
+                if not (row.get("Angle Tag") or "").strip():
+                    print(f"   ⚠️ Missing Angle Tag for ad group {row.get('Ad Group')}")
+                for h in ("Headline 1", "Headline 2", "Headline 3"):
+                    if len((row.get(h) or "").strip()) > 30:
+                        print(f"   ⚠️ Constraint warning: {h} exceeds 30 chars in ad group {row.get('Ad Group')}")
+                for d in ("Description 1", "Description 2"):
+                    if len((row.get(d) or "").strip()) > 90:
+                        print(f"   ⚠️ Constraint warning: {d} exceeds 90 chars in ad group {row.get('Ad Group')}")
+        except Exception:
+            pass
             
         print(f"✅ Saved Search Ads CSV to: {output_file}")
         

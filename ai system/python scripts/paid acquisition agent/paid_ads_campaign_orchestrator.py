@@ -3,7 +3,7 @@ Generic paid ads campaign orchestrator.
 
 Goal:
     Given a small set of inputs (channel, campaign name, objective, month),
-    scaffold the full paid-ads asset pack under docs/paid_ads_assets/:
+    scaffold the full paid-ads asset pack under outputs/docs/paid_ads_assets/:
 
         - Campaign structure file
         - Ad creative file for the month
@@ -35,8 +35,9 @@ import os
 from pathlib import Path
 from textwrap import dedent
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-ASSETS_ROOT = REPO_ROOT / "docs" / "paid_ads_assets"
+# Repository root (orchestrator lives at ai system/python scripts/paid acquisition agent/)
+REPO_ROOT = Path(__file__).resolve().parents[3]
+ASSETS_ROOT = REPO_ROOT / "outputs" / "docs" / "paid_ads_assets"
 
 
 def _today_iso() -> str:
@@ -100,8 +101,8 @@ def scaffold_campaign(
     tracking_dir = campaign_dir / "tracking-implementation-and-qa"
     build_sheet_dir = campaign_dir / "build-sheet"
     ab_test_dir = campaign_dir / "ab-test-plan"
-    # Visual briefs remain under creative-briefs/
     creative_briefs_dir = campaign_dir / "creative-briefs" / month_slug
+    creative_deliverables_dir = campaign_dir / "creative-deliverables" / month_slug
     for d in (
         structure_dir,
         ad_creative_dir,
@@ -110,6 +111,7 @@ def scaffold_campaign(
         build_sheet_dir,
         ab_test_dir,
         creative_briefs_dir,
+        creative_deliverables_dir,
     ):
         _ensure_dir(d)
 
@@ -156,6 +158,7 @@ def scaffold_campaign(
             |-------|------|
             | **Ad Creative (current)** | [ad-creative/{campaign_name}_ad-creative_{month_slug}.md](ad-creative/{campaign_name}_ad-creative_{month_slug}.md) |
             | **Creative Briefs (current)** | [creative-briefs/{month_slug}/](creative-briefs/{month_slug}/_index.md) |
+            | **Creative deliverables (current)** | [creative-deliverables/{month_slug}/](creative-deliverables/{month_slug}/_index.md) |
             | **Campaign Master Index** | [_index.md](_index.md) |
             """
         ),
@@ -217,6 +220,35 @@ def scaffold_campaign(
 
             This folder is intended to be filled by visual-creative-brief-agent.
             Create one brief per ad ID defined in `{campaign_name}_ad-creative_{month_slug}.md`.
+            """
+        ),
+    )
+
+    deliverables_index = creative_deliverables_dir / "_index.md"
+    _write_if_missing(
+        deliverables_index,
+        dedent(
+            f"""
+            ---
+            title: "Creative Deliverables – {campaign_name} – {human_month}"
+            campaign: "{campaign_name}"
+            platform: "{channel_norm}"
+            month: "{human_month}"
+            status: "Draft"
+            ---
+
+            # Creative Deliverables – {campaign_name} ({human_month})
+
+            Place **built** assets here: Canva/Figma handoff markdown, export links, `canva_mcp_sync_plan.json`, etc.
+            **Designer briefs** stay in `creative-briefs/{month_slug}/`.
+
+            ## Companion assets
+
+            | Asset | Link |
+            |-------|------|
+            | **Creative briefs** | [../../creative-briefs/{month_slug}/_index.md](../../creative-briefs/{month_slug}/_index.md) |
+            | **Ad creative** | [../../ad-creative/{campaign_name}_ad-creative_{month_slug}.md](../../ad-creative/{campaign_name}_ad-creative_{month_slug}.md) |
+            | **Campaign index** | [../../_index.md](../../_index.md) |
             """
         ),
     )

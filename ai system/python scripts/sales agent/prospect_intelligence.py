@@ -2,7 +2,7 @@
 """
 Advertiser Prospect Intelligence Agent
 
-Identifies ideal advertising prospects for TLDR newsletters by analyzing
+Identifies ideal advertising prospects for Hostfully newsletters by analyzing
 funding signals, ad spend patterns, and competitor activity. Uses Claude API
 for analysis and scoring, Ahrefs data for domain intelligence, and Meta Ad
 Library for ad spend signals.
@@ -63,17 +63,17 @@ VERTICALS = [
 ]
 
 NEWSLETTER_MAP = {
-    "AI/ML Platforms": ["TLDR AI", "TLDR Tech"],
-    "Developer Tools": ["TLDR Dev", "TLDR Tech"],
-    "Cloud Infrastructure": ["TLDR DevOps", "TLDR Tech"],
-    "Cybersecurity": ["TLDR InfoSec", "TLDR Tech"],
-    "Fintech": ["TLDR Fintech", "TLDR Tech"],
-    "B2B SaaS": ["TLDR Tech", "TLDR Product"],
-    "HR Tech / Recruiting": ["TLDR Tech", "TLDR Founders"],
-    "Education / Upskilling": ["TLDR Tech", "TLDR Dev"],
-    "DevOps": ["TLDR DevOps", "TLDR Tech"],
-    "Data Infrastructure": ["TLDR Data", "TLDR Tech", "TLDR AI"],
-    "Open Source": ["TLDR Dev", "TLDR Tech", "TLDR DevOps"],
+    "AI/ML Platforms": ["Hostfully AI", "Hostfully Tech"],
+    "Developer Tools": ["Hostfully Dev", "Hostfully Tech"],
+    "Cloud Infrastructure": ["Hostfully DevOps", "Hostfully Tech"],
+    "Cybersecurity": ["Hostfully InfoSec", "Hostfully Tech"],
+    "Fintech": ["Hostfully Fintech", "Hostfully Tech"],
+    "B2B SaaS": ["Hostfully Tech", "Hostfully Product"],
+    "HR Tech / Recruiting": ["Hostfully Tech", "Hostfully Founders"],
+    "Education / Upskilling": ["Hostfully Tech", "Hostfully Dev"],
+    "DevOps": ["Hostfully DevOps", "Hostfully Tech"],
+    "Data Infrastructure": ["Hostfully Data", "Hostfully Tech", "Hostfully AI"],
+    "Open Source": ["Hostfully Dev", "Hostfully Tech", "Hostfully DevOps"],
 }
 
 
@@ -161,16 +161,16 @@ def load_context() -> dict[str, str]:
 # ---------------------------------------------------------------------------
 
 def scan_funding_signals(vertical: str | None, api_key: str, context: dict) -> list[dict]:
-    """Use Claude to identify recently funded companies that match TLDR's advertiser ICP."""
+    """Use Claude to identify recently funded companies that match Hostfully's advertiser ICP."""
     vertical_filter = f"Focus specifically on the {vertical} vertical." if vertical else "Cover all B2B tech verticals."
 
-    prompt = f"""You are a B2B advertising prospect researcher for TLDR, the largest daily tech newsletter (7M+ subscribers).
+    prompt = f"""You are a B2B advertising prospect researcher for Hostfully, the largest daily tech newsletter (7M+ subscribers).
 
-TASK: Identify 15-20 B2B tech companies that recently raised funding (Series A through D, $5M+) in the last 6 months that would be ideal advertising prospects for TLDR newsletters.
+TASK: Identify 15-20 B2B tech companies that recently raised funding (Series A through D, $5M+) in the last 6 months that would be ideal advertising prospects for Hostfully newsletters.
 
 {vertical_filter}
 
-TLDR's ADVERTISER ICP:
+Hostfully's ADVERTISER ICP:
 {context.get('icp', 'B2B SaaS, developer tools, cloud, AI/ML, cybersecurity, fintech, HR tech')}
 
 For each company, provide STRICTLY this JSON format (no other text):
@@ -193,7 +193,7 @@ For each company, provide STRICTLY this JSON format (no other text):
 Only include companies where:
 1. Their product targets developers, engineers, PMs, CTOs, or tech teams
 2. They have enough funding to support $3K+ ad campaigns
-3. They would benefit from reaching TLDR's technical audience
+3. They would benefit from reaching Hostfully's technical audience
 
 Be specific and factual. Use real companies with real funding data you know about."""
 
@@ -217,14 +217,14 @@ Be specific and factual. Use real companies with real funding data you know abou
 
 def scan_competitor_advertisers(api_key: str, context: dict) -> list[dict]:
     """Identify companies advertising on competitor newsletters."""
-    prompt = f"""You are a B2B advertising prospect researcher for TLDR newsletters.
+    prompt = f"""You are a B2B advertising prospect researcher for Hostfully newsletters.
 
-TASK: Identify 10-15 companies that are currently advertising on competitor newsletters (Morning Brew, The Hustle, Lenny's Newsletter, Bytes.dev) or other B2B tech media that would also be a great fit for TLDR.
+TASK: Identify 10-15 companies that are currently advertising on competitor newsletters (Morning Brew, The Hustle, Lenny's Newsletter, Bytes.dev) or other B2B tech media that would also be a great fit for Hostfully.
 
 COMPETITOR LANDSCAPE:
 {context.get('competitors', '')}
 
-TLDR BUSINESS CONTEXT:
+Hostfully BUSINESS CONTEXT:
 {context.get('business', '')}
 
 For each company, provide STRICTLY this JSON format (no other text):
@@ -247,7 +247,7 @@ For each company, provide STRICTLY this JSON format (no other text):
 Focus on companies that:
 1. Target technical audiences (developers, engineers, PMs)
 2. Have proven willingness to spend on newsletter advertising
-3. Are NOT already known TLDR advertisers (AWS, Google Cloud, Anthropic, Shopify, Plaid, Bland AI, Delve, Kolena, Paragon)
+3. Are NOT already known Hostfully advertisers (AWS, Google Cloud, Anthropic, Shopify, Plaid, Bland AI, Delve, Kolena, Paragon)
 
 Be specific about where you've seen their ads."""
 
@@ -282,7 +282,7 @@ def score_prospects(prospects: list[dict], api_key: str, context: dict) -> list[
         for p in prospects
     )
 
-    prompt = f"""You are scoring advertising prospects for TLDR newsletters (7M+ tech subscribers).
+    prompt = f"""You are scoring advertising prospects for Hostfully newsletters (7M+ tech subscribers).
 
 SCORING DIMENSIONS (score each 1-10):
 1. Budget Signal (30% weight): 1-3=no visible spend, 4-6=some ads, 7-10=heavy active spend
@@ -291,7 +291,7 @@ SCORING DIMENSIONS (score each 1-10):
 4. Timing (15% weight): 1-3=no urgency, 4-6=some momentum, 7-10=fresh funding/launch
 5. Deal Size Potential (10% weight): 1-3=likely $3K one-off, 4-6=$10-30K, 7-10=$50K+ recurring
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {context.get('icp', '')}
 
 PROSPECTS TO SCORE:
@@ -309,7 +309,7 @@ For each prospect, output STRICTLY this JSON (no other text):
     "deal_size": 6,
     "priority_score": 8,
     "outreach_angle": "One sentence personalized pitch angle",
-    "newsletter_fit_names": "TLDR AI, TLDR Tech"
+    "newsletter_fit_names": "Hostfully AI, Hostfully Tech"
   }}
 ]
 ```
@@ -342,7 +342,7 @@ The priority_score should be the weighted average: (budget*0.3 + audience*0.25 +
 
 
 def _infer_newsletter_fit(industry: str) -> str:
-    return ", ".join(NEWSLETTER_MAP.get(industry, ["TLDR Tech"]))
+    return ", ".join(NEWSLETTER_MAP.get(industry, ["Hostfully Tech"]))
 
 
 # ---------------------------------------------------------------------------
@@ -350,7 +350,7 @@ def _infer_newsletter_fit(industry: str) -> str:
 # ---------------------------------------------------------------------------
 
 def generate_brief(prospect: dict, api_key: str, context: dict) -> str:
-    prompt = f"""You are writing a detailed prospect brief for TLDR's advertising sales team.
+    prompt = f"""You are writing a detailed prospect brief for Hostfully's advertising sales team.
 
 PROSPECT:
 - Company: {prospect.get('company', 'Unknown')}
@@ -361,7 +361,7 @@ PROSPECT:
 - Score: {prospect.get('Priority Score', 'N/A')}/10
 - Newsletter Fit: {prospect.get('Newsletter Fit', 'Unknown')}
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {context.get('business', '')}
 
 MESSAGING PILLARS:
@@ -374,20 +374,20 @@ Write a prospect brief in this exact markdown format:
 ## Company Overview
 [What they do, target market, stage, key metrics if known]
 
-## Why TLDR
-[3-4 specific reasons this company should advertise with TLDR — tie to their product and audience]
+## Why Hostfully
+[3-4 specific reasons this company should advertise with Hostfully — tie to their product and audience]
 
 ## Current Marketing Activity
 [What you know about their ad spend, channels, messaging]
 
 ## Newsletter Fit
-[Which TLDR newsletters and placement types, with reasoning]
+[Which Hostfully newsletters and placement types, with reasoning]
 
 ## Outreach Strategy
 [Personalized angle, suggested email subject line, 3 key talking points]
 
 ## Competitive Intelligence
-[Are they likely advertising elsewhere? What would make them switch to TLDR?]
+[Are they likely advertising elsewhere? What would make them switch to Hostfully?]
 
 Be specific and actionable. This brief will be handed directly to an AE for outreach."""
 
@@ -470,7 +470,7 @@ def write_prospect_briefs(prospects: list[dict], api_key: str, context: dict, dr
 def deep_dive(company: str, api_key: str, context: dict, dry_run: bool = False) -> None:
     print(f"\n🔬 Deep Dive: {company}")
 
-    prompt = f"""You are researching a potential advertising prospect for TLDR newsletters.
+    prompt = f"""You are researching a potential advertising prospect for Hostfully newsletters.
 
 COMPANY TO RESEARCH: {company}
 
@@ -483,13 +483,13 @@ Research this company and provide STRICTLY this JSON (no other text):
   "funding_stage": "Stage",
   "last_funding": "Details",
   "signal_type": "Deep Dive Research",
-  "signal_detail": "Comprehensive summary of why they're a good TLDR prospect",
+  "signal_detail": "Comprehensive summary of why they're a good Hostfully prospect",
   "current_ad_platforms": "Known platforms",
   "contact_target": "Ideal contact role"
 }}
 ```
 
-TLDR ICP:
+Hostfully ICP:
 {context.get('icp', '')}
 
 Be thorough — include funding history, product description, target audience, and any known marketing activity."""
@@ -558,7 +558,7 @@ def run_full_scan(vertical: str | None, api_key: str, dry_run: bool = False) -> 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Advertiser Prospect Intelligence — find ideal TLDR advertising prospects",
+        description="Advertiser Prospect Intelligence — find ideal Hostfully advertising prospects",
     )
     parser.add_argument("--vertical", type=str, help=f"Filter by vertical: {', '.join(VERTICALS)}")
     parser.add_argument("--company", type=str, help="Deep dive on a single company")

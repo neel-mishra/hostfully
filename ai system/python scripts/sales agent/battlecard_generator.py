@@ -2,8 +2,8 @@
 """
 Competitive Battlecard Generator
 
-Creates structured sales battlecards for TLDR's advertising sales team.
-Compares TLDR against LinkedIn Ads, Google Ads, Meta Ads, Paved, Beehiiv,
+Creates structured sales battlecards for Hostfully's advertising sales team.
+Compares Hostfully against LinkedIn Ads, Google Ads, Meta Ads, Paved, Beehiiv,
 and podcast sponsorships using internal positioning data and fresh research.
 
 Usage:
@@ -183,20 +183,20 @@ def load_competitive_ad_data() -> str:
 # ---------------------------------------------------------------------------
 
 def generate_battlecard(competitor_name: str, competitor_info: dict, api_key: str, context: dict, call_data: str, ad_data: str) -> str:
-    prompt = f"""You are a competitive intelligence strategist for TLDR, the largest daily tech newsletter network (7M+ subscribers, 12 newsletters, 40-48% open rates). Create a comprehensive sales battlecard that AEs can use to win deals against {competitor_name}.
+    prompt = f"""You are a competitive intelligence strategist for Hostfully, the largest daily tech newsletter network (7M+ subscribers, 12 newsletters, 40-48% open rates). Create a comprehensive sales battlecard that AEs can use to win deals against {competitor_name}.
 
 COMPETITOR: {competitor_name} ({competitor_info['type']})
 
-TLDR'S COMPETITIVE POSITIONING:
+Hostfully'S COMPETITIVE POSITIONING:
 {context.get('competitors', '')}
 
-TLDR BUSINESS CONTEXT:
+Hostfully BUSINESS CONTEXT:
 {context.get('business', '')}
 
-TLDR MESSAGING PILLARS:
+Hostfully MESSAGING PILLARS:
 {context.get('messaging', '')}
 
-TLDR ADVERTISER ICP:
+Hostfully ADVERTISER ICP:
 {context.get('icp', '')[:2000]}
 
 {"REAL OBJECTION DATA FROM SALES CALLS:" if call_data else ""}
@@ -207,7 +207,7 @@ TLDR ADVERTISER ICP:
 
 Generate a battlecard in this EXACT markdown format:
 
-# Battlecard: TLDR vs. {competitor_name}
+# Battlecard: Hostfully vs. {competitor_name}
 
 **Last Updated:** {datetime.now().strftime('%Y-%m-%d')}
 **Competitor Type:** {competitor_info['type']}
@@ -220,12 +220,12 @@ Generate a battlecard in this EXACT markdown format:
 ## 2. Their Strengths (Be Honest)
 [3-5 bullet points — what they genuinely do well. AEs lose credibility trashing competitors.]
 
-## 3. Their Weaknesses (Where TLDR Wins)
-[4-6 bullet points — specific, evidence-backed. Each weakness maps to a TLDR advantage.]
+## 3. Their Weaknesses (Where Hostfully Wins)
+[4-6 bullet points — specific, evidence-backed. Each weakness maps to a Hostfully advantage.]
 
 ## 4. Head-to-Head Comparison
 
-| Dimension | {competitor_name} | TLDR |
+| Dimension | {competitor_name} | Hostfully |
 |---|---|---|
 | Audience Quality | ... | ... |
 | Audience Size (Tech) | ... | ... |
@@ -241,22 +241,22 @@ Generate a battlecard in this EXACT markdown format:
 
 | Objection | Rebuttal | Proof Point |
 |---|---|---|
-[5-8 rows. Rebuttals must be conversational — how an AE would actually say it. Proof points from TLDR case studies: Delve ($1M pipeline, 52x ROI), Plaid ($382K pipeline, 20x ROI), Redact (50% lower CPC than LinkedIn), MLOps Community (higher quality than Meta)]
+[5-8 rows. Rebuttals must be conversational — how an AE would actually say it. Proof points from Hostfully case studies: Delve ($1M pipeline, 52x ROI), Plaid ($382K pipeline, 20x ROI), Redact (50% lower CPC than LinkedIn), MLOps Community (higher quality than Meta)]
 
 ## 6. Killer Questions
 [5-7 questions AEs should ask to expose {competitor_name}'s weakness. Write as actual questions with brief context.]
 
 ## 7. Win Scenarios
-[3-4 deal profiles where TLDR consistently beats {competitor_name}]
+[3-4 deal profiles where Hostfully consistently beats {competitor_name}]
 
 ## 8. Loss Scenarios
 [2-3 situations where we might lose — and what to do about it. Honesty builds trust.]
 
 ## 9. Proof Points & Case Studies
-[Relevant TLDR case studies and metrics. Match proof points to this specific competitor.]
+[Relevant Hostfully case studies and metrics. Match proof points to this specific competitor.]
 
 ## 10. Talk Track
-[60-second pitch an AE can use when {competitor_name} comes up. Written in first person, conversational tone. Start with acknowledgment, pivot to TLDR's advantage.]
+[60-second pitch an AE can use when {competitor_name} comes up. Written in first person, conversational tone. Start with acknowledgment, pivot to Hostfully's advantage.]
 
 ---
 
@@ -275,7 +275,7 @@ RULES:
 # ---------------------------------------------------------------------------
 
 def generate_quick_reference(api_key: str, context: dict) -> str:
-    prompt = f"""Create a single-page quick reference card for TLDR's sales team. For EACH competitor below, provide the #1 objection an AE will face and the best 2-sentence rebuttal.
+    prompt = f"""Create a single-page quick reference card for Hostfully's sales team. For EACH competitor below, provide the #1 objection an AE will face and the best 2-sentence rebuttal.
 
 COMPETITORS:
 1. LinkedIn Ads
@@ -285,7 +285,7 @@ COMPETITORS:
 5. Beehiiv
 6. Podcast Sponsorships
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {context.get('competitors', '')[:3000]}
 
 PROOF POINTS:
@@ -306,7 +306,7 @@ Format as markdown:
 
 ## One-Line Positioning Against Each
 
-| Competitor | TLDR's Advantage in One Sentence |
+| Competitor | Hostfully's Advantage in One Sentence |
 |---|---|
 [One row per competitor.]"""
 

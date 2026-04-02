@@ -29,7 +29,7 @@ flowchart LR
 - `competitive_tracker.py` and any competitor blog scraper configs.
 
 ## Outputs
-- Google Doc strategic brief showing overlapping “bets” (topics with both ads + content), gaps vs TLDR, and recommended responses.
+- Google Doc strategic brief showing overlapping “bets” (topics with both ads + content), gaps vs Hostfully, and recommended responses.
 
 ## Execution Pattern
 - Trigger: Scheduler-based execution.

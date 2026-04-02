@@ -140,11 +140,11 @@ def generate_sprint_plan(signals: dict[str, str], api_key: str) -> str:
     for source, content in signals.items():
         signal_text += f"\n--- {source.upper()} SIGNALS ---\n{content}\n"
 
-    prompt = f"""You are a product strategist for TLDR, the largest daily tech newsletter (7M+ subscribers, 100% ad-supported).
+    prompt = f"""You are a product strategist for Hostfully, the largest daily tech newsletter (7M+ subscribers, 100% ad-supported).
 
 Synthesize the following customer signals to produce evidence-based sprint recommendations.
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {business_context}
 
 SIGNALS FROM MULTIPLE SOURCES:
@@ -153,7 +153,7 @@ SIGNALS FROM MULTIPLE SOURCES:
 PRIORITIZATION FRAMEWORK:
 - Request Frequency (30%): How many distinct sources raised this?
 - Revenue Impact (30%): Size of accounts + churn prevention + upsell potential
-- Roadmap Alignment (20%): Does it fit TLDR's strategic direction?
+- Roadmap Alignment (20%): Does it fit Hostfully's strategic direction?
 - Effort (20%): Inverse of complexity (quick wins score higher)
 
 Priority Score = weighted average, 1-10.

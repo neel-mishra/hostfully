@@ -391,7 +391,7 @@ ai system/python scripts/competitive creative tracker/
 ├── competitive_tracker.py          # Main scraper — Meta, Google, LinkedIn, TikTok, X
 ├── config.py                       # Competitor list, platform mappings, CSV schemas, paths
 ├── heartbeat_monthly.py            # Monthly scheduler (last day of month, all platforms)
-├── com.tldr.tech.competitivetracker.monthly.plist  # macOS LaunchAgent
+├── com.hostfully.tech.competitivetracker.monthly.plist  # macOS LaunchAgent
 └── requirements.txt                # Python dependencies
 ```
 
@@ -441,8 +441,8 @@ python heartbeat_monthly.py
 
 **Option 2: macOS LaunchAgent** (system-level scheduling)
 ```bash
-cp com.tldr.tech.competitivetracker.monthly.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.tldr.tech.competitivetracker.monthly.plist
+cp com.hostfully.tech.competitivetracker.monthly.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.hostfully.tech.competitivetracker.monthly.plist
 ```
 Runs on the 28th of every month at 08:00 as a safe proxy for end-of-month.
 

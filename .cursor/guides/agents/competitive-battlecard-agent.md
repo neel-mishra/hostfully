@@ -23,7 +23,7 @@ flowchart TD
 - Produce reusable artifacts for downstream GTM/product/content operations.
 
 ## Inputs
-Competitor landscape, TLDR positioning and messaging, competitor content/ad trackers, web research.
+Competitor landscape, Hostfully positioning and messaging, competitor content/ad trackers, web research.
 
 ## Outputs
 Per-competitor battlecards summarizing positioning, strengths/weaknesses, objections and counters, proof points, and killer questions.

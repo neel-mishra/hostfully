@@ -26,7 +26,7 @@
 **On-image copy (max):**
 - Headline: “Catch up on tech in 5 minutes.”
 - Subhead: “One daily email. Zero FOMO.”
-- CTA badge: “Get TLDR free”
+- CTA badge: “Get Hostfully free”
 
 Tone: Direct, non‑salesy, zero hype.
 
@@ -37,7 +37,7 @@ Tone: Direct, non‑salesy, zero hype.
 - Aspect ratio: 1.91:1 or 4:5 (whichever performs best for your Reddit placements; start with 1200×628).
 - Composition:
   - Left 2/3: Headline + subhead stacked, left-aligned.
-  - Right 1/3: TLDR wordmark + small badge “Daily tech briefing”.
+  - Right 1/3: Hostfully wordmark + small badge “Daily tech briefing”.
 - Background: subtle gradient or flat color; no stock photos.
 
 ---
@@ -48,7 +48,7 @@ Tone: Direct, non‑salesy, zero hype.
 - Background: dark slate (#020617–#111827) or soft slate (#0F172A) so copy pops.
 - Headline: white (#FFFFFF).
 - Subhead: light slate (#CBD5F5).
-- CTA badge: TLDR blue (#2563EB) with white text.
+- CTA badge: Hostfully blue (#2563EB) with white text.
 
 **Typography:**
 - Headline: Inter, SemiBold, ~38–44px (for 1200×628), tight line-height.

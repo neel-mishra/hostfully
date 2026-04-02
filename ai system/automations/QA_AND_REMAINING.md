@@ -29,10 +29,10 @@ Goal: confirm the **scripts and APIs** used by each automation run correctly bef
 
 ### 2.1 Run from repo root with local `.env`
 
-All commands below assume you’re in the **TLDR repo root** and have a working `.env` (same vars as Configured Environment). Load deps once:
+All commands below assume you’re in the **Hostfully repo root** and have a working `.env` (same vars as Configured Environment). Load deps once:
 
 ```bash
-cd "/path/to/TLDR"   # your repo root
+cd "/path/to/Hostfully"   # your repo root
 pip install -r ai system/automations/lib/requirements.txt
 ```
 
@@ -43,13 +43,13 @@ Run the **first API/script step** (or a minimal set) for each automation. If it 
 | # | Automation | What to run (smoke test) | Expected |
 |---|------------|--------------------------|----------|
 | **1** | Daily Content Pipeline | `python3 ai system/automations/lib/gsheets_api.py list` then `create --title "Content Pipeline Daily Log"` (or skip create if it exists) | JSON list of sheets; or new sheet created. |
-| **2** | Weekly Content Execution | `python3 ai system/automations/lib/gdocs_api.py list` then `create --title "TLDR Weekly Content Review - 2026-03-10"` | JSON list of docs; or new doc created. |
+| **2** | Weekly Content Execution | `python3 ai system/automations/lib/gdocs_api.py list` then `create --title "Hostfully Weekly Content Review - 2026-03-10"` | JSON list of docs; or new doc created. |
 | **3** | Monthly Competitive Ads | `python3 ai system/automations/lib/meta_ads_api.py account-summary --date-preset last_7d` (or fb_ad_library / ScrapeCreators if that’s step 1) | Meta account summary JSON or ad library data. |
 | **4** | Weekly Ad Performance | `python3 ai system/automations/lib/meta_ads_api.py results-summary --date-preset last_7d` and `python3 ai system/automations/lib/google_ads_api.py account-summary --date-range LAST_7_DAYS` | Meta + Google Ads summary output. |
-| **5** | Weekly SEO | `python3 ai system/automations/lib/ahrefs_api.py domain-rating --target tldr.tech` (or gsc_api search-analytics if GSC configured) | Ahrefs domain rating JSON or GSC data. |
+| **5** | Weekly SEO | `python3 ai system/automations/lib/ahrefs_api.py domain-rating --target hostfully.tech` (or gsc_api search-analytics if GSC configured) | Ahrefs domain rating JSON or GSC data. |
 | **6** | Bi-Weekly Advertiser Health | `python3 "ai system/python scripts/customer success agent/advertiser_health.py"` (with sample data in `data/advertiser_performance/`) | Health report or CSV output. |
 | **7** | Weekly Sales Intelligence | `python3 ai system/automations/lib/gsheets_api.py list` and optionally run prospect_intelligence / battlecard scripts | Sheets list; script outputs if run. |
-| **8** | Weekly CRO Audit | `python3 ai system/automations/lib/ahrefs_api.py domain-rating --target tldr.tech` and/or `python3 ai system/automations/lib/gsc_api.py search-analytics --start-date YYYY-MM-DD --end-date YYYY-MM-DD` (if GSC configured) | Ahrefs/GSC output; Playwright step needs browser in env. |
+| **8** | Weekly CRO Audit | `python3 ai system/automations/lib/ahrefs_api.py domain-rating --target hostfully.tech` and/or `python3 ai system/automations/lib/gsc_api.py search-analytics --start-date YYYY-MM-DD --end-date YYYY-MM-DD` (if GSC configured) | Ahrefs/GSC output; Playwright step needs browser in env. |
 | **9** | Monthly GTM | `python3 ai system/automations/lib/gdocs_api.py list`; run gtm_commander script if present | Docs list; commander output. |
 | **10** | Monthly Competitor Convergence | `python3 ai system/automations/lib/gdocs_api.py create --title "Convergence Test"` (then delete the test doc if you want) | Doc created in your Docs folder. |
 
@@ -85,13 +85,13 @@ Use the **OUTPUT_DESTINATIONS.md** table (“Workspace / repo output paths”) f
 ### 3.2 Google Docs output
 
 - Open the **Doc** (from Drive or from the run log link). Check:
-  - **Title** matches the pattern (e.g. “TLDR Weekly Content Review - 2026-03-10”, “TLDR SEO Intelligence - Week of …”).
+  - **Title** matches the pattern (e.g. “Hostfully Weekly Content Review - 2026-03-10”, “Hostfully SEO Intelligence - Week of …”).
   - **Content** matches the instructions: sections, bullet lists, data (dates, numbers, file paths) that the automation was supposed to insert.
 
 ### 3.3 Google Sheets output
 
 - Open the **Sheet** (from Drive or run log). Check:
-  - **Title** (e.g. “Content Pipeline Daily Log”, “TLDR Ad Performance Tracker”).
+  - **Title** (e.g. “Content Pipeline Daily Log”, “Hostfully Ad Performance Tracker”).
   - **Headers** and **one or more data rows** with the expected columns (dates, metrics, etc.).
 
 If content is empty or wrong, the issue is in the automation steps (agent didn’t substitute placeholders, or an API step failed and the agent didn’t fall back correctly). Re-run and inspect the run log.
@@ -115,8 +115,8 @@ Your **Configured Environment** (and `.env`) define:
    - Example Docs: `https://drive.google.com/drive/folders/<DRIVE_FOLDER_ID_DOCS>`
    - Example Sheets: `https://drive.google.com/drive/folders/<DRIVE_FOLDER_ID_SHEETS>`
 2. After a run that creates a Doc or Sheet, open that folder and confirm:
-   - A **new file** with the expected title (e.g. “TLDR Weekly Content Review - 2026-03-10”) appears in the **Docs** folder.
-   - A **new sheet** (e.g. “Content Pipeline Daily Log” or “TLDR Ad Performance Tracker”) appears in the **Sheets** folder (or was updated if it already existed).
+   - A **new file** with the expected title (e.g. “Hostfully Weekly Content Review - 2026-03-10”) appears in the **Docs** folder.
+   - A **new sheet** (e.g. “Content Pipeline Daily Log” or “Hostfully Ad Performance Tracker”) appears in the **Sheets** folder (or was updated if it already existed).
 
 If files appear in a different folder or in “My Drive” root, the script is using the wrong folder ID or the env var isn’t set in the run environment. Fix the Configured Environment and re-run.
 

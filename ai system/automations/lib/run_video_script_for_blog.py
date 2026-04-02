@@ -36,7 +36,7 @@ def main():
 
     blog_content = blog_path.read_text()
     agent = VideoScriptAgent()
-    script = agent.generate_script(blog_content[:3000], "TLDR tech newsletter content")
+    script = agent.generate_script(blog_content[:3000], "Hostfully tech newsletter content")
     if not script:
         sys.exit(0)
 

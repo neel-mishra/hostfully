@@ -1,4 +1,4 @@
-## TLDR Automations Roster
+## Hostfully Automations Roster
 
 Index of Cursor Automations you’ve designed, with purpose, schedules, expected inputs, and outputs. Grouped by priority tier.
 
@@ -8,7 +8,7 @@ Index of Cursor Automations you’ve designed, with purpose, schedules, expected
 
 - **Daily Content Pipeline Orchestrator**
   - **Schedule**: Daily at 08:00.
-  - **Synopsis**: Replaces `com.tofulab.contentpipeline.plist`. Orchestrates competitor content scraping, pipeline scoring, SEO enrichment, and daily visibility for the team.
+  - **Synopsis**: `com.hostfully.contentpipeline.plist` — orchestrates competitor content scraping, pipeline scoring, SEO enrichment, and daily visibility for the team.
   - **Inputs**:
     - Competitor blog list and scraper config (`competitor-blog-scraper.py`).
     - Existing content pipeline CSVs.
@@ -21,7 +21,7 @@ Index of Cursor Automations you’ve designed, with purpose, schedules, expected
 
 - **Weekly Content Execution + Repurposing Chain**
   - **Schedule**: Weekly, Monday at 09:00.
-  - **Synopsis**: Replaces `com.tofulab.contentpipeline.weekly.plist`. Runs content execution, humanizer quality gate, repurposing, and pushes everything into Docs.
+  - **Synopsis**: `com.hostfully.contentpipeline.weekly.plist` — runs content execution, humanizer quality gate, repurposing, and pushes everything into Docs.
   - **Inputs**:
     - Content pipeline entries ready for execution.
     - `execution_commander.py` configuration.
@@ -36,7 +36,7 @@ Index of Cursor Automations you’ve designed, with purpose, schedules, expected
 
 - **Monthly Competitive Ad Intelligence**
   - **Schedule**: Monthly, last day of month.
-  - **Synopsis**: Replaces `com.tldr.tech.competitivetracker.monthly.plist`. Consolidates cross-platform competitor ad intelligence and TLDR’s own performance.
+  - **Synopsis**: Replaces `com.hostfully.tech.competitivetracker.monthly.plist`. Consolidates cross-platform competitor ad intelligence and Hostfully’s own performance.
   - **Inputs**:
     - Competitor brand/account lists.
     - Meta Ad Library MCP (platform ID + ads endpoints).
@@ -133,7 +133,7 @@ Index of Cursor Automations you’ve designed, with purpose, schedules, expected
     - Ahrefs MCP (competitor organic keywords, top pages).
     - `competitive_tracker.py` and any competitor blog scraper configs.
   - **Outputs**:
-    - Google Doc strategic brief showing overlapping “bets” (topics with both ads + content), gaps vs TLDR, and recommended responses.
+    - Google Doc strategic brief showing overlapping “bets” (topics with both ads + content), gaps vs Hostfully, and recommended responses.
 
 ---
 

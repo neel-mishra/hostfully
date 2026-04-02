@@ -6,7 +6,7 @@ from datetime import datetime
 from typing import Dict, List, Tuple
 
 
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 SOCIAL_DIR = os.path.join(REPO_ROOT, "docs", "social media")
 
 
@@ -43,6 +43,24 @@ class DraftInfo:
     person_id: str
     file_path: str
     copy: str
+
+
+def evaluate_draft_collisions(
+    drafts: List[Tuple[str, str, str]],
+    threshold: float = 0.75,
+) -> List[Tuple[str, str, float]]:
+    """
+    Evaluate collisions for in-memory drafts.
+    Input tuple format: (draft_id, person_id, copy).
+    Returns tuples of (draft_id_a, draft_id_b, similarity) above threshold.
+    """
+    wrapped = [DraftInfo(person_id=p, file_path=d, copy=c) for d, p, c in drafts]
+    sims = _pairwise_similarities(wrapped)
+    collisions: List[Tuple[str, str, float]] = []
+    for a, b, score in sims:
+        if score >= threshold:
+            collisions.append((a.file_path, b.file_path, score))
+    return collisions
 
 
 def _collect_today_drafts(date: datetime) -> List[DraftInfo]:

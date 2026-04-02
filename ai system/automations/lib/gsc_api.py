@@ -10,7 +10,7 @@ Usage:
   python gsc_api.py search-analytics --start-date 2026-02-01 --end-date 2026-03-10 --dimensions page --limit 100
   python gsc_api.py sitemaps-list
   python gsc_api.py sitemap-urls
-  python gsc_api.py sitemap-urls --sitemap https://tldr.tech/sitemap.xml
+  python gsc_api.py sitemap-urls --sitemap https://hostfully.tech/sitemap.xml
 """
 
 import argparse

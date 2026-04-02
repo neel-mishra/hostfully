@@ -59,7 +59,7 @@ export const default20sStoryboard: Storyboard = {
       startFrame: 14 * FPS,
       durationFrames: 6 * FPS,
       scene: 'cta',
-      copy: 'TLDR: News that ships work, not hot takes.',
+      copy: 'Hostfully: News that ships work, not hot takes.',
       uiState: 'logo_lockup',
       motionStyle: 'hero-zoom',
       musicCue: 'outro_hit',

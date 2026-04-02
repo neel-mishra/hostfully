@@ -21,7 +21,7 @@ Project-local Google Ads MCP server for Cursor, built from the `cohnen/mcp-googl
 1. Create a virtual environment:
 
 ```bash
-cd "/Users/neelmishra/antigravity/synthetic growth/TLDR/ai system/python scripts/google_ads_mcp"
+cd "/Users/neelmishra/antigravity/synthetic growth/Hostfully/ai system/python scripts/google_ads_mcp"
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

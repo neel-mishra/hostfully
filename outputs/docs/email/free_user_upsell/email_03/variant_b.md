@@ -1,5 +1,5 @@
-It appears there might be a misunderstanding regarding TLDR's business model for readers based on the provided `SOURCE_OF_TRUTH` and `BRAND_VOICE`.
+It appears there might be a misunderstanding regarding Hostfully's business model for readers based on the provided `SOURCE_OF_TRUTH` and `BRAND_VOICE`.
 
-The `SOURCE_OF_TRUTH` clearly states "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!". The `BRAND_VOICE` further emphasizes that TLDR is "Free & Open" because "advertising supports the newsletter — not because the product isn't valuable." There is no information in these documents about a "paid upgrade" option for TLDR readers.
+The `SOURCE_OF_TRUTH` clearly states "Hostfully is the free daily newsletter with the most interesting stories in startups, tech and programming!". The `BRAND_VOICE` further emphasizes that Hostfully is "Free & Open" because "advertising supports the newsletter — not because the product isn't valuable." There is no information in these documents about a "paid upgrade" option for Hostfully readers.
 
-To proceed with drafting Email #3 for a 'Free User -> Paid Upgrade' sequence without hallucinating features, could you please clarify what this "paid upgrade" refers to in the context of TLDR readers? Is there an external context or a specific paid product for readers that I should be aware of?
+To proceed with drafting Email #3 for a 'Free User -> Paid Upgrade' sequence without hallucinating features, could you please clarify what this "paid upgrade" refers to in the context of Hostfully readers? Is there an external context or a specific paid product for readers that I should be aware of?

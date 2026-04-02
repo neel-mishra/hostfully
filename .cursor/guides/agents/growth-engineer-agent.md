@@ -38,7 +38,7 @@ Project specs, implementation plans, and measurement setups.
 - Downstream: Reports, briefs, trackers, and handoffs to other agents/automations.
 
 ## Related Implementation Plans
-- `tldr-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
+- `hostfully-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
 
 ## Reference Notes
 - This guide is generated from the canonical roster and matched implementation plans.

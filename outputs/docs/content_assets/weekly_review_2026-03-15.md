@@ -5,6 +5,6 @@
 
 ## Expected outputs
 - **Workspace:** `docs/blogs/YYYY-MM-DD/*.md`, `docs/content_assets/repurposed/`, `video_script_*.md`; fallback: this file.
-- **Google Drive (Docs):** "TLDR Weekly Content Review - YYYY-MM-DD" in Docs folder.
+- **Google Drive (Docs):** "Hostfully Weekly Content Review - YYYY-MM-DD" in Docs folder.
 
 This file confirms the local output path is writable. Check the Docs folder for the live destination.

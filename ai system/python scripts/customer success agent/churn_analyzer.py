@@ -150,21 +150,21 @@ EVIDENCE:
     except FileNotFoundError:
         pass
 
-    prompt = f"""You are a churn analyst for TLDR, the largest daily tech newsletter (7M+ subscribers, 100% ad-supported).
+    prompt = f"""You are a churn analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers, 100% ad-supported).
 
 Analyze these churned advertiser accounts and produce a post-mortem report.
 
 CHURNED ACCOUNTS ({len(churned)} total):
 {accounts_text[:20000]}
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {business_context}
 
 CHURN DRIVER CATEGORIES:
 - Performance: Didn't see ROI
 - Price: Budget cuts or cheaper alternatives
 - Competition: Switched to LinkedIn/Meta/Paved/etc.
-- Product Gap: Needed features TLDR doesn't offer
+- Product Gap: Needed features Hostfully doesn't offer
 - Relationship: Poor account management
 - Market: Company downsized/pivoted
 - Timing: Budget cycle or one-time campaign

@@ -141,9 +141,9 @@ class SitePerformanceAgent:
 
         if not urls:
             urls = [
-                "https://tldr.tech",
-                "https://tldr.tech/tech",
-                "https://tldr.tech/ai",
+                "https://hostfully.tech",
+                "https://hostfully.tech/tech",
+                "https://hostfully.tech/ai",
             ]
             print("   ℹ️ No URLs provided. Using defaults.")
 

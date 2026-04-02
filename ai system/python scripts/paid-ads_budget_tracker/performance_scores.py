@@ -3,6 +3,8 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
+from config import allocation_config
+
 
 def compute_performance_score(row: pd.Series) -> float:
     """Backward-compatible row scorer (used as fallback)."""
@@ -41,7 +43,11 @@ def _cvr(r: pd.Series):
 
 
 def add_scores_and_buckets(df: pd.DataFrame) -> pd.DataFrame:
-    """Adds engagement/cost/conversion signals and blended performance score."""
+    """Adds engagement/cost/conversion signals and blended performance score.
+
+    Composite weights (see ``AllocationConfig``): default **45% cost / 10% engagement /
+    10% conversion / 35% volume**; must sum to 1.0.
+    """
     out = df.copy()
     out["cpl_mtd"] = out.apply(_cpl, axis=1)
     out["ctr_mtd"] = out.apply(_ctr, axis=1)
@@ -77,11 +83,21 @@ def add_scores_and_buckets(df: pd.DataFrame) -> pd.DataFrame:
     out["engagement_score"] = engagement_score
     out["conversion_score"] = conv_score
     out["volume_score"] = volume_score
+    wc = float(allocation_config.perf_weight_cost)
+    we = float(allocation_config.perf_weight_engagement)
+    wf = float(allocation_config.perf_weight_conversion)
+    wv = float(allocation_config.perf_weight_volume)
+    wsum = wc + we + wf + wv
+    if abs(wsum - 1.0) > 1e-6:
+        raise ValueError(
+            f"In-platform perf weights must sum to 1.0; got {wsum} "
+            f"(cost={wc}, engagement={we}, conversion={wf}, volume={wv})"
+        )
     out["performance_score"] = (
-        0.45 * out["cost_score"]
-        + 0.20 * out["engagement_score"]
-        + 0.20 * out["conversion_score"]
-        + 0.15 * out["volume_score"]
+        wc * out["cost_score"]
+        + we * out["engagement_score"]
+        + wf * out["conversion_score"]
+        + wv * out["volume_score"]
     ).clip(0.1, 10.0)
 
     def bucket(r) -> str:

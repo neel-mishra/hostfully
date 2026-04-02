@@ -41,7 +41,7 @@ flowchart LR
 - Downstream: Planning reviews, campaign updates, content roadmap decisions, and account actions.
 
 ## Related Implementation Plans
-- `tldr-social-and-ads-agents_7071cac8.plan.md` — 10/10 completed todo items.
+- `hostfully-social-and-ads-agents_7071cac8.plan.md` — 10/10 completed todo items.
 
 ## Reference Notes
 - This guide is generated from your automation roster and matched implementation plans.

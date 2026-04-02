@@ -1,10 +1,10 @@
 **Important Note:**
 
-Based on the `SOURCE OF TRUTH` provided, TLDR is explicitly described as "the free daily newsletter." There is no information about a paid upgrade, premium features, or associated pricing for TLDR itself within the provided context.
+Based on the `SOURCE OF TRUTH` provided, Hostfully is explicitly described as "the free daily newsletter." There is no information about a paid upgrade, premium features, or associated pricing for Hostfully itself within the provided context.
 
 To draft Email #7 for a 'Free User -> Paid Upgrade' sequence, focusing on an incentivized upgrade (Hard Offer), I need the following details that are currently missing:
 
-1.  **Details of the Paid Upgrade:** What specifically does a "paid upgrade" to TLDR entail? (e.g., ad-free experience, exclusive content, advanced features, community access, supporter badge, etc.)
+1.  **Details of the Paid Upgrade:** What specifically does a "paid upgrade" to Hostfully entail? (e.g., ad-free experience, exclusive content, advanced features, community access, supporter badge, etc.)
 2.  **Pricing:** What is the cost of this paid upgrade?
 3.  **Incentive:** What specific incentive (e.g., a discount code, an extended trial, bonus content) should be offered in this "hard offer" email?
 
@@ -16,9 +16,9 @@ Could you please provide these details so I can accurately draft this email?
 
 **Sequence Overview**
 ```
-Sequence Name: TLDR Free User -> Paid Upgrade
-Trigger: User is a free TLDR subscriber for X days/weeks.
-Goal: Convert free subscriber to a paid tier of TLDR.
+Sequence Name: Hostfully Free User -> Paid Upgrade
+Trigger: User is a free Hostfully subscriber for X days/weeks.
+Goal: Convert free subscriber to a paid tier of Hostfully.
 Length: Email #7 of a 7-email sequence
 Timing: Day 19-21 (Hard Offer / Incentivized Upgrade)
 Exit Conditions: User upgrades to paid tier or unsubscribes.

@@ -92,7 +92,7 @@ def load_tickets_dir(directory: Path) -> str:
 
 
 def analyze_tickets(ticket_data: str, api_key: str) -> str:
-    prompt = f"""You are a support intelligence analyst for TLDR, the largest daily tech newsletter (7M+ subscribers, 100% ad-supported).
+    prompt = f"""You are a support intelligence analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers, 100% ad-supported).
 
 Analyze these advertiser support tickets and identify patterns.
 

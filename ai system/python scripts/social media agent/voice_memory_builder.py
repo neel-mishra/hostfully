@@ -12,8 +12,8 @@ except ImportError:
     yaml = None
 
 
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-AGENTS_DIR = os.path.join(REPO_ROOT, "agents")
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+AGENTS_DIR = os.path.join(REPO_ROOT, "ai system", "agents")
 SOCIAL_DIR = os.path.join(REPO_ROOT, "docs", "social media")
 
 ROSTER_PATH = os.path.join(AGENTS_DIR, "social", "roster.yaml")

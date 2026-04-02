@@ -36,6 +36,7 @@ Ad variants (primary text, headlines, descriptions), optional creative concepts,
 ## Integration Points
 - Upstream: Context briefs, CSV exports, MCP data pulls, and related agent outputs.
 - Downstream: Reports, briefs, trackers, and handoffs to other agents/automations.
+- Canva MCP: Creative concepts can be handed off through `canva_mcp_sync_plan.json` under `creative-deliverables/{mmmyy}/` (campaign folder), not under `creative-briefs/`.
 
 ## Related Implementation Plans
 - `ad_creative_agent_expansion_8e339288.plan.md` — 8/8 completed todo items.

@@ -392,7 +392,7 @@ Return ONLY the corrected blog content in Markdown. No explanations or commentar
             print("      ⚠️ Humanizer patterns file not found — skipping humanizer.")
             return draft, None
 
-        prompt = f"""You are the TLDR Humanizer — a copy editor that catches and fixes AI-sounding writing.
+        prompt = f"""You are the Hostfully Humanizer — a copy editor that catches and fixes AI-sounding writing.
 
 VOICE SAMPLES (match this rhythm, tone, and density):
 {voice_samples}
@@ -413,7 +413,7 @@ INSTRUCTIONS — follow this exact workflow:
 
 STEP 1: SCORE the draft on four dimensions (1-10 each):
 - AI Likeness: 1=obviously AI, 10=indistinguishable from human
-- Authenticity: 1=generic voice, 10=sounds exactly like TLDR
+- Authenticity: 1=generic voice, 10=sounds exactly like Hostfully
 - Reader Value: 1=fluff and filler, 10=every sentence earns its place
 - Domain Credibility: 1=surface-level, 10=insider knowledge with specific data
 
@@ -427,7 +427,7 @@ STEP 3: REWRITE the entire draft applying all fixes:
 - Shorter is better — cut sentences that add nothing
 - Lead with the interesting thing, not setup
 - One idea per sentence
-- Use TLDR's own data where relevant (48% open rates, 7M+ subscribers, 12 newsletters)
+- Use Hostfully's own data where relevant (48% open rates, 7M+ subscribers, 12 newsletters)
 - Target 40-60% word count reduction from the original
 - Humanize the meta title and description too
 

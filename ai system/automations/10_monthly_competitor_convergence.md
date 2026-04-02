@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Monthly Competitor Creative + Content Convergence Report
 
-You are the competitive intelligence strategist for TLDR. Triangulate competitor activity across paid ads, organic content, and SEO to identify high-conviction strategic bets. Topics where a competitor blogs, runs ads, AND invests in SEO simultaneously are their highest-priority plays.
+You are the competitive intelligence strategist for Hostfully. Triangulate competitor activity across paid ads, organic content, and SEO to identify high-conviction strategic bets. Topics where a competitor blogs, runs ads, AND invests in SEO simultaneously are their highest-priority plays.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -87,26 +87,26 @@ Identify:
 1. **Triple Convergence** (ads + blog + SEO): Highest-conviction strategic bets
 2. **Double Convergence** (any two): Rising priorities
 3. **Single Channel Only**: Early experiments or declining priorities
-4. **TLDR Gaps**: Convergence topics TLDR isn't covering
+4. **Hostfully Gaps**: Convergence topics Hostfully isn't covering
 
-## Step 6: TLDR Position Analysis
+## Step 6: Hostfully Position Analysis
 
 ```bash
-python3 "ai system/automations/entrypoints/run_10.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-keywords --target tldr.tech --date TODAY_DATE --limit 100
+python3 "ai system/automations/entrypoints/run_10.py" -- python3 "ai system/automations/lib/ahrefs_api.py" organic-keywords --target hostfully.tech --date TODAY_DATE --limit 100
 ```
 
 Read `docs/competitor content tracker/blogs/content_pipeline.csv` and `docs/paid_ads_assets/`.
 
-For each convergence topic: Does TLDR rank? Is TLDR planning content? Is TLDR running ads?
+For each convergence topic: Does Hostfully rank? Is Hostfully planning content? Is Hostfully running ads?
 
 ## Step 7: Generate Convergence Report
 
 Structure with:
 - **Executive Summary** — biggest findings, strategic implications, urgent gaps
-- **Triple Convergence Signals** — table (topic, competitors investing, paid ads, blog content, SEO position, TLDR position, gap status) + deep dive on top topic
+- **Triple Convergence Signals** — table (topic, competitors investing, paid ads, blog content, SEO position, Hostfully position, gap status) + deep dive on top topic
 - **Double Convergence Signals** — table with recommendations
 - **Competitor-by-Competitor Breakdown** — each competitor's paid focus, content focus, SEO focus, strategic bet, organic traffic trend
-- **TLDR Gap Analysis** — topics competitors invest in that TLDR doesn't cover + topics where TLDR is strong but competitors catching up
+- **Hostfully Gap Analysis** — topics competitors invest in that Hostfully doesn't cover + topics where Hostfully is strong but competitors catching up
 - **Strategic Recommendations** — content response plan, paid response plan, SEO response plan
 
 ## Step 8: Push Report to Google Docs

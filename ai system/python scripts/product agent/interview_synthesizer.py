@@ -87,7 +87,7 @@ def discover_interviews(directory: Path) -> list[Path]:
 
 
 def analyze_interview(content: str, filename: str, api_key: str) -> str:
-    prompt = f"""You are a user research analyst for TLDR, the largest daily tech newsletter (7M+ subscribers).
+    prompt = f"""You are a user research analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers).
 
 Analyze this interview transcript and extract structured insights.
 
@@ -102,10 +102,10 @@ Generate the summary in this EXACT format:
 - **Type:** Advertiser / Reader
 - **Role:** [title]
 - **Company:** [company]
-- **TLDR Usage:** [which newsletters, how long, frequency]
+- **Hostfully Usage:** [which newsletters, how long, frequency]
 
 ## Jobs to Be Done
-- [JTBD 1 — what job are they hiring TLDR for?]
+- [JTBD 1 — what job are they hiring Hostfully for?]
 - [JTBD 2]
 
 ## Pain Points
@@ -121,7 +121,7 @@ Generate the summary in this EXACT format:
 |---|---|---|
 
 ## Competitor Context
-| Competitor/Alternative | Usage | Comparison to TLDR |
+| Competitor/Alternative | Usage | Comparison to Hostfully |
 |---|---|---|
 
 ## Key Quotes
@@ -136,7 +136,7 @@ Generate the summary in this EXACT format:
 
 RULES:
 - Extract exact quotes where possible
-- Severity should reflect how much the pain point affects their TLDR usage
+- Severity should reflect how much the pain point affects their Hostfully usage
 - JTBD should be framed as "When [situation], I want [motivation], so I can [outcome]"
 - Be specific in takeaways — not "improve the product" but "add self-serve reporting dashboard" """
 
@@ -146,7 +146,7 @@ RULES:
 def generate_synthesis(summaries: list[str], api_key: str) -> str:
     combined = "\n\n---\n\n".join(s[:3000] for s in summaries)
 
-    prompt = f"""You are synthesizing insights across {len(summaries)} user interviews for TLDR newsletters.
+    prompt = f"""You are synthesizing insights across {len(summaries)} user interviews for Hostfully newsletters.
 
 INTERVIEW SUMMARIES:
 {combined[:20000]}

@@ -1,11 +1,11 @@
 ---
 name: humanizer
-description: Score and rewrite AI-generated copy to sound human. Use when the user says "humanize," "sounds like AI," "make this sound human," "rewrite in my voice," "AI score," "humanizer," or when reviewing any near-final draft for AI patterns. Scores on four dimensions, diagnoses specific AI tells, and rewrites in TLDR's brand voice.
+description: Score and rewrite AI-generated copy to sound human. Use when the user says "humanize," "sounds like AI," "make this sound human," "rewrite in my voice," "AI score," "humanizer," or when reviewing any near-final draft for AI patterns. Scores on four dimensions, diagnoses specific AI tells, and rewrites in Hostfully's brand voice.
 ---
 
 # Humanizer
 
-Score drafts for AI-ness, diagnose what makes them feel machine-generated, and rewrite them to sound like a human wrote them — specifically a human who writes for TLDR.
+Score drafts for AI-ness, diagnose what makes them feel machine-generated, and rewrite them to sound like a human wrote them — specifically a human who writes for Hostfully.
 
 ## Workflow
 
@@ -13,8 +13,8 @@ Score drafts for AI-ness, diagnose what makes them feel machine-generated, and r
 
 Before scoring or rewriting, read these files for voice calibration:
 
-1. `commands/identity/brand_voice_matrix.md` — TLDR's voice rules
-2. `commands/identity/messaging_pillars.md` — what TLDR sounds like when it's on
+1. `commands/identity/brand_voice_matrix.md` — Hostfully's voice rules
+2. `commands/identity/messaging_pillars.md` — what Hostfully sounds like when it's on
 3. `.cursor/skills/humanizer/voice-samples.md` — real human-written samples (the ground truth)
 4. `.cursor/skills/humanizer/patterns.md` — known AI patterns to detect
 
@@ -27,7 +27,7 @@ Rate the draft on four dimensions, each 1–10:
 | Dimension | 1 (Bad) | 5 (Passable) | 10 (Nailed It) |
 |---|---|---|---|
 | **AI Likeness** | Obviously machine-generated. Hits 5+ patterns from `patterns.md` | Some AI tells but could pass casual reading | Indistinguishable from human writing. Zero detected patterns |
-| **Authenticity** | Generic voice. Could be any brand | Has some brand markers but inconsistent | Sounds exactly like TLDR — matches voice samples, follows brand matrix |
+| **Authenticity** | Generic voice. Could be any brand | Has some brand markers but inconsistent | Sounds exactly like Hostfully — matches voice samples, follows brand matrix |
 | **Reader Value** | Fluff and filler. No takeaway | Useful but padded with unnecessary setup | Every sentence earns its place. High density of insight per word |
 | **Domain Credibility** | Surface-level, Wikipedia-grade understanding | Shows awareness of the space but uses safe/obvious takes | Demonstrates insider knowledge. Specific, opinionated, references real signals |
 
@@ -107,13 +107,13 @@ If yes:
 *This section grows over time as the skill learns from feedback.*
 
 ### Rule 1: Use the company's own data as proof points
-TLDR has 48% open rates, 7M+ subscribers, 12 newsletters, specific case studies (Delve 52x ROI, Redact 50% lower CPC). When writing reader-facing content about newsletters, reference TLDR's actual numbers. First-party data instantly kills the generic Wikipedia feel and adds domain credibility. Check `commands/identity/messaging_pillars.md` for proof points.
+Hostfully has 48% open rates, 7M+ subscribers, 12 newsletters, specific case studies (Delve 52x ROI, Redact 50% lower CPC). When writing reader-facing content about newsletters, reference Hostfully's actual numbers. First-party data instantly kills the generic Wikipedia feel and adds domain credibility. Check `commands/identity/messaging_pillars.md` for proof points.
 
 ### Rule 2: Target 40-60% word count reduction
 Unedited AI blog posts are consistently 2-3x longer than they should be. The first humanizer run cut from ~1,800 words to ~750 (58% reduction). If your rewrite isn't at least 40% shorter, you haven't cut enough filler.
 
 ### Rule 3: "Have an opinion" is the highest-impact single fix
-Replacing hedge language ("there are pros and cons," "it depends on your needs") with a clear position ("Habits drive open rates more than subject lines do") is the single change that most improves both AI Likeness and Domain Credibility scores. TLDR's brand voice is authoritative — lean into it.
+Replacing hedge language ("there are pros and cons," "it depends on your needs") with a clear position ("Habits drive open rates more than subject lines do") is the single change that most improves both AI Likeness and Domain Credibility scores. Hostfully's brand voice is authoritative — lean into it.
 
 ### Rule 4: Delete every "Actionable Takeaway" box
 AI loves bolded callout boxes. They break flow and patronize readers. The content itself should be the takeaway.

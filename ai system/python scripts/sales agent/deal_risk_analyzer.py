@@ -97,7 +97,7 @@ def analyze_deals(notes: list[tuple[str, str]], api_key: str) -> str:
     except FileNotFoundError:
         pass
 
-    prompt = f"""You are a deal risk analyst for TLDR's advertising sales team (7M+ tech newsletter subscribers, 100% ad-supported).
+    prompt = f"""You are a deal risk analyst for Hostfully's advertising sales team (7M+ tech newsletter subscribers, 100% ad-supported).
 
 Analyze these deal notes and assess the health of each opportunity.
 

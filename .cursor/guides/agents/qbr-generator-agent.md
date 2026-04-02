@@ -23,7 +23,7 @@ flowchart TD
 - Produce reusable artifacts for downstream GTM/product/content operations.
 
 ## Inputs
-Advertiser performance history (impressions, CTR, conversions, spend), placement history, TLDR benchmarks/context.
+Advertiser performance history (impressions, CTR, conversions, spend), placement history, Hostfully benchmarks/context.
 
 ## Outputs
 Per-advertiser QBR markdown docs or decks with exec summaries, performance sections, benchmarks, and recommended next plans.

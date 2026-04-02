@@ -4,7 +4,7 @@
 Leveraging the 'State of Newsletters 2026' report to establish authority and set the stage with high-level industry data.
 
 ## Visual Prompt
-A premium, minimalist dashboard visualization. Use TLDR Black (#0F172A) as the background. Display a glowing TLDR Blue (#2563EB) line graph trending upward. Text overlay in clean white sans-serif: '41% OPEN RATES'. High-contrast, tech-forward aesthetic.
+A premium, minimalist dashboard visualization. Use Hostfully Black (#0F172A) as the background. Display a glowing Hostfully Blue (#2563EB) line graph trending upward. Text overlay in clean white sans-serif: '41% OPEN RATES'. High-contrast, tech-forward aesthetic.
 
 ---
 
@@ -24,4 +24,4 @@ When a reader hits 'subscribe,' they aren't just scrolling; they're inviting you
 
 Are you building on rented land (social) or owned land (email)? 
 
-#Newsletters #MarketingStrategy #DigitalGrowth #TLDR
+#Newsletters #MarketingStrategy #DigitalGrowth #Hostfully

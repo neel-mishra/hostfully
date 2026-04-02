@@ -32,21 +32,21 @@ class CampaignBrief:
 
 FUNNEL_RULES: dict[str, str] = {
     "prospecting": """FUNNEL STAGE RULES — PROSPECTING (Cold Audience):
-Never heard of TLDR. Lead with PAIN not product. Copy provokes recognition — "That's exactly the newsletter I need to stay ahead."
+Never heard of Hostfully. Lead with PAIN not product. Copy provokes recognition — "That's exactly the newsletter I need to stay ahead."
 Visual shows the chaos of fragmented news sources, tabs, and feeds contrasted with one clean daily newsletter.
 Avoid product jargon. Hook must work in under 2 seconds.
-Do NOT mention TLDR by name — this audience doesn't know us yet.
+Do NOT mention Hostfully by name — this audience doesn't know us yet.
 Lead with the PROBLEM, not the solution. Make them feel seen before you sell.""",
 
     "awareness": """FUNNEL STAGE RULES — AWARENESS (Category-Aware):
-Knows the tech newsletter category exists but hasn't committed to subscribing to TLDR.
-Position TLDR as the ONLY newsletter that gives you everything you need in 5 minutes.
+Knows the tech newsletter category exists but hasn't committed to subscribing to Hostfully.
+Position Hostfully as the ONLY newsletter that gives you everything you need in 5 minutes.
 Copy can mention "tech newsletter" but should lead with the outcome.
 Lean on proof points: 4M+ subscribers, free daily delivery, covers AI/dev/crypto/startups/marketing, 5-minute read.
-Spark curiosity about what makes TLDR different from other tech newsletters.""",
+Spark curiosity about what makes Hostfully different from other tech newsletters.""",
 
     "retargeting": """FUNNEL STAGE RULES — RETARGETING (Engaged Audience):
-Visited our site or engaged with content. They KNOW us. Be EXPLICIT: say "TLDR" by name.
+Visited our site or engaged with content. They KNOW us. Be EXPLICIT: say "Hostfully" by name.
 Say "tech newsletter" directly. No need to educate on the category.
 Copy should address objections and accelerate the decision: "Yes, it really is free and takes only 5 minutes."
 Show the product — real newsletter screenshots, real headlines, reader testimonials.
@@ -71,17 +71,17 @@ Center the visual on the PERSON — the marketer in their world.
 Show them relaxed, in control, managing campaigns from a single chat.
 The emotional message: "This is what marketing feels like with an AI teammate."
 Avoid stock photo aesthetics. Aim for editorial photography quality — natural light, candid moments, real environments.
-The TLDR newsletter can appear subtly (on a screen in frame) but isn't the hero.""",
+The Hostfully newsletter can appear subtly (on a screen in frame) but isn't the hero.""",
 
     "ui_based": """VISUAL LEVER RULES — UI-BASED (Product / UI as Hero):
-The TLDR newsletter itself IS the ad creative.
+The Hostfully newsletter itself IS the ad creative.
 Show real headlines, real newsletter snippets, real value-packed content.
 Technique from Linear and Ramp: make the newsletter screenshot the entire visual, with premium framing (subtle shadow, dark or brand-colored background).
 Highlight specific newsletter moments: a killer headline, a concise AI summary, a trending story curated before anyone else covered it.
 Typography overlaid on the screenshot should be minimal — let the product speak.""",
 
     "combination": """VISUAL LEVER RULES — COMBINATION (Lifestyle + UI Fusion):
-Split the composition: real-world tech professional context on one side, TLDR newsletter UI on the other.
+Split the composition: real-world tech professional context on one side, Hostfully newsletter UI on the other.
 OR: Show a person in context with the chat interface floating or overlaid naturally.
 Technique from Notion: warm lifestyle photo with a clean UI card composited into the scene.
 The human element adds warmth; the UI adds credibility.
@@ -106,7 +106,7 @@ OUTPUT_FORMAT = """
 - **Scene and Composition:** [detailed description of what the viewer sees]
 - **The Scroll-Stop Element:** [the single thing that catches the eye first]
 - **Premium Execution Notes:** [typography choices, spacing, finish quality, texture]
-- **Color and Mood:** [specific TLDR palette colors applied, overall mood]
+- **Color and Mood:** [specific Hostfully palette colors applied, overall mood]
 - **Layout and Hierarchy:** [element placement, focal point, visual flow]
 - **Format Notes:** [aspect ratio specs per placement — 1:1 feed, 9:16 stories, etc.]
 

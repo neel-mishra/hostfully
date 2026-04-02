@@ -91,17 +91,17 @@ def analyze_engagement(data_preview: str, api_key: str) -> str:
     except FileNotFoundError:
         pass
 
-    prompt = f"""You are a behavioral analytics specialist for TLDR, the largest daily tech newsletter (7M+ subscribers, 12 newsletters).
+    prompt = f"""You are a behavioral analytics specialist for Hostfully, the largest daily tech newsletter (7M+ subscribers, 12 newsletters).
 
 Analyze this subscriber engagement data and produce a comprehensive behavior audit.
 
 ENGAGEMENT DATA (sample):
 {data_preview[:15000]}
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {business_context}
 
-TLDR BENCHMARKS:
+Hostfully BENCHMARKS:
 - Open rates: 40-48% across newsletters
 - 12 newsletters covering Tech, AI, Dev, InfoSec, DevOps, Product, Marketing, Founders, Crypto, Design, Data, Fintech
 

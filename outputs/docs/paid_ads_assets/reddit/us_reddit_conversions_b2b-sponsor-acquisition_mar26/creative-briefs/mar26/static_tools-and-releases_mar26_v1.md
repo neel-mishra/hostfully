@@ -21,14 +21,14 @@
 ## 2. Concept Overview
 
 **Concept name:** “Tools & releases you actually ship with”  
-**Idea:** Tile that looks like a tidy list of interesting tools/releases with short one‑liners, implying TLDR curates this every day.
+**Idea:** Tile that looks like a tidy list of interesting tools/releases with short one‑liners, implying Hostfully curates this every day.
 
 **On-image copy:**
 - Headline: “New tools, every morning.”
 - 3 “tool rows”, each with:
   - Tool name (fictional or generic).
   - One short benefit line (max ~6–7 words).
-- Footer line: “From the TLDR daily briefing.”
+- Footer line: “From the Hostfully daily briefing.”
 
 ---
 
@@ -38,7 +38,7 @@
 - Layout:
   - Top row: Headline, left-aligned.
   - Middle: 3 rows, each styled like a list item or code comment.
-  - Bottom: TLDR wordmark and small “Free newsletter” label.
+  - Bottom: Hostfully wordmark and small “Free newsletter” label.
 
 Make it resemble a stylized changelog or release-notes list more than a glossy ad.
 
@@ -50,7 +50,7 @@ Make it resemble a stylized changelog or release-notes list more than a glossy a
 - Background: very dark slate (#020617) or terminal-like dark gray.
 - Row backgrounds: slightly lighter stripes (#111827).
 - Text: off‑white (#E5E7EB).
-- Accents: TLDR blue (#2563EB) for tool names or bullets.
+- Accents: Hostfully blue (#2563EB) for tool names or bullets.
 
 **Typography:**
 - Use a monospaced or mono‑inspired font for tool rows (e.g., JetBrains Mono / SF Mono).

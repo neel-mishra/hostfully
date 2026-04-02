@@ -3,7 +3,7 @@
 Advertiser QBR (Quarterly Business Review) Generator
 
 Auto-generates structured QBR documents using campaign performance data,
-historical spend, and TLDR benchmarks. Outputs markdown QBR decks ready
+historical spend, and Hostfully benchmarks. Outputs markdown QBR decks ready
 for presentation.
 
 Usage:
@@ -149,7 +149,7 @@ def generate_qbr(advertiser: str, api_key: str, context: dict, quarter: str) -> 
             f"- Newsletters: {h.get('newsletters_used', 'N/A')}\n"
         )
 
-    prompt = f"""You are a customer success strategist for TLDR, the largest daily tech newsletter (7M+ subscribers, 12 newsletters, 40-48% open rates).
+    prompt = f"""You are a customer success strategist for Hostfully, the largest daily tech newsletter (7M+ subscribers, 12 newsletters, 40-48% open rates).
 
 Generate a Quarterly Business Review (QBR) document for this advertiser.
 
@@ -160,10 +160,10 @@ QUARTER: {quarter} {datetime.now().year}
 
 {health_summary}
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {context.get('business', '')[:2000]}
 
-TLDR BENCHMARKS:
+Hostfully BENCHMARKS:
 - Average open rate: 40-48% across newsletters
 - Average CTR: 1.5-3% depending on newsletter and placement
 - Benchmark CPC: $2-5 (vs LinkedIn $8-15, Google $20-50)
@@ -183,7 +183,7 @@ Generate a complete QBR in this markdown format:
 ## Campaign Performance
 
 ### Overview
-| Metric | This Quarter | Last Quarter | Delta | TLDR Benchmark |
+| Metric | This Quarter | Last Quarter | Delta | Hostfully Benchmark |
 |---|---|---|---|---|
 [Fill with real data where available, reasonable estimates where not]
 
@@ -208,7 +208,7 @@ Generate a complete QBR in this markdown format:
 RULES:
 - Lead with wins, even if modest
 - Be honest about underperformance but pair with a fix
-- Recommendations must be specific (not "try new creative" but "test testimonial-style ad in TLDR AI")
+- Recommendations must be specific (not "try new creative" but "test testimonial-style ad in Hostfully AI")
 - Always end with forward motion"""
 
     return claude_generate(prompt, api_key)

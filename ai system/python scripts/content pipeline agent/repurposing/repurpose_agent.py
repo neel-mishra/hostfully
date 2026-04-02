@@ -111,7 +111,7 @@ TARGET SIDE: Advertiser-facing
 - Pillars: Outperform Paid Social, Audience Concentration, Low Noise
 - Reference proof points: Delve (52x ROI), Plaid (20x ROI), Redact (50% lower CPC)"""
 
-    prompt = f"""You are a content distribution specialist for TLDR, the largest daily tech newsletter (7M+ subscribers).
+    prompt = f"""You are a content distribution specialist for Hostfully, the largest daily tech newsletter (7M+ subscribers).
 
 Take this source content and generate a full multi-channel repurposing kit.
 
@@ -171,7 +171,7 @@ Generate the complete kit in this format:
 
 ## Newsletter Blurb
 
-[50-75 words. TLDR editorial style: concise, informative. Natural link placement.]
+[50-75 words. Hostfully editorial style: concise, informative. Natural link placement.]
 
 ---
 
@@ -189,7 +189,7 @@ RULES:
 - Every LinkedIn post must have a different opening hook and angle
 - Twitter thread tweets must be under 280 characters each
 - Email subject lines: 2-6 words, lowercase, internal-feeling
-- Newsletter blurb must match TLDR editorial voice exactly
+- Newsletter blurb must match Hostfully editorial voice exactly
 - No emoji overload, no hashtag spam"""
 
     return claude_generate(prompt, api_key)

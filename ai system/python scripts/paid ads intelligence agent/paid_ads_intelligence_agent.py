@@ -36,6 +36,7 @@ from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
+import pandas as pd
 
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 AGENT_DIR = Path(__file__).resolve().parent
@@ -144,6 +145,150 @@ LEAD_TYPE_LABELS = {
     "offsite_search_add_meta_leads": "Lead Form Search Step",
     "offsite_content_view_add_meta_leads": "Lead Form Content View Step",
 }
+
+# Shared thresholds for machine-readable intelligence signals.
+INTELLIGENCE_SIGNAL_THRESHOLDS = {
+    "wow_materiality_pct": 15.0,
+    "fatigue_ctr_drop_pct": 12.0,
+    "fatigue_cpl_rise_pct": 15.0,
+    "high_conf_impressions": 5000,
+    "high_conf_clicks": 100,
+    "high_conf_results": 5,
+    "med_conf_impressions": 2000,
+    "med_conf_clicks": 40,
+    "med_conf_results": 2,
+    "low_conf_impressions": 1000,
+    "low_conf_clicks": 20,
+    "low_conf_results": 1,
+}
+# Checklist names (Phase 2); used for action_priority / anomaly_score composites.
+ANOMALY_WEIGHTS = {
+    "anomaly_weight_cpl": 0.45,
+    "anomaly_weight_ctr": 0.25,
+    "anomaly_weight_cpm": 0.15,
+    "anomaly_weight_spend": 0.15,
+}
+
+
+def _prior_iso_period_range(since: str, until: str) -> tuple[str, str] | None:
+    """Same-length window immediately before ``since``..``until`` (inclusive), for WoW fatigue."""
+    try:
+        s = datetime.strptime(since, "%Y-%m-%d").date()
+        u = datetime.strptime(until, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    span = (u - s).days + 1
+    if span < 1:
+        return None
+    prev_end = s - timedelta(days=1)
+    prev_start = prev_end - timedelta(days=span - 1)
+    return prev_start.isoformat(), prev_end.isoformat()
+
+
+def _float_insight_field(ci: dict, key: str) -> float:
+    if not isinstance(ci, dict):
+        return 0.0
+    try:
+        return float(ci.get(key) or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _batch_cpm_norm(cpms: list[float]) -> list[float]:
+    """0–1 normalize positive CPMs within a batch; higher CPM → higher norm (cost pressure)."""
+    if not cpms:
+        return []
+    pos = [c for c in cpms if c > 0]
+    if not pos:
+        return [0.0] * len(cpms)
+    lo, hi = min(pos), max(pos)
+    out: list[float] = []
+    for c in cpms:
+        if c <= 0:
+            out.append(0.0)
+        elif hi <= lo:
+            out.append(0.5)
+        else:
+            out.append((c - lo) / (hi - lo))
+    return out
+
+
+def _cr_to_fatigue_baseline(cr: dict) -> dict:
+    """Normalize campaign_results row for WoW comparison."""
+    leads = float(cr.get("leads") or 0)
+    spend = float(cr.get("spend") or 0)
+    raw_cpl = cr.get("cpl")
+    if raw_cpl is not None:
+        try:
+            cpl = float(raw_cpl)
+        except (TypeError, ValueError):
+            cpl = spend / leads if leads > 0 else None
+    else:
+        cpl = spend / leads if leads > 0 else None
+    return {
+        "ctr": float(cr.get("ctr") or 0),
+        "cpm": float(cr.get("cpm") or 0),
+        "cpl": cpl,
+        "leads": leads,
+        "spend": spend,
+        "impressions": float(cr.get("impressions") or 0),
+        "clicks": float(cr.get("clicks") or 0),
+    }
+
+
+def _google_row_to_fatigue_baseline(row: dict) -> dict | None:
+    camp = row.get("campaign", {}) if isinstance(row, dict) else {}
+    met = row.get("metrics", {}) if isinstance(row, dict) else {}
+    cid = camp.get("id")
+    if cid is None:
+        return None
+    imps = float(met.get("impressions") or 0)
+    clicks = float(met.get("clicks") or 0)
+    spend = float(met.get("costMicros") or met.get("cost_micros") or 0) / 1_000_000.0
+    conv = float(met.get("conversions") or 0)
+    ctr = float(met.get("ctr") or 0)
+    cpm = float(met.get("averageCpm") or met.get("average_cpm") or 0)
+    if cpm <= 0 and imps > 0 and spend > 0:
+        cpm = 1000.0 * spend / imps
+    cpl = spend / conv if conv > 0 else None
+    return {
+        "ctr": ctr,
+        "cpm": cpm,
+        "cpl": cpl,
+        "leads": conv,
+        "spend": spend,
+        "impressions": imps,
+        "clicks": clicks,
+        "id": str(cid),
+    }
+
+
+def _compute_fatigue_flags(cur: dict, prior: dict | None) -> tuple[bool, dict]:
+    """WoW fatigue vs prior period using configurable CTR drop / CPL rise thresholds."""
+    t = INTELLIGENCE_SIGNAL_THRESHOLDS
+    diag: dict = {
+        "wow_ctr_delta_pct": None,
+        "wow_cpl_delta_pct": None,
+        "fatigue_ctr_drop": False,
+        "fatigue_cpl_rise": False,
+    }
+    if not prior:
+        return False, diag
+    pct_ctr = float(t["fatigue_ctr_drop_pct"])
+    pct_cpl = float(t["fatigue_cpl_rise_pct"])
+    c0, c1 = float(cur.get("ctr") or 0), float(prior.get("ctr") or 0)
+    if c1 > 1e-6:
+        diag["wow_ctr_delta_pct"] = round(100.0 * (c0 - c1) / c1, 2)
+        if c0 < c1 * (1.0 - pct_ctr / 100.0):
+            diag["fatigue_ctr_drop"] = True
+    cur_cpl = cur.get("cpl")
+    prev_cpl = prior.get("cpl")
+    if cur_cpl is not None and prev_cpl is not None and float(prev_cpl) > 1e-6:
+        cur_f, prev_f = float(cur_cpl), float(prev_cpl)
+        diag["wow_cpl_delta_pct"] = round(100.0 * (cur_f - prev_f) / prev_f, 2)
+        if cur_f > prev_f * (1.0 + pct_cpl / 100.0):
+            diag["fatigue_cpl_rise"] = True
+    return bool(diag["fatigue_ctr_drop"] or diag["fatigue_cpl_rise"]), diag
 
 
 def week_folder_name(dt: datetime = None) -> str:
@@ -924,6 +1069,11 @@ def build_lead_analysis(data: dict, optimization_map: dict = None) -> dict:
 
         allowed = _get_campaign_allowed_breakdown(camp)
         primary_objective_label = _label_for_action_type(primary_action) if primary_action else ""
+        ci = camp.get("_campaign_insights") or {}
+        impressions = _float_insight_field(ci, "impressions")
+        clicks_m = _float_insight_field(ci, "clicks")
+        ctr_m = (clicks_m / impressions) if impressions > 0 else 0.0
+        cpm_m = (1000.0 * spend / impressions) if impressions > 0 else 0.0
         campaign_results.append({
             "campaign_id": camp.get("id", ""),
             "campaign_name": camp.get("name", ""),
@@ -935,6 +1085,10 @@ def build_lead_analysis(data: dict, optimization_map: dict = None) -> dict:
             "primary_action_type": primary_action,
             "primary_objective_label": primary_objective_label,
             "cpl": round(spend / results, 2) if results > 0 else None,
+            "impressions": impressions,
+            "clicks": clicks_m,
+            "ctr": ctr_m,
+            "cpm": round(cpm_m, 4),
             "is_engagement": res.get("is_engagement_campaign", False),
             "lead_breakdown": res.get("lead_breakdown", {}),
             "allowed_breakdown": allowed,
@@ -1019,6 +1173,275 @@ def validate_data(data: dict, analysis: dict) -> list:
             f"(delta: ${analysis['spend_delta']:.2f})"
         )
     return warnings
+
+
+def _confidence_class(impressions: float, clicks: float, results: float) -> str:
+    t = INTELLIGENCE_SIGNAL_THRESHOLDS
+    if impressions >= t["high_conf_impressions"] and clicks >= t["high_conf_clicks"] and results >= t["high_conf_results"]:
+        return "high"
+    if impressions >= t["med_conf_impressions"] and clicks >= t["med_conf_clicks"] and results >= t["med_conf_results"]:
+        return "medium"
+    if impressions >= t["low_conf_impressions"] and clicks >= t["low_conf_clicks"] and results >= t["low_conf_results"]:
+        return "low"
+    return "insufficient"
+
+
+def _write_signals(platform_dir: Path, rows: list[dict]) -> None:
+    if not rows:
+        return
+    sig_jsonl = platform_dir / "signals.jsonl"
+    with open(sig_jsonl, "w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    pd.DataFrame(rows).to_parquet(platform_dir / "signals.parquet", index=False)
+
+
+def _action_priority_score(
+    results: float,
+    spend: float,
+    ctr: float,
+    confidence_class: str,
+    *,
+    cpm_norm: float = 0.0,
+) -> float:
+    eff = (results / spend) if spend > 0 else 0.0
+    c_mult = {
+        "high": 1.0,
+        "medium": 0.9,
+        "low": 0.75,
+        "insufficient": 0.5,
+    }.get(str(confidence_class), 0.5)
+    ctr_t = max(0.0, min(1.0, float(ctr)))
+    cpm_t = max(0.0, min(1.0, float(cpm_norm)))
+    # Weighted proxy: CPL efficiency + CTR + spend discipline + batch-normalized CPM pressure.
+    base = (
+        ANOMALY_WEIGHTS["anomaly_weight_cpl"] * eff
+        + ANOMALY_WEIGHTS["anomaly_weight_ctr"] * ctr_t
+        + ANOMALY_WEIGHTS["anomaly_weight_spend"] * (1.0 / max(spend, 1.0))
+        + ANOMALY_WEIGHTS["anomaly_weight_cpm"] * cpm_t
+    )
+    return float(max(0.0, base * c_mult))
+
+
+def _format_ranked_anomaly_table_md(rows: list[dict], *, top_n: int = 15) -> str:
+    """Pre-computed priority table for report Section 8.5 (deterministic ordering)."""
+    if not rows:
+        return "_No signal rows available for ranked anomaly table._"
+    ranked = sorted(
+        rows,
+        key=lambda r: float(r.get("action_priority_score") or r.get("anomaly_score") or 0.0),
+        reverse=True,
+    )[:top_n]
+    lines = [
+        "| Rank | Entity | action_priority | anomaly | Spend | Results | Conf |",
+        "|------|--------|-----------------|---------|-------|---------|------|",
+    ]
+    for i, r in enumerate(ranked, 1):
+        ent = str(r.get("entity_text") or r.get("campaign_name") or r.get("entity_id") or "")[:60]
+        ap = float(r.get("action_priority_score") or 0.0)
+        an = float(r.get("anomaly_score") or ap)
+        sp = float(r.get("spend") or 0.0)
+        res = float(r.get("results_or_conversions") or 0.0)
+        conf = str(r.get("confidence_class") or "")
+        lines.append(
+            f"| {i} | {ent} | {ap:.4f} | {an:.4f} | ${sp:,.2f} | {res:.1f} | {conf} |"
+        )
+    return "\n".join(lines)
+
+
+def _meta_signals_from_lead_analysis(
+    raw_data: dict,
+    lead_analysis: dict,
+    *,
+    prior_by_campaign_id: dict[str, dict] | None = None,
+) -> list[dict]:
+    tr = raw_data.get("time_range", {})
+    prior_by_campaign_id = prior_by_campaign_id or {}
+    crs = lead_analysis.get("campaign_results", [])
+    cpms = [float(cr.get("cpm") or 0) for cr in crs]
+    cpm_norms = _batch_cpm_norm(cpms)
+    out: list[dict] = []
+    for i, cr in enumerate(crs):
+        spend = float(cr.get("spend") or 0.0)
+        leads = float(cr.get("leads") or 0.0)
+        impressions = float(cr.get("impressions") or 0.0)
+        clicks_m = float(cr.get("clicks") or 0.0)
+        ctr_m = float(cr.get("ctr") or 0.0)
+        cpm_m = float(cr.get("cpm") or 0.0)
+        cid = str(cr.get("campaign_id") or "")
+        cur_base = _cr_to_fatigue_baseline(cr)
+        fatigue, fdiag = _compute_fatigue_flags(cur_base, prior_by_campaign_id.get(cid))
+        conf = _confidence_class(impressions, clicks_m, leads)
+        row = {
+            "platform": "meta",
+            "entity_type": "meta_campaign",
+            "entity_id": cid,
+            "entity_text": str(cr.get("campaign_name") or ""),
+            "campaign_name": str(cr.get("campaign_name") or ""),
+            "date_start": tr.get("since"),
+            "date_stop": tr.get("until"),
+            "grain": "weekly",
+            "impressions": impressions,
+            "clicks": clicks_m,
+            "spend": spend,
+            "results_or_conversions": leads,
+            "ctr": ctr_m,
+            "cpm": cpm_m,
+            "cpm_norm": float(cpm_norms[i]) if i < len(cpm_norms) else 0.0,
+            "roi_priority_weight": 0.0,
+            "roi_norm": 1.0,
+            "perf_signal": 1.0 if leads > 0 else 0.5,
+            "blended_score": 1.0 if leads > 0 else 0.5,
+            "confidence_class": conf,
+            "fatigue_flag": fatigue,
+            "volatility_flag": False,
+            "primary_action_type": cr.get("primary_action_type"),
+            "wow_ctr_delta_pct": fdiag.get("wow_ctr_delta_pct"),
+            "wow_cpl_delta_pct": fdiag.get("wow_cpl_delta_pct"),
+            "fatigue_ctr_drop": fdiag.get("fatigue_ctr_drop"),
+            "fatigue_cpl_rise": fdiag.get("fatigue_cpl_rise"),
+        }
+        cpm_norm = float(row["cpm_norm"])
+        ap = _action_priority_score(
+            float(row["results_or_conversions"]),
+            float(row["spend"]),
+            float(row["ctr"]),
+            str(row["confidence_class"]),
+            cpm_norm=cpm_norm,
+        )
+        row["action_priority_score"] = ap
+        row["anomaly_score"] = ap
+        out.append(row)
+    return out
+
+
+def _aggregate_gads_campaign_rows(rows: list) -> list[dict]:
+    """Sum daily (segmented) GAQL rows into one dict per campaign.id for stable signals + WoW joins."""
+    by_id: dict[str, dict] = {}
+    for row in rows or []:
+        if not isinstance(row, dict) or row.get("error"):
+            continue
+        camp = row.get("campaign") or {}
+        cid = camp.get("id")
+        if cid is None:
+            continue
+        key = str(cid)
+        met = row.get("metrics") or {}
+        imps = float(met.get("impressions") or 0)
+        clicks = float(met.get("clicks") or 0)
+        cost_micros = float(met.get("costMicros") or met.get("cost_micros") or 0)
+        conv = float(met.get("conversions") or 0)
+        if key not in by_id:
+            by_id[key] = {"campaign": dict(camp), "imps": 0.0, "clicks": 0.0, "micros": 0.0, "conv": 0.0}
+        by_id[key]["imps"] += imps
+        by_id[key]["clicks"] += clicks
+        by_id[key]["micros"] += cost_micros
+        by_id[key]["conv"] += conv
+    out: list[dict] = []
+    for _key, blob in by_id.items():
+        imps = blob["imps"]
+        clicks = blob["clicks"]
+        spend = blob["micros"] / 1_000_000.0
+        conv = blob["conv"]
+        ctr = (clicks / imps) if imps > 0 else 0.0
+        cpm = (1000.0 * spend / imps) if imps > 0 else 0.0
+        out.append(
+            {
+                "campaign": blob["campaign"],
+                "metrics": {
+                    "impressions": imps,
+                    "clicks": clicks,
+                    "costMicros": blob["micros"],
+                    "conversions": conv,
+                    "ctr": ctr,
+                    "averageCpm": cpm,
+                },
+            }
+        )
+    return out
+
+
+def _google_signals_from_raw(
+    raw_data: dict,
+    *,
+    prior_by_campaign_id: dict[str, dict] | None = None,
+) -> list[dict]:
+    tr = raw_data.get("time_range", {})
+    prior_by_campaign_id = prior_by_campaign_id or {}
+    camp_rows = _aggregate_gads_campaign_rows(raw_data.get("campaigns") or [])
+    cpms: list[float] = []
+    for c in camp_rows:
+        met = c.get("metrics", {}) or {}
+        imps = float(met.get("impressions") or 0.0)
+        spend = float(met.get("costMicros") or met.get("cost_micros") or 0.0) / 1_000_000.0
+        cpm = float(met.get("averageCpm") or met.get("average_cpm") or 0.0)
+        if cpm <= 0 and imps > 0 and spend > 0:
+            cpm = 1000.0 * spend / imps
+        cpms.append(cpm)
+    cpm_norms = _batch_cpm_norm(cpms)
+    rows: list[dict] = []
+    for idx, c in enumerate(camp_rows):
+        camp = c.get("campaign", {}) if isinstance(c, dict) else {}
+        met = c.get("metrics", {}) if isinstance(c, dict) else {}
+        impressions = float(met.get("impressions") or 0.0)
+        clicks = float(met.get("clicks") or 0.0)
+        conv = float(met.get("conversions") or 0.0)
+        ctr = float(met.get("ctr") or 0.0)
+        spend = float(met.get("costMicros") or met.get("cost_micros") or 0.0) / 1_000_000.0
+        cpm = cpms[idx] if idx < len(cpms) else 0.0
+        cid = str(camp.get("id") or "")
+        cpl_cur = spend / conv if conv > 0 else None
+        cur_base = {
+            "ctr": ctr,
+            "cpm": cpm,
+            "cpl": cpl_cur,
+            "leads": conv,
+            "spend": spend,
+            "impressions": impressions,
+            "clicks": clicks,
+        }
+        fatigue, fdiag = _compute_fatigue_flags(cur_base, prior_by_campaign_id.get(cid))
+        cpm_norm = float(cpm_norms[idx]) if idx < len(cpm_norms) else 0.0
+        rows.append(
+            {
+                "platform": "google",
+                "entity_type": "google_campaign",
+                "entity_id": cid,
+                "entity_text": str(camp.get("name") or ""),
+                "campaign_name": str(camp.get("name") or ""),
+                "date_start": tr.get("since"),
+                "date_stop": tr.get("until"),
+                "grain": "weekly",
+                "impressions": impressions,
+                "clicks": clicks,
+                "spend": spend,
+                "results_or_conversions": conv,
+                "ctr": ctr,
+                "cpm": cpm,
+                "cpm_norm": cpm_norm,
+                "roi_priority_weight": 0.0,
+                "roi_norm": 1.0,
+                "perf_signal": 1.0 if conv > 0 else 0.5,
+                "blended_score": 1.0 if conv > 0 else 0.5,
+                "confidence_class": _confidence_class(impressions, clicks, conv),
+                "fatigue_flag": fatigue,
+                "volatility_flag": False,
+                "wow_ctr_delta_pct": fdiag.get("wow_ctr_delta_pct"),
+                "wow_cpl_delta_pct": fdiag.get("wow_cpl_delta_pct"),
+                "fatigue_ctr_drop": fdiag.get("fatigue_ctr_drop"),
+                "fatigue_cpl_rise": fdiag.get("fatigue_cpl_rise"),
+            }
+        )
+        ap = _action_priority_score(
+            float(rows[-1]["results_or_conversions"]),
+            float(rows[-1]["spend"]),
+            float(rows[-1]["ctr"]),
+            str(rows[-1]["confidence_class"]),
+            cpm_norm=cpm_norm,
+        )
+        rows[-1]["action_priority_score"] = ap
+        rows[-1]["anomaly_score"] = ap
+    return rows
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1605,17 +2028,27 @@ The LLM API could not generate a full analysis. Below is a summary of the data r
 """
 
 
-def generate_meta_report(raw_data: dict, lead_analysis: dict, warnings: list) -> str:
+def generate_meta_report(
+    raw_data: dict,
+    lead_analysis: dict,
+    warnings: list,
+    *,
+    signal_rows: list | None = None,
+) -> str:
     """Generate Meta Ads report using platform-specific analyzer."""
     slim_data = _slim_raw_data_for_prompt(raw_data)
     from report_analyzers.meta_ads_analyzer import generate_meta_report as meta_generate
-    return meta_generate(slim_data, lead_analysis, warnings, call_llm)
+
+    ranked_md = _format_ranked_anomaly_table_md(signal_rows or [])
+    return meta_generate(slim_data, lead_analysis, warnings, call_llm, ranked_anomaly_markdown=ranked_md)
 
 
-def generate_google_report(raw_data: dict) -> str:
+def generate_google_report(raw_data: dict, *, signal_rows: list | None = None) -> str:
     """Generate Google Ads report using platform-specific analyzer."""
     from report_analyzers.google_ads_analyzer import generate_google_report as google_generate
-    return google_generate(raw_data, call_llm)
+
+    ranked_md = _format_ranked_anomaly_table_md(signal_rows or [])
+    return google_generate(raw_data, call_llm, ranked_anomaly_markdown=ranked_md)
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1667,6 +2100,31 @@ class PaidAdsIntelligenceAgent:
             json.dump(lead_analysis, f, indent=2)
         print(f"   💾 Lead analysis saved: {analysis_path}")
 
+        prior_by_campaign_id: dict[str, dict] = {}
+        prng = _prior_iso_period_range(since, until)
+        if prng:
+            ps, pu = prng
+            print(f"   📥 Prior period pull (WoW fatigue): {ps} → {pu}")
+            try:
+                raw_prev = pull_full_meta_data(ps, pu)
+                prev_path = platform_dir / "raw_data_prior_period.json"
+                with open(prev_path, "w", encoding="utf-8") as f:
+                    json.dump(raw_prev, f, indent=2, default=str)
+                print(f"   💾 Prior period raw saved: {prev_path}")
+                la_prev = build_lead_analysis(raw_prev, raw_prev.get("optimization_map", {}))
+                for cr in la_prev.get("campaign_results", []):
+                    cid = str(cr.get("campaign_id") or "")
+                    if cid:
+                        prior_by_campaign_id[cid] = _cr_to_fatigue_baseline(cr)
+            except Exception as e:
+                print(f"   ⚠️ Prior period Meta pull failed (fatigue flags default false): {e}")
+
+        signal_rows = _meta_signals_from_lead_analysis(
+            raw_data, lead_analysis, prior_by_campaign_id=prior_by_campaign_id
+        )
+        _write_signals(platform_dir, signal_rows)
+        print(f"   💾 Signals saved: {platform_dir / 'signals.jsonl'}")
+
         if warnings:
             for w in warnings:
                 print(f"   ⚠️ {w}")
@@ -1675,7 +2133,7 @@ class PaidAdsIntelligenceAgent:
               f"Blended CPL: ${lead_analysis['blended_cpl'] or 'N/A'}")
 
         print("   🤖 Generating AI analysis...")
-        report = generate_meta_report(raw_data, lead_analysis, warnings)
+        report = generate_meta_report(raw_data, lead_analysis, warnings, signal_rows=signal_rows)
         if report.startswith("⚠️"):
             print("   ⚠️ LLM failed, writing data-only fallback report...")
             report = _format_meta_fallback_report(raw_data, lead_analysis, warnings, report)
@@ -1705,8 +2163,31 @@ class PaidAdsIntelligenceAgent:
             json.dump(raw_data, f, indent=2, default=str)
         print(f"   💾 Raw data saved: {raw_path}")
 
+        prior_google: dict[str, dict] = {}
+        prng_g = _prior_iso_period_range(since, until)
+        if prng_g:
+            ps, pu = prng_g
+            print(f"   📥 Prior period pull (WoW fatigue): {ps} → {pu}")
+            try:
+                raw_prev_g = pull_full_google_data(ps, pu)
+                prev_g_path = platform_dir / "raw_data_prior_period.json"
+                with open(prev_g_path, "w", encoding="utf-8") as f:
+                    json.dump(raw_prev_g, f, indent=2, default=str)
+                print(f"   💾 Prior period raw saved: {prev_g_path}")
+                for row in _aggregate_gads_campaign_rows(raw_prev_g.get("campaigns") or []):
+                    b = _google_row_to_fatigue_baseline(row)
+                    if b and b.get("id"):
+                        cid = str(b["id"])
+                        prior_google[cid] = {k: v for k, v in b.items() if k != "id"}
+            except Exception as e:
+                print(f"   ⚠️ Prior period Google pull failed (fatigue flags default false): {e}")
+
+        g_signal_rows = _google_signals_from_raw(raw_data, prior_by_campaign_id=prior_google)
+        _write_signals(platform_dir, g_signal_rows)
+        print(f"   💾 Signals saved: {platform_dir / 'signals.jsonl'}")
+
         print("   🤖 Generating AI analysis...")
-        report = generate_google_report(raw_data)
+        report = generate_google_report(raw_data, signal_rows=g_signal_rows)
         if report.startswith("⚠️"):
             print("   ⚠️ LLM failed, writing fallback report...")
             report = _format_google_fallback_report(raw_data, report)

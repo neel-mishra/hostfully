@@ -23,7 +23,7 @@ Use these to verify output destinations (local workspace + Google Drive) for eac
 | Destination | Link |
 |-------------|------|
 | **Local (Cursor)** | [docs/content_assets/weekly_review_2026-03-15.md](docs/content_assets/weekly_review_2026-03-15.md) · [docs/blogs/2026-03-15/qa_test_blog_post.md](docs/blogs/2026-03-15/qa_test_blog_post.md) · [docs/content_assets/repurposed/qa_test_repurposed_2026-03-15.md](docs/content_assets/repurposed/qa_test_repurposed_2026-03-15.md) |
-| **Google Drive (Doc)** | [TLDR Weekly Content Review - 2026-03-15](https://docs.google.com/document/d/1rihCGOMyNfQ3jJAhVGIu6aHEHnqP_ag6tl0rKpBdF8I) |
+| **Google Drive (Doc)** | [Hostfully Weekly Content Review - 2026-03-15](https://docs.google.com/document/d/1rihCGOMyNfQ3jJAhVGIu6aHEHnqP_ag6tl0rKpBdF8I) |
 
 ---
 
@@ -41,8 +41,8 @@ Use these to verify output destinations (local workspace + Google Drive) for eac
 | Destination | Link |
 |-------------|------|
 | **Local (Cursor)** | [docs/analytics_reports/weekly_ad_performance_2026-03-15.md](docs/analytics_reports/weekly_ad_performance_2026-03-15.md) |
-| **Google Drive (Sheet)** | [TLDR Ad Performance Tracker](https://docs.google.com/spreadsheets/d/15Pa6tWquLSKvtn_ES_7kWE3rF3YXJf3_luT9i2SFUTc/edit?usp=drivesdk) |
-| **Google Drive (Doc)** | [TLDR Ad Performance - Week of 2026-03-15](https://docs.google.com/document/d/1nANLwbxi76tnC4Cz5HD2H3L08fqieG62OLCCVlUMWVw) |
+| **Google Drive (Sheet)** | [Hostfully Ad Performance Tracker](https://docs.google.com/spreadsheets/d/15Pa6tWquLSKvtn_ES_7kWE3rF3YXJf3_luT9i2SFUTc/edit?usp=drivesdk) |
+| **Google Drive (Doc)** | [Hostfully Ad Performance - Week of 2026-03-15](https://docs.google.com/document/d/1nANLwbxi76tnC4Cz5HD2H3L08fqieG62OLCCVlUMWVw) |
 
 ---
 
@@ -51,7 +51,7 @@ Use these to verify output destinations (local workspace + Google Drive) for eac
 | Destination | Link |
 |-------------|------|
 | **Local (Cursor)** | [docs/analytics_reports/seo_intelligence_2026-03-15.md](docs/analytics_reports/seo_intelligence_2026-03-15.md) |
-| **Google Drive (Doc)** | [TLDR SEO Intelligence - Week of 2026-03-15](https://docs.google.com/document/d/11Ys55rtpqjFlUiGvWgoTAyIiyF7HrghpD_8h36iCXLA) |
+| **Google Drive (Doc)** | [Hostfully SEO Intelligence - Week of 2026-03-15](https://docs.google.com/document/d/11Ys55rtpqjFlUiGvWgoTAyIiyF7HrghpD_8h36iCXLA) |
 
 ---
 
@@ -70,7 +70,7 @@ Use these to verify output destinations (local workspace + Google Drive) for eac
 | Destination | Link |
 |-------------|------|
 | **Local (Cursor)** | [docs/sales_assets/weekly_intelligence_2026-03-15.md](docs/sales_assets/weekly_intelligence_2026-03-15.md) |
-| **Google Drive (Sheet)** | [TLDR Prospect Pipeline](https://docs.google.com/spreadsheets/d/1TNkZhYmWoRVDmZnZaMoQvtv1mTmluyYSEID88ZMC9UI/edit?usp=drivesdk) |
+| **Google Drive (Sheet)** | [Hostfully Prospect Pipeline](https://docs.google.com/spreadsheets/d/1TNkZhYmWoRVDmZnZaMoQvtv1mTmluyYSEID88ZMC9UI/edit?usp=drivesdk) |
 | **Google Drive (Doc)** | [Sales Intelligence - Week of 2026-03-15](https://docs.google.com/document/d/1qvCtnW9WGeGhylUg0ArRM_JXhf5aJT27ZQwTAOYLkp4) |
 
 ---
@@ -80,7 +80,7 @@ Use these to verify output destinations (local workspace + Google Drive) for eac
 | Destination | Link |
 |-------------|------|
 | **Local (Cursor)** | [docs/cro_reports/weekly_audit_2026-03-15.md](docs/cro_reports/weekly_audit_2026-03-15.md) |
-| **Google Drive (Doc)** | [TLDR CRO Audit - Week of 2026-03-15](https://docs.google.com/document/d/1OMDpauFroq5BxmAEM0W3hStwugFE9JYsFB_klWhaWQA) |
+| **Google Drive (Doc)** | [Hostfully CRO Audit - Week of 2026-03-15](https://docs.google.com/document/d/1OMDpauFroq5BxmAEM0W3hStwugFE9JYsFB_klWhaWQA) |
 
 ---
 

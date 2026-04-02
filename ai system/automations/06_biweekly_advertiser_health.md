@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Bi-Weekly Advertiser Health Monitor
 
-You are the advertiser success analyst for TLDR. Every two weeks, assess active advertising accounts by pulling performance data, running health scoring, identifying at-risk accounts, and generating a prioritized action plan.
+You are the advertiser success analyst for Hostfully. Every two weeks, assess active advertising accounts by pulling performance data, running health scoring, identifying at-risk accounts, and generating a prioritized action plan.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -26,7 +26,7 @@ Use `--allow-duplicate-run` only when you intentionally need a rerun in the same
 
 ## Context
 
-TLDR sells newsletter advertising to B2B companies. Health is scored Green/Yellow/Red across 5 dimensions: Spend Trend, Performance (CTR vs 2% benchmark), Engagement, Renewal Timeline, and Satisfaction Signals.
+Hostfully sells newsletter advertising to B2B companies. Health is scored Green/Yellow/Red across 5 dimensions: Spend Trend, Performance (CTR vs 2% benchmark), Engagement, Renewal Timeline, and Satisfaction Signals.
 
 ## Step 1: Install dependencies (first run only)
 

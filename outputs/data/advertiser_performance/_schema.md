@@ -9,12 +9,12 @@ This folder stores advertiser campaign performance data extracted from native ad
 
 ## Data Source
 
-Performance data is pulled from TLDR's internal ad management systems. A future MCP integration will automate extraction from each native platform.
+Performance data is pulled from Hostfully's internal ad management systems. A future MCP integration will automate extraction from each native platform.
 
 ### MCP Integration Placeholder
 
 When the MCP is built, it should:
-1. Connect to TLDR's ad serving / campaign management platform
+1. Connect to Hostfully's ad serving / campaign management platform
 2. Extract per-advertiser performance metrics on a weekly cadence
 3. Write CSV files to this folder following the schema below
 4. Optionally push to Google Sheets via the `user-gsheets` MCP
@@ -33,7 +33,7 @@ One row per advertiser per campaign per newsletter placement.
 | advertiser_name | string | Company name |
 | campaign_id | string | Campaign identifier |
 | campaign_name | string | Campaign name/description |
-| newsletter | string | Which TLDR newsletter (Tech, AI, Dev, InfoSec, etc.) |
+| newsletter | string | Which Hostfully newsletter (Tech, AI, Dev, InfoSec, etc.) |
 | placement_type | string | Primary, Secondary, or Quick Link |
 | placement_date | date | Date of newsletter send (YYYY-MM-DD) |
 | impressions | int | Newsletter opens (= impressions for the ad) |

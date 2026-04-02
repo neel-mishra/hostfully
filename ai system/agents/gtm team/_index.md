@@ -51,7 +51,7 @@ Product intelligence from customer signals.
 | [release-notes-agent](product/release-notes-agent.md) | `ai system/python scripts/product agent/release_notes_generator.py` | Transforms raw release notes into advertiser-facing, reader-facing, and internal changelogs. |
 | [user-interview-synthesizer-agent](product/user-interview-synthesizer-agent.md) | `ai system/python scripts/product agent/interview_synthesizer.py` | Extracts JTBD, pain points, feature wishes, competitor mentions from interview transcripts. Per-interview + cross-interview synthesis. |
 | [prd-task-breakdown-agent](product/prd-task-breakdown-agent.md) | *(agent spec — manual execution)* | Creates comprehensive PRDs with technical architecture, user research, and implementation roadmaps. Breaks into tasks. |
-| [competitive-feature-matrix-agent](product/competitive-feature-matrix-agent.md) | `ai system/python scripts/product agent/competitive_feature_matrix.py` | Feature-by-feature comparison matrix: TLDR vs LinkedIn, Google, Meta, Paved, Beehiiv. Identifies gaps and roadmap recs. |
+| [competitive-feature-matrix-agent](product/competitive-feature-matrix-agent.md) | `ai system/python scripts/product agent/competitive_feature_matrix.py` | Feature-by-feature comparison matrix: Hostfully vs LinkedIn, Google, Meta, Paved, Beehiiv. Identifies gaps and roadmap recs. |
 
 ---
 

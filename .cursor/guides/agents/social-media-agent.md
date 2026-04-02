@@ -38,7 +38,7 @@ Repurposed post sets, threads, captions, hooks, and light calendar plans.
 - Downstream: Reports, briefs, trackers, and handoffs to other agents/automations.
 
 ## Related Implementation Plans
-- `tldr-social-and-ads-agents_7071cac8.plan.md` — 10/10 completed todo items.
+- `hostfully-social-and-ads-agents_7071cac8.plan.md` — 10/10 completed todo items.
 - `claude_skill_builder_agent_52a1e919.plan.md` — 1/1 completed todo items.
 - `cursor_automations_brainstorm_97eb7e7d.plan.md` — 10/10 completed todo items.
 

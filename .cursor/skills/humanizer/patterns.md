@@ -80,7 +80,7 @@ Known patterns that make copy sound AI-generated. Each pattern includes what to 
 
 ### 16. The Diplomatic Tone
 **What it is:** Never taking a strong position. "There are pros and cons to both approaches." "It depends on your specific needs."
-**Fix:** Have an opinion. TLDR's voice is authoritative. Pick a side when the evidence supports it.
+**Fix:** Have an opinion. Hostfully's voice is authoritative. Pick a side when the evidence supports it.
 
 ---
 
@@ -88,7 +88,7 @@ Known patterns that make copy sound AI-generated. Each pattern includes what to 
 
 ### 17. The Question Opener
 **What it is:** "Have you ever wondered...?" or "What if there was a way to...?" AI defaults to rhetorical questions as openers.
-**Fix:** Start with a fact, a number, or a bold claim. TLDR leads with the news, not a question.
+**Fix:** Start with a fact, a number, or a bold claim. Hostfully leads with the news, not a question.
 
 ### 18. The Call-to-Action Closing
 **What it is:** Every piece ends with "Ready to get started?" or "The future of X is here — are you ready?"
@@ -100,7 +100,7 @@ Known patterns that make copy sound AI-generated. Each pattern includes what to 
 
 ---
 
-## TLDR-Specific Patterns
+## Hostfully-Specific Patterns
 
 ### 20. Wrong Side of the Network
 **What it is:** Using advertiser language in reader-facing copy or vice versa. "ROI" in a newsletter blurb. "Curated" in a sales email.
@@ -124,7 +124,7 @@ Known patterns that make copy sound AI-generated. Each pattern includes what to 
 
 ### 24. The Meta-Description Voice Bleed
 **What it is:** The meta title and description sound just as AI as the body copy. "Unlock the secrets to..." or "Discover proven strategies for..." in the SEO metadata.
-**Fix:** Write meta descriptions in the same voice as the rewritten body. Short, specific, no "unlock/discover/proven." TLDR style: state the fact, state the benefit.
+**Fix:** Write meta descriptions in the same voice as the rewritten body. Short, specific, no "unlock/discover/proven." Hostfully style: state the fact, state the benefit.
 
 ### 25. The 2x Bloat Ratio
 **What it is:** AI drafts are consistently 2-3x longer than they need to be. A point that needs one sentence gets three. A section that needs three bullets gets six. The piece feels comprehensive but reads as padded.

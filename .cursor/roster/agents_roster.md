@@ -1,14 +1,14 @@
-## TLDR Agents Roster
+## Hostfully Agents Roster
 
-High-level index of TLDR’s Cursor agents so you can quickly see what to use, what they expect in, and what they produce out. Grouped by function and use case.
+High-level index of Hostfully’s Cursor agents so you can quickly see what to use, what they expect in, and what they produce out. Grouped by function and use case.
 
 ---
 
 ### GTM Team — Sales Agents
 
 - **Advertiser Prospect Intelligence Agent** (`ai system/agents/gtm team/sales/advertiser-prospect-agent.md`)
-  - **Synopsis**: Finds and scores ideal advertisers based on funding, ad spend, and fit with TLDR newsletters. Used for building outbound prospect lists.
-  - **Inputs**: Ideal customer profile, TLDR business context, competitor landscape, external ad/SEO signals (Ahrefs, Meta/Google ads, ad libraries).
+  - **Synopsis**: Finds and scores ideal advertisers based on funding, ad spend, and fit with Hostfully newsletters. Used for building outbound prospect lists.
+  - **Inputs**: Ideal customer profile, Hostfully business context, competitor landscape, external ad/SEO signals (Ahrefs, Meta/Google ads, ad libraries).
   - **Outputs**: Ranked CSV prospect lists with scores and signals, plus optional per-company prospect briefs with suggested outreach angles.
 
 - **Sales Call Transcript Analyzer** (`ai system/agents/gtm team/sales/call-transcript-analyzer-agent.md`)
@@ -18,7 +18,7 @@ High-level index of TLDR’s Cursor agents so you can quickly see what to use, w
 
 - **Competitive Battlecard Agent** (`ai system/agents/gtm team/sales/battlecard-agent.md`)
   - **Synopsis**: Generates sales battlecards against key competitors using existing competitive trackers and fresh research.
-  - **Inputs**: Competitor landscape, TLDR positioning and messaging, competitor content/ad trackers, web research.
+  - **Inputs**: Competitor landscape, Hostfully positioning and messaging, competitor content/ad trackers, web research.
   - **Outputs**: Per-competitor battlecards summarizing positioning, strengths/weaknesses, objections and counters, proof points, and killer questions.
 
 - **Deal Risk Agent** (`ai system/agents/gtm team/sales/deal-risk-agent.md`)
@@ -70,7 +70,7 @@ High-level index of TLDR’s Cursor agents so you can quickly see what to use, w
 
 - **QBR Generator Agent** (`ai system/agents/gtm team/customer success/qbr-generator-agent.md`)
   - **Synopsis**: Builds Quarterly Business Review documents for advertisers using campaign performance data and benchmarks.
-  - **Inputs**: Advertiser performance history (impressions, CTR, conversions, spend), placement history, TLDR benchmarks/context.
+  - **Inputs**: Advertiser performance history (impressions, CTR, conversions, spend), placement history, Hostfully benchmarks/context.
   - **Outputs**: Per-advertiser QBR markdown docs or decks with exec summaries, performance sections, benchmarks, and recommended next plans.
 
 - **Support Ticket Analyzer Agent** (`ai system/agents/gtm team/customer success/support-ticket-analyzer-agent.md`)
@@ -98,7 +98,7 @@ High-level index of TLDR’s Cursor agents so you can quickly see what to use, w
   - **Outputs**: Sprint plans with prioritized work, owners, and rationales.
 
 - **Competitive Feature Matrix Agent** (`ai system/agents/gtm team/product/competitive-feature-matrix-agent.md`)
-  - **Synopsis**: Builds and updates feature comparison matrices across TLDR and competitors.
+  - **Synopsis**: Builds and updates feature comparison matrices across Hostfully and competitors.
   - **Inputs**: Product features, competitor research, pricing/packaging info.
   - **Outputs**: Competitive feature matrices and narrative commentary.
 

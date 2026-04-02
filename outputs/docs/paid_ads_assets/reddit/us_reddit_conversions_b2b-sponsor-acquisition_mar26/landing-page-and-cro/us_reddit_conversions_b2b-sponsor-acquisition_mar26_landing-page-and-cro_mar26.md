@@ -15,8 +15,8 @@ Define funnel, landing-page structure, hypotheses, and test backlog.
 
 ## Funnel Definition
 
-- **Traffic source:** Reddit ads to existing TLDR newsletter signup page.
-- **Offer:** Free TLDR tech newsletter (same as Meta / other channels).
+- **Traffic source:** Reddit ads to existing Hostfully newsletter signup page.
+- **Offer:** Free Hostfully tech newsletter (same as Meta / other channels).
 - **Core promise:** “Get the 5‑minute briefing on what’s happening in tech.”
 
 ## Recommended Landing Page Considerations (Reddit-Specific)

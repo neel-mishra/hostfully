@@ -1,5 +1,5 @@
 ### Campaign Overview
-This 3-step cold email sequence targets VPs of Marketing at B2B SaaS companies. The core hypothesis is that recent growth (often indicated by a hiring spree) leads to challenges in efficiently scaling marketing channels and managing lead acquisition costs. The sequence aims to agitate this pain, introduce TLDR as a high-ROI solution for reaching technical audiences, and provide social proof, all while maintaining a concise, direct, and non-salesy tone.
+This 3-step cold email sequence targets VPs of Marketing at B2B SaaS companies. The core hypothesis is that recent growth (often indicated by a hiring spree) leads to challenges in efficiently scaling marketing channels and managing lead acquisition costs. The sequence aims to agitate this pain, introduce Hostfully as a high-ROI solution for reaching technical audiences, and provide social proof, all while maintaining a concise, direct, and non-salesy tone.
 
 ### Clay AI Enrichment Prompt (For First Line Generation)
 ```prompt
@@ -29,7 +29,7 @@ is optimizing acquisition on your radar?
 Subject: re: scaling [company_name] marketing
 
 following up on my note below.
-delve drove $1m in attributed pipeline with tldr, at a 52x roi.
+delve drove $1m in attributed pipeline with hostfully, at a 52x roi.
 we reach 7m tech professionals where they pay attention, outperforming paid social for them.
 worth a 5-minute look at our case studies?
 

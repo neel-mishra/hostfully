@@ -160,6 +160,52 @@ def build_channel_frame(
     return df, summary
 
 
+def _attach_blended_and_tiebreak_columns(out: pd.DataFrame, cfg: AllocationConfig) -> pd.Series:
+    """Core 85/15 blend + tie-break decomposition (audit columns on ``out``). Returns final blended weights."""
+    roi = pd.to_numeric(out.get("roi_priority_weight", 0.0), errors="coerce").fillna(0.0)
+    roi_norm = roi.copy()
+    pos = roi_norm > 0
+    if pos.any():
+        med = float(roi_norm[pos].median())
+        if med > 0:
+            roi_norm[pos] = (roi_norm[pos] / med).clip(lower=0.25, upper=4.0)
+    roi_norm[~pos] = 1.0
+    perf_norm = pd.to_numeric(out.get("performance_score", 1.0), errors="coerce").fillna(1.0)
+    pm = float(perf_norm[perf_norm > 0].median()) if (perf_norm > 0).any() else 1.0
+    if pm > 0:
+        perf_norm = (perf_norm / pm).clip(lower=0.25, upper=4.0)
+    blended_core = 0.15 * perf_norm + 0.85 * roi_norm
+    has_winning_angle = pd.to_numeric(out.get("has_winning_angle", 0.0), errors="coerce").fillna(0.0)
+    fatigue_flag = pd.to_numeric(out.get("fatigue_flag", 0.0), errors="coerce").fillna(0.0)
+    volatility_flag = pd.to_numeric(out.get("volatility_flag", 0.0), errors="coerce").fillna(0.0)
+    low_confidence_flag = pd.to_numeric(out.get("low_confidence_flag", 0.0), errors="coerce").fillna(0.0)
+    d_win = float(cfg.winning_angle_bonus) * has_winning_angle
+    d_fat = -float(cfg.fatigue_penalty) * fatigue_flag
+    d_vol = -float(cfg.volatility_penalty) * volatility_flag
+    d_lc = -float(cfg.low_confidence_penalty) * low_confidence_flag
+    modifier_stage1 = (
+        1.0
+        + float(cfg.winning_angle_bonus) * has_winning_angle
+        - float(cfg.fatigue_penalty) * fatigue_flag
+        - float(cfg.volatility_penalty) * volatility_flag
+        - float(cfg.low_confidence_penalty) * low_confidence_flag
+    ).clip(
+        lower=float(getattr(cfg, "tie_break_modifier_min", 0.85)),
+        upper=float(getattr(cfg, "tie_break_modifier_max", 1.15)),
+    )
+    max_impact = float(getattr(cfg, "tie_break_max_net_impact_pct", 0.15))
+    modifier_final = modifier_stage1.clip(lower=1.0 - max_impact, upper=1.0 + max_impact)
+    out["blended_core_85_15"] = blended_core
+    out["tie_break_delta_winning_angle"] = d_win
+    out["tie_break_delta_fatigue"] = d_fat
+    out["tie_break_delta_volatility"] = d_vol
+    out["tie_break_delta_low_confidence"] = d_lc
+    out["tie_break_modifier_before_net_cap"] = modifier_stage1
+    out["tie_break_modifier"] = modifier_final
+    blended_final = (blended_core * modifier_final).clip(lower=0.1, upper=10.0)
+    return blended_final
+
+
 def allocate_channel(
     df: pd.DataFrame,
     summary: ChannelPacingSummary,
@@ -177,26 +223,13 @@ def allocate_channel(
     out["recommended_daily_budget"] = out["current_daily_budget"].astype(float)
     out["allocation_share_pct"] = 0.0
 
+    blended = _attach_blended_and_tiebreak_columns(out, cfg)
+
     if d_rem <= 0 or abs(pool) < 1e-9:
         out["note"] = "Month ending or no pacing gap at channel level; no daily redistribution."
         out = _apply_caps_and_notes(out, cfg)
         out["pct_budget_change"] = out.apply(_pct_change, axis=1)
         return out
-
-    roi = pd.to_numeric(out.get("roi_priority_weight", 0.0), errors="coerce").fillna(0.0)
-    roi_norm = roi.copy()
-    pos = roi_norm > 0
-    if pos.any():
-        med = float(roi_norm[pos].median())
-        if med > 0:
-            roi_norm[pos] = (roi_norm[pos] / med).clip(lower=0.25, upper=4.0)
-    roi_norm[~pos] = 1.0
-    perf_norm = pd.to_numeric(out.get("performance_score", 1.0), errors="coerce").fillna(1.0)
-    pm = float(perf_norm[perf_norm > 0].median()) if (perf_norm > 0).any() else 1.0
-    if pm > 0:
-        perf_norm = (perf_norm / pm).clip(lower=0.25, upper=4.0)
-    # ROI-dominant blended priority (ROI is primary signal).
-    blended = 0.15 * perf_norm + 0.85 * roi_norm
 
     if pool > 0:
         elig = eligible_for_increase(out)

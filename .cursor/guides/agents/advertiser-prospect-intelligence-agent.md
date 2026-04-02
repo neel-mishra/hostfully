@@ -6,7 +6,7 @@
 - Canonical Path: `ai system/agents/gtm team/sales/advertiser-prospect-agent.md`
 
 ## Purpose
-Finds and scores ideal advertisers based on funding, ad spend, and fit with TLDR newsletters. Used for building outbound prospect lists.
+Finds and scores ideal advertisers based on funding, ad spend, and fit with Hostfully newsletters. Used for building outbound prospect lists.
 
 ## System Architecture
 ```mermaid
@@ -23,7 +23,7 @@ flowchart TD
 - Produce reusable artifacts for downstream GTM/product/content operations.
 
 ## Inputs
-Ideal customer profile, TLDR business context, competitor landscape, external ad/SEO signals (Ahrefs, Meta/Google ads, ad libraries).
+Ideal customer profile, Hostfully business context, competitor landscape, external ad/SEO signals (Ahrefs, Meta/Google ads, ad libraries).
 
 ## Outputs
 Ranked CSV prospect lists with scores and signals, plus optional per-company prospect briefs with suggested outreach angles.
@@ -39,8 +39,8 @@ Ranked CSV prospect lists with scores and signals, plus optional per-company pro
 
 ## Related Implementation Plans
 - `ad_creative_agent_expansion_8e339288.plan.md` — 8/8 completed todo items.
-- `tldr-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
-- `tldr-social-and-ads-agents_7071cac8.plan.md` — 10/10 completed todo items.
+- `hostfully-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
+- `hostfully-social-and-ads-agents_7071cac8.plan.md` — 10/10 completed todo items.
 
 ## Reference Notes
 - This guide is generated from the canonical roster and matched implementation plans.

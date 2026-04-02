@@ -6,7 +6,7 @@ tools: shell commands + Python scripts + Playwright
 
 # Weekly CRO + Landing Page Audit
 
-You are the CRO analyst for TLDR. Every Thursday, crawl key landing pages, capture accessibility snapshots, pull traffic data from Ahrefs, run CRO hypothesis generation, and produce a prioritized testing roadmap.
+You are the CRO analyst for Hostfully. Every Thursday, crawl key landing pages, capture accessibility snapshots, pull traffic data from Ahrefs, run CRO hypothesis generation, and produce a prioritized testing roadmap.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -26,12 +26,12 @@ Use `--allow-duplicate-run` only when you intentionally need a rerun in the same
 
 ## Landing Pages to Audit
 
-- https://tldr.tech (homepage/signup)
-- https://tldr.tech/signup (newsletter signup)
-- https://advertise.tldr.tech (advertiser landing page)
-- https://tldr.tech/ai (TLDR AI newsletter)
-- https://tldr.tech/webdev (TLDR Web Dev)
-- https://tldr.tech/crypto (TLDR Crypto)
+- https://hostfully.tech (homepage/signup)
+- https://hostfully.tech/signup (newsletter signup)
+- https://advertise.hostfully.tech (advertiser landing page)
+- https://hostfully.tech/ai (Hostfully AI newsletter)
+- https://hostfully.tech/webdev (Hostfully Web Dev)
+- https://hostfully.tech/crypto (Hostfully Crypto)
 
 ## Step 1: Install dependencies (first run only)
 
@@ -50,12 +50,12 @@ from playwright.sync_api import sync_playwright
 import json, time
 
 urls = [
-    'https://tldr.tech',
-    'https://tldr.tech/signup',
-    'https://advertise.tldr.tech',
-    'https://tldr.tech/ai',
-    'https://tldr.tech/webdev',
-    'https://tldr.tech/crypto',
+    'https://hostfully.tech',
+    'https://hostfully.tech/signup',
+    'https://advertise.hostfully.tech',
+    'https://hostfully.tech/ai',
+    'https://hostfully.tech/webdev',
+    'https://hostfully.tech/crypto',
 ]
 
 with sync_playwright() as p:
@@ -86,9 +86,9 @@ with sync_playwright() as p:
 ## Step 3: Pull Traffic Data from Ahrefs
 
 ```bash
-python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/ahrefs_api.py" top-pages --target tldr.tech --date TODAY_DATE --limit 30
-python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/ahrefs_api.py" pages-by-traffic --target tldr.tech --limit 20
-python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/ahrefs_api.py" metrics --target tldr.tech --date TODAY_DATE
+python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/ahrefs_api.py" top-pages --target hostfully.tech --date TODAY_DATE --limit 30
+python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/ahrefs_api.py" pages-by-traffic --target hostfully.tech --limit 20
+python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/ahrefs_api.py" metrics --target hostfully.tech --date TODAY_DATE
 ```
 
 Filter results to the landing pages being audited to identify which are CRO priorities by traffic volume.
@@ -134,8 +134,8 @@ Structure with:
 ## Step 7: Push Report to Google Docs
 
 ```bash
-python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "TLDR CRO Audit - Week of DATE"
-python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "TLDR CRO Audit - Week of DATE" --text "REPORT_CONTENT" --location start
+python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/gdocs_api.py" create --title "Hostfully CRO Audit - Week of DATE"
+python3 "ai system/automations/entrypoints/run_08.py" -- python3 "ai system/automations/lib/gdocs_api.py" update --doc-name "Hostfully CRO Audit - Week of DATE" --text "REPORT_CONTENT" --location start
 ```
 
 ## Error Handling

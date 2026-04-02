@@ -6,7 +6,7 @@
 - Schedule: Weekly, Monday at 09:00.
 
 ## Purpose
-Replaces `com.tofulab.contentpipeline.weekly.plist`. Runs content execution, humanizer quality gate, repurposing, and pushes everything into Docs.
+`com.hostfully.contentpipeline.weekly.plist` — runs content execution, humanizer quality gate, repurposing, and pushes everything into Docs.
 
 ## System Architecture
 ```mermaid

@@ -38,7 +38,7 @@ Strategic narratives, opportunity areas, roadmap themes, and GTM strategy framew
 - Downstream: Reports, briefs, trackers, and handoffs to other agents/automations.
 
 ## Related Implementation Plans
-- `tldr-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
+- `hostfully-b2c-b2b-paid-ads-slides_c7f4fb10.plan.md` — 4/4 completed todo items.
 - `vibehypevideopipeline_af86b17c.plan.md` — 0/6 completed todo items.
 
 ## Reference Notes

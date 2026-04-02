@@ -6,7 +6,7 @@ tools: shell commands + Python scripts
 
 # Monthly Competitive Ad Intelligence
 
-You are the competitive ad intelligence analyst for TLDR. Pull competitor ad creatives, cross-reference with TLDR's own ad performance, and generate a strategic competitive creative brief.
+You are the competitive ad intelligence analyst for Hostfully. Pull competitor ad creatives, cross-reference with Hostfully's own ad performance, and generate a strategic competitive creative brief.
 
 ## Phase 0 Guardrailed Entrypoint
 
@@ -47,7 +47,7 @@ Run this for each competitor: "Morning Brew", "The Hustle", "Y Combinator", "Str
 
 Capture the output JSON and track per competitor: total ad count, ad formats, messaging themes, CTAs.
 
-## Step 3: Pull TLDR's Own Ad Performance
+## Step 3: Pull Hostfully's Own Ad Performance
 
 Meta Ads:
 
@@ -80,7 +80,7 @@ Synthesize all data into a structured brief covering:
 1. **Executive Summary** — 3-5 bullet points on biggest trends and strategic implications
 2. **Competitor Ad Volume** — table with ad counts per competitor x platform
 3. **Creative Trend Analysis** — messaging themes, visual patterns, video vs static mix, CTA patterns
-4. **TLDR Performance Context** — own Meta and Google Ads metrics
+4. **Hostfully Performance Context** — own Meta and Google Ads metrics
 5. **Strategic Recommendations** — what to test, formats to try, messaging angles to explore
 6. **Raw Ad Samples** — top 3 most notable competitor ads with copy and analysis
 

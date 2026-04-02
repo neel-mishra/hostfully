@@ -102,7 +102,7 @@ def analyze_performance(newsletter_data: str, blog_data: str, competitor_data: s
     except FileNotFoundError:
         pass
 
-    prompt = f"""You are a content performance analyst for TLDR, the largest daily tech newsletter (7M+ subscribers, 12 newsletters, 40-48% open rates).
+    prompt = f"""You are a content performance analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers, 12 newsletters, 40-48% open rates).
 
 Analyze the following performance data and produce a comprehensive report.
 
@@ -114,7 +114,7 @@ Analyze the following performance data and produce a comprehensive report.
 
 {competitor_data}
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {business_context}
 
 Generate the report in this EXACT format:
@@ -147,7 +147,7 @@ Generate the report in this EXACT format:
 [Correlation between length and engagement — find the sweet spots]
 
 ## Competitor Comparison
-[How TLDR stacks up on frequency, topics, and engagement]
+[How Hostfully stacks up on frequency, topics, and engagement]
 
 ## Recommendations for Next Month
 1. [Topic to double down on — with evidence]
@@ -159,7 +159,7 @@ Generate the report in this EXACT format:
 RULES:
 - Every recommendation must cite specific data
 - Identify patterns, not just rankings
-- Compare to TLDR benchmarks (40-48% open rates)
+- Compare to Hostfully benchmarks (40-48% open rates)
 - Be actionable — what should the content team DO differently?"""
 
     return claude_generate(prompt, api_key)

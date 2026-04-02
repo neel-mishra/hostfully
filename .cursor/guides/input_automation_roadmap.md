@@ -2,7 +2,7 @@
 
 ## Objective
 
-Eliminate recurring manual data uploads across the TLDR AI system by replacing file-staging and placeholder-driven steps with connectorized ingestion, inter-workflow contracts, and safe fallback controls.
+Eliminate recurring manual data uploads across the Hostfully AI system by replacing file-staging and placeholder-driven steps with connectorized ingestion, inter-workflow contracts, and safe fallback controls.
 
 ## Audit Basis (Code-Grounded)
 

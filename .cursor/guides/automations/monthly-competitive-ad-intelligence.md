@@ -6,7 +6,7 @@
 - Schedule: Monthly, last day of month.
 
 ## Purpose
-Replaces `com.tldr.tech.competitivetracker.monthly.plist`. Consolidates cross-platform competitor ad intelligence and TLDR’s own performance.
+Replaces `com.hostfully.tech.competitivetracker.monthly.plist`. Consolidates cross-platform competitor ad intelligence and Hostfully’s own performance.
 
 ## System Architecture
 ```mermaid

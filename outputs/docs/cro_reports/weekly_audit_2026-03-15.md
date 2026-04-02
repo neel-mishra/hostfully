@@ -5,6 +5,6 @@
 
 ## Expected outputs
 - **Workspace:** `docs/cro_reports/screenshot_*.png` (Playwright); fallback: this file.
-- **Google Drive (Docs):** "TLDR CRO Audit - Week of DATE" in Docs folder.
+- **Google Drive (Docs):** "Hostfully CRO Audit - Week of DATE" in Docs folder.
 
 This file confirms the local output path is writable.

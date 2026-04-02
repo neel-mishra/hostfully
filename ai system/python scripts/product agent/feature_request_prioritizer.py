@@ -124,7 +124,7 @@ def prioritize(sources: dict[str, str], api_key: str) -> str:
         f"--- {name.upper()} ---\n{content}" for name, content in sources.items()
     )
 
-    prompt = f"""You are a product prioritization specialist for TLDR (7M+ tech newsletter subscribers, 100% ad-supported).
+    prompt = f"""You are a product prioritization specialist for Hostfully (7M+ tech newsletter subscribers, 100% ad-supported).
 
 Aggregate feature requests from all these customer-facing sources, deduplicate, and score them.
 
@@ -134,7 +134,7 @@ SOURCES:
 SCORING FRAMEWORK (each dimension 1-10):
 - Request Frequency (25%): How many distinct sources raised this?
 - Revenue Impact (30%): Blocks enterprise deals? Prevents churn? Enables upsell?
-- Strategic Alignment (25%): Core to TLDR's roadmap?
+- Strategic Alignment (25%): Core to Hostfully's roadmap?
 - Effort Inverse (20%): Quick win scores higher
 
 Priority Score = weighted average.

@@ -26,4 +26,4 @@ The best subject lines are actually 'boring.' They are clear, concise (under 50 
 
 Lead with the news, not the clickbait.
 
-#EmailStrategy #MarketingTips #Copywriting #TLDR
+#EmailStrategy #MarketingTips #Copywriting #Hostfully

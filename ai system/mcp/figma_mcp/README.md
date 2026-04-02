@@ -1,4 +1,4 @@
-# Figma MCP Setup (TLDR Repo)
+# Figma MCP Setup (Hostfully Repo)
 
 This directory contains the local setup and crawl artifacts for the hosted Figma MCP server.
 

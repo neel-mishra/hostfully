@@ -3,7 +3,7 @@
 Competitive Feature Matrix Generator
 
 Researches competitor platforms and builds feature-by-feature comparison
-matrices against TLDR's advertising capabilities.
+matrices against Hostfully's advertising capabilities.
 
 Usage:
   python competitive_feature_matrix.py                          # full matrix
@@ -102,11 +102,11 @@ def generate_matrix(competitors: list[str], api_key: str) -> str:
     battlecard_data = load_battlecard_context()
     comp_list = ", ".join(competitors)
 
-    prompt = f"""You are a competitive product analyst for TLDR, the largest daily tech newsletter (7M+ subscribers, 12 newsletters, 40-48% open rates).
+    prompt = f"""You are a competitive product analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers, 12 newsletters, 40-48% open rates).
 
-Build a detailed feature comparison matrix: TLDR vs {comp_list}.
+Build a detailed feature comparison matrix: Hostfully vs {comp_list}.
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {business_context}
 
 COMPETITOR CONTEXT:
@@ -115,11 +115,11 @@ COMPETITOR CONTEXT:
 {"BATTLECARD DATA:" if battlecard_data else ""}
 {battlecard_data[:5000]}
 
-TLDR'S CURRENT CAPABILITIES:
+Hostfully'S CURRENT CAPABILITIES:
 - 12 newsletters segmented by tech vertical
 - 3 ad placement types: Primary (top), Secondary (middle), Quick Links (bottom)
 - Managed service only (no self-serve yet)
-- TLDR team writes ad copy
+- Hostfully team writes ad copy
 - Dedicated CSM per advertiser
 - UTM tracking, click reporting, performance reports included
 - 40-48% open rates, 1.5-3% CTR
@@ -140,37 +140,37 @@ Generate in this EXACT format:
 
 ## Quick View
 
-| Feature | TLDR | {' | '.join(competitors)} |
+| Feature | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 [Use ✅ / ❌ / Partial for each cell. 20+ rows covering all dimensions.]
 
 ## Detailed: Targeting Capabilities
-| Capability | TLDR | {' | '.join(competitors)} |
+| Capability | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 [8-10 rows]
 
 ## Detailed: Ad Formats
-| Format | TLDR | {' | '.join(competitors)} |
+| Format | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 
 ## Detailed: Creative & Copy
-| Feature | TLDR | {' | '.join(competitors)} |
+| Feature | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 
 ## Detailed: Reporting & Attribution
-| Feature | TLDR | {' | '.join(competitors)} |
+| Feature | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 
 ## Detailed: Buying & Pricing
-| Feature | TLDR | {' | '.join(competitors)} |
+| Feature | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 
 ## Detailed: Account Management
-| Feature | TLDR | {' | '.join(competitors)} |
+| Feature | Hostfully | {' | '.join(competitors)} |
 |---|---|{'---|' * len(competitors)}
 
-## TLDR's Unique Advantages
-[Features only TLDR offers]
+## Hostfully's Unique Advantages
+[Features only Hostfully offers]
 
 ## Critical Gaps
 | Gap | Who Has It | Priority | Impact on Deals |
@@ -184,7 +184,7 @@ Generate in this EXACT format:
 
 RULES:
 - Be accurate — don't guess if uncertain, mark as "Unknown"
-- TLDR's unique advantages (CSM, copywriting, low ad density) should be prominent
+- Hostfully's unique advantages (CSM, copywriting, low ad density) should be prominent
 - Gaps should be honest — don't hide weaknesses
 - Roadmap recs should be prioritized by deal impact"""
 
@@ -205,7 +205,7 @@ def main():
 
     comps = [args.competitor] if args.competitor else COMPETITORS
 
-    print(f"  🏗️ Building feature matrix: TLDR vs {', '.join(comps)}")
+    print(f"  🏗️ Building feature matrix: Hostfully vs {', '.join(comps)}")
 
     if args.dry_run:
         print("  🧪 DRY RUN: would generate matrix")

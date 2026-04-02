@@ -5,6 +5,6 @@
 
 ## Expected outputs
 - **Workspace:** `docs/sales_assets/prospect_lists/`, `battlecards/`; fallback: this file.
-- **Google Drive:** Sheet "TLDR Prospect Pipeline"; Doc "Sales Intelligence - Week of DATE" in Docs folder.
+- **Google Drive:** Sheet "Hostfully Prospect Pipeline"; Doc "Sales Intelligence - Week of DATE" in Docs folder.
 
 This file confirms the local output path is writable.

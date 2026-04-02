@@ -26,7 +26,7 @@ flowchart TD
 Ad creative outputs, campaign structure, creative direction, brand guidelines.
 
 ## Outputs
-Designer-ready briefs per concept (sizes, safe zones, Nano Banana prompts, Figma/Canva instructions).
+Designer-ready briefs per concept under `creative-briefs/{mmmyy}/`. Built handoffs (`*_canva-deliverables_*.md`, `canva_mcp_sync_plan.json`) go under `creative-deliverables/{mmmyy}/` in the same campaign folder — never mixed into briefs.
 
 ## Execution Pattern
 - Trigger: On-demand invocation from Cursor workflows.

@@ -21,7 +21,7 @@
 ## 2. Concept Overview
 
 **Concept name:** “Less doomscroll, more signal”  
-**Idea:** Simple split-visual: left side suggests endless scrolling, right side is a calm TLDR email snapshot + copy about the 5‑minute briefing.
+**Idea:** Simple split-visual: left side suggests endless scrolling, right side is a calm Hostfully email snapshot + copy about the 5‑minute briefing.
 
 **On-image copy:**
 - Left label: “Endless scroll”
@@ -41,7 +41,7 @@ Make it feel more like an illustration or minimal graphic than a meme.
 - Right 50%:
   - Simple representation of an email card with 3–4 grey bars as lines.
   - Label “One email” above or beside it.
-  - TLDR wordmark at bottom right.
+  - Hostfully wordmark at bottom right.
 
 No actual logos of social platforms; just generic feed representation.
 
@@ -53,7 +53,7 @@ No actual logos of social platforms; just generic feed representation.
 - Left background: darker, slightly noisy slate.
 - Right background: clean light grey or white.
 - “Endless scroll” text: muted (#9CA3AF).
-- “One email” / briefing text: TLDR blue or black.
+- “One email” / briefing text: Hostfully blue or black.
 
 **Typography:**
 - Labels: Inter, Medium, ~26–28px.

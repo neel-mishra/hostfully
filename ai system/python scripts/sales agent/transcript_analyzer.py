@@ -165,7 +165,7 @@ def load_transcript(path: Path) -> str:
 
 def analyze_call(transcript_text: str, filename: str, api_key: str, context: dict) -> dict:
     """Analyze a single call transcript and return structured extraction."""
-    prompt = f"""You are a sales intelligence analyst for TLDR, the largest daily tech newsletter (7M+ subscribers). Analyze this advertiser sales call transcript and extract structured intelligence.
+    prompt = f"""You are a sales intelligence analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers). Analyze this advertiser sales call transcript and extract structured intelligence.
 
 TRANSCRIPT (filename: {filename}):
 ---
@@ -193,7 +193,7 @@ EXTRACT the following and return STRICTLY as JSON (no other text):
       "quote": "Exact or close paraphrase of the objection",
       "category": "price_budget / attribution / audience_fit / format_creative / timing / competition / internal",
       "severity": "low / medium / high",
-      "suggested_rebuttal": "How TLDR should respond, referencing proof points"
+      "suggested_rebuttal": "How Hostfully should respond, referencing proof points"
     }}
   ],
   "competitor_mentions": [

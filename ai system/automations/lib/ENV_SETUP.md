@@ -53,7 +53,7 @@ SCRAPECREATORS_API_KEY=<from .env or mcp.json>
 ### Google Search Console (automations 5, 8; scripts: search_ranking_agent, seo_auditor, gsc_api.py)
 Set these to use live GSC data. If unset, automations and scripts use mock data or sitemap-only fallbacks. See `docs/GSC_GA4_SETUP.md` for setup.
 ```
-GSC_SITE_URL=https://tldr.tech
+GSC_SITE_URL=https://hostfully.tech
 GOOGLE_APPLICATION_CREDENTIALS=/absolute/path/to/service-account.json
 ```
 

@@ -26,11 +26,14 @@ genai.configure(api_key=API_KEY)
 
 # Constants
 MODEL_NAME = "gemini-flash-latest" 
-DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../docs"))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+PRIMARY_DOCS_DIR = os.path.join(REPO_ROOT, "docs")
+FALLBACK_DOCS_DIR = os.path.join(REPO_ROOT, "outputs", "docs")
+DOCS_DIR = PRIMARY_DOCS_DIR if os.path.isdir(PRIMARY_DOCS_DIR) else FALLBACK_DOCS_DIR
 BLOGS_DIR = os.path.join(DOCS_DIR, "blogs")
 SOCIAL_DIR = os.path.join(DOCS_DIR, "social media")
-AGENTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../agents"))
-IDENTITY_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../commands/identity"))
+AGENTS_DIR = os.path.join(REPO_ROOT, "ai system", "agents")
+IDENTITY_DIR = os.path.join(REPO_ROOT, "commands", "identity")
 
 import sys
 # Add visual generators (images and videos) to path
@@ -68,14 +71,17 @@ class SocialMediaAgent:
     def load_context(self) -> str:
         """Loads agent personas and identity."""
         context = []
-        
+
         # Load Social Media + canonical long-form writing context
-        for agent_file in ["social-media-agent.md", "copywriting-agent.md"]:
-            path = os.path.join(AGENTS_DIR, agent_file)
+        agent_files = [
+            os.path.join(AGENTS_DIR, "content", "social-media-agent.md"),
+            os.path.join(AGENTS_DIR, "content", "copywriting-agent.md"),
+        ]
+        for path in agent_files:
             if os.path.exists(path):
                 with open(path, "r") as f:
-                    context.append(f"=== {agent_file} ===\n{f.read()}\n")
-        
+                    context.append(f"=== {os.path.basename(path)} ===\n{f.read()}\n")
+
         # Load Creative Direction for Visuals
         creative_path = os.path.join(IDENTITY_DIR, "creative_direction.md")
         if os.path.exists(creative_path):
@@ -350,5 +356,17 @@ class SocialMediaAgent:
             print("⚠️ No blogs to process. Exiting.")
 
 if __name__ == "__main__":
-    agent = SocialMediaAgent()
-    agent.run()
+    # Keep legacy class in file for compatibility, but route CLI execution
+    # to the unified orchestrator modes.
+    try:
+        from social_agent_orchestrator import run_social_agent  # type: ignore
+
+        run_social_agent(
+            mode=os.getenv("SOCIAL_MODE", "weekly"),  # type: ignore[arg-type]
+            input_mode=os.getenv("SOCIAL_INPUT_MODE", "asset_repurpose"),  # type: ignore[arg-type]
+            strictness=os.getenv("SOCIAL_STRICTNESS", "balanced"),  # type: ignore[arg-type]
+            channels=[c.strip() for c in os.getenv("SOCIAL_CHANNELS", "linkedin").split(",") if c.strip()],  # type: ignore[list-item]
+        )
+    except Exception:
+        agent = SocialMediaAgent()
+        agent.run()

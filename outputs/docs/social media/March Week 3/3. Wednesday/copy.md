@@ -4,7 +4,7 @@
 Synthesizing the 'Local Community' guide and the '66 days to profit' stat into a relatable narrative of community building.
 
 ## Visual Prompt
-A warm, high-quality photo of a professional holding a smartphone while drinking coffee in a modern, sunlit cafe. The focus is on the phone screen showing a clean, blue-themed newsletter. Palette: Soft Gray (#F1F5F9) and TLDR Blue (#2563EB) accents. 'Relaxed confidence' vibe.
+A warm, high-quality photo of a professional holding a smartphone while drinking coffee in a modern, sunlit cafe. The focus is on the phone screen showing a clean, blue-themed newsletter. Palette: Soft Gray (#F1F5F9) and Hostfully Blue (#2563EB) accents. 'Relaxed confidence' vibe.
 
 ---
 

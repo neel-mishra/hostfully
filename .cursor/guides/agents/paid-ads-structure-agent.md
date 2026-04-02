@@ -33,6 +33,14 @@ Campaign structure blueprints, naming conventions, UTM schemas, and launch check
 - Core Flow: Ingest context -> reason against domain rules -> produce artifacts.
 - Dependencies: Shared context in `commands/`, datasets in `data/`, and outputs in `docs/` when applicable.
 
+## Intake (Cursor-native questionnaire)
+The canonical spec enables a **progressive questioning flow** in chat: the agent walks Steps 1–4 from `paid-ads-structure-agent.md`, presents options, and **waits for your reply before the next step**. This is the default interactive questionnaire behavior in Cursor for this agent.
+
+## Standardized Journey Contract
+- This agent is the always-on entrypoint for paid ads activations.
+- Any paid-ads-intent prompt variation should trigger the same intake-first journey.
+- After intake, it must build the full architecture bundle (campaign structure, ad creative, tracking QA, CRO handoff, AB test plan, build sheet, and creative briefs scaffolding) under `outputs/docs/paid_ads_assets/`.
+
 ## Integration Points
 - Upstream: Context briefs, CSV exports, MCP data pulls, and related agent outputs.
 - Downstream: Reports, briefs, trackers, and handoffs to other agents/automations.

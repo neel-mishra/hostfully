@@ -4,7 +4,7 @@
 A forward-looking thought leadership piece based on the fragmentation of media and the rise of curated content.
 
 ## Visual Prompt
-Abstract digital network visualization. Connected nodes forming a globe shape, using TLDR Blue (#2563EB) and Signal Green (#10B981) for the connections. Dark, sleek TLDR Black (#0F172A) background. Minimalist, premium, and futuristic.
+Abstract digital network visualization. Connected nodes forming a globe shape, using Hostfully Blue (#2563EB) and Signal Green (#10B981) for the connections. Dark, sleek Hostfully Black (#0F172A) background. Minimalist, premium, and futuristic.
 
 ---
 
@@ -27,4 +27,4 @@ The inbox isn't dead. It's just getting started.
 
 Agree or Disagree? Let's discuss below. 👇
 
-#FutureOfMedia #ContentCuration #TLDR #NewsletterEconomy
+#FutureOfMedia #ContentCuration #Hostfully #NewsletterEconomy

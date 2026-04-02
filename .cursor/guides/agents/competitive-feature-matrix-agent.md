@@ -6,7 +6,7 @@
 - Canonical Path: `ai system/agents/gtm team/product/competitive-feature-matrix-agent.md`
 
 ## Purpose
-Builds and updates feature comparison matrices across TLDR and competitors.
+Builds and updates feature comparison matrices across Hostfully and competitors.
 
 ## System Architecture
 ```mermaid

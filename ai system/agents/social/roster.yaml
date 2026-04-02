@@ -1,5 +1,5 @@
 ---
-# TLDR GTM Social Roster
+# Hostfully GTM Social Roster
 # This file defines who the social system should generate drafts for,
 # and the constraints/context for each person.
 
@@ -22,7 +22,7 @@ people:
   - id: founder_neel
     name: "Neel Mishra"
     role: "Founder & CEO"
-    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME"
+    linkedin_url: "https://www.linkedin.com/in/neelrmishra"
     # Audience & positioning
     primary_audience:
       - "B2B growth leaders"
@@ -39,12 +39,12 @@ people:
       topics_to_avoid:
         - fundraising_advice
       hard_rules:
-        - "Do not overclaim TLDR capabilities beyond what’s on the website."
+        - "Do not overclaim Hostfully capabilities beyond what’s on the website."
 
   - id: marketing_lead
     name: "Marketing Lead"
     role: "Head of Marketing"
-    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME"
+    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME_MARKETING"
     primary_audience:
       - "Demand gen leaders"
       - "Marketing ops / RevOps"
@@ -58,12 +58,12 @@ people:
     constraints:
       topics_to_avoid: []
       hard_rules:
-        - "Always ground claims in real TLDR results, case studies, or data."
+        - "Always ground claims in real Hostfully results, case studies, or data."
 
   - id: sales_lead
     name: "Sales Lead"
     role: "Head of Sales"
-    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME"
+    linkedin_url: "https://www.linkedin.com/in/REPLACE_ME_SALES"
     primary_audience:
       - "CROs"
       - "VP Sales"

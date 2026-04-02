@@ -36,8 +36,21 @@ from config import (
     ALL_COMPETITORS,
     COMPETITOR_NAMES,
     DOCS_DIR,
+    HOSTFULLY_OUTPERFORMANCE_OVERRIDE,
+    MARKET_SATURATION_SUMMARY_JSON,
     PLATFORMS,
+    SATURATION_PENALTY_WEIGHT,
+    SATURATION_THRESHOLD_HIGH,
 )
+
+ANGLE_KEYWORDS = {
+    "ops_relief": ["automate", "save time", "streamline", "workflow", "manual"],
+    "roi_proof": ["revenue", "profit", "roi", "cost", "bookings", "occupancy"],
+    "scale_story": ["scale", "growth", "portfolio", "units", "expand"],
+    "integration_power": ["integration", "connect", "sync", "api", "channel manager"],
+    "social_proof": ["trusted", "customers", "rated", "review", "case study"],
+    "offer_urgency": ["discount", "off", "limited", "today", "now"],
+}
 
 
 def _resolve_env_key(name: str) -> str | None:
@@ -60,6 +73,55 @@ def _resolve_env_key(name: str) -> str | None:
 def _truncate(text: str, max_len: int = 500) -> str:
     text = " ".join(text.split())
     return text[:max_len] if len(text) > max_len else text
+
+
+def _infer_angle_tag(*texts: str) -> str:
+    blob = " ".join([t for t in texts if t]).lower()
+    best = ("uncategorized", 0)
+    for tag, kws in ANGLE_KEYWORDS.items():
+        score = sum(1 for kw in kws if kw in blob)
+        if score > best[1]:
+            best = (tag, score)
+    return best[0]
+
+
+def _build_market_saturation(rows: list[dict]) -> dict:
+    by_angle: dict[str, int] = {}
+    by_platform_angle: dict[str, dict[str, int]] = {}
+    for r in rows:
+        angle = r.get("Copy Angle", "uncategorized") or "uncategorized"
+        plat = r.get("Platform", "Unknown")
+        by_angle[angle] = by_angle.get(angle, 0) + 1
+        by_platform_angle.setdefault(plat, {})
+        by_platform_angle[plat][angle] = by_platform_angle[plat].get(angle, 0) + 1
+    total = float(len(rows) or 1.0)
+    angle_saturation_index = {
+        k: min(1.0, (v / total) / max(SATURATION_THRESHOLD_HIGH, 1e-6)) for k, v in by_angle.items()
+    }
+    return {
+        "generated_at": datetime.now().isoformat(),
+        "total_ads_scored": len(rows),
+        "angle_counts": by_angle,
+        "platform_angle_counts": by_platform_angle,
+        "angle_saturation_index": angle_saturation_index,
+        "saturation_threshold_high": SATURATION_THRESHOLD_HIGH,
+        "saturation_penalty_weight": SATURATION_PENALTY_WEIGHT,
+        "hostfully_outperformance_override": HOSTFULLY_OUTPERFORMANCE_OVERRIDE,
+        "differentiation_constraint": (
+            "Avoid heavily saturated competitor angles unless Hostfully strict winners indicate outperformance."
+        ),
+    }
+
+
+def _write_market_saturation(summary: dict, dry_run: bool = False) -> None:
+    out = MARKET_SATURATION_SUMMARY_JSON
+    if dry_run:
+        print(f"  🧪 DRY RUN: would write market saturation summary to {out}")
+        return
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2)
+    print(f"  ✅ Wrote market saturation summary: {out}")
 
 
 def _get_playwright():
@@ -803,6 +865,17 @@ def run_audit(platforms: list[str] | None = None, dry_run: bool = False) -> None
         p_total = sum(volume_counts.get(n, {}).get(platform, 0) for n in COMPETITOR_NAMES)
         print(f"   {platform}: {p_total} ads")
     print(f"{'=' * 60}")
+
+    for r in all_rows:
+        r["Copy Angle"] = _infer_angle_tag(
+            r.get("Headline / Primary Text", ""),
+            r.get("Description / Body Copy", ""),
+            r.get("CTA", ""),
+            r.get("Visual Style", ""),
+        )
+
+    saturation = _build_market_saturation(all_rows)
+    _write_market_saturation(saturation, dry_run=dry_run)
 
     new_count = append_creative_rows(all_rows, dry_run=dry_run)
     append_volume_row(volume_counts, dry_run=dry_run)

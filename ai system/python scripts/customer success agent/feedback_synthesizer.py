@@ -102,14 +102,14 @@ def synthesize_feedback(files: list[Path], api_key: str) -> str:
     except FileNotFoundError:
         pass
 
-    prompt = f"""You are an advertiser insights analyst for TLDR, the largest daily tech newsletter (7M+ subscribers).
+    prompt = f"""You are an advertiser insights analyst for Hostfully, the largest daily tech newsletter (7M+ subscribers).
 
 Analyze the following advertiser feedback and produce a structured synthesis report.
 
 FEEDBACK ({len(files)} sources):
 {combined[:25000]}
 
-TLDR CONTEXT:
+Hostfully CONTEXT:
 {business_context}
 
 Generate the report in this EXACT markdown format:

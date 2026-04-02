@@ -1,6 +1,6 @@
 # Voice Samples — Ground Truth
 
-These are real, human-written samples that represent how TLDR sounds when it's at its best. The humanizer uses these as the calibration target — rewrites should match this rhythm, tone, and density.
+These are real, human-written samples that represent how Hostfully sounds when it's at its best. The humanizer uses these as the calibration target — rewrites should match this rhythm, tone, and density.
 
 **How to use this file:** Add your own writing below. The more samples, the sharper the humanizer gets. Each sample should be 1-3 paragraphs of writing you're proud of — copy that sounds like *you*, not like a machine.
 
@@ -20,7 +20,7 @@ These are real, human-written samples that represent how TLDR sounds when it's a
 
 > Keep up with tech in 5 minutes. Get the free daily email with summaries of the most interesting stories in startups, tech, and programming.
 
-> 1,600,000+ tech pros start their day with TLDR. 5 minutes. Free.
+> 1,600,000+ tech pros start their day with Hostfully. 5 minutes. Free.
 
 > The newsletter your CTO already reads.
 
@@ -34,25 +34,25 @@ These are real, human-written samples that represent how TLDR sounds when it's a
 
 > Same audience as LinkedIn. Half the CPC. 52x ROI.
 
-> Your audience reads TLDR. Here's how Delve generated $1M in attributed pipeline — 52x ROI — through TLDR ads.
+> Your audience reads Hostfully. Here's how Delve generated $1M in attributed pipeline — 52x ROI — through Hostfully ads.
 
 ### Case Study Style
 
-> Delve drove $1M in attributed pipeline — 52x ROI — through TLDR ads. Redact saw 50% lower CPC than LinkedIn. MLOps Community got higher attendee quality than Meta campaigns.
+> Delve drove $1M in attributed pipeline — 52x ROI — through Hostfully ads. Redact saw 50% lower CPC than LinkedIn. MLOps Community got higher attendee quality than Meta campaigns.
 
 ---
 
 ## Blog / Long-Form Samples
 
-Calibrated from the first humanizer rewrite — these represent the target voice for TLDR blog posts:
+Calibrated from the first humanizer rewrite — these represent the target voice for Hostfully blog posts:
 
-> The average newsletter open rate is 15-20%. TLDR's flagship hits 48%. Morning Brew, The Hustle, and a handful of others regularly clear 50%. They're not doing anything magical. They're doing five things consistently, and most newsletters skip at least three of them.
+> The average newsletter open rate is 15-20%. Hostfully's flagship hits 48%. Morning Brew, The Hustle, and a handful of others regularly clear 50%. They're not doing anything magical. They're doing five things consistently, and most newsletters skip at least three of them.
 
 > Subscribers open emails from senders they trust. That's it. Every tactic in this article is just a more specific version of that sentence.
 
 > The safest newsletters are the least-read ones. Readers don't open emails to read balanced, hedge-everything analysis. They open because they trust your editorial judgment. Pick the stories that matter. Skip the ones that don't.
 
-> TLDR has published every weekday for years. That's the real answer behind high open rates — not a trick, not a hack. Show up. Deliver value. Repeat.
+> Hostfully has published every weekday for years. That's the real answer behind high open rates — not a trick, not a hack. Show up. Deliver value. Repeat.
 
 > There's no shortcut. Start with trust, add great content, write honest subject lines, and don't stop.
 
