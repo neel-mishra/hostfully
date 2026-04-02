@@ -1,0 +1,187 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "title": "TLDR - A Byte Sized Daily Tech Newsletter",
+    "h1": "Keep up with tech in 5 minutes",
+    "h2s": [
+      "Get the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!"
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 6,
+    "cta_texts": [
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe"
+    ],
+    "form_count": 1,
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "link_count": 369,
+    "images_no_alt": 2,
+    "total_images": 118,
+    "testimonial_elements": 0,
+    "logo_elements": 0,
+    "screenshot": "screenshot_tldr.tech.png",
+    "blocked": false
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "title": "TLDR Newsletter - Keep up with Tech in 5 minutes",
+    "h1": "Keep up with tech in 5 minutes",
+    "h2s": [
+      "Get the most interesting stories in startups, tech, and programming delivered in a free daily email."
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up for Free"
+    ],
+    "form_count": 1,
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "link_count": 1,
+    "images_no_alt": 2,
+    "total_images": 2,
+    "testimonial_elements": 0,
+    "logo_elements": 0,
+    "screenshot": "screenshot_signup.png",
+    "blocked": false
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "title": "TLDR | Sponsorship Opportunities",
+    "h1": "Reach over 7 million tech professionals",
+    "h2s": [
+      "Native ad opportunities in every newsletter \ud83d\ude80",
+      "",
+      ""
+    ],
+    "meta": "",
+    "cta_count": 8,
+    "cta_texts": [
+      "Brand Awareness",
+      "Lead Generation",
+      "Pipeline & Revenue"
+    ],
+    "form_count": 0,
+    "form_fields": [],
+    "link_count": 50,
+    "images_no_alt": 140,
+    "total_images": 140,
+    "testimonial_elements": 18,
+    "logo_elements": 261,
+    "screenshot": "screenshot_advertise.png",
+    "blocked": false
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "title": "",
+    "h1": "Keep up with AI in 5 minutes",
+    "h2s": [
+      "Get the most interesting AI stories and breakthroughs delivered in a free daily email."
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_count": 1,
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "link_count": 2,
+    "images_no_alt": 2,
+    "total_images": 2,
+    "testimonial_elements": 0,
+    "logo_elements": 0,
+    "screenshot": "screenshot_ai.png",
+    "blocked": false
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "title": "",
+    "h1": "Get smarter about software in 5 minutes",
+    "h2s": [
+      "The most important software engineering news in one daily email"
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_count": 1,
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "link_count": 4,
+    "images_no_alt": 2,
+    "total_images": 2,
+    "testimonial_elements": 0,
+    "logo_elements": 0,
+    "screenshot": "screenshot_webdev.png",
+    "blocked": false
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "title": "",
+    "h1": "Keep Up With Crypto in 5 Minutes",
+    "h2s": [
+      "Get our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!"
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_count": 1,
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "link_count": 4,
+    "images_no_alt": 2,
+    "total_images": 2,
+    "testimonial_elements": 0,
+    "logo_elements": 0,
+    "screenshot": "screenshot_crypto.png",
+    "blocked": false
+  }
+]
