@@ -1,0 +1,4 @@
+date,advertiser,risk_level,spend_30d,ctr,cpc,days_to_renewal,risk_factor,action
+2026-04-06,Acme Corp,Green,8500,0.024,1.85,55,communication,Schedule proactive check-in — last contact 32 days ago
+2026-04-06,Beta Labs,Red,2800,0.018,2.10,8,spend,CRITICAL: Call immediately before April 15 renewal — declining spend and 55 days no contact
+2026-04-06,Gamma Inc,Green,3200,0.022,1.95,147,communication,Schedule proactive touchpoint — last contact 36 days ago; propose Dev Primary upgrade
