@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "April 2026 - Retargeting Scale & Infrastructure Fix",
+  "target_persona": "Property Manager with 5-30 vacation rental units (US/CA primary, BR secondary)",
+  "active_campaign_hypothesis": "Retargeting converts at 3x efficiency vs prospecting; reallocating budget and fixing data infrastructure will improve blended CPA by 30%",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -29,7 +29,7 @@
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "CRO Intelligence",
