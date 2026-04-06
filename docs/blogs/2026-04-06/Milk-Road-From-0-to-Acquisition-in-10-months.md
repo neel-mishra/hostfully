@@ -1,4 +1,4 @@
-# Milk Road: 0 to 250K Subscribers to Acquired in 10 Months <!-- pragma: allowlist secret -->
+# Milk Road: 0 to 250K Subscribers to Acquired in 10 Months
 
 Milk Road started as a Twitter DM between Shaan Puri and Ben Levy. Ten months later, it had 250,000+ subscribers and got acquired.
 
