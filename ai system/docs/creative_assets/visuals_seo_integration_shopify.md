@@ -1,0 +1,23 @@
+# Creative Direction: seo_integration_shopify.md
+
+**Source:** `/workspace/ai system/docs/seo_pages/seo_integration_shopify.md`
+**Generated:** 2026-04-06 01:05
+
+Here are 3 detailed image generation prompts tailored for B2B SaaS marketing visuals, adhering strictly to your brand's visual identity and style guide, and designed to visually communicate the core value proposition from the provided content.
+
+---
+
+### Visual Asset 1: Hero Image
+**Prompt:** A sleek, futuristic digital landscape that visualizes the elevation of data. In the foreground, an abstract, foundational data layer, subtly referencing Shopify's role as a robust e-commerce platform, is represented by a clean grid of interconnected, muted white `#FFFFFF` blocks against a light grey `#F5F7FA` background. From this foundation, dynamic, glowing data streams, characterized by soft blue `#3C82F6` and rich purple `#8B5CF6` gradients, elegantly ascend and coalesce into a more advanced, intelligent data architecture. This architecture is depicted as an intricate network of luminous nodes, geometric shapes, and subtle, flowing particles, suggesting advanced processing and AI-driven insights. Delicate orange `#F97316` highlight lines weave through this elevated structure, symbolizing key insights and enhanced value. The overall composition should be clean, minimalist, and convey seamless integration and sophisticated data transformation. Soft, ethereal light emanates from the elevated elements, casting subtle glows.
+**Dimensions:** 16:9
+**Notes:** The Shopify "foundation" should be abstract and implied, not a direct logo. The focus is on *our platform's* advanced capabilities building *upon* it. Emphasize the sense of upward movement and intelligence.
+
+### Visual Asset 2: Inline Illustration / Social Thumbnail
+**Prompt:** A sophisticated and abstract visualization of unified multi-channel campaign orchestration. At the absolute center, a radiant, slightly transparent spherical core representing our unified platform, glowing with soft blue `#3C82F6` and purple `#8B5CF6` gradients. From this central core, elegant, luminous data lines or subtle energy pulses in `#3C82F6` and `#8B5CF6` radiate outwards. These lines connect to a semicircle of five distinct, minimalist, glowing white `#FFFFFF` icons, each representing a marketing channel: an email envelope, an SMS bubble, a push notification bell, an in-app icon (e.g., small mobile screen with a simplified UI element), and a generic ad platform icon (e.g., a simple square with a stylized cursor). The background is a clean, dark grey `#1F2937` providing strong contrast to the glowing elements. The composition should suggest seamless connectivity, precise control, and intelligent distribution across all channels. Clean lines, modern aesthetic. Soft, focused light emanating from the central core and along the connecting lines.
+**Dimensions:** 1:1
+**Notes:** The icons should be extremely simple and abstract, recognizable but not overly detailed. The emphasis is on the interconnectedness and unified control from the central platform.
+
+### Visual Asset 3: Inline Illustration
+**Prompt:** An abstract, clean, and modern visualization demonstrating the transformation of raw data into actionable, personalized intelligence. On the left, an inflow of diffuse, unrefined data represented by subtle, irregular, darker grey `#1F2937` geometric fragments or cloud-like particles, subtly hinting at scattered data points. This stream flows smoothly towards a central, glowing abstract processing engine, depicted as a sleek, crystalline structure or a series of interconnected nodes in vibrant blue `#3C82F6` and purple `#8B5CF6`, with subtle internal luminescence. From the right side of this processing engine, refined, highly organized, and distinct data segments emerge, visualized as clear, defined geometric shapes (e.g., hexagons, triangles) each glowing with a focused orange `#F97316` highlight. These refined segments radiate outwards, implying actionable insights. The background is a soft, light grey `#F5F7FA` with a very subtle gradient towards a slightly darker tone at the edges. The overall composition shows a clear left-to-right progression and transformation. Futuristic, soft, and directional lighting.
+**Dimensions:** 4:3
+**Notes:** The "raw data" should not look chaotic, but rather unorganized compared to the refined output. The orange highlights on the output signify valuable insights and personalization.
