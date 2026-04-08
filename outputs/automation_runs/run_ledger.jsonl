@@ -35,3 +35,20 @@
 {"ts": "2026-03-19T12:33:51.998229+00:00", "workflow": "Monthly GTM Execution Commander", "step": "entrypoint", "status": "skipped", "idempotency_key": "automation_9:2026-03:monthly_gtm_execution_commander", "details": {}}
 {"ts": "2026-03-19T12:33:52.032459+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "started", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {}}
 {"ts": "2026-03-19T12:33:52.032634+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "success", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {"dry_run": true, "command": []}}
+{"ts": "2026-04-08T01:04:51.626444+00:00", "workflow": "ahrefs_api", "step": "keywords-overview", "status": "failed", "idempotency_key": "ahrefs_api:2026-04-08:keywords-overview:::50", "details": {"missing_env": ["AHREFS_API_KEY"]}}
+{"ts": "2026-04-08T01:06:26.809890+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Datadog:10", "details": {}}
+{"ts": "2026-04-08T01:06:28.134958+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Snyk:10", "details": {}}
+{"ts": "2026-04-08T01:06:29.424965+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:HashiCorp:10", "details": {}}
+{"ts": "2026-04-08T01:06:30.722369+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Cloudflare:10", "details": {}}
+{"ts": "2026-04-08T01:06:32.034409+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:MongoDB:10", "details": {}}
+{"ts": "2026-04-08T01:06:33.343384+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Wiz:10", "details": {}}
+{"ts": "2026-04-08T01:06:34.639552+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Databricks:10", "details": {}}
+{"ts": "2026-04-08T01:06:35.949172+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Figma:10", "details": {}}
+{"ts": "2026-04-08T01:06:37.252811+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Notion:10", "details": {}}
+{"ts": "2026-04-08T01:06:38.540564+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Linear:10", "details": {}}
+{"ts": "2026-04-08T01:06:39.840990+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Vercel:10", "details": {}}
+{"ts": "2026-04-08T01:06:41.134322+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Supabase:10", "details": {}}
+{"ts": "2026-04-08T01:06:42.429749+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Postman:10", "details": {}}
+{"ts": "2026-04-08T01:06:43.721821+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:GitLab:10", "details": {}}
+{"ts": "2026-04-08T01:06:45.006490+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W15:full:Sentry:10", "details": {}}
+{"ts": "2026-04-08T01:12:38.444882+00:00", "workflow": "gsheets_api", "step": "list", "status": "started", "idempotency_key": "gsheets_api:2026-04-08:list::", "details": {}}
