@@ -1,0 +1,4 @@
+date,advertiser,risk_level,spend_30d,ctr,cpc,days_to_renewal,risk_factor,action
+2026-05-04,Acme Corp,Yellow,8500,0.024,1.85,27,communication,Schedule renewal check-in immediately — renewal in 27 days with 60-day communication gap
+2026-05-04,Beta Labs,Red,2800,0.018,2.10,-20,spend,Immediate outreach — contract expired 20 days ago with declining spend and 83-day contact gap
+2026-05-04,Gamma Inc,Green,3200,0.022,1.95,119,none,Monitor — healthy account with expansion potential

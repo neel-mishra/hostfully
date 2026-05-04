@@ -35,3 +35,12 @@
 {"ts": "2026-03-19T12:33:51.998229+00:00", "workflow": "Monthly GTM Execution Commander", "step": "entrypoint", "status": "skipped", "idempotency_key": "automation_9:2026-03:monthly_gtm_execution_commander", "details": {}}
 {"ts": "2026-03-19T12:33:52.032459+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "started", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {}}
 {"ts": "2026-03-19T12:33:52.032634+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "success", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {"dry_run": true, "command": []}}
+{"ts": "2026-05-04T01:04:01.267177+00:00", "workflow": "meta_ads_api", "step": "account-summary", "status": "started", "idempotency_key": "meta_ads_api:2026-W19:account-summary:last_30d:::", "details": {}}
+{"ts": "2026-05-04T01:04:01.290289+00:00", "workflow": "google_ads_api", "step": "account-summary", "status": "started", "idempotency_key": "google_ads_api:2026-W19:account-summary:LAST_30_DAYS:", "details": {}}
+{"ts": "2026-05-04T01:04:01.705842+00:00", "workflow": "meta_ads_api", "step": "account-summary", "status": "success", "idempotency_key": "meta_ads_api:2026-W19:account-summary:last_30d:::", "details": {}}
+{"ts": "2026-05-04T01:04:07.966932+00:00", "workflow": "meta_ads_api", "step": "campaigns", "status": "started", "idempotency_key": "meta_ads_api:2026-W19:campaigns:last_30d:::", "details": {}}
+{"ts": "2026-05-04T01:04:08.699530+00:00", "workflow": "meta_ads_api", "step": "campaigns", "status": "success", "idempotency_key": "meta_ads_api:2026-W19:campaigns:last_30d:::", "details": {}}
+{"ts": "2026-05-04T01:04:28.096347+00:00", "workflow": "meta_ads_api", "step": "results-summary", "status": "started", "idempotency_key": "meta_ads_api:2026-W19:results-summary:last_30d:::", "details": {}}
+{"ts": "2026-05-04T01:04:29.536647+00:00", "workflow": "meta_ads_api", "step": "results-summary", "status": "success", "idempotency_key": "meta_ads_api:2026-W19:results-summary:last_30d:::", "details": {}}
+{"ts": "2026-05-04T01:07:01.503376+00:00", "workflow": "gsheets_api", "step": "list", "status": "started", "idempotency_key": "gsheets_api:2026-05-04:list::", "details": {}}
+{"ts": "2026-05-04T01:07:06.363908+00:00", "workflow": "gdocs_api", "step": "list", "status": "failed", "idempotency_key": "gdocs_api:2026-05-04:list:", "details": {"missing_env": ["GOOGLE_CLIENT_ID"]}}
