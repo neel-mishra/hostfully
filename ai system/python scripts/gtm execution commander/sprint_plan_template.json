@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "May 2026 - Retargeting Scale & LATAM Expansion",
+  "target_persona": "Property Manager (10-50 units) in US/Canada and LATAM markets",
+  "active_campaign_hypothesis": "Retargeting warm audiences converts at 3.9x efficiency vs prospecting; LATAM markets deliver volume at lower CPCs — shift budget allocation accordingly",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -29,7 +29,7 @@
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "CRO Intelligence",
