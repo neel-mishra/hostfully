@@ -35,3 +35,8 @@
 {"ts": "2026-03-19T12:33:51.998229+00:00", "workflow": "Monthly GTM Execution Commander", "step": "entrypoint", "status": "skipped", "idempotency_key": "automation_9:2026-03:monthly_gtm_execution_commander", "details": {}}
 {"ts": "2026-03-19T12:33:52.032459+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "started", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {}}
 {"ts": "2026-03-19T12:33:52.032634+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "success", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {"dry_run": true, "command": []}}
+{"ts": "2026-05-06T01:05:16.255581+00:00", "workflow": "ahrefs_api", "step": "keywords-overview", "status": "failed", "idempotency_key": "ahrefs_api:2026-05-06:keywords-overview:::50", "details": {"missing_env": ["AHREFS_API_KEY"]}}
+{"ts": "2026-05-06T01:05:25.242036+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W19:full:Datadog:10", "details": {}}
+{"ts": "2026-05-06T01:05:36.823602+00:00", "workflow": "fb_ad_library_api", "step": "search", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W19:search:Datadog:50", "details": {}}
+{"ts": "2026-05-06T01:10:00.606001+00:00", "workflow": "gsheets_api", "step": "list", "status": "started", "idempotency_key": "gsheets_api:2026-05-06:list::", "details": {}}
+{"ts": "2026-05-06T01:10:21.938242+00:00", "workflow": "gdocs_api", "step": "list", "status": "failed", "idempotency_key": "gdocs_api:2026-05-06:list:", "details": {"missing_env": ["GOOGLE_CLIENT_ID"]}}
