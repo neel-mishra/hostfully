@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "May 2026 - Geo Arbitrage & Retargeting Scale",
+  "target_persona": "Property Managers scaling from 5-50 units (MX & LATAM primary, CA-US retargeting secondary)",
+  "active_campaign_hypothesis": "MX prospecting delivers 4.5x lower CPL than CA-US; shifting budget toward MX prospecting and CA-US retargeting will improve blended CPL while maintaining lead volume",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
