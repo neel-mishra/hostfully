@@ -1,0 +1,188 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "slug": "tldr.tech",
+    "title": "Vercel Security Checkpoint",
+    "h1": "",
+    "h2s": [],
+    "meta_description": "",
+    "cta_count": 0,
+    "cta_texts": [],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links_sample": [
+      {
+        "text": "Website owner? Click here to fix",
+        "href": "https://vercel.link/security-checkpoint"
+      }
+    ],
+    "performance": {
+      "domContentLoaded": 62,
+      "loadComplete": 64,
+      "firstByte": 29
+    },
+    "a11y_snapshot_available": false
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "slug": "signup",
+    "title": "Vercel Security Checkpoint",
+    "h1": "",
+    "h2s": [],
+    "meta_description": "",
+    "cta_count": 0,
+    "cta_texts": [],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links_sample": [
+      {
+        "text": "Website owner? Click here to fix",
+        "href": "https://vercel.link/security-checkpoint"
+      }
+    ],
+    "performance": {
+      "domContentLoaded": 35,
+      "loadComplete": 36,
+      "firstByte": 17
+    },
+    "a11y_snapshot_available": false
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "slug": "advertise.tldr.tech",
+    "title": "TLDR | Sponsorship Opportunities",
+    "h1": "Reach over 7 million tech professionals",
+    "h2s": [
+      "Native ad opportunities in every newsletter \ud83d\ude80",
+      "Your brand, directly in your target audience's inbox \u2709\ufe0f",
+      ""
+    ],
+    "meta_description": "",
+    "cta_count": 13,
+    "cta_texts": [
+      "Ask us"
+    ],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links_sample": [
+      {
+        "text": "Skip to main content",
+        "href": "#brx-content"
+      },
+      {
+        "text": "Skip to footer",
+        "href": "#brx-footer"
+      },
+      {
+        "text": "TLDR",
+        "href": "https://advertise.tldr.tech/"
+      },
+      {
+        "text": "Advertising Best Practices",
+        "href": "#"
+      },
+      {
+        "text": "Audiences",
+        "href": "https://advertise.tldr.tech/audiences/"
+      },
+      {
+        "text": "Case Studies",
+        "href": "https://advertise.tldr.tech/case-studies/"
+      },
+      {
+        "text": "TLDR Trends",
+        "href": "#"
+      },
+      {
+        "text": "Newsletter Best Practices",
+        "href": "https://advertise.tldr.tech/newsletter-advertising-best-practices/"
+      },
+      {
+        "text": "Brand Awareness Campaigns",
+        "href": "https://advertise.tldr.tech/best-practices/brand-awareness/"
+      },
+      {
+        "text": "Events and Webinars Campaigns",
+        "href": "https://advertise.tldr.tech/best-practices/events-and-webinars/"
+      }
+    ],
+    "performance": {
+      "domContentLoaded": 641,
+      "loadComplete": 1090,
+      "firstByte": 278
+    },
+    "a11y_snapshot_available": false
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "slug": "ai",
+    "title": "Vercel Security Checkpoint",
+    "h1": "",
+    "h2s": [],
+    "meta_description": "",
+    "cta_count": 0,
+    "cta_texts": [],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links_sample": [
+      {
+        "text": "Website owner? Click here to fix",
+        "href": "https://vercel.link/security-checkpoint"
+      }
+    ],
+    "performance": {
+      "domContentLoaded": 30,
+      "loadComplete": 31,
+      "firstByte": 16
+    },
+    "a11y_snapshot_available": false
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "slug": "webdev",
+    "title": "Vercel Security Checkpoint",
+    "h1": "",
+    "h2s": [],
+    "meta_description": "",
+    "cta_count": 0,
+    "cta_texts": [],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links_sample": [
+      {
+        "text": "Website owner? Click here to fix",
+        "href": "https://vercel.link/security-checkpoint"
+      }
+    ],
+    "performance": {
+      "domContentLoaded": 228,
+      "loadComplete": 228,
+      "firstByte": 17
+    },
+    "a11y_snapshot_available": false
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "slug": "crypto",
+    "title": "Vercel Security Checkpoint",
+    "h1": "",
+    "h2s": [],
+    "meta_description": "",
+    "cta_count": 0,
+    "cta_texts": [],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links_sample": [
+      {
+        "text": "Website owner? Click here to fix",
+        "href": "https://vercel.link/security-checkpoint"
+      }
+    ],
+    "performance": {
+      "domContentLoaded": 38,
+      "loadComplete": 38,
+      "firstByte": 17
+    },
+    "a11y_snapshot_available": false
+  }
+]
