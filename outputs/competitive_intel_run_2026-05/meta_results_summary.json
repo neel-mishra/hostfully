@@ -1,0 +1,52 @@
+{
+  "date_range": "2026-04-18 to 2026-05-17",
+  "since": "2026-04-18",
+  "until": "2026-05-17",
+  "campaign_count": 7,
+  "campaigns_with_results": 7,
+  "results_by_conversion_action": {
+    "lead_email-valid": 127,
+    "onsite conversion post net comment": 5
+  },
+  "total_results": 132,
+  "total_results_all_types": 132,
+  "results_summary_line": "Results (lead results only (excl. post engagement)): 127 lead_email-valid, 5 onsite conversion post net comment",
+  "one_row_total": 132,
+  "campaign_detail": [
+    {
+      "campaign_name": "mx_pms_prospecting_website-conv",
+      "result_type": "lead_email-valid",
+      "result_value": 42
+    },
+    {
+      "campaign_name": "eu_pms_prospecting_website-conv",
+      "result_type": "lead_email-valid",
+      "result_value": 15
+    },
+    {
+      "campaign_name": "au-uk_pms_retargeting_website-conv",
+      "result_type": "lead_email-valid",
+      "result_value": 3
+    },
+    {
+      "campaign_name": "ca-us_pms_retargeting_website-conv",
+      "result_type": "lead_email-valid",
+      "result_value": 18
+    },
+    {
+      "campaign_name": "ca-us_pms_prospecting_website-conv",
+      "result_type": "lead_email-valid",
+      "result_value": 27
+    },
+    {
+      "campaign_name": "[Post Promovido] | pt-br",
+      "result_type": "onsite conversion post net comment",
+      "result_value": 5
+    },
+    {
+      "campaign_name": "[Leads] | hostfully | pt-br \u2014 meeting",
+      "result_type": "lead_email-valid",
+      "result_value": 22
+    }
+  ]
+}

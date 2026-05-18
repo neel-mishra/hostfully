@@ -1,0 +1,236 @@
+{
+  "data": [
+    {
+      "impressions": "1023463",
+      "reach": "259409",
+      "clicks": "13176",
+      "ctr": "1.287394",
+      "cpc": "2.54323",
+      "spend": "33509.6",
+      "actions": [
+        {
+          "action_type": "onsite_conversion.total_messaging_connection",
+          "value": "7"
+        },
+        {
+          "action_type": "offsite_complete_registration_add_meta_leads",
+          "value": "22"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_block",
+          "value": "10"
+        },
+        {
+          "action_type": "link_click",
+          "value": "7743"
+        },
+        {
+          "action_type": "omni_complete_registration",
+          "value": "22"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "156259"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "1447"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "1447"
+        },
+        {
+          "action_type": "onsite_conversion.post_unlike",
+          "value": "113"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "156202"
+        },
+        {
+          "action_type": "like",
+          "value": "57"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "3686"
+        },
+        {
+          "action_type": "comment",
+          "value": "55"
+        },
+        {
+          "action_type": "complete_registration",
+          "value": "22"
+        },
+        {
+          "action_type": "post_interaction_net",
+          "value": "3808"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_first_reply",
+          "value": "6"
+        },
+        {
+          "action_type": "onsite_web_lead",
+          "value": "127"
+        },
+        {
+          "action_type": "post",
+          "value": "325"
+        },
+        {
+          "action_type": "onsite_conversion.post_unsave",
+          "value": "9"
+        },
+        {
+          "action_type": "onsite_conversion.post_save",
+          "value": "292"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_comment",
+          "value": "55"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_save",
+          "value": "283"
+        },
+        {
+          "action_type": "onsite_conversion.post_net_like",
+          "value": "2901"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_user_depth_5_message_send",
+          "value": "1"
+        },
+        {
+          "action_type": "lead",
+          "value": "127"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_conversation_started_7d",
+          "value": "11"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_conversation_replied_7d",
+          "value": "1"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_lead",
+          "value": "127"
+        },
+        {
+          "action_type": "video_view",
+          "value": "144773"
+        },
+        {
+          "action_type": "offsite_lead_add_20_s_calls",
+          "value": "127"
+        },
+        {
+          "action_type": "post_reaction",
+          "value": "3014"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_complete_registration",
+          "value": "22"
+        },
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "369"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "offsite_conversion.fb_pixel_custom",
+          "value": "90.811924"
+        },
+        {
+          "action_type": "offsite_complete_registration_add_meta_leads",
+          "value": "1523.163636"
+        },
+        {
+          "action_type": "offsite_lead_add_20_s_calls",
+          "value": "263.855118"
+        },
+        {
+          "action_type": "video_view",
+          "value": "0.231463"
+        },
+        {
+          "action_type": "link_click",
+          "value": "4.327728"
+        },
+        {
+          "action_type": "like",
+          "value": "587.887719"
+        },
+        {
+          "action_type": "post_interaction_gross",
+          "value": "9.091047"
+        },
+        {
+          "action_type": "onsite_web_lead",
+          "value": "263.855118"
+        },
+        {
+          "action_type": "onsite_conversion.total_messaging_connection",
+          "value": "4787.085714"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.214527"
+        },
+        {
+          "action_type": "omni_complete_registration",
+          "value": "1523.163636"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_user_depth_5_message_send",
+          "value": "33509.6"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_conversation_replied_7d",
+          "value": "33509.6"
+        },
+        {
+          "action_type": "lead",
+          "value": "263.855118"
+        },
+        {
+          "action_type": "complete_registration",
+          "value": "1523.163636"
+        },
+        {
+          "action_type": "landing_page_view",
+          "value": "23.157982"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.214449"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_first_reply",
+          "value": "5584.933333"
+        },
+        {
+          "action_type": "omni_landing_page_view",
+          "value": "23.157982"
+        },
+        {
+          "action_type": "onsite_conversion.messaging_conversation_started_7d",
+          "value": "3046.327273"
+        }
+      ],
+      "date_start": "2026-04-18",
+      "date_stop": "2026-05-17"
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "MAZDZD",
+      "after": "MAZDZD"
+    }
+  }
+}
