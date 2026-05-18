@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "June 2026 - LATAM Expansion & US Efficiency Fix",
+  "target_persona": "Property Managers with 5-30 units in US/CA, MX, BR, EU, AU/UK",
+  "active_campaign_hypothesis": "LATAM markets (MX/BR) deliver 3-7x better CPL than US cold prospecting; shifting budget and doubling retargeting will improve blended efficiency while maintaining volume",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -13,7 +13,8 @@
         "site_performance_agent.py",
         "creative_direction_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Priority: accelerate content velocity to 4 articles/week. SEO tracking blocked until Ahrefs key is configured."
     },
     {
       "name": "Paid Acquisition",
@@ -22,21 +23,24 @@
         "social_ads_agent.py",
         "landing_page_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Focus: reallocate 25% of US/CA prospecting budget to MX expansion. Refresh US/CA creatives. Increase retargeting budgets 25% across all geos."
     },
     {
       "name": "B2B Outbound",
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false,
+      "notes": "Paused: paid acquisition and content driving sufficient pipeline. Re-evaluate if paid CPL rises above $300 blended."
     },
     {
       "name": "CRO Intelligence",
       "agents": [
         "cro_hypothesis_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Priority: improve landing page conversion rate. Current 1,447 landing page views from 13,176 clicks (11% flow-through) indicates LP friction."
     }
   ]
 }
