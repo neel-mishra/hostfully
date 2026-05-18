@@ -49,11 +49,11 @@ if not os.path.exists(env_path):
 load_dotenv(env_path)
 
 # Configuration
-PIPELINE_CSV = "../../../../docs/competitor content tracker/blogs/content_pipeline.csv"
+PIPELINE_CSV = "../../../../outputs/docs/competitor content tracker/blogs/content_pipeline.csv"
 BLOGS_DIR = "../../../../docs/blogs/"
 AGENTS_DIR = "../../../agents/"
-CORE_CONTEXT_DIR = "../../../../commands/core/"
-IDENTITY_CONTEXT_DIR = "../../../../commands/identity/"
+CORE_CONTEXT_DIR = "../../../../business dna/core/"
+IDENTITY_CONTEXT_DIR = "../../../../business dna/identity/"
 
 # Max SEO audit iterations before publishing anyway
 MAX_AUDIT_ITERATIONS = 3
@@ -83,8 +83,8 @@ CLAUDE_API_BASE = "https://api.anthropic.com/v1/messages"
 HUMANIZER_SKILL_DIR = os.path.join(workspace_root, ".cursor", "skills", "humanizer")
 HUMANIZER_VOICE_SAMPLES = os.path.join(HUMANIZER_SKILL_DIR, "voice-samples.md")
 HUMANIZER_PATTERNS = os.path.join(HUMANIZER_SKILL_DIR, "patterns.md")
-BRAND_VOICE_MATRIX = os.path.join(workspace_root, "commands", "identity", "brand_voice_matrix.md")
-MESSAGING_PILLARS = os.path.join(workspace_root, "commands", "identity", "messaging_pillars.md")
+BRAND_VOICE_MATRIX = os.path.join(workspace_root, "business dna", "identity", "brand_voice_matrix.md")
+MESSAGING_PILLARS = os.path.join(workspace_root, "business dna", "identity", "messaging_pillars.md")
 
 
 def claude_generate(prompt, max_tokens=8192, retries=3, timeout=180):

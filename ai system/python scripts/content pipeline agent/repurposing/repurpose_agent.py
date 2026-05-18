@@ -23,7 +23,7 @@ import requests
 from dotenv import load_dotenv
 
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent
-COMMANDS_DIR = WORKSPACE_ROOT / "commands"
+COMMANDS_DIR = WORKSPACE_ROOT / "business dna"
 OUTPUT_DIR = WORKSPACE_ROOT / "docs" / "content_assets" / "repurposed"
 
 
