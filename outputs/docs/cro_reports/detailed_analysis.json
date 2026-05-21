@@ -1,0 +1,151 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "slug": "tldr.tech",
+    "cta_texts": [
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe",
+      "Subscribe"
+    ],
+    "form_fields": [
+      {
+        "type": "url",
+        "placeholder": "",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email Address",
+        "name": "email"
+      }
+    ],
+    "h2_sections": [
+      "Get the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!"
+    ],
+    "trust_signals_found": [
+      "join",
+      "companies",
+      "brands"
+    ],
+    "mobile_overflow": false
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "slug": "signup",
+    "cta_texts": [
+      "Sign Up for Free"
+    ],
+    "form_fields": [
+      {
+        "type": "url",
+        "placeholder": "",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email Address",
+        "name": "email"
+      }
+    ],
+    "h2_sections": [
+      "Get the most interesting stories in startups, tech, and programming delivered in a free daily email."
+    ],
+    "trust_signals_found": [],
+    "mobile_overflow": false
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "slug": "advertise.tldr.tech",
+    "cta_texts": [
+      "Ask us"
+    ],
+    "form_fields": [],
+    "h2_sections": [
+      "Native ad opportunities in every newsletter \ud83d\ude80"
+    ],
+    "trust_signals_found": [
+      "million"
+    ],
+    "mobile_overflow": false
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "slug": "ai",
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_fields": [
+      {
+        "type": "url",
+        "placeholder": "",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email Address",
+        "name": "email"
+      }
+    ],
+    "h2_sections": [
+      "Get the most interesting AI stories and breakthroughs delivered in a free daily email."
+    ],
+    "trust_signals_found": [
+      "join"
+    ],
+    "mobile_overflow": false
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "slug": "webdev",
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_fields": [
+      {
+        "type": "url",
+        "placeholder": "",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email Address",
+        "name": "email"
+      }
+    ],
+    "h2_sections": [
+      "The most important software engineering news in one daily email"
+    ],
+    "trust_signals_found": [
+      "join"
+    ],
+    "mobile_overflow": false
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "slug": "crypto",
+    "cta_texts": [
+      "Sign Up"
+    ],
+    "form_fields": [
+      {
+        "type": "url",
+        "placeholder": "",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "placeholder": "Email Address",
+        "name": "email"
+      }
+    ],
+    "h2_sections": [
+      "Get our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!"
+    ],
+    "trust_signals_found": [
+      "join"
+    ],
+    "mobile_overflow": false
+  }
+]
