@@ -1,0 +1,445 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "title": "TLDR - A Byte Sized Daily Tech Newsletter",
+    "h1": "Keep up with tech in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 6,
+    "cta_texts": [
+      {
+        "text": "Subscribe",
+        "tag": "BUTTON",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "tag": "BUTTON",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "tag": "BUTTON",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "tag": "BUTTON",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "tag": "BUTTON",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website"
+          },
+          {
+            "type": "email",
+            "name": "email"
+          }
+        ],
+        "action": ""
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Keep up with tech in 5 minutes"
+      },
+      {
+        "tag": "h2",
+        "text": "Get the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!"
+      },
+      {
+        "tag": "h3",
+        "text": "Meta Will Reportedly Let Employees Take 30-Minute Breaks From Its Tracking Program (2 minute read)"
+      },
+      {
+        "tag": "h3",
+        "text": "More Stories"
+      },
+      {
+        "tag": "h3",
+        "text": "Karpathy's Autoresearch found a 3-year-old bug in Posthog's query engine (and improved performance by 11%) (9 minute read)"
+      },
+      {
+        "tag": "h3",
+        "text": "The Google Capital Company (15 minute read)"
+      },
+      {
+        "tag": "h3",
+        "text": "BYD plans to bring all-solid-state batteries to EVs by 2027, but it's not alone (4 minute read)"
+      },
+      {
+        "tag": "h3",
+        "text": "Leaks: Nvidia-Powered Windows 11 PCs Set to Debut (2 minute read)"
+      },
+      {
+        "tag": "h3",
+        "text": "Anthropic expands Mythos to 150 additional organizations in more than 15 countries (3 minute read)"
+      },
+      {
+        "tag": "h3",
+        "text": "Open and closed models are on different exponentials (8 minute read)"
+      }
+    ],
+    "trust_signals": [],
+    "images": [
+      {
+        "alt": "Meta Will Reportedly Let Employees Take 30-Minute Breaks From Its Tracking Progr",
+        "src": "/api/image?url=https%3A%2F%2Fwww.engadget.com%2Fimg%2Fgallery%2Fmeta-will-reportedly-let-employees-t"
+      },
+      {
+        "alt": "The Trust Problem With AI Agents",
+        "src": "/logo-jpg.jpg"
+      },
+      {
+        "alt": "GitHub's plan for Agents (90 minute read)",
+        "src": "https://substackcdn.com/image/fetch/$s_!m6os!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:s"
+      },
+      {
+        "alt": "My Agent Skill for Test-Driven Development (3 minute read)",
+        "src": "https://www.saturnci.com/images/og-image.png"
+      },
+      {
+        "alt": "How One Line of Code Put Billions of Microsoft Android App Downloads at Risk (4 ",
+        "src": "https://www.securityweek.com/wp-content/uploads/2026/06/Android-Microsoft_Apps-Flaw.jpg"
+      },
+      {
+        "alt": "Karpathy's Autoresearch found a 3-year-old bug in Posthog's query engine (and im",
+        "src": "https://d36j3rcgc2qfsv.cloudfront.net/blogkarpathy-autoresearch-query-engine-bug.jpeg"
+      },
+      {
+        "alt": "The Google Capital Company (15 minute read)",
+        "src": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC9zdHJhdGVjaGVyeS5jb21cL3dwLWNvbnRlbnR"
+      },
+      {
+        "alt": "BYD plans to bring all-solid-state batteries to EVs by 2027, but it's not alone ",
+        "src": "https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/06/BYD-all-solid-state-EV-batteries-20"
+      },
+      {
+        "alt": "Leaks: Nvidia-Powered Windows 11 PCs Set to Debut (2 minute read)",
+        "src": "https://thurrott-assets.nyc3.digitaloceanspaces.com/web/wp-content/uploads/sites/2/2023/08/nvidia-lo"
+      },
+      {
+        "alt": "Anthropic expands Mythos to 150 additional organizations in more than 15 countri",
+        "src": "https://image.cnbcfm.com/api/v1/image/108315192-1780407455581-108315192-1780407385109-gettyimages-22"
+      }
+    ],
+    "body_text_snippet": "TLDR\nNewsletters\nAdvertise\nBlog\nKeep up with tech in 5 minutes\nGet the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!\nSubscribe\nJoin 1,600,000 readers for one daily email\nJun 03 | Tech\nMeta Will Reportedly Let Employees Take 30-Minute Breaks From Its Tracking Program (2 minute read)\nA subset of employees will also be able to request to opt out of the program altogether.\nSubscribe\nApr 29 | Blog\nThe Trust Problem With AI Agents\n\nWhy developers should not entirely rely on agents, and what you can do about it.\n\nSponsored\nJun 03 | AI\nGitHub's plan for Agents (90 minute read)\nGitHub has been the home for software for almost two decades. Coding agents have seen massive quantities of code being shipped on the platform, which has grown 1,400% this year. This has put pressure on GitHub's infrastructure, which was designed around human developers moving at human speed. This article features an interview with GitHub COO Kyle Daigle where he discusses how AI has changed things in the company, how he uses AI to work at GitHub, why the AI era is breaking GitHub in new ways, and more.\nSubscribe\nJun 03 | Dev\nMy Agent Skill for Test-Driven Development (3 minute read)\nThe greatest productivity gains from AI agents, which often write poor tests, are unlocked by guiding them with software design principles like a structured Test-Driven Development (TDD) process.\nSubscribe\nJun 03 | Infosec\nHow One Line of Code Put Billions of Microsoft Android App Downloads at Risk (4 minute read)\nA forgotten debug flag in six Microsoft 365 Android apps (Word, Excel, PowerPoint, Copilot, Loop, and OneNote) let any Android app request and receive Microsoft account access tokens. Attackers only needed about 15 lines of code inside a widely installed or updated app to silently steal tokens and reuse or refresh them over time. Stolen FOCI tokens exposed email, files, documents, communications, and calendars until Microsoft patched the flaws in May and pushed fixes via Patch Tuesday and Google Play.\nSubscribe\nMore Stories\nTech\nJun 03 | Tech\nKarpathy's Autoresearch found a 3-year-old bug in Posthog's query engine (and improved performance by 11%) (9 minute read)\nJun 03 | Tech\nThe Google Capital Company (15 minute read)\nJun 02 | Tech\nBYD plans to bring all-solid-state batteries to EVs by 2027, but it's not alone (4 minute read)\nJun 01 | Tech\nLeaks: Nvidia-Powered Windows 11 PCs Set to Debut (2 minute read)\nAI\nJun 03 | AI\nAnthropic expands Mythos to 150 additional organizations in more than 15 countries (3 minute read)\nJun 03 | AI\nOpen and closed models are on different exponentials (8 minute read)\nJun 03 | AI\nBuilding a hill-climbing machine: Launching seven new MAI models (5 minute read)\nJun 03 | AI\nThe Next Frontier of Visual AI Is Code (11 minute read)\nJun 02 | AI\nAnthropic Filed a Confidential Draft IPO Registration (2 minute read)\nJun 02 | AI\nNVIDIA just announced the release of Nemotron 3 Ultra (2 minute read)\nJun 02 | AI\nOpus "
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "title": "TLDR Newsletter - Keep up with Tech in 5 minutes",
+    "h1": "Keep up with tech in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up for Free",
+        "tag": "BUTTON",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website"
+          },
+          {
+            "type": "email",
+            "name": "email"
+          }
+        ],
+        "action": ""
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Keep up with tech in 5 minutes"
+      },
+      {
+        "tag": "h2",
+        "text": "Get the most interesting stories in startups, tech, and programming delivered in a free daily email."
+      }
+    ],
+    "trust_signals": [],
+    "images": [
+      {
+        "alt": "",
+        "src": "https://t.co/1/i/adsct?bci=3&cv=100%261&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%20x86_"
+      },
+      {
+        "alt": "",
+        "src": "https://analytics.twitter.com/1/i/adsct?bci=3&cv=100%261&dv=America%2FNew_York%26en-US%26Google%20In"
+      }
+    ],
+    "body_text_snippet": "TLDR\n\nKeep up with tech in 5 minutes\nGet the most interesting stories in startups, tech, and programming delivered in a free daily email.\nSign Up for Free\nNo spam. Unsubscribe at any time with one click.\nPrivacy"
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "title": "TLDR | Sponsorship Opportunities",
+    "h1": "Reach over 7 million tech professionals",
+    "meta": "",
+    "cta_count": 13,
+    "cta_texts": [
+      {
+        "text": "Ask us",
+        "tag": "A",
+        "href": "#talk-tldr"
+      }
+    ],
+    "form_count": 0,
+    "form_details": [],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Reach over 7 million tech professionals"
+      },
+      {
+        "tag": "h2",
+        "text": "Native ad opportunities in every newsletter \ud83d\ude80"
+      },
+      {
+        "tag": "h2",
+        "text": ""
+      },
+      {
+        "tag": "h2",
+        "text": ""
+      },
+      {
+        "tag": "h3",
+        "text": "Quick Links"
+      },
+      {
+        "tag": "h3",
+        "text": "Secondary Placement"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udc51 Primary Placement"
+      }
+    ],
+    "trust_signals": [
+      {
+        "selector": "[class*=\"testimonial\"]",
+        "count": 15
+      },
+      {
+        "selector": "[class*=\"logo\"]",
+        "count": 225
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/aws.svg"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/snyk-300x156.png"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/logo-mlops.avif"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/google.png"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/shopify-300x85.png"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/plaid.svg"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/sentry-300x74.png"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/intel.svg"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/06/ThreatSpike-logo-300x67.png"
+      },
+      {
+        "alt": "",
+        "src": "https://advertise.tldr.tech/wp-content/uploads/2025/01/taboola-300x75.avif"
+      }
+    ],
+    "body_text_snippet": "Skip to main content\nSkip to footer\nTLDR\nAdvertising Best Practices\nHow TLDR Compares\nAudiences\nCase Studies\nTLDR Trends\nReach over 7 million tech professionals\nGet your brand in front of developers, product managers, marketers, designers and executives. Copywriting services and campaign performance reports are included at no additional cost.\nTop-tier tech marketers advertise in TLDR\n1,200 leads \ud83d\udd25\n$382k in pipeline, 20.1x ROI \ud83d\udcb8\n75k+ in pipeline\n-50% CPC compared to LinkedIn \ud83d\udcb8\n100+ webinar signups \ud83d\udd25\n20k+ site visits \ud83d\udcc8\n14k+ site visit \ud83d\udcc8\n1,200 leads \ud83d\udd25\n$382k in pipeline, 20.1x ROI \ud83d\udcb8\n75k+ in pipeline\n-50% CPC compared to LinkedIn \ud83d\udcb8\n100+ webinar signups \ud83d\udd25\n20k+ site visits \ud83d\udcc8\n14k+ site visit \ud83d\udcc8\nNative ad opportunities in every newsletter \ud83d\ude80\n12 interest-based newsletters, 40-48% average open rate\nTLDR Tech\n\nTLDR's flagship newsletter covering the most interesting stories in startups, programming and tech\n\n1.6 million subs, 47% open rate\nTLDR AI\n\nLaunches, innovations, and research for AI, machine learning, and data science professionals\n\n1.1 million subs, 47% open rate\nTLDR Data\n\nCurated deep dives, tools and trends in big data, data science and data engineering\n\n550k subs, 33% open rate\nTLDR Dev\n\nCurated deep dives, tools, and trends in frontend, backend, and full stack web development\n\n460k subs, 43% open rate\nTLDR DevOps\n\nTools, trends, and insights for DevOps engineers\n\n330k subs, 42% open rate\nTLDR InfoSec\n\nNews, research, and tools for information security professionals\n\n400k subs, 41% open rate\nTLDR IT\n\nNews and trends in IT strategy, information security, and cloud computing.\n\n570k subs, 32% open rate\nTLDR Product\n\nDeep dives, trends, and resources for product managers\n\n400k subs, 46% open rate\nTLDR Marketing\n\nTactics, trends, and tools for cutting edge marketers\n\n310k subs, 43% open rate\nTLDR Design\n\nTools, trends, and inspiration for designers.\n\n300k subs, 43% open rate\nTLDR Fintech\n\nInnovations and trends in financial markets and technology\n\n450k subs, 34% open rate\nTLDR Founders\n\nTactics, trends, and tools for startup founders and entrepreneurs\n\n380k subs, 43% open rate\nTLDR Crypto\n\nThe latest launches, innovations, and market moves in crypto & Web3\n\n280k subs, 42% open rate\nCurious which newsletters your audience reads?\nAsk us\nQuick Links\n\n\u2705 Bottom of the newsletter\n\u2705 Up to 30 words\n\u2705 1 CTA\n\nSecondary Placement\n\n\u2705 Middle of the newsletter\n\u2705 Up to 50 words\n\u2705 2 CTAs\n\n\ud83d\udc51 Primary Placement\n\n\u2705 Top of the newsletter\n\u2705 Logo\n\u2705 Up to 100 words\n\u2705 3 CTAs\n\nTLDR\nSubscribe to TLDR\nPrivacy Policy"
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "title": "",
+    "h1": "Keep up with AI in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up",
+        "tag": "BUTTON",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website"
+          },
+          {
+            "type": "email",
+            "name": "email"
+          }
+        ],
+        "action": ""
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Keep up with AI in 5 minutes"
+      },
+      {
+        "tag": "h2",
+        "text": "Get the most interesting AI stories and breakthroughs delivered in a free daily email."
+      }
+    ],
+    "trust_signals": [],
+    "images": [
+      {
+        "alt": "",
+        "src": "https://t.co/1/i/adsct?bci=3&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26"
+      },
+      {
+        "alt": "",
+        "src": "https://analytics.twitter.com/1/i/adsct?bci=3&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%"
+      }
+    ],
+    "body_text_snippet": "\ud83e\udde0\n\nTLDR AI\n\nKeep up with AI in 5 minutes\nGet the most interesting AI stories and breakthroughs delivered in a free daily email.\nSign Up\nJoin 920,000 readers for one daily email\nPrivacy"
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "title": "",
+    "h1": "Get smarter about software in 5 minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up",
+        "tag": "BUTTON",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website"
+          },
+          {
+            "type": "email",
+            "name": "email"
+          }
+        ],
+        "action": ""
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Get smarter about software in 5 minutes"
+      },
+      {
+        "tag": "h2",
+        "text": "The most important software engineering news in one daily email"
+      }
+    ],
+    "trust_signals": [],
+    "images": [
+      {
+        "alt": "",
+        "src": "https://t.co/1/i/adsct?bci=3&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26"
+      },
+      {
+        "alt": "",
+        "src": "https://analytics.twitter.com/1/i/adsct?bci=3&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%"
+      }
+    ],
+    "body_text_snippet": "\ud83d\udcbb\n\nTLDR Dev\n\nGet smarter about software in 5 minutes\nThe most important software engineering news in one daily email\nSign Up\nJoin 450,000 readers for one daily email\nPrivacyCareersAdvertise"
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "title": "",
+    "h1": "Keep Up With Crypto in 5 Minutes",
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up",
+        "tag": "BUTTON",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website"
+          },
+          {
+            "type": "email",
+            "name": "email"
+          }
+        ],
+        "action": ""
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Keep Up With Crypto in 5 Minutes"
+      },
+      {
+        "tag": "h2",
+        "text": "Get our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!"
+      }
+    ],
+    "trust_signals": [],
+    "images": [
+      {
+        "alt": "",
+        "src": "https://t.co/1/i/adsct?bci=3&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26"
+      },
+      {
+        "alt": "",
+        "src": "https://analytics.twitter.com/1/i/adsct?bci=3&dv=America%2FNew_York%26en-US%26Google%20Inc.%26Linux%"
+      }
+    ],
+    "body_text_snippet": "\ud83e\ude99\n\nTLDR Crypto\n\nKeep Up With Crypto in 5 Minutes\nGet our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!\nSign Up\nJoin 310,000 readers for one daily email\nPrivacyCareersAdvertise"
+  }
+]
