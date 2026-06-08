@@ -18,27 +18,47 @@ def _timeout_handler(signum, frame):
 
 signal.signal(signal.SIGALRM, _timeout_handler)
 
+class _ClaudeResponse:
+    """Thin wrapper so safe_generate returns an object with a .text attribute."""
+    def __init__(self, text):
+        self.text = text
+
 def safe_generate(prompt, retries=5, timeout=120):
-    """Wrapper to safely call Gemini with strict timeout and retries."""
-    model = genai.GenerativeModel('gemini-2.5-flash-lite')
+    """Call Claude API as the primary generation backend (Gemini quota exhausted)."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise Exception("ANTHROPIC_API_KEY not set — cannot generate content")
     for attempt in range(retries):
         try:
-            # Prevent hitting the 15 RPM free tier limit consistently
-            time.sleep(4)
-            signal.alarm(timeout)
-            response = model.generate_content(prompt)
-            signal.alarm(0)
-            return response
-        except TimeoutException:
-            signal.alarm(0)
-            print(f"      ⚠️ API timeout on attempt {attempt+1}/{retries}")
-            time.sleep(10)
+            time.sleep(2)
+            resp = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={
+                    "x-api-key": api_key,
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                },
+                json={
+                    "model": "claude-sonnet-4-20250514",
+                    "max_tokens": 8192,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                timeout=timeout,
+            )
+            if resp.status_code == 200:
+                text = resp.json()["content"][0]["text"]
+                return _ClaudeResponse(text)
+            if resp.status_code == 429:
+                wait = min(60, 2 ** (attempt + 2))
+                print(f"      ⚠️ Rate limited, waiting {wait}s (attempt {attempt+1}/{retries})")
+                time.sleep(wait)
+                continue
+            print(f"      ⚠️ API error {resp.status_code} on attempt {attempt+1}/{retries}")
+            time.sleep(5)
         except Exception as e:
-            signal.alarm(0)
             print(f"      ⚠️ API error on attempt {attempt+1}/{retries}: {e}")
-            # If rate limit 429 is hit, wait longer than the 1-minute free tier window
-            time.sleep(65)
-    raise Exception("Max retries reached for Gemini API")
+            time.sleep(10)
+    raise Exception("Max retries reached for Claude API")
 
 # Load environment variables from .env file in the Workspace Root
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -198,9 +218,9 @@ class BlogWriterAgent:
         Phase 1: Generate an SEO-optimized, brand-neutral blog draft.
         Uses prompts derived from seo-agent.md and copywriting-agent.md.
         """
-        if not GEMINI_API_KEY:
-            print("⚠️ GEMINI_API_KEY not found in environment variables.")
-            return f"# {title}\n\n**Error**: GEMINI_API_KEY not found."
+        if not ANTHROPIC_API_KEY:
+            print("⚠️ ANTHROPIC_API_KEY not found in environment variables.")
+            return f"# {title}\n\n**Error**: ANTHROPIC_API_KEY not found."
 
         system_prompt = """You are an expert SEO content strategist and performance marketing journalist.
 You write authoritative, value-dense blog content as a NEUTRAL industry expert — similar to
@@ -265,7 +285,7 @@ Your writing principles:
         Returns a dict with 'pass' (bool), 'score' (int), and 'issues' (list).
         Uses criteria from the canonical `ai system/agents/seo-aeo/seo-audit-agent.md`.
         """
-        if not GEMINI_API_KEY:
+        if not ANTHROPIC_API_KEY:
             return {"pass": True, "score": 0, "issues": []}
 
         audit_prompt = f"""You are an expert SEO auditor. Analyze the following blog post and evaluate it 
@@ -326,7 +346,7 @@ Set "pass" to true ONLY if ALL checks are PASS. The "score" should reflect overa
         Phase 3: Refine the blog draft based on SEO audit findings.
         Takes the original draft + audit issues and returns a corrected version.
         """
-        if not GEMINI_API_KEY:
+        if not ANTHROPIC_API_KEY:
             return draft
 
         issues_text = "\n".join(
