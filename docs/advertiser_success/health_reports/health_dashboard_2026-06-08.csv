@@ -1,0 +1,4 @@
+advertiser_name,risk_level,spend_trend,days_to_renewal,last_contact_days,avg_ctr,ctr_vs_benchmark,primary_risk_factor,recommended_action,urgency
+Acme Corp,Yellow,increasing,-8,95,0.024,above,communication,Review account manually (Claude unavailable),medium
+Beta Labs,Red,declining,-55,118,0.018,at,spend,Review account manually (Claude unavailable),critical
+Gamma Inc,Green,stable,84,99,0.022,above,communication,Review account manually (Claude unavailable),low
