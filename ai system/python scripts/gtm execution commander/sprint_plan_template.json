@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "June 2026 - Geo Arbitrage & Funnel Optimization",
+  "target_persona": "Property Managers in LATAM (MX/CO/BR) and Retargeting Warm Audiences in US/CA",
+  "active_campaign_hypothesis": "LATAM prospecting delivers 5x better CPL than US/CA cold — shift budget toward geo arbitrage while building retargeting pools in premium markets",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -13,7 +13,8 @@
         "site_performance_agent.py",
         "creative_direction_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Focus on clearing mid-tier content backlog (11 items not started). Prioritize Gmail deliverability and Milk Road case study articles."
     },
     {
       "name": "Paid Acquisition",
@@ -22,21 +23,24 @@
         "social_ads_agent.py",
         "landing_page_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Google Ads credentials need re-auth before search_ads_agent can execute. Social ads should prioritize MX/CO/BR geo expansion and US/CA retargeting. Pause AU-UK retargeting."
     },
     {
       "name": "B2B Outbound",
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Target property management companies in LATAM based on paid campaign signal. US/CA outbound should focus on retargeting leads that didn't convert."
     },
     {
       "name": "CRO Intelligence",
       "agents": [
         "cro_hypothesis_agent.py"
       ],
-      "enabled": true
+      "enabled": true,
+      "notes": "Investigate why CA-US prospecting CPL is 5x higher than MX. Test landing page localization for LATAM markets. Analyze hostfully pt-br funnel drop-off."
     }
   ]
 }
