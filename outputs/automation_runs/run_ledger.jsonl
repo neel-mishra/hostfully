@@ -35,3 +35,11 @@
 {"ts": "2026-03-19T12:33:51.998229+00:00", "workflow": "Monthly GTM Execution Commander", "step": "entrypoint", "status": "skipped", "idempotency_key": "automation_9:2026-03:monthly_gtm_execution_commander", "details": {}}
 {"ts": "2026-03-19T12:33:52.032459+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "started", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {}}
 {"ts": "2026-03-19T12:33:52.032634+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "success", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {"dry_run": true, "command": []}}
+{"ts": "2026-06-10T01:03:07.393603+00:00", "workflow": "ahrefs_api", "step": "keywords-overview", "status": "failed", "idempotency_key": "ahrefs_api:2026-06-10:keywords-overview:::50", "details": {"missing_env": ["AHREFS_API_KEY"]}}
+{"ts": "2026-06-10T01:04:14.026189+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W24:full:HashiCorp:10", "details": {}}
+{"ts": "2026-06-10T01:04:14.041120+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W24:full:Wiz:10", "details": {}}
+{"ts": "2026-06-10T01:04:14.042656+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W24:full:Datadog:10", "details": {}}
+{"ts": "2026-06-10T01:04:14.080756+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W24:full:Vercel:10", "details": {}}
+{"ts": "2026-06-10T01:04:14.106794+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W24:full:Snyk:10", "details": {}}
+{"ts": "2026-06-10T01:07:18.381388+00:00", "workflow": "gsheets_api", "step": "list", "status": "started", "idempotency_key": "gsheets_api:2026-06-10:list::", "details": {}}
+{"ts": "2026-06-10T01:07:26.211656+00:00", "workflow": "gdocs_api", "step": "list", "status": "failed", "idempotency_key": "gdocs_api:2026-06-10:list:", "details": {"missing_env": ["GOOGLE_CLIENT_ID"]}}
