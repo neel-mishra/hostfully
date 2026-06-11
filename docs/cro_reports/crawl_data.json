@@ -1,0 +1,239 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "title": "TLDR - A Byte Sized Daily Tech Newsletter",
+    "blocked": false,
+    "h1": "Keep up with tech in 5 minutes",
+    "h2s": [
+      "Get the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!"
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 6,
+    "cta_texts": [
+      {
+        "text": "Subscribe",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "href": ""
+      },
+      {
+        "text": "Subscribe",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "input_count": 2,
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website",
+            "placeholder": ""
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email Address"
+          }
+        ]
+      }
+    ],
+    "nav_links": [],
+    "trust_signal_count": 0,
+    "body_preview": "TLDR\nNewsletters\nAdvertise\nBlog\nKeep up with tech in 5 minutes\nGet the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!\nSubscribe\nJoin 1,600,000 readers for one daily email\nJun 10 | Tech\nInitial impressions of Claude Fable 5 (12 minute read)\nAnthropic claims that Claude Fable 5 offers the same performance as Mythos 5 but with stricter guardrails. It has a 1 million token context window with 128,000 maximum output tokens. The model is priced at twice the price of the Claude Opus models at $10 per million input tokens and $50 per million output tokens. The Claude API has new mechanisms for alerting users when these guardrails are activated, and there is an option to request to fall back to another model automatically if something gets rejected.\nSubscribe\nApr 29 | Blog\nThe Trust Problem With AI Agents\n\nWhy developers should not entirely rely on agents, and what you can do about it.\n\nSponsored\nJun 10 | AI\nClaude Fable 5 Launch (6 minute read)\nAnthropic announced Claude Fable 5 for general use and Claude Mythos 5 for selected cyberdefenders and infrastructure providers. The models were described as highly capable across software engineering, research, vision, and cybersecurity, with conservative safeguards applied to Fable 5.\nSubscribe\nJun 10 | Dev\nCleaning up after AI rockstar developers (6 minute read)\nSo-called \u201crockstar\" developers often leave behind overly complex and idiosyncratic codebases that prioritize individual c"
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "title": "TLDR Newsletter - Keep up with Tech in 5 minutes",
+    "blocked": false,
+    "h1": "Keep up with tech in 5 minutes",
+    "h2s": [
+      "Get the most interesting stories in startups, tech, and programming delivered in a free daily email."
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up for Free",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "input_count": 2,
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website",
+            "placeholder": ""
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email Address"
+          }
+        ]
+      }
+    ],
+    "nav_links": [],
+    "trust_signal_count": 0,
+    "body_preview": "TLDR\n\nKeep up with tech in 5 minutes\nGet the most interesting stories in startups, tech, and programming delivered in a free daily email.\nSign Up for Free\nNo spam. Unsubscribe at any time with one click.\nPrivacy"
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "title": "TLDR | Sponsorship Opportunities",
+    "blocked": false,
+    "h1": "Reach over 7 million tech professionals",
+    "h2s": [
+      "Native ad opportunities in every newsletter \ud83d\ude80",
+      "",
+      ""
+    ],
+    "meta": "",
+    "cta_count": 13,
+    "cta_texts": [
+      {
+        "text": "Ask us",
+        "href": "#talk-tldr"
+      }
+    ],
+    "form_count": 0,
+    "form_details": [],
+    "nav_links": [
+      "TLDR Trends",
+      "Audiences",
+      "Case Studies",
+      "How TLDR Compares",
+      "Advertising Best Practices",
+      "TLDR"
+    ],
+    "trust_signal_count": 240,
+    "body_preview": "Skip to main content\nSkip to footer\nTLDR\nAdvertising Best Practices\nHow TLDR Compares\nAudiences\nCase Studies\nTLDR Trends\nReach over 7 million tech professionals\nGet your brand in front of developers, product managers, marketers, designers and executives. Copywriting services and campaign performance reports are included at no additional cost.\nTop-tier tech marketers advertise in TLDR\n1,200 leads \ud83d\udd25\n$382k in pipeline, 20.1x ROI \ud83d\udcb8\n75k+ in pipeline\n-50% CPC compared to LinkedIn \ud83d\udcb8\n100+ webinar signups \ud83d\udd25\n20k+ site visits \ud83d\udcc8\n14k+ site visit \ud83d\udcc8\n1,200 leads \ud83d\udd25\n$382k in pipeline, 20.1x ROI \ud83d\udcb8\n75k+ in pipeline\n-50% CPC compared to LinkedIn \ud83d\udcb8\n100+ webinar signups \ud83d\udd25\n20k+ site visits \ud83d\udcc8\n14k+ site visit \ud83d\udcc8\nNative ad opportunities in every newsletter \ud83d\ude80\n12 interest-based newsletters, 40-48% average open rate\nTLDR Tech\n\nTLDR's flagship newsletter covering the most interesting stories in startups, programming and tech\n\n1.6 million subs, 47% open rate\nTLDR AI\n\nLaunches, innovations, and research for AI, machine learning, and data science professionals\n\n1.1 million subs, 47% open rate\nTLDR Data\n\nCurated deep dives, tools and trends in big data, data science and data engineering\n\n550k subs, 33% open rate\nTLDR Dev\n\nCurated deep dives, tools, and trends in frontend, backend, and full stack web development\n\n460k subs, 43% open rate\nTLDR DevOps\n\nTools, trends, and insights for DevOps engineers\n\n330k subs, 42% open rate\nTLDR InfoSec\n\nNews, research, and tools for information security professionals\n\n400k subs"
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "title": "",
+    "blocked": true,
+    "h1": "Keep up with AI in 5 minutes",
+    "h2s": [
+      "Get the most interesting AI stories and breakthroughs delivered in a free daily email."
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "input_count": 2,
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website",
+            "placeholder": ""
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email Address"
+          }
+        ]
+      }
+    ],
+    "nav_links": [],
+    "trust_signal_count": 0,
+    "body_preview": "\ud83e\udde0\n\nTLDR AI\n\nKeep up with AI in 5 minutes\nGet the most interesting AI stories and breakthroughs delivered in a free daily email.\nSign Up\nJoin 920,000 readers for one daily email\nPrivacy"
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "title": "",
+    "blocked": true,
+    "h1": "Get smarter about software in 5 minutes",
+    "h2s": [
+      "The most important software engineering news in one daily email"
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "input_count": 2,
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website",
+            "placeholder": ""
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email Address"
+          }
+        ]
+      }
+    ],
+    "nav_links": [],
+    "trust_signal_count": 0,
+    "body_preview": "\ud83d\udcbb\n\nTLDR Dev\n\nGet smarter about software in 5 minutes\nThe most important software engineering news in one daily email\nSign Up\nJoin 450,000 readers for one daily email\nPrivacyCareersAdvertise"
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "title": "",
+    "blocked": true,
+    "h1": "Keep Up With Crypto in 5 Minutes",
+    "h2s": [
+      "Get our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!"
+    ],
+    "meta": "TLDR is the free daily newsletter with the most interesting stories in startups, tech and programming!",
+    "cta_count": 1,
+    "cta_texts": [
+      {
+        "text": "Sign Up",
+        "href": ""
+      }
+    ],
+    "form_count": 1,
+    "form_details": [
+      {
+        "input_count": 2,
+        "inputs": [
+          {
+            "type": "url",
+            "name": "website",
+            "placeholder": ""
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email Address"
+          }
+        ]
+      }
+    ],
+    "nav_links": [],
+    "trust_signal_count": 0,
+    "body_preview": "\ud83e\ude99\n\nTLDR Crypto\n\nKeep Up With Crypto in 5 Minutes\nGet our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!\nSign Up\nJoin 310,000 readers for one daily email\nPrivacyCareersAdvertise"
+  }
+]
