@@ -27,7 +27,7 @@ WORKSPACE_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 load_dotenv(WORKSPACE_ROOT / ".env")
 
 API_KEY = os.environ.get("SCRAPECREATORS_API_KEY", "")
-BASE_URL = "https://api.scrapecreators.com/v2"
+BASE_URL = "https://api.scrapecreators.com/v1"
 
 
 def api_get(endpoint, params=None):
@@ -48,14 +48,14 @@ def api_get(endpoint, params=None):
 
 
 def cmd_search(brand_name):
-    data = api_get("meta-ad-library/search-page", {"query": brand_name})
+    data = api_get("facebook/adLibrary/search/companies", {"query": brand_name})
     results = data.get("data", data.get("results", []))
     print(json.dumps(results, indent=2))
     return results
 
 
 def cmd_ads(platform_id, limit=50):
-    data = api_get("meta-ad-library/ads", {"platform_id": platform_id, "limit": limit})
+    data = api_get("facebook/adLibrary/company/ads", {"pageId": platform_id})
     ads = data.get("data", data.get("ads", data.get("results", [])))
     print(json.dumps(ads, indent=2))
     return ads
@@ -63,7 +63,7 @@ def cmd_ads(platform_id, limit=50):
 
 def cmd_full(brand_name, limit=30):
     """Search for brand, then pull ads for the first result."""
-    search_data = api_get("meta-ad-library/search-page", {"query": brand_name})
+    search_data = api_get("facebook/adLibrary/search/companies", {"query": brand_name})
     pages = search_data.get("data", search_data.get("results", []))
 
     if not pages:
@@ -78,7 +78,10 @@ def cmd_full(brand_name, limit=30):
         print(json.dumps({"brand": brand_name, "platform_id": None, "ads": [], "message": "No platform ID found"}))
         return
 
-    ads_data = api_get("meta-ad-library/ads", {"platform_id": platform_id, "limit": limit})
+    ads_data = api_get("facebook/adLibrary/company/ads", {
+        "pageId": platform_id,
+        "companyName": page_name,
+    })
     ads = ads_data.get("data", ads_data.get("ads", ads_data.get("results", [])))
 
     print(json.dumps({
