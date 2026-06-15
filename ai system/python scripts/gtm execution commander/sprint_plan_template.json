@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "July 2026 - Geo Rebalance & Funnel Optimization",
+  "target_persona": "Property Managers (5-30 units) in US/CA, MX, EU, BR markets",
+  "active_campaign_hypothesis": "Geo-diversified prospecting (MX/EU) delivers 2-4x better CPL than US/CA; retargeting converts at 3.5x efficiency — rebalance budget accordingly and fix mid-funnel conversion bottlenecks",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -29,7 +29,7 @@
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "CRO Intelligence",

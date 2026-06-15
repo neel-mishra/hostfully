@@ -1,0 +1,21 @@
+# Creative Direction: seo_comparison_hubspot_marketing_hub.md
+
+**Source:** `/workspace/ai system/docs/seo_pages/seo_comparison_hubspot_marketing_hub.md`
+**Generated:** 2026-06-15 01:09
+
+Here are 3 detailed image generation prompts, tailored for your B2B SaaS brand's visual identity and the provided content:
+
+### Visual Asset 1: Hero Image
+**Prompt:** A visually striking, futuristic digital landscape comparing two marketing platforms, emphasizing the superior advancement of "Our Product." On the left, a sleek, dynamic, and interconnected holographic user interface represents "Our Product", glowing with vibrant energy. It features intricate 3D data visualizations and abstract, geometric shapes in #F97316 (Vibrant Orange) and #0E7490 (Teal Blue), signifying advanced AI, multi-touch attribution, and custom reporting. Subtle, flowing data streams in #C4B5FD (Soft Lavender) connect these elements, illustrating seamless workflows and deep personalization. The digital space behind "Our Product" is expansive and deep #0A1128 (Deep Midnight Blue), with subtle geometric patterns and light trails receding into the distance. On the right, positioned slightly lower and less brightly lit, is a more conventional, structured digital interface hinting at a competitor, with a less dynamic array of UI elements and simpler data representations, almost receding into the background. The overall mood is sophisticated, dynamic, and forward-thinking, emphasizing clear superiority and innovation. High-tech, clean lines, minimalist aesthetic.
+**Dimensions:** 16:9
+**Notes:** Ensure the "Our Product" side feels distinctly more advanced and visually engaging without explicitly showing a logo. The contrast should be clear but not overtly negative towards the competitor.
+
+### Visual Asset 2: Inline Illustration
+**Prompt:** An abstract, intelligent visual representing "Deep AI-Powered Personalization." In the foreground, subtle, glowing geometric neural pathways in #C4B5FD (Soft Lavender) and #0E7490 (Teal Blue) create a sense of advanced processing. At the center, a radiant, multi-faceted geometric orb or network node in #F97316 (Vibrant Orange) acts as the AI core, emitting intelligent data streams. These streams dynamically curve and adapt, forming subtle, ghosted outlines of different user profiles (represented as minimal, abstract shapes or faint human silhouettes) in the midground, indicating personalized content delivery. The background is a clean, deep #0A1128 (Deep Midnight Blue) canvas, with a subtle, futuristic grid pattern. The lighting is soft and internal, making the AI core and data streams glow from within, emphasizing precision and adaptive intelligence. Modern, clean, and sophisticated.
+**Dimensions:** 3:2
+**Notes:** Ensure the "personalization" aspect is clear through the interacting data streams and user profiles, without being too literal or cliché. Maintain the brand's abstract, geometric style.
+
+### Visual Asset 3: Social Thumbnail
+**Prompt:** A dynamic and abstract visualization of superior ROI and cost-effective scalability. In the foreground, a prominent, smooth, and brightly glowing upward-sloping growth curve in #F97316 (Vibrant Orange) symbolizes "Our Product"'s predictable and efficient growth. This curve is sharp, clean, and points towards the top right of the composition. Around this curve, subtle, geometric digital currency symbols and abstract data points in #C4B5FD (Soft Lavender) and #0E7490 (Teal Blue) float and sparkle, emphasizing savings and value. Subtly in the midground, a second, more erratic or steeply ascending, less luminous curve, perhaps in a muted shade (or indicated by less defined edges), suggests competitor pricing complexities. The background is a sophisticated, deep #0A1128 (Deep Midnight Blue) with faint, abstract financial chart lines and subtle grid patterns. The lighting is strong and optimistic, highlighting the upward orange trend, conveying financial intelligence and strategic advantage. Clean, geometric, minimalist.
+**Dimensions:** 1:1
+**Notes:** The competitor's curve should be very subtle, just enough to imply comparison without being distracting. The focus is entirely on the positive ascent and benefits of "Our Product."
