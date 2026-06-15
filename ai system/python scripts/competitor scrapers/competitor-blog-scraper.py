@@ -8,7 +8,7 @@ from typing import List, Any
 
 # Configuration
 # Adjust to current directory
-CSV_FILE = os.path.join(os.path.dirname(__file__), '../../docs/competitor content tracker/blogs/competitor_content_tracker.csv')
+CSV_FILE = os.path.join(os.path.dirname(__file__), '../../../outputs/docs/competitor content tracker/blogs/competitor_content_tracker.csv')
 DEFAULT_START_DATE = datetime(2024, 1, 1)
 
 
