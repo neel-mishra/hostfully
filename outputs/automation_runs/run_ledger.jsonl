@@ -35,3 +35,13 @@
 {"ts": "2026-03-19T12:33:51.998229+00:00", "workflow": "Monthly GTM Execution Commander", "step": "entrypoint", "status": "skipped", "idempotency_key": "automation_9:2026-03:monthly_gtm_execution_commander", "details": {}}
 {"ts": "2026-03-19T12:33:52.032459+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "started", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {}}
 {"ts": "2026-03-19T12:33:52.032634+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "success", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {"dry_run": true, "command": []}}
+{"ts": "2026-06-15T01:03:11.893379+00:00", "workflow": "meta_ads_api", "step": "account-summary", "status": "started", "idempotency_key": "meta_ads_api:2026-W25:account-summary:last_30d:::", "details": {}}
+{"ts": "2026-06-15T01:03:12.630442+00:00", "workflow": "meta_ads_api", "step": "account-summary", "status": "success", "idempotency_key": "meta_ads_api:2026-W25:account-summary:last_30d:::", "details": {}}
+{"ts": "2026-06-15T01:03:17.370114+00:00", "workflow": "meta_ads_api", "step": "campaigns", "status": "started", "idempotency_key": "meta_ads_api:2026-W25:campaigns:last_30d:::", "details": {}}
+{"ts": "2026-06-15T01:03:18.729198+00:00", "workflow": "meta_ads_api", "step": "campaigns", "status": "success", "idempotency_key": "meta_ads_api:2026-W25:campaigns:last_30d:::", "details": {}}
+{"ts": "2026-06-15T01:03:36.437633+00:00", "workflow": "google_ads_api", "step": "campaigns", "status": "started", "idempotency_key": "google_ads_api:2026-W25:campaigns:LAST_30_DAYS:", "details": {}}
+{"ts": "2026-06-15T01:03:36.440630+00:00", "workflow": "google_ads_api", "step": "account-summary", "status": "started", "idempotency_key": "google_ads_api:2026-W25:account-summary:LAST_30_DAYS:", "details": {}}
+{"ts": "2026-06-15T01:03:43.988339+00:00", "workflow": "meta_ads_api", "step": "results-summary", "status": "started", "idempotency_key": "meta_ads_api:2026-W25:results-summary:last_30d:::", "details": {}}
+{"ts": "2026-06-15T01:03:45.421962+00:00", "workflow": "meta_ads_api", "step": "results-summary", "status": "success", "idempotency_key": "meta_ads_api:2026-W25:results-summary:last_30d:::", "details": {}}
+{"ts": "2026-06-15T01:06:06.649745+00:00", "workflow": "gsheets_api", "step": "list", "status": "started", "idempotency_key": "gsheets_api:2026-06-15:list::", "details": {}}
+{"ts": "2026-06-15T01:06:15.637274+00:00", "workflow": "gdocs_api", "step": "list", "status": "failed", "idempotency_key": "gdocs_api:2026-06-15:list:", "details": {"missing_env": ["GOOGLE_CLIENT_ID"]}}
