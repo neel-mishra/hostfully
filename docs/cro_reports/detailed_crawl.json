@@ -1,0 +1,119 @@
+[
+  {
+    "url": "https://tldr.tech",
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "trust_signals": [
+      "0 testimonial(s)",
+      "0 logo/partner elements",
+      "0 stat elements"
+    ],
+    "nav_text": "",
+    "body_snippet": "TLDR\nNewsletters\nAdvertise\nBlog\nKeep up with tech in 5 minutes\nGet the free daily email with summaries of the most interesting stories in startups \ud83d\ude80, tech \ud83d\udcf1, and programming \ud83d\udcbb!\nSubscribe\nJoin 1,600,000 readers for one daily email\nJun 15 | Tech\nAnthropic shuts down Fable, Mythos models following Trump admin directive (2 minute read)\nAnthropic has shut off access to its Mythos 5 and Fable 5 models. The US Commerce Department has issued a directive that subjects the new models to export controls restricting their use anywhere outside of the US. Anthropic says the only way to ensure compliance is to completely cut access until the issue is resolved. Access to other Anthropic models is not affected.\nSubscribe\nJun 12 | Blog\nI Tried to Build a Context Layer for My Agent in a Weekend. Reader, I Did Not Build a Context Layer for My Agent in a Weekend.\n\nA \"simple\" weekend project turns into real infrastructure, and why agent context deserves a boring, reliable foundation.\n\nSponsored\nJun 15 | Data\nSQL to ER Diagram (Tool)\nSQL to ER Diagram is a free, open source, browser-only tool that turns pasted SQL schemas into clean, interactive ER diagrams without uploading your data or requiring signup.\nSubscribe\nJun 12 | AI\nMaking a vintage LLM from scratch (50 minute read)\nThis post shares how a developer created their own LLM from scratch. It covers how they create their own base-training and fine-tuning scripts, data processing pipelines, and custom dataset. The total cost of the project was ",
+    "footer_snippet": ""
+  },
+  {
+    "url": "https://tldr.tech/signup",
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "trust_signals": [
+      "0 testimonial(s)",
+      "0 logo/partner elements",
+      "0 stat elements"
+    ],
+    "nav_text": "",
+    "body_snippet": "TLDR\n\nKeep up with tech in 5 minutes\nGet the most interesting stories in startups, tech, and programming delivered in a free daily email.\nSign Up for Free\nNo spam. Unsubscribe at any time with one click.\nPrivacy",
+    "footer_snippet": ""
+  },
+  {
+    "url": "https://advertise.tldr.tech",
+    "form_fields": [],
+    "trust_signals": [
+      "15 testimonial(s)",
+      "225 logo/partner elements",
+      "39 stat elements"
+    ],
+    "nav_text": "TLDR\nAdvertising Best Practices\nHow TLDR Compares\nAudiences\nCase Studies\nTLDR Trends",
+    "body_snippet": "Skip to main content\nSkip to footer\nTLDR\nAdvertising Best Practices\nHow TLDR Compares\nAudiences\nCase Studies\nTLDR Trends\nReach over 7 million tech professionals\nGet your brand in front of developers, product managers, marketers, designers and executives. Copywriting services and campaign performance reports are included at no additional cost.\nTop-tier tech marketers advertise in TLDR\n1,200 leads \ud83d\udd25\n$382k in pipeline, 20.1x ROI \ud83d\udcb8\n75k+ in pipeline\n-50% CPC compared to LinkedIn \ud83d\udcb8\n100+ webinar signups \ud83d\udd25\n20k+ site visits \ud83d\udcc8\n14k+ site visit \ud83d\udcc8\n1,200 leads \ud83d\udd25\n$382k in pipeline, 20.1x ROI \ud83d\udcb8\n75k+ in pipeline\n-50% CPC compared to LinkedIn \ud83d\udcb8\n100+ webinar signups \ud83d\udd25\n20k+ site visits \ud83d\udcc8\n14k+ site visit \ud83d\udcc8\nNative ad opportunities in every newsletter \ud83d\ude80\n12 interest-based newsletters, 40-48% average open rate\nTLDR Tech\n\nTLDR's flagship newsletter covering the most interesting stories in startups, programming and tech\n\n1.6 million subs, 47% open rate\nTLDR AI\n\nLaunches, innovations, and research for AI, machine learning, and data science professionals\n\n1.1 million subs, 47% open rate\nTLDR Data\n\nCurated deep dives, tools and trends in big data, data science and data engineering\n\n550k subs, 33% open rate\nTLDR Dev\n\nCurated deep dives, tools, and trends in frontend, backend, and full stack web development\n\n460k subs, 43% open rate\nTLDR DevOps\n\nTools, trends, and insights for DevOps engineers\n\n330k subs, 42% open rate\nTLDR InfoSec\n\nNews, research, and tools for information security professionals\n\n400k subs",
+    "footer_snippet": "TLDR\nSubscribe to TLDR\nPrivacy Policy"
+  },
+  {
+    "url": "https://tldr.tech/ai",
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "trust_signals": [
+      "0 testimonial(s)",
+      "0 logo/partner elements",
+      "0 stat elements"
+    ],
+    "nav_text": "",
+    "body_snippet": "\ud83e\udde0\n\nTLDR AI\n\nKeep up with AI in 5 minutes\nGet the most interesting AI stories and breakthroughs delivered in a free daily email.\nSign Up\nJoin 920,000 readers for one daily email\nPrivacy",
+    "footer_snippet": ""
+  },
+  {
+    "url": "https://tldr.tech/webdev",
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "trust_signals": [
+      "0 testimonial(s)",
+      "0 logo/partner elements",
+      "0 stat elements"
+    ],
+    "nav_text": "",
+    "body_snippet": "\ud83d\udcbb\n\nTLDR Dev\n\nGet smarter about software in 5 minutes\nThe most important software engineering news in one daily email\nSign Up\nJoin 450,000 readers for one daily email\nPrivacyCareersAdvertise",
+    "footer_snippet": ""
+  },
+  {
+    "url": "https://tldr.tech/crypto",
+    "form_fields": [
+      {
+        "type": "url",
+        "name": "website"
+      },
+      {
+        "type": "email",
+        "name": "email"
+      }
+    ],
+    "trust_signals": [
+      "0 testimonial(s)",
+      "0 logo/partner elements",
+      "0 stat elements"
+    ],
+    "nav_text": "",
+    "body_snippet": "\ud83e\ude99\n\nTLDR Crypto\n\nKeep Up With Crypto in 5 Minutes\nGet our free, daily newsletter with the latest launches \ud83d\ude80, innovations \ud83d\udca1, and market moves \ud83d\udcc8 in crypto!\nSign Up\nJoin 310,000 readers for one daily email\nPrivacyCareersAdvertise",
+    "footer_snippet": ""
+  }
+]
