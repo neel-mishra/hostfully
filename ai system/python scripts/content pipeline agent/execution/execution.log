@@ -94,3 +94,15 @@
 [2026-03-16 09:00:03]    Blogs Dir: /Users/neelmishra/antigravity/synthetic growth/TLDR/docs/blogs
 [2026-03-16 09:04:46] ✅ Blog Writer Agent run complete.
 [2026-03-16 09:04:46] 🚀 Starting Social Media Agent (Aggregator)...
+[2026-06-22 01:05:46] === WEEKLY EXECUTION START ===
+[2026-06-22 01:05:46] 🚀 Starting Blog Writer Agent...
+[2026-06-22 01:05:46]    Pipeline CSV: /workspace/docs/competitor content tracker/blogs/content_pipeline.csv
+[2026-06-22 01:05:46]    Blogs Dir: /workspace/docs/blogs
+[2026-06-22 01:08:24] === WEEKLY EXECUTION START ===
+[2026-06-22 01:08:24] 🚀 Starting Blog Writer Agent...
+[2026-06-22 01:08:24]    Pipeline CSV: /workspace/docs/competitor content tracker/blogs/content_pipeline.csv
+[2026-06-22 01:08:24]    Blogs Dir: /workspace/docs/blogs
+[2026-06-22 01:13:51] ✅ Blog Writer Agent run complete.
+[2026-06-22 01:13:51] 🚀 Starting Social Media Agent (Aggregator)...
+[2026-06-22 01:13:51] ✅ Social Media Agent run complete.
+[2026-06-22 01:13:51] === WEEKLY EXECUTION END ===
