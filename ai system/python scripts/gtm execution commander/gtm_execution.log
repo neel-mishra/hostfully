@@ -1,0 +1,174 @@
+[2026-06-22 01:06:09] 
+==================================================
+[2026-06-22 01:06:09] 🚀 GTM COMMANDER STARTING: Sprint 'Month 4 - Scale Efficient Channels & Fix Visibility Gaps'
+[2026-06-22 01:06:09] 🎯 Target Persona: Property Manager scaling from 5-30 units (MX, CA-US retargeting)
+[2026-06-22 01:06:09] ==================================================
+[2026-06-22 01:06:09] 
+⚙️ Starting Vertical: Content & SEO Pipeline
+[2026-06-22 01:06:09] ▶️ Executing: programmatic_seo_agent.py
+    | /workspace/ai system/python scripts/content and seo pipeline agent/programmatic_seo_agent.py:15: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading strategic context...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/business_context.md.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/product_dna.md.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/competitor_landscape.md.
+    | --- Starting Programmatic SEO Agent ---
+    | ℹ️ No entity CSV provided. Using demo entities.
+    | ✍️ Generating SEO page: HubSpot Marketing Hub (comparison)...
+    | ✅ Saved: /workspace/ai system/docs/seo_pages/seo_comparison_hubspot_marketing_hub.md
+    | ✍️ Generating SEO page: Shopify (integration)...
+    | ✅ Saved: /workspace/ai system/docs/seo_pages/seo_integration_shopify.md
+    | --- Programmatic SEO Agent Complete ---
+[2026-06-22 01:06:58] ✅ Success: programmatic_seo_agent.py
+[2026-06-22 01:07:00] ▶️ Executing: content_ideation_agent.py
+    | /workspace/ai system/python scripts/content and seo pipeline agent/content_ideation_agent.py:17: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading strategic context...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/ideal_customer_profile.md.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/messaging_pillars.md.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/business_context.md.
+    | --- Starting Content Ideation Agent ---
+    | ℹ️ No source URLs provided. Using defaults.
+    | 🌐 Scraping: https://blog.hubspot.com/marketing
+    | 🌐 Scraping: https://neilpatel.com/blog/
+    | ✍️  Generating content briefs...
+    | ✅ Appended 8 briefs to: /workspace/ai system/docs/content_briefs/ideation_tracker.csv
+    | --- Content Ideation Agent Complete ---
+[2026-06-22 01:07:20] ✅ Success: content_ideation_agent.py
+[2026-06-22 01:07:22] ▶️ Executing: traffic_analytics_agent.py
+    | --- Starting Traffic Analytics Agent ---
+    | ⚠️ google-analytics-data package not installed. Running in mock mode.
+    | 📊 Using mock traffic data...
+    | ✅ Saved Traffic Report to: /workspace/ai system/docs/analytics_reports/traffic_report_20260622_010722.md
+    | --- Traffic Analytics Agent Complete ---
+[2026-06-22 01:07:22] ✅ Success: traffic_analytics_agent.py
+[2026-06-22 01:07:24] ▶️ Executing: search_ranking_agent.py
+    | --- Starting Search Ranking Agent ---
+    | ⚠️ GSC_SITE_URL not set in .env. Running in mock mode.
+    | 📊 Using mock search ranking data...
+    | 📄 Exported CSV: /workspace/ai system/docs/analytics_reports/striking_distance_keywords_20260622_010724.csv
+    | ✅ Saved Ranking Report to: /workspace/ai system/docs/analytics_reports/search_ranking_report_20260622_010724.md
+    | 🎯 Found 6 striking-distance keywords
+    | --- Search Ranking Agent Complete ---
+[2026-06-22 01:07:24] ✅ Success: search_ranking_agent.py
+[2026-06-22 01:07:26] ▶️ Executing: site_performance_agent.py
+    | --- Starting Site Performance Agent ---
+    | ℹ️ No URLs provided. Using defaults.
+    | 🔍 Auditing: https://tldr.tech
+    | 📊 Using mock performance data for: https://tldr.tech
+    | 🔍 Auditing: https://tldr.tech/tech
+    | 📊 Using mock performance data for: https://tldr.tech/tech
+    | 🔍 Auditing: https://tldr.tech/ai
+    | 📊 Using mock performance data for: https://tldr.tech/ai
+    | ✅ Saved Performance Report to: /workspace/ai system/docs/analytics_reports/site_performance_20260622_010729.md
+    | 🚨 ALERTS for https://tldr.tech:
+    | 🟡 Performance score low: 87% (threshold: 90%)
+    | 🚨 ALERTS for https://tldr.tech/tech:
+    | 🟡 Performance score low: 87% (threshold: 90%)
+    | 🚨 ALERTS for https://tldr.tech/ai:
+    | 🟡 Performance score low: 87% (threshold: 90%)
+    | --- Site Performance Agent Complete ---
+[2026-06-22 01:07:29] ✅ Success: site_performance_agent.py
+[2026-06-22 01:07:31] ▶️ Executing: creative_direction_agent.py
+    | /workspace/ai system/python scripts/content and seo pipeline agent/creative_direction_agent.py:15: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading brand visual identity...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/creative_direction.md.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/style_guides.md.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/brand_voice_matrix.md.
+    | --- Starting Creative Direction Agent ---
+    | 📂 Found 2 content files to process.
+    | 🎨 Generating visual prompts for: seo_integration_shopify.md
+    | ✅ Saved: /workspace/ai system/docs/creative_assets/visuals_seo_integration_shopify.md
+    | 🎨 Generating visual prompts for: seo_comparison_hubspot_marketing_hub.md
+    | ✅ Saved: /workspace/ai system/docs/creative_assets/visuals_seo_comparison_hubspot_marketing_hub.md
+    | --- Creative Direction Agent Complete ---
+[2026-06-22 01:08:19] ✅ Success: creative_direction_agent.py
+[2026-06-22 01:08:21] 
+⚙️ Starting Vertical: Paid Acquisition
+[2026-06-22 01:08:21] ▶️ Executing: search_ads_agent.py
+    | /workspace/ai system/python scripts/paid acquisition agent/search_ads_agent.py:17: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading strategic context...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/ideal_customer_profile.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/messaging_pillars.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/ad_copy_frameworks.md. Using empty context.
+    | --- Starting Search Ads Agent ---
+    | 🔍 Running Google Ads Keyword Planner research for: 'AI marketing analytics and automation'...
+    | ✓ Discovered 4 highly relevant keywords.
+    | ✍️  Generating AI Ad Copy based on strategic constraints...
+    | ✅ Saved Search Ads CSV to: /workspace/ai system/docs/paid_ads_assets/search_ads_copy_1782090515.csv
+    | --- Search Ads Agent Complete ---
+[2026-06-22 01:08:37] ✅ Success: search_ads_agent.py
+[2026-06-22 01:08:39] ▶️ Executing: social_ads_agent.py
+    | /workspace/ai system/python scripts/paid acquisition agent/social_ads_agent.py:14: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading strategic context...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/ideal_customer_profile.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/messaging_pillars.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/creative_direction.md. Using empty context.
+    | --- Starting Social Ads Agent ---
+    | ✍️  Generating AI Ad Concepts for Meta...
+    | ✅ Saved Social Ads Concepts to: /workspace/ai system/docs/paid_ads_assets/social_ads_concepts_meta_20260622_010856.md
+    | --- Social Ads Agent Complete ---
+[2026-06-22 01:08:58] ✅ Success: social_ads_agent.py
+[2026-06-22 01:09:00] ▶️ Executing: landing_page_agent.py
+    | /workspace/ai system/python scripts/paid acquisition agent/landing_page_agent.py:15: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading strategic context...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/ideal_customer_profile.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/messaging_pillars.md. Using empty context.
+    | --- Starting Landing Page Generator Agent ---
+    | 🏗️  Drafting Landing Page for campaign: 'AI Marketing Hub'...
+    | 📥 Loading latest ad assets for message scent...
+    | ✅ Saved Landing Page Wireframe to: /workspace/ai system/docs/landing_pages/landing_page_ai_marketing_hub_20260622_010920.md
+    | --- Landing Page Agent Complete ---
+[2026-06-22 01:09:23] ✅ Success: landing_page_agent.py
+[2026-06-22 01:09:25] 
+⏩ Skipping Vertical: B2B Outbound (Disabled in config)
+[2026-06-22 01:09:25] 
+⚙️ Starting Vertical: CRO Intelligence
+[2026-06-22 01:09:25] ▶️ Executing: cro_hypothesis_agent.py
+    | /workspace/ai system/python scripts/cro and website intelligence agent/cro_hypothesis_agent.py:15: FutureWarning:
+    | All support for the `google.generativeai` package has ended. It will no longer be receiving
+    | updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+    | See README for more details:
+    | https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+    | import google.generativeai as genai
+    | 📥 Loading strategic context...
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/core/ideal_customer_profile.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/identity/messaging_pillars.md. Using empty context.
+    | ⚠️ Warning: Could not find /workspace/ai system/commands/ops/gtm_launch_playbook.md. Using empty context.
+    | --- Starting CRO Hypothesis Agent ---
+    | 🕵️  Generating CRO Hypothesis Report for: https://tldr.tech/signup...
+    | ✅ Saved CRO Sprint Report to: /workspace/ai system/docs/cro_reports/cro_sprint_report_tldr_tech_signup_20260622_010946.md
+    | --- CRO Hypothesis Agent Complete ---
+[2026-06-22 01:09:48] ✅ Success: cro_hypothesis_agent.py
+[2026-06-22 01:09:50] 
+🏁 GTM COMMANDER EXECUTION COMPLETE.
+[2026-06-22 01:09:50] ==================================================
+

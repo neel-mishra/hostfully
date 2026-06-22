@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "Month 4 - Scale Efficient Channels & Fix Visibility Gaps",
+  "target_persona": "Property Manager scaling from 5-30 units (MX, CA-US retargeting)",
+  "active_campaign_hypothesis": "Retargeting warm audiences and MX prospecting are 3-5x more efficient than cold CA-US prospecting; reallocating budget will reduce blended CPL below $200",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -29,7 +29,7 @@
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "CRO Intelligence",
