@@ -1,0 +1,23 @@
+# Creative Direction: seo_integration_shopify.md
+
+**Source:** `/workspace/ai system/docs/seo_pages/seo_integration_shopify.md`
+**Generated:** 2026-06-22 01:07
+
+Here are 3 detailed image generation prompts, tailored for Midjourney or DALL-E, designed to visualize the Shopify integration content while strictly adhering to the ApexFlow brand visual identity.
+
+---
+
+### Visual Asset 1: Hero Image
+**Prompt:** A visually stunning, modern, and clean abstract digital illustration. In the foreground, a minimalist, stylized geometric representation of a generic e-commerce platform's facade or a shopping cart icon, rendered in subtle Stratosphere Grey (`#6C7577D`) and a hint of soft purple (representing Shopify's brand), subtly radiating data streams upwards. These data streams, depicted as flowing, luminous lines and particles in gradient shades of Apex Blue (`#007BFF`) and Flow Teal (`#00C1D4`), seamlessly converge and elevate into a sophisticated, interconnected network of glowing nodes and pathways in the midground. This network forms an abstract, intelligent architecture, symbolizing ApexFlow's advanced CDP and AI. The overall composition suggests upward movement and strategic elevation. The background is a clean, expansive Cloud White (`#F8F9FA`) with a subtle, ethereal glow of Apex Blue and Flow Teal emanating from the elevated network. The lighting is soft and digital, emphasizing the luminescence of the data flow and the intelligent structure. No human figures. Focus on modern abstract geometry and connectivity.
+**Dimensions:** 16:9 (Ideal for website hero banners)
+**Notes:** Ensure the 'Shopify' element is subtle and not directly branded with logos, rather represented by a generic e-commerce platform. The emphasis should be on the transformation and elevation by ApexFlow.
+
+### Visual Asset 2: Inline Illustration
+**Prompt:** A minimalist, abstract digital illustration centered around the concept of a "unified customer profile." In the center, a perfectly spherical or crystalline geometric core pulses softly with a gradient glow transitioning from Apex Blue (`#007BFF`) to Flow Teal (`#00C1D4`). From multiple directions in the midground and background, various abstract data streams, depicted as thin, luminous lines and tiny geometric particles in Stratosphere Grey (`#6C757D`) and Flow Teal, elegantly converge into this central core. Each incoming stream originates from a different, small, abstract, clean-lined icon representing a customer touchpoint: an envelope for email, a browser window for web activity, a chat bubble for support, and a shopping bag for purchase data (the latter subtly hinting at Shopify). The background is a deep, contrasting Carbon Black (`#212529`) with a very subtle, almost imperceptible geometric grid pattern. The lighting highlights the central sphere's glow and the defined paths of the incoming data streams. No human figures. Emphasize clarity, precision, and the seamless integration of disparate data.
+**Dimensions:** 1:1 (Suitable for social media thumbnails or square inline illustrations)
+**Notes:** The icons representing touchpoints should be extremely stylized and minimalist, maintaining the sophisticated digital aesthetic.
+
+### Visual Asset 3: Inline Illustration
+**Prompt:** An intricate, dynamic, abstract digital illustration visualizing "AI-powered automation workflows." The composition features a complex yet clean network of interconnected pathways and nodes. The main pathways, representing intelligent data flow, are depicted as vibrant, glowing lines in Apex Blue (`#007BFF`) and Flow Teal (`#00C1D4`), constantly moving and subtly shifting. Key decision nodes are represented by slightly larger, multi-faceted geometric shapes with a very subtle internal glow, some incorporating a minimalist, abstract AI brain or circuit pattern texture. Luminous arrows indicate the direction of data movement, highlighting conditional logic and optimized pathways. The background is a dark Stratosphere Grey (`#6C757D`) fading into Carbon Black (`#212529`), featuring an understated, geometric circuit board motif that provides structure without being busy. Lighting emphasizes the luminosity of the active pathways and the intelligent glow of the nodes. No human figures. Focus on complexity, intelligence, and seamless automation.
+**Dimensions:** 3:2 (Good for blog post illustrations or inline content)
+**Notes:** The complexity should be implied by the number of connections and pathways, not by overly busy details. Maintain a sense of order and precision.
