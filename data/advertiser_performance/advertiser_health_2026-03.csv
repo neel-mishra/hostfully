@@ -1,0 +1,4 @@
+advertiser_id,advertiser_name,contract_start,contract_renewal,total_spend_ltv,spend_this_quarter,spend_last_quarter,spend_trend,campaigns_active,avg_ctr,avg_cpc,last_placement_date,last_contact_date,nps_score,newsletters_used,notes
+adv-001,Acme Corp,2024-06-01,2026-06-01,42000,8500,8200,increasing,3,0.024,1.85,2026-03-08,2026-03-05,72,Tech; AI,Strong engagement on Tech. Considering AI expansion.
+adv-002,Beta Labs,2025-01-15,2026-04-15,12000,2800,3200,declining,1,0.018,2.10,2026-02-28,2026-02-10,,Tech,CTR below benchmark. Schedule check-in before renewal.
+adv-003,Gamma Inc,2025-09-01,2026-09-01,6500,3200,3100,stable,2,0.022,1.95,2026-03-06,2026-03-01,65,Tech; Dev,New Dev placement performing well.
