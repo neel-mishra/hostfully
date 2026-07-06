@@ -35,3 +35,6 @@
 {"ts": "2026-03-19T12:33:51.998229+00:00", "workflow": "Monthly GTM Execution Commander", "step": "entrypoint", "status": "skipped", "idempotency_key": "automation_9:2026-03:monthly_gtm_execution_commander", "details": {}}
 {"ts": "2026-03-19T12:33:52.032459+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "started", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {}}
 {"ts": "2026-03-19T12:33:52.032634+00:00", "workflow": "Monthly Competitor Convergence Report", "step": "entrypoint", "status": "success", "idempotency_key": "automation_10:2026-03:monthly_competitor_convergence_report", "details": {"dry_run": true, "command": []}}
+{"ts": "2026-07-06T01:02:39.738208+00:00", "workflow": "fb_ad_library_api", "step": "full", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W28:full:Morning Brew:30", "details": {}}
+{"ts": "2026-07-06T01:02:47.180841+00:00", "workflow": "fb_ad_library_api", "step": "search", "status": "started", "idempotency_key": "fb_ad_library_api:2026-W28:search:Morning Brew:50", "details": {}}
+{"ts": "2026-07-06T01:06:00.086136+00:00", "workflow": "gdocs_api", "step": "create", "status": "failed", "idempotency_key": "gdocs_api:2026-07-06:create:Competitor Convergence Report - July 2026", "details": {"missing_env": ["GOOGLE_CLIENT_ID"]}}
