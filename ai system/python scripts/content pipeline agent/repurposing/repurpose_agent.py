@@ -23,8 +23,8 @@ import requests
 from dotenv import load_dotenv
 
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent
-COMMANDS_DIR = WORKSPACE_ROOT / "commands"
-OUTPUT_DIR = WORKSPACE_ROOT / "docs" / "content_assets" / "repurposed"
+COMMANDS_DIR = WORKSPACE_ROOT / "business dna"
+OUTPUT_DIR = WORKSPACE_ROOT / "outputs" / "docs" / "content_assets" / "repurposed"
 
 
 def _resolve_env_key(name: str) -> str | None:
