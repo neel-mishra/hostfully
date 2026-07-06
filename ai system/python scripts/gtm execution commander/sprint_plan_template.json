@@ -1,7 +1,7 @@
 {
-  "sprint_name": "Month 1 - Initial Testing",
-  "target_persona": "VP of Marketing at DTC Ecommerce",
-  "active_campaign_hypothesis": "Data fragmentation is killing their ROAS",
+  "sprint_name": "July 2026 - LATAM Expansion & Pipeline Acceleration",
+  "target_persona": "Vacation Rental Property Managers (5-30 units) in US/CA and LATAM",
+  "active_campaign_hypothesis": "LATAM markets offer 4-6x better CPAs; shifting budget from expensive US/CA prospecting to MX/BR expansion while fixing content velocity will compound organic growth",
   "verticals_to_run": [
     {
       "name": "Content & SEO Pipeline",
@@ -29,7 +29,7 @@
       "agents": [
         "outbound_sequence_agent.py"
       ],
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "CRO Intelligence",
